@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-06T19:24:09.498012Z",
+  "generated": "2026-07-06T20:08:42.469891Z",
   "today": "2026-07-07",
   "rows": [
     {
@@ -102,7 +102,9 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_followPrice": 418.05,
+      "_sinceLast": -1.8
     },
     {
       "name": "Astra Microwave",
@@ -136,7 +138,9 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_followPrice": 1848.5,
+      "_sinceLast": -0.1
     },
     {
       "name": "Travel Food",
@@ -170,7 +174,9 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_followPrice": 1310.8,
+      "_sinceLast": -1.4
     },
     {
       "name": "Endurance Tech",
