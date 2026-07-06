@@ -1,0 +1,31 @@
+name: Reset data
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type DELETE to wipe all daily lists'
+        required: true
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  reset:
+    if: ${{ github.event.inputs.confirm == 'DELETE' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Clear lists and rebuild empty dashboard
+        run: |
+          rm -f data/lists/*.csv || true
+          python scripts/process.py || true
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Reset: cleared all daily lists"
+          git push
