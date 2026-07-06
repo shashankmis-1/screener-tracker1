@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Screener Tracker</title>
+<style>
+* { box-sizing: border-box; }
+body { margin:0; padding:20px; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:#f5f6fa; color:#1a1f36; font-size:14px; line-height:1.45; }
+h1 { font-size:20px; margin:0 0 4px; }
+.sub { color:#5b6472; margin:0 0 14px; font-size:13px; }
+.card { background:#fff; border:1px solid #e3e6ee; border-radius:10px; padding:14px; margin-bottom:16px; }
+.row { display:flex; flex-wrap:wrap; gap:14px; align-items:flex-end; }
+.ctrl { display:flex; flex-direction:column; gap:3px; }
+.ctrl label { font-size:11px; color:#5b6472; font-weight:600; text-transform:uppercase; letter-spacing:.03em; }
+.ctrl select, .ctrl input { padding:6px 8px; border:1px solid #cdd2df; border-radius:6px; font-size:13px; background:#fff; }
+.counts { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; align-items:center; }
+.counts .prof { margin-left:auto; font-size:12px; color:#5b6472; }
+.pill { padding:4px 10px; border-radius:999px; font-size:12px; font-weight:600; border:1px solid transparent; }
+.b5{background:#e7f6ec;color:#1a7f3c;border-color:#b8e6c6;} .b1{background:#fff3e0;color:#a65a00;border-color:#ffdca8;}
+.b4{background:#fdeede;color:#9a5b12;border-color:#f6d2a6;} .b3{background:#eef0f3;color:#55606f;border-color:#dfe3ea;}
+.b2{background:#fdeaea;color:#b02525;border-color:#f4c5c5;}
+.st-new{background:#e8f0ff;color:#1a4bd6;border-color:#c4d7ff;} .st-persistent{background:#e7f6ec;color:#1a7f3c;border-color:#b8e6c6;}
+.st-current{background:#f0f2f8;color:#55606f;border-color:#dfe3ea;} .st-dropped{background:#fdeaea;color:#b02525;border-color:#f4c5c5;}
+table { width:100%; border-collapse:collapse; font-size:12.5px; }
+th,td { padding:7px 8px; text-align:right; border-bottom:1px solid #eef0f4; white-space:nowrap; }
+th { background:#f0f2f8; font-size:11px; text-transform:uppercase; letter-spacing:.02em; color:#5b6472; cursor:pointer; position:sticky; top:0; }
+td.name,th.name,td.bucket { text-align:left; }
+td.name { font-weight:600; }
+tr.row5{background:#f4fbf6;} tr.row1{background:#fffaf2;} tr.row2{background:#fdf5f5;}
+.tag { display:inline-block; padding:2px 7px; border-radius:6px; font-size:11px; font-weight:700; }
+.score { font-weight:700; } .flag{color:#b02525;font-size:11px;} .flag.warn{color:#a65a00;} .flag.good{color:#1a7f3c;} .good{color:#1a7f3c;} .muted{color:#98a0ad;}
+.wrap { overflow-x:auto; }
+</style>
+</head>
+<body>
+<h1>Screener Tracker</h1>
+<p class="sub" id="meta">Loading…</p>
+
+<div class="card">
+  <div class="row">
+    <div class="ctrl"><label>Strategy profile</label>
+      <select id="profile"><option value="momentum">Momentum tilt</option><option value="balanced">Balanced</option><option value="value">Value / Quality tilt</option></select>
+    </div>
+    <div class="ctrl"><label>Show</label>
+      <select id="filter"><option value="today">Today's list</option><option value="all">All tracked</option><option value="persistent">Persistent (≥3 days)</option><option value="new">New today</option><option value="dropped">Dropped off</option></select>
+    </div>
+    <div class="ctrl"><label>Min turnover ₹Cr</label><input id="liqCr" type="number" step="0.5" value="1" style="width:90px"></div>
+    <div class="ctrl"><label>RSI cap</label><input id="rsiCap" type="number" value="72" style="width:80px"></div>
+    <div class="ctrl"><label>Low-mom 3m below %</label><input id="momMin" type="number" value="8" style="width:90px"></div>
+  </div>
+</div>
+
+<div id="out"></div>
+
+<script>
+const PROFILES = { balanced:{mom:25,prox:15,qual:15,inst:15,val:15,piot:15}, momentum:{mom:40,prox:25,qual:10,inst:10,val:5,piot:10}, value:{mom:10,prox:10,qual:25,inst:15,val:25,piot:15} };
+const PROFILE_LABEL = {balanced:'Balanced',momentum:'Momentum tilt',value:'Value / Quality tilt'};
+const $ = id => document.getElementById(id);
+function cfg(){ return { profile:$('profile').value, filter:$('filter').value, liqCr:+$('liqCr').value||0, rsiCap:+$('rsiCap').value||100, peMult:1.5, momMin:+$('momMin').value||0 }; }
+function clamp(x,a,b){ return Math.max(a,Math.min(b,x)); }
+const isN = v => typeof v==='number' && !isNaN(v);
+
+function scoreOf(r,prof){
+  const W=PROFILES[prof]; const P=[];
+  const mv=[]; if(isN(r.r3m))mv.push(clamp(r.r3m,0,40)/40); if(isN(r.r1m))mv.push(clamp(r.r1m,0,20)/20);
+  if(isN(r.qsales))mv.push(clamp(r.qsales,0,40)/40); if(isN(r.volx))mv.push(clamp((r.volx-1)/1,0,1));
+  if(mv.length)P.push({w:W.mom,v:mv.reduce((a,b)=>a+b,0)/mv.length});
+  if(isN(r.down))P.push({w:W.prox,v:clamp((18-r.down)/16,0,1)});
+  const q=[]; if(isN(r.roe))q.push(clamp(r.roe,0,50)/50); if(isN(r.roce))q.push(clamp(r.roce,0,60)/60);
+  if(q.length)P.push({w:W.qual,v:q.reduce((a,b)=>a+b,0)/q.length});
+  if(isN(r.fii)||isN(r.dii)){let s=0,n=0; if(isN(r.fii)){s+=r.fii>0?1:(r.fii<0?0:.5);n++;} if(isN(r.dii)){s+=r.dii>0?1:(r.dii<0?0:.5);n++;} P.push({w:W.inst,v:s/n});}
+  const vv=[]; if(isN(r.pe)&&isN(r.indpe)&&r.indpe>0)vv.push(clamp((1.6-r.pe/r.indpe)/1.2,0,1)); if(isN(r.peg)&&r.peg>0)vv.push(clamp((2-r.peg)/1.5,0,1));
+  if(vv.length)P.push({w:W.val,v:vv.reduce((a,b)=>a+b,0)/vv.length});
+  if(isN(r.piotroski))P.push({w:W.piot,v:clamp(r.piotroski,0,9)/9});
+  const t=P.reduce((a,p)=>a+p.w,0); return t?Math.round(P.reduce((a,p)=>a+p.w*p.v,0)/t*100):0;
+}
+function bucketOf(r,c){
+  const to=(isN(r.cmp)&&isN(r.vol))?r.cmp*r.vol:NaN;
+  if(isN(to)){ if(to<c.liqCr*1e7) return 2; } else if(isN(r.vol)&&r.vol<20000) return 2;
+  if(isN(r.rsi)&&r.rsi>c.rsiCap) return 1;
+  if((isN(r.sales5)&&r.sales5<0)||(isN(r.profit5)&&r.profit5<0)) return 3;
+  if(isN(r.pe)&&isN(r.indpe)&&r.indpe>0&&r.pe>c.peMult*r.indpe) return 4;
+  return 5;
+}
+function flagsOf(r,c){
+  const f=[]; const has3=isN(r.r3m), n1=isN(r.r1y)&&r.r1y<0, strong=has3&&r.r3m>=15, vc=isN(r.volx)&&r.volx>=1.5;
+  if(vc) f.push({t:'vol '+r.volx.toFixed(1)+'×',s:'good'});
+  if(isN(r.r1d)&&r.r1d<-2) f.push({t:'red day '+r.r1d.toFixed(1)+'%',s:''});
+  if(isN(r.fii)&&isN(r.dii)&&r.fii<0&&r.dii<0) f.push({t:'FII+DII selling',s:''});
+  else if(isN(r.fii)&&r.fii<0&&(!isN(r.dii)||r.dii<=0)) f.push({t:'FII selling',s:''});
+  if(isN(r.promchg)&&r.promchg<0) f.push({t:'promoter selling',s:''});
+  if(has3&&r.r3m<c.momMin) f.push({t:'low momentum',s:'warn'});
+  else if(n1&&strong) f.push({t:vc?'early turn (vol)':'early turn?',s:'good'});
+  else if(n1&&has3) f.push({t:'recovering',s:'warn'});
+  else if(n1&&!has3) f.push({t:'low momentum',s:'warn'});
+  if(isN(r.r1y)&&r.r1y>=10&&has3&&r.r3m>=c.momMin) f.push({t:vc?'uptrend (vol)':'uptrend',s:'good'});
+  if(isN(r.rsi)&&r.rsi<=c.rsiCap&&r.rsi>c.rsiCap-4) f.push({t:'RSI hot '+r.rsi.toFixed(0),s:'warn'});
+  return f;
+}
+function actionOf(r){
+  const fs=(r._flags||[]).map(f=>f.t); const has=s=>fs.some(t=>t.indexOf(s)===0);
+  if(r._b===2) return {t:'Skip — illiquid',d:'Turnover too low to enter/exit cleanly.',s:'warn'};
+  if(r._b===1) return {t:'Wait — overbought',d:'Let RSI cool; wait for a pullback toward the 50 DMA.',s:'warn'};
+  if(r._b===3) return {t:'Skip — weak fundamentals',d:'Negative 5-yr growth; fails the quality thesis.',s:'warn'};
+  if(r._b===4) return {t:'Check valuation first',d:'Is PEG < 1.5 / premium justified by growth & ROCE? If yes, treat as core.',s:'warn'};
+  if(has('low momentum')) return {t:'Skip — no momentum',d:'Weak recent trend; nothing to time.',s:'warn'};
+  if(has('uptrend')) return {t:'Core pick — confirm & buy',d:'Chart: daily CLOSE above resistance on rising volume, higher highs & lows, 200 DMA rising. Enter with a stop below the 50 DMA.',s:'good'};
+  if(has('early turn')) return {t:'Early turn — size small',d:'Chart: real base breakout, NOT a dead-cat bounce? 200 DMA flattening/up, volume sustained, retest holds. Smaller position, tight stop.',s:'good'};
+  if(has('recovering')) return {t:'Watch — mild bounce',d:'Wait for a stronger turn or a clean base breakout.',s:''};
+  if(r.score>=45) return {t:'Confirm on chart',d:'Check trend structure and volume before acting.',s:''};
+  return {t:'Watch',d:'',s:''};
+}
+const BUCKET={5:{label:'Shortlist',cls:'b5',rank:0},1:{label:'Extended',cls:'b1',rank:1},4:{label:'Expensive',cls:'b4',rank:2},3:{label:'Weak',cls:'b3',rank:3},2:{label:'Thin',cls:'b2',rank:4}};
+const COLS=[
+  {k:'status',t:'Status'},{k:'days',t:'Days'},{k:'bucket',t:'Bucket'},{k:'name',t:'Name'},{k:'score',t:'Score'},{k:'action',t:'What next'},{k:'flags',t:'Signals'},
+  {k:'cmp',t:'CMP'},{k:'volx',t:'Vol×'},{k:'rsi',t:'RSI'},{k:'down',t:'Down%'},{k:'r1m',t:'1m%'},{k:'r3m',t:'3m%'},{k:'r1y',t:'1y%'},
+  {k:'qsales',t:'QSales%'},{k:'roe',t:'ROE'},{k:'roce',t:'ROCE'},{k:'debt',t:'D/E'},{k:'pe',t:'P/E'},{k:'indpe',t:'IndPE'},{k:'peg',t:'PEG'},{k:'piotroski',t:'Piot'},
+  {k:'fii',t:'ΔFII'},{k:'dii',t:'ΔDII'},{k:'firstSeen',t:'First seen'},{k:'since',t:'Since drop%'}
+];
+function fmt(v){ if(v==null)return '<span class="muted">–</span>'; if(typeof v==='number')return isNaN(v)?'<span class="muted">–</span>':(Number.isInteger(v)?v:v.toFixed(2)); return v; }
+
+let DATA=null, STATE={sortKey:null,sortDir:-1};
+
+function passesFilter(r,f,today){
+  if(f==='all') return true;
+  if(f==='today') return r._lastSeen===today;
+  if(f==='persistent') return r._daysOnList>=3 && r._lastSeen===today;
+  if(f==='new') return r._status==='new';
+  if(f==='dropped') return r._status==='dropped';
+  return true;
+}
+function render(){
+  if(!DATA){return;} const c=cfg(); const today=DATA.today;
+  let rows=DATA.rows.filter(r=>passesFilter(r,c.filter,today)).map(r=>{
+    const x=Object.assign({},r);
+    if(isN(x.vol)&&isN(x.avgvol)&&x.avgvol>0) x.volx=x.vol/x.avgvol;
+    x._b=bucketOf(x,c); x.score=scoreOf(x,c.profile); x._flags=flagsOf(x,c); x._action=actionOf(x);
+    return x;
+  });
+  const sk=STATE.sortKey;
+  rows.sort((a,b)=>{ const ra=BUCKET[a._b].rank,rb=BUCKET[b._b].rank; if(ra!==rb)return ra-rb;
+    if(sk){let av=a[sk],bv=b[sk]; if(typeof av==='string'||typeof bv==='string'){av=String(av||'');bv=String(bv||'');return STATE.sortDir*av.localeCompare(bv);} av=isN(av)?av:-1e9;bv=isN(bv)?bv:-1e9;return STATE.sortDir*(bv-av);}
+    return b.score-a.score; });
+  const counts={}; rows.forEach(r=>counts[r._b]=(counts[r._b]||0)+1);
+  let pills='<div class="counts">'; [5,1,4,3,2].forEach(b=>{ if(counts[b]) pills+=`<span class="pill ${BUCKET[b].cls}">${BUCKET[b].label}: ${counts[b]}</span>`; });
+  pills+=`<span class="prof">${rows.length} shown · Ranking: <b>${PROFILE_LABEL[c.profile]}</b></span></div>`;
+  let html=pills+'<div class="card wrap"><table><thead><tr>';
+  COLS.forEach(col=>html+=`<th class="${col.k==='name'?'name':''}" data-k="${col.k}">${col.t}</th>`);
+  html+='</tr></thead><tbody>';
+  rows.forEach(r=>{
+    html+=`<tr class="row${r._b}">`;
+    COLS.forEach(col=>{
+      const k=col.k;
+      if(k==='status'){ const s=r._status||''; html+=`<td class="bucket"><span class="pill st-${s}">${s}</span></td>`; }
+      else if(k==='days') html+=`<td>${r._daysOnList||'–'}</td>`;
+      else if(k==='bucket') html+=`<td class="bucket"><span class="tag ${BUCKET[r._b].cls}">${BUCKET[r._b].label}</span></td>`;
+      else if(k==='name') html+=`<td class="name">${r.name}</td>`;
+      else if(k==='score') html+=`<td class="score">${r.score}</td>`;
+      else if(k==='action') html+=`<td class="bucket" style="max-width:300px;white-space:normal"><div class="flag ${r._action.s}" style="font-weight:700;font-size:12.5px">${r._action.t}</div>${r._action.d?`<div class="muted" style="font-size:11px;line-height:1.35;margin-top:2px">${r._action.d}</div>`:''}</td>`;
+      else if(k==='flags'){ const hide=['uptrend','early turn','low momentum','recovering']; const sh=(r._flags||[]).filter(f=>!hide.some(h=>f.t.indexOf(h)===0)); html+=`<td class="bucket" style="white-space:normal;max-width:160px">${sh.map(f=>`<span class="flag ${f.s}">${f.t}</span>`).join('; ')||'<span class="muted">–</span>'}</td>`; }
+      else if(k==='volx') html+=`<td>${isN(r.volx)?`<span class="${r.volx>=1.5?'good':''}">${r.volx.toFixed(1)}×</span>`:'<span class="muted">–</span>'}</td>`;
+      else if(k==='firstSeen') html+=`<td>${r._firstSeen||'–'}</td>`;
+      else if(k==='since') html+=`<td>${isN(r._sinceLast)?`<span class="${r._sinceLast>=0?'good':'flag'}">${r._sinceLast}%</span>`:'<span class="muted">–</span>'}</td>`;
+      else { let cell=fmt(r[k]); if((k==='fii'||k==='dii')&&isN(r[k])) cell=`<span class="${r[k]>0?'good':(r[k]<0?'flag':'')}">${r[k].toFixed(2)}</span>`; html+=`<td>${cell}</td>`; }
+    });
+    html+='</tr>';
+  });
+  html+='</tbody></table></div>';
+  $('out').innerHTML=html;
+  document.querySelectorAll('th').forEach(th=>th.onclick=()=>{ const k=th.dataset.k; if(STATE.sortKey===k)STATE.sortDir*=-1; else{STATE.sortKey=k;STATE.sortDir=(k==='name'||k==='status')?1:-1;} render(); });
+}
+['profile','filter','liqCr','rsiCap','momMin'].forEach(id=>$(id).addEventListener('change',render));
+fetch('data.json?_='+Date.now()).then(r=>r.json()).then(d=>{
+  DATA=d;
+  $('meta').textContent = d.today ? `Today: ${d.today} · ${d.rows.length} stocks tracked · data generated ${new Date(d.generated).toLocaleString()}` : 'No data yet — upload your first list to data/lists/.';
+  render();
+}).catch(e=>{ $('meta').textContent='Could not load data.json ('+e+'). Run scripts/process.py or push a list to data/lists/.'; });
+</script>
+</body>
+</html>
