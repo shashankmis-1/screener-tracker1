@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 """
 Screener list tracker.
@@ -254,6 +255,150 @@ def sector_heat(rows):
     return out
  
  
+# ---------------------------------------------------------------------------
+# Paper-test: log Core/Early picks, track forward returns, compute win rate
+# ---------------------------------------------------------------------------
+PAPER_LOG = os.path.join(ROOT, "data", "paper_log.json")
+STOP_PCT = 8.0        # simulated stop-loss (%)
+HORIZON_DAYS = 20     # trading days to hold before scoring
+MILESTONES = [5, 10, 20]
+ 
+ 
+def _num(r, k):
+    v = r.get(k)
+    return v if isinstance(v, (int, float)) else None
+ 
+ 
+def classify(r):
+    """Replicate the dashboard's action logic (defaults) to tag a row core/early/other."""
+    LIQ, RSICAP, PEM, MOM = 1e7, 72, 1.5, 8
+    cmp, vol, avgvol = _num(r, "cmp"), _num(r, "vol"), _num(r, "avgvol")
+    rsi, r3m, r1y = _num(r, "rsi"), _num(r, "r3m"), _num(r, "r1y")
+    sales5, profit5, pe, indpe = _num(r, "sales5"), _num(r, "profit5"), _num(r, "pe"), _num(r, "indpe")
+    turnover = cmp * vol if (cmp and vol) else None
+    if turnover is not None:
+        if turnover < LIQ:
+            return "skip"
+    elif vol is not None and vol < 20000:
+        return "skip"
+    if rsi is not None and rsi > RSICAP:
+        return "wait"
+    if (sales5 is not None and sales5 < 0) or (profit5 is not None and profit5 < 0):
+        return "skip"
+    if pe is not None and indpe and indpe > 0 and pe > PEM * indpe:
+        return "expensive"
+    has3 = r3m is not None
+    n1 = (r1y is not None and r1y < 0)
+    if (has3 and r3m < MOM) or (n1 and not has3):
+        return "skip"
+    if r1y is not None and r1y >= 10 and has3 and r3m >= MOM:
+        return "core"
+    if n1 and has3 and r3m >= 15:
+        return "early"
+    if n1 and has3:
+        return "watch"
+    return "watch"
+ 
+ 
+def _business_days(d1, d2):
+    a = datetime.date.fromisoformat(d1)
+    b = datetime.date.fromisoformat(d2)
+    if b <= a:
+        return 0
+    days, cur = 0, a
+    while cur < b:
+        cur += datetime.timedelta(days=1)
+        if cur.weekday() < 5:
+            days += 1
+    return days
+ 
+ 
+def _last_price(sym):
+    import yfinance as yf
+    h = yf.Ticker(sym).history(period="5d")
+    c = h["Close"].dropna()
+    return float(c.iloc[-1]) if len(c) else None
+ 
+ 
+def paper_stats(trades):
+    stats = {}
+    for rec in ("core", "early"):
+        closed = [t for t in trades if t["rec"] == rec and t.get("status") == "closed"]
+        opened = [t for t in trades if t["rec"] == rec and t.get("status") == "open"]
+        rets = [t.get("finalReturn", 0) for t in closed]
+        wins = [x for x in rets if x > 0]
+        stats[rec] = {
+            "closed": len(closed), "open": len(opened),
+            "winRate": round(len(wins) / len(closed) * 100) if closed else None,
+            "avgReturn": round(sum(rets) / len(rets), 1) if rets else None,
+            "avgWin": round(sum(wins) / len(wins), 1) if wins else None,
+            "avgLoss": round(sum(x for x in rets if x <= 0) / max(1, len(rets) - len(wins)), 1) if (len(rets) - len(wins)) else None,
+            "openTrades": sorted(
+                [{"name": t["name"], "ret": t.get("lastReturn"), "days": t.get("daysHeld")} for t in opened],
+                key=lambda x: -(x["ret"] if isinstance(x["ret"], (int, float)) else -999))
+        }
+    return stats
+ 
+ 
+def update_paper_trades(out_rows, today):
+    log = {"trades": []}
+    if os.path.exists(PAPER_LOG):
+        try:
+            log = json.load(open(PAPER_LOG))
+        except Exception:
+            log = {"trades": []}
+    trades = log.get("trades", [])
+    open_keys = {(t["name"], t["rec"]) for t in trades if t.get("status") == "open"}
+ 
+    # add new paper trades for today's core/early picks (not already open)
+    for r in out_rows:
+        if r.get("_lastSeen") != today:
+            continue
+        rec = classify(r)
+        if rec not in ("core", "early"):
+            continue
+        sym, cmp = r.get("symbol"), _num(r, "cmp")
+        if not sym or cmp is None:
+            continue
+        if (r["name"], rec) in open_keys:
+            continue
+        tk = sym if str(sym).upper().endswith(".NS") else str(sym) + ".NS"
+        trades.append({"name": r["name"], "symbol": tk, "rec": rec, "entryDate": today,
+                       "entryPrice": round(cmp, 2), "status": "open", "daysHeld": 0,
+                       "lastPrice": round(cmp, 2), "lastReturn": 0.0, "minReturn": 0.0, "snap": {}})
+ 
+    # update open trades via yfinance, apply stop / horizon
+    try:
+        import yfinance  # noqa: F401
+        have_yf = True
+    except Exception:
+        have_yf = False
+    for t in trades:
+        if t.get("status") != "open":
+            continue
+        t["daysHeld"] = _business_days(t["entryDate"], today)
+        if have_yf:
+            try:
+                p = _last_price(t["symbol"])
+                if p:
+                    ret = round((p / t["entryPrice"] - 1) * 100, 2)
+                    t["lastPrice"], t["lastReturn"] = round(p, 2), ret
+                    t["minReturn"] = min(t.get("minReturn", 0.0), ret)
+                    for m in MILESTONES:
+                        if t["daysHeld"] >= m and str(m) not in t["snap"]:
+                            t["snap"][str(m)] = ret
+            except Exception:
+                pass
+        if t.get("minReturn", 0.0) <= -STOP_PCT:
+            t.update({"status": "closed", "exitReason": "stop", "closeDate": today, "finalReturn": -STOP_PCT})
+        elif t["daysHeld"] >= HORIZON_DAYS:
+            t.update({"status": "closed", "exitReason": "horizon", "closeDate": today, "finalReturn": t.get("lastReturn", 0.0)})
+ 
+    log["trades"] = trades
+    json.dump(log, open(PAPER_LOG, "w"), indent=2)
+    return {"stats": paper_stats(trades), "stopPct": STOP_PCT, "horizon": HORIZON_DAYS, "total": len(trades)}
+ 
+ 
 def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     files = sorted(glob.glob(os.path.join(LISTS_DIR, "*.csv")))
@@ -310,15 +455,16 @@ def main():
     today_rows = [r for r in out_rows if r.get("_lastSeen") == today]
     heat = sector_heat(today_rows)
     market = market_context()
+    paper = update_paper_trades(out_rows, today)
  
     json.dump({"generated": datetime.datetime.utcnow().isoformat() + "Z",
                "today": today, "rows": out_rows,
-               "sectorHeat": heat, "market": market}, open(OUT, "w"), indent=2)
+               "sectorHeat": heat, "market": market, "paper": paper}, open(OUT, "w"), indent=2)
     print(f"Wrote {len(out_rows)} tracked stocks (today={today}) -> {OUT}")
+    print(f"Paper trades: {paper['total']} total")
     if market:
         print(f"Market bias: {market.get('bias')} ({market.get('biasScore')})")
  
  
 if __name__ == "__main__":
     main()
- 
