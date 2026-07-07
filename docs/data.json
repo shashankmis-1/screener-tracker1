@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-07T09:19:13.275845Z",
+  "generated": "2026-07-07T10:48:01.379789Z",
   "today": "2026-07-07",
   "rows": [
     {
@@ -37,8 +37,8 @@
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
       "_status": "dropped",
-      "_followPrice": 420.9,
-      "_sinceLast": -1.1
+      "_followPrice": 419.15,
+      "_sinceLast": -1.5
     },
     {
       "name": "CARE Ratings",
@@ -843,7 +843,7 @@
   ],
   "sectorHeat": [],
   "market": {
-    "generated": "2026-07-07T09:19:11.338875Z",
+    "generated": "2026-07-07T10:47:57.598628Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -869,57 +869,57 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": 1.63
+        "pct": 0.96
       },
       {
         "name": "WTI",
-        "pct": 1.58
+        "pct": 0.77
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.2
+        "pct": -0.26
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -2.07
+        "pct": -1.46
       }
     ],
     "sectors": [
       {
         "name": "Nifty IT",
-        "pct": 2.67
+        "pct": 2.43
       },
       {
         "name": "Nifty Auto",
-        "pct": 1.45
+        "pct": 1.32
       },
       {
         "name": "Nifty FMCG",
-        "pct": 0.45
+        "pct": 0.26
       },
       {
         "name": "Nifty Realty",
-        "pct": 0.25
+        "pct": 0.2
       },
       {
         "name": "Nifty Energy",
-        "pct": 0.22
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": 0.06
+        "pct": 0.03
       },
       {
         "name": "Nifty Metal",
-        "pct": -0.11
+        "pct": -0.12
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -0.16
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.65
+        "pct": -0.73
       }
     ],
     "biasScore": -0.1,
@@ -930,21 +930,72 @@
         "tone": "neu"
       },
       {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 7 July - livemint.com",
-        "tone": "neu"
+        "t": "Why did the stock market fall today? Sensex snaps 4-day winning streak, Nifty slips below 24,400 - CNBC TV18",
+        "tone": "neg"
+      },
+      {
+        "t": "Stock market today: Sensex, Nifty 50 snap four-day winning streak as oil prices rise - livemint.com",
+        "tone": "pos"
       },
       {
         "t": "Stock Market News: Sensex, Nifty Rise At Open Tracking Wall Street Gains, But Fresh Oil Tanker Attack Limits Upside - Outlook Money",
         "tone": "pos"
       },
       {
-        "t": "Stock markets today: Sensex, Nifty climb as foreign funds return, crude oil stabilises - Rediff",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex Today Trades Higher | Nifty Above 24,450 | Infosys &amp; Tech Mahindra Top Gainers - Equitymaster",
-        "tone": "pos"
+        "t": "Sensex Today Ends 104 Points Lower | Nifty Below 24,400 | Trent Down 10% - Equitymaster",
+        "tone": "neg"
       }
     ]
+  },
+  "paper": {
+    "stats": {
+      "core": {
+        "closed": 0,
+        "open": 5,
+        "winRate": null,
+        "avgReturn": null,
+        "avgWin": null,
+        "avgLoss": null,
+        "openTrades": [
+          {
+            "name": "Stylam Industrie",
+            "ret": 0.22,
+            "days": 0
+          },
+          {
+            "name": "Privi Speci.",
+            "ret": 0.12,
+            "days": 0
+          },
+          {
+            "name": "KSB",
+            "ret": -0.01,
+            "days": 0
+          },
+          {
+            "name": "Pricol Ltd",
+            "ret": -0.36,
+            "days": 0
+          },
+          {
+            "name": "Grindwell Norton",
+            "ret": -0.8,
+            "days": 0
+          }
+        ]
+      },
+      "early": {
+        "closed": 0,
+        "open": 0,
+        "winRate": null,
+        "avgReturn": null,
+        "avgWin": null,
+        "avgLoss": null,
+        "openTrades": []
+      }
+    },
+    "stopPct": 8.0,
+    "horizon": 20,
+    "total": 5
   }
 }
