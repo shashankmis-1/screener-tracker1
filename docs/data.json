@@ -1,10 +1,11 @@
 {
-  "generated": "2026-07-06T21:12:00.742624Z",
+  "generated": "2026-07-07T08:28:44.535647Z",
   "today": "2026-07-06",
   "rows": [
     {
       "name": "Bharat Electron",
       "symbol": "BEL",
+      "industry": null,
       "cmp": 425.55,
       "mcap": 311104.84,
       "vol": 17464087.0,
@@ -40,6 +41,7 @@
     {
       "name": "CARE Ratings",
       "symbol": "CARERATING",
+      "industry": null,
       "cmp": 1674.7,
       "mcap": 5026.73,
       "vol": 63705.0,
@@ -75,6 +77,7 @@
     {
       "name": "CCL Products",
       "symbol": "CCL",
+      "industry": null,
       "cmp": 1199.7,
       "mcap": 16016.62,
       "vol": 211115.0,
@@ -110,6 +113,7 @@
     {
       "name": "Endurance Tech.",
       "symbol": "ENDURANCE",
+      "industry": null,
       "cmp": 2648.1,
       "mcap": 37206.66,
       "vol": 171676.0,
@@ -145,6 +149,7 @@
     {
       "name": "Fine Organic",
       "symbol": "FINEORG",
+      "industry": null,
       "cmp": 5137.5,
       "mcap": 15767.31,
       "vol": 7218.0,
@@ -180,6 +185,7 @@
     {
       "name": "Kovai Medical",
       "symbol": "KOVAI",
+      "industry": null,
       "cmp": 6023.5,
       "mcap": 6590.8,
       "vol": 5290.0,
@@ -215,6 +221,7 @@
     {
       "name": "KSB",
       "symbol": "KSB",
+      "industry": null,
       "cmp": 934.7,
       "mcap": 16280.49,
       "vol": 104852.0,
@@ -250,6 +257,7 @@
     {
       "name": "Manorama Indust.",
       "symbol": "MANORAMA",
+      "industry": null,
       "cmp": 1575.9,
       "mcap": 9391.13,
       "vol": 371004.0,
@@ -285,6 +293,7 @@
     {
       "name": "Pricol Ltd",
       "symbol": "PRICOLLTD",
+      "industry": null,
       "cmp": 624.6,
       "mcap": 7607.82,
       "vol": 602124.0,
@@ -320,6 +329,7 @@
     {
       "name": "Rainbow Child.",
       "symbol": "RAINBOW",
+      "industry": null,
       "cmp": 1441.6,
       "mcap": 14647.45,
       "vol": 60525.0,
@@ -355,6 +365,7 @@
     {
       "name": "Sai Life",
       "symbol": "SAILIFE",
+      "industry": null,
       "cmp": 1232.6,
       "mcap": 26193.46,
       "vol": 221084.0,
@@ -390,6 +401,7 @@
     {
       "name": "Travel Food",
       "symbol": "TRAVELFOOD",
+      "industry": null,
       "cmp": 1329.6,
       "mcap": 17506.77,
       "vol": 15718.0,
@@ -422,5 +434,111 @@
       "_lastSeen": "2026-07-06",
       "_status": "new"
     }
-  ]
+  ],
+  "sectorHeat": [],
+  "market": {
+    "generated": "2026-07-07T08:28:42.320720Z",
+    "indices": [
+      {
+        "name": "S&P 500",
+        "pct": 0.72
+      },
+      {
+        "name": "Dow",
+        "pct": 0.29
+      },
+      {
+        "name": "Nasdaq",
+        "pct": 1.12
+      },
+      {
+        "name": "Nikkei",
+        "pct": -2.12
+      },
+      {
+        "name": "Hang Seng",
+        "pct": -0.51
+      }
+    ],
+    "commodities": [
+      {
+        "name": "Brent",
+        "pct": 1.13
+      },
+      {
+        "name": "WTI",
+        "pct": 1.09
+      }
+    ],
+    "forex": [
+      {
+        "name": "USD/INR",
+        "pct": -0.04
+      }
+    ],
+    "vix": [
+      {
+        "name": "India VIX",
+        "pct": -1.46
+      }
+    ],
+    "sectors": [
+      {
+        "name": "Nifty IT",
+        "pct": 2.82
+      },
+      {
+        "name": "Nifty Auto",
+        "pct": 1.46
+      },
+      {
+        "name": "Nifty Realty",
+        "pct": 0.4
+      },
+      {
+        "name": "Nifty FMCG",
+        "pct": 0.37
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": 0.07
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -0.05
+      },
+      {
+        "name": "Nifty Metal",
+        "pct": -0.12
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": -0.41
+      }
+    ],
+    "biasScore": -0.1,
+    "bias": "mixed",
+    "news": [
+      {
+        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 7 July - livemint.com",
+        "tone": "neu"
+      },
+      {
+        "t": "Stock Market News: Sensex, Nifty Rise At Open Tracking Wall Street Gains, But Fresh Oil Tanker Attack Limits Upside - Outlook Money",
+        "tone": "pos"
+      },
+      {
+        "t": "Stock markets today: Sensex, Nifty climb as foreign funds return, crude oil stabilises - Rediff",
+        "tone": "pos"
+      },
+      {
+        "t": "Sensex Today Trades Higher | Nifty Above 24,450 | Infosys &amp; Tech Mahindra Top Gainers - Equitymaster",
+        "tone": "pos"
+      },
+      {
+        "t": "Sensex, Nifty rise for 5th day as IT stocks gain and FIIs return - India Today",
+        "tone": "pos"
+      }
+    ]
+  }
 }
