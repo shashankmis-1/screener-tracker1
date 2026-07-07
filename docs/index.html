@@ -71,6 +71,7 @@ function scoreOf(r,prof){
   const W=PROFILES[prof]; const P=[];
   const mv=[]; if(isN(r.r3m))mv.push(clamp(r.r3m,0,40)/40); if(isN(r.r1m))mv.push(clamp(r.r1m,0,20)/20);
   if(isN(r.qsales))mv.push(clamp(r.qsales,0,40)/40); if(isN(r.volx))mv.push(clamp((r.volx-1)/1,0,1));
+  if(isN(r.macd)&&isN(r.macdsig))mv.push(r.macd>r.macdsig?1:0);
   if(mv.length)P.push({w:W.mom,v:mv.reduce((a,b)=>a+b,0)/mv.length});
   if(isN(r.down))P.push({w:W.prox,v:clamp((18-r.down)/16,0,1)});
   const q=[]; if(isN(r.roe))q.push(clamp(r.roe,0,50)/50); if(isN(r.roce))q.push(clamp(r.roce,0,60)/60);
@@ -102,6 +103,11 @@ function flagsOf(r,c){
   else if(n1&&!has3) f.push({t:'low momentum',s:'warn'});
   if(isN(r.r1y)&&r.r1y>=10&&has3&&r.r3m>=c.momMin) f.push({t:vc?'uptrend (vol)':'uptrend',s:'good'});
   if(isN(r.rsi)&&r.rsi<=c.rsiCap&&r.rsi>c.rsiCap-4) f.push({t:'RSI hot '+r.rsi.toFixed(0),s:'warn'});
+  const macdBull=isN(r.macd)&&isN(r.macdsig)&&r.macd>r.macdsig;
+  const macdCross=macdBull&&isN(r.macdprev)&&isN(r.macdsigprev)&&r.macdprev<=r.macdsigprev;
+  if(macdCross) f.push({t:'MACD cross ↑',s:'good'});
+  else if(macdBull) f.push({t:'MACD+',s:'good'});
+  else if(isN(r.macd)&&isN(r.macdsig)&&r.macd<r.macdsig) f.push({t:'MACD−',s:'warn'});
   return f;
 }
 function actionOf(r){
@@ -120,7 +126,7 @@ function actionOf(r){
 const BUCKET={5:{label:'Shortlist',cls:'b5',rank:0},1:{label:'Extended',cls:'b1',rank:1},4:{label:'Expensive',cls:'b4',rank:2},3:{label:'Weak',cls:'b3',rank:3},2:{label:'Thin',cls:'b2',rank:4}};
 const COLS=[
   {k:'status',t:'Status'},{k:'days',t:'Days'},{k:'bucket',t:'Bucket'},{k:'name',t:'Name'},{k:'sector',t:'Sector'},{k:'score',t:'Score'},{k:'action',t:'What next'},{k:'flags',t:'Signals'},
-  {k:'cmp',t:'CMP'},{k:'volx',t:'Vol×'},{k:'rsi',t:'RSI'},{k:'down',t:'Down%'},{k:'r1m',t:'1m%'},{k:'r3m',t:'3m%'},{k:'r1y',t:'1y%'},
+  {k:'cmp',t:'CMP'},{k:'volx',t:'Vol×'},{k:'rsi',t:'RSI'},{k:'macd',t:'MACD'},{k:'down',t:'Down%'},{k:'r1m',t:'1m%'},{k:'r3m',t:'3m%'},{k:'r1y',t:'1y%'},
   {k:'qsales',t:'QSales%'},{k:'roe',t:'ROE'},{k:'roce',t:'ROCE'},{k:'debt',t:'D/E'},{k:'pe',t:'P/E'},{k:'indpe',t:'IndPE'},{k:'peg',t:'PEG'},{k:'piotroski',t:'Piot'},
   {k:'fii',t:'ΔFII'},{k:'dii',t:'ΔDII'},{k:'firstSeen',t:'First seen'},{k:'since',t:'Since drop%'}
 ];
@@ -168,6 +174,7 @@ function render(){
       else if(k==='action') html+=`<td class="bucket" style="max-width:300px;white-space:normal"><div class="flag ${r._action.s}" style="font-weight:700;font-size:12.5px">${r._action.t}</div>${r._action.d?`<div class="muted" style="font-size:11px;line-height:1.35;margin-top:2px">${r._action.d}</div>`:''}</td>`;
       else if(k==='flags'){ const hide=['uptrend','early turn','low momentum','recovering']; const sh=(r._flags||[]).filter(f=>!hide.some(h=>f.t.indexOf(h)===0)); html+=`<td class="bucket" style="white-space:normal;max-width:160px">${sh.map(f=>`<span class="flag ${f.s}">${f.t}</span>`).join('; ')||'<span class="muted">–</span>'}</td>`; }
       else if(k==='volx') html+=`<td>${isN(r.volx)?`<span class="${r.volx>=1.5?'good':''}">${r.volx.toFixed(1)}×</span>`:'<span class="muted">–</span>'}</td>`;
+      else if(k==='macd'){ if(isN(r.macd)&&isN(r.macdsig)){ const up=r.macd>r.macdsig; html+=`<td><span class="${up?'good':'flag'}">${up?'▲':'▼'}${r.macd.toFixed(1)}</span></td>`; } else html+=`<td><span class="muted">–</span></td>`; }
       else if(k==='firstSeen') html+=`<td>${r._firstSeen||'–'}</td>`;
       else if(k==='since') html+=`<td>${isN(r._sinceLast)?`<span class="${r._sinceLast>=0?'good':'flag'}">${r._sinceLast}%</span>`:'<span class="muted">–</span>'}</td>`;
       else { let cell=fmt(r[k]); if((k==='fii'||k==='dii')&&isN(r[k])) cell=`<span class="${r[k]>0?'good':(r[k]<0?'flag':'')}">${r[k].toFixed(2)}</span>`; html+=`<td>${cell}</td>`; }
