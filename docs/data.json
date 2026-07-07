@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-07T10:53:21.390656Z",
+  "generated": "2026-07-07T13:23:55.965812Z",
   "today": "2026-07-07",
   "rows": [
     {
@@ -843,7 +843,7 @@
   ],
   "sectorHeat": [],
   "market": {
-    "generated": "2026-07-07T10:53:19.014026Z",
+    "generated": "2026-07-07T13:23:51.875844Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -869,11 +869,11 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": 1.17
+        "pct": 1.24
       },
       {
         "name": "WTI",
-        "pct": 1.02
+        "pct": 1.17
       }
     ],
     "forex": [
@@ -934,15 +934,15 @@
         "tone": "neg"
       },
       {
+        "t": "Stock markets snap 4-day rally amid profit booking, Sensex declines 104.35 points - Telegraph India",
+        "tone": "neu"
+      },
+      {
         "t": "Share Market Today: Nifty 50, Bank Nifty | July 07, 2026 - Liquide Blog",
         "tone": "neu"
       },
       {
-        "t": "Stock market today: Sensex, Nifty 50 snap four-day winning streak as oil prices rise - livemint.com",
-        "tone": "pos"
-      },
-      {
-        "t": "Stock Market News: Sensex, Nifty Rise At Open Tracking Wall Street Gains, But Fresh Oil Tanker Attack Limits Upside - Outlook Money",
+        "t": "Stock market today: Sensex, Nifty 50 snap four-day winning streak as fresh US-Iran strikes drive oil prices higher - livemint.com",
         "tone": "pos"
       }
     ]
