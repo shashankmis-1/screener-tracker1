@@ -39,6 +39,7 @@ tr.row5{background:#f4fbf6;} tr.row1{background:#fffaf2;} tr.row2{background:#fd
 
 <div id="market"></div>
 <div id="sectorheat"></div>
+<div id="perf"></div>
 
 <div class="card">
   <div class="row">
@@ -216,11 +217,29 @@ function renderSectorHeat(sh){
   h+='</div></div>';
   $('sectorheat').innerHTML=h;
 }
+function renderPerf(p){
+  if(!p||!p.stats){ $('perf').innerHTML=''; return; }
+  const LBL={core:'Core pick',early:'Early turn'};
+  let any=false; let h='<div class="card" style="background:#fffdf6"><b style="font-size:13px">Strategy performance (paper test)</b> <span class="muted" style="font-size:11px">forward test · buys the signal, −'+p.stopPct+'% stop, scored at '+p.horizon+' days · not real trades</span><div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:14px">';
+  ['core','early'].forEach(rec=>{ const s=p.stats[rec]; if(!s)return; any=true;
+    const wr=s.winRate==null?'—':s.winRate+'%'; const wc=(s.winRate!=null&&s.winRate>=50)?'#1a7f3c':(s.winRate!=null?'#b02525':'#5b6472');
+    h+=`<div style="border:1px solid #e3e6ee;border-radius:8px;padding:10px 12px;min-width:190px;background:#fff">
+      <div style="font-weight:700;font-size:12.5px">${LBL[rec]}</div>
+      <div style="margin-top:4px;font-size:12px">Win rate: <b style="color:${wc}">${wr}</b> <span class="muted">(${s.closed} closed)</span></div>
+      <div style="font-size:12px">Avg return: <b class="${(s.avgReturn||0)>=0?'good':'flag'}">${s.avgReturn==null?'—':s.avgReturn+'%'}</b></div>
+      <div style="font-size:11px" class="muted">avg win ${s.avgWin==null?'—':s.avgWin+'%'} · avg loss ${s.avgLoss==null?'—':s.avgLoss+'%'} · ${s.open} open</div>`;
+    if(s.openTrades&&s.openTrades.length){ h+='<div style="margin-top:6px;font-size:11px">Open: '+s.openTrades.slice(0,6).map(t=>`${t.name} <span class="${(t.ret||0)>=0?'good':'flag'}">${t.ret==null?'':(t.ret>0?'+':'')+t.ret+'%'}</span>`).join(', ')+'</div>'; }
+    h+='</div>';
+  });
+  h+='</div>';
+  if(p.total===0){ h='<div class="card" style="background:#fffdf6"><b style="font-size:13px">Strategy performance (paper test)</b><div class="muted" style="font-size:12px;margin-top:4px">No paper trades yet — they start logging when a Core pick / Early turn first appears, and the win rate builds over the coming weeks.</div></div>'; }
+  $('perf').innerHTML = any||p.total===0 ? h : '';
+}
 ['profile','filter','action','liqCr','rsiCap','momMin'].forEach(id=>$(id).addEventListener('change',render));
 fetch('data.json?_='+Date.now()).then(r=>r.json()).then(d=>{
   DATA=d;
   $('meta').textContent = d.today ? `Today: ${d.today} · ${d.rows.length} stocks tracked · data generated ${new Date(d.generated).toLocaleString()}` : 'No data yet — upload your first list to data/lists/.';
-  renderMarket(d.market); renderSectorHeat(d.sectorHeat);
+  renderMarket(d.market); renderSectorHeat(d.sectorHeat); renderPerf(d.paper);
   render();
 }).catch(e=>{ $('meta').textContent='Could not load data.json ('+e+'). Run scripts/process.py or push a list to data/lists/.'; });
 </script>
