@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-07T08:53:58.807703Z",
+  "generated": "2026-07-07T09:12:16.385017Z",
   "today": "2026-07-06",
   "rows": [
     {
@@ -437,7 +437,7 @@
   ],
   "sectorHeat": [],
   "market": {
-    "generated": "2026-07-07T08:53:56.872292Z",
+    "generated": "2026-07-07T09:12:14.027521Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -463,57 +463,57 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": 1.28
+        "pct": 1.35
       },
       {
         "name": "WTI",
-        "pct": 1.18
+        "pct": 1.31
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.15
+        "pct": -0.33
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -1.69
+        "pct": -1.97
       }
     ],
     "sectors": [
       {
         "name": "Nifty IT",
-        "pct": 2.82
+        "pct": 2.65
       },
       {
         "name": "Nifty Auto",
-        "pct": 1.38
-      },
-      {
-        "name": "Nifty FMCG",
-        "pct": 0.29
+        "pct": 1.4
       },
       {
         "name": "Nifty Realty",
-        "pct": 0.26
+        "pct": 0.39
+      },
+      {
+        "name": "Nifty FMCG",
+        "pct": 0.35
       },
       {
         "name": "Nifty Energy",
-        "pct": 0.1
+        "pct": 0.19
       },
       {
         "name": "Nifty Bank",
-        "pct": 0.02
+        "pct": 0.06
       },
       {
         "name": "Nifty Metal",
-        "pct": -0.15
+        "pct": -0.05
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.47
+        "pct": -0.61
       }
     ],
     "biasScore": -0.1,
