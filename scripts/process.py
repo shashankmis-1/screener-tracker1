@@ -33,6 +33,7 @@ def field_of(h):
     if "nse code" in h or "nse symbol" in h or (("symbol" in h or "ticker" in h) and "isin" not in h):
         return "symbol"
     if "bse code" in h or "isin" in h: return None
+    if "industry" in h and "pe" not in h: return "industry"  # "Industry" / "Industry Group"
     # valuation — MUST come before the generic 'price' -> cmp rule
     if "peg" in h: return "peg"
     if "industry pe" in h or "ind pe" in h or "ind. pe" in h: return "indpe"
@@ -151,6 +152,104 @@ def follow_up(dropped_names, symbols):
     return follow
  
  
+# ---------------------------------------------------------------------------
+# Market context (global cues, sector leaders, news) + sector heat from list
+# ---------------------------------------------------------------------------
+GLOBAL_TICKERS = {"S&P 500": "^GSPC", "Dow": "^DJI", "Nasdaq": "^IXIC", "Nikkei": "^N225", "Hang Seng": "^HSI"}
+COMMODITY_TICKERS = {"Brent": "BZ=F", "WTI": "CL=F"}
+FOREX_TICKERS = {"USD/INR": "INR=X"}
+VIX_TICKERS = {"India VIX": "^INDIAVIX"}
+SECTOR_TICKERS = {"Nifty Bank": "^NSEBANK", "Nifty IT": "^CNXIT", "Nifty Auto": "^CNXAUTO",
+                  "Nifty Pharma": "^CNXPHARMA", "Nifty FMCG": "^CNXFMCG", "Nifty Metal": "^CNXMETAL",
+                  "Nifty Energy": "^CNXENERGY", "Nifty Realty": "^CNXREALTY"}
+ 
+ 
+def _pct_change(tk):
+    import yfinance as yf
+    h = yf.Ticker(tk).history(period="7d")
+    c = h["Close"].dropna()
+    if len(c) >= 2:
+        return round((c.iloc[-1] / c.iloc[-2] - 1) * 100, 2)
+    return None
+ 
+ 
+def _group_pct(d):
+    out = []
+    for name, tk in d.items():
+        try:
+            p = _pct_change(tk)
+            if p is not None:
+                out.append({"name": name, "pct": p})
+        except Exception:
+            pass
+    return out
+ 
+ 
+def fetch_news(n=5):
+    """Best-effort market headlines from Google News RSS with a crude tone tag.
+    Rough by design — meant as a headline glance, not a real sentiment score."""
+    try:
+        import urllib.request
+        url = ("https://news.google.com/rss/search?q=nifty%20sensex%20indian%20stock%20market%20"
+               "when:1d&hl=en-IN&gl=IN&ceid=IN:en")
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        xml = urllib.request.urlopen(req, timeout=15).read().decode("utf-8", "ignore")
+        titles = re.findall(r"<title><!\[CDATA\[(.*?)\]\]></title>", xml) or re.findall(r"<title>(.*?)</title>", xml)
+        titles = [t for t in titles if "Google News" not in t][:n]
+        POS = ["rally", "surge", "gain", "jump", "high", "rise", "bull", "record", "soar", "climb", "boost", "recover", "up "]
+        NEG = ["fall", "drop", "slump", "crash", "down", "bear", "loss", "plunge", "cut", "weak", "tumble", "sink", "decline", "sell-off", "selloff"]
+        out = []
+        for t in titles:
+            tl = t.lower()
+            p = sum(w in tl for w in POS)
+            ng = sum(w in tl for w in NEG)
+            out.append({"t": t, "tone": "pos" if p > ng else ("neg" if ng > p else "neu")})
+        return out
+    except Exception as ex:
+        print("news fetch skipped:", ex)
+        return []
+ 
+ 
+def market_context():
+    try:
+        import yfinance  # noqa: F401
+    except Exception as ex:
+        print("yfinance unavailable for market context:", ex)
+        return None
+    ctx = {"generated": datetime.datetime.utcnow().isoformat() + "Z"}
+    ctx["indices"] = _group_pct(GLOBAL_TICKERS)
+    ctx["commodities"] = _group_pct(COMMODITY_TICKERS)
+    ctx["forex"] = _group_pct(FOREX_TICKERS)
+    ctx["vix"] = _group_pct(VIX_TICKERS)
+    ctx["sectors"] = sorted(_group_pct(SECTOR_TICKERS), key=lambda x: -x["pct"])
+    eq = [x["pct"] for x in ctx["indices"]]
+    usdinr = next((x["pct"] for x in ctx["forex"] if x["name"] == "USD/INR"), 0) or 0
+    score = (sum(eq) / len(eq) if eq else 0) - (usdinr * 0.5 if usdinr > 0 else 0)
+    ctx["biasScore"] = round(score, 2)
+    ctx["bias"] = "positive" if score > 0.25 else ("negative" if score < -0.25 else "mixed")
+    ctx["news"] = fetch_news()
+    return ctx
+ 
+ 
+def sector_heat(rows):
+    """Group today's stocks by Industry -> which sector is hot (count + avg 3-mth return)."""
+    from collections import defaultdict
+    agg = defaultdict(lambda: {"count": 0, "r3": []})
+    for r in rows:
+        ind = r.get("industry")
+        if not ind:
+            continue
+        agg[ind]["count"] += 1
+        if isinstance(r.get("r3m"), (int, float)):
+            agg[ind]["r3"].append(r["r3m"])
+    out = []
+    for ind, a in agg.items():
+        avg3 = round(sum(a["r3"]) / len(a["r3"]), 1) if a["r3"] else None
+        out.append({"sector": ind, "count": a["count"], "avg3m": avg3})
+    out.sort(key=lambda x: (-(x["avg3m"] if x["avg3m"] is not None else -999), -x["count"]))
+    return out
+ 
+ 
 def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     files = sorted(glob.glob(os.path.join(LISTS_DIR, "*.csv")))
@@ -204,9 +303,16 @@ def main():
                 rec["_sinceLast"] = round((follow[nm] / rec["cmp"] - 1) * 100, 1)
         out_rows.append(rec)
  
+    today_rows = [r for r in out_rows if r.get("_lastSeen") == today]
+    heat = sector_heat(today_rows)
+    market = market_context()
+ 
     json.dump({"generated": datetime.datetime.utcnow().isoformat() + "Z",
-               "today": today, "rows": out_rows}, open(OUT, "w"), indent=2)
+               "today": today, "rows": out_rows,
+               "sectorHeat": heat, "market": market}, open(OUT, "w"), indent=2)
     print(f"Wrote {len(out_rows)} tracked stocks (today={today}) -> {OUT}")
+    if market:
+        print(f"Market bias: {market.get('bias')} ({market.get('biasScore')})")
  
  
 if __name__ == "__main__":
