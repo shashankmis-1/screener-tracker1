@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-07T08:36:38.729789Z",
+  "generated": "2026-07-07T08:53:58.807703Z",
   "today": "2026-07-06",
   "rows": [
     {
@@ -437,7 +437,7 @@
   ],
   "sectorHeat": [],
   "market": {
-    "generated": "2026-07-07T08:36:34.132298Z",
+    "generated": "2026-07-07T08:53:56.872292Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -463,62 +463,66 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": 1.0
+        "pct": 1.28
       },
       {
         "name": "WTI",
-        "pct": 0.93
+        "pct": 1.18
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.02
+        "pct": -0.15
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -1.59
+        "pct": -1.69
       }
     ],
     "sectors": [
       {
         "name": "Nifty IT",
-        "pct": 2.74
+        "pct": 2.82
       },
       {
         "name": "Nifty Auto",
-        "pct": 1.49
+        "pct": 1.38
       },
       {
         "name": "Nifty FMCG",
-        "pct": 0.32
+        "pct": 0.29
       },
       {
         "name": "Nifty Realty",
-        "pct": 0.22
+        "pct": 0.26
       },
       {
         "name": "Nifty Energy",
-        "pct": 0.09
+        "pct": 0.1
       },
       {
         "name": "Nifty Bank",
-        "pct": -0.01
+        "pct": 0.02
       },
       {
         "name": "Nifty Metal",
-        "pct": -0.13
+        "pct": -0.15
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.41
+        "pct": -0.47
       }
     ],
     "biasScore": -0.1,
     "bias": "mixed",
     "news": [
+      {
+        "t": "- The HinduBusinessLine - BusinessLine",
+        "tone": "neu"
+      },
       {
         "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 7 July - livemint.com",
         "tone": "neu"
@@ -533,10 +537,6 @@
       },
       {
         "t": "Sensex Today Trades Higher | Nifty Above 24,450 | Infosys &amp; Tech Mahindra Top Gainers - Equitymaster",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex, Nifty rise for 5th day as IT stocks gain and FIIs return - India Today",
         "tone": "pos"
       }
     ]
