@@ -1,0 +1,69 @@
+{
+  "trades": [
+    {
+      "name": "KSB",
+      "symbol": "KSB.NS",
+      "rec": "core",
+      "entryDate": "2026-07-07",
+      "entryPrice": 926.55,
+      "status": "open",
+      "daysHeld": 0,
+      "lastPrice": 926.5,
+      "lastReturn": -0.01,
+      "minReturn": -0.01,
+      "snap": {}
+    },
+    {
+      "name": "Pricol Ltd",
+      "symbol": "PRICOLLTD.NS",
+      "rec": "core",
+      "entryDate": "2026-07-07",
+      "entryPrice": 624.95,
+      "status": "open",
+      "daysHeld": 0,
+      "lastPrice": 622.7,
+      "lastReturn": -0.36,
+      "minReturn": -0.36,
+      "snap": {}
+    },
+    {
+      "name": "Grindwell Norton",
+      "symbol": "GRINDWELL.NS",
+      "rec": "core",
+      "entryDate": "2026-07-07",
+      "entryPrice": 2050.1,
+      "status": "open",
+      "daysHeld": 0,
+      "lastPrice": 2033.6,
+      "lastReturn": -0.8,
+      "minReturn": -0.8,
+      "snap": {}
+    },
+    {
+      "name": "Privi Speci.",
+      "symbol": "PRIVISCL.NS",
+      "rec": "core",
+      "entryDate": "2026-07-07",
+      "entryPrice": 3635.0,
+      "status": "open",
+      "daysHeld": 0,
+      "lastPrice": 3639.3,
+      "lastReturn": 0.12,
+      "minReturn": 0.0,
+      "snap": {}
+    },
+    {
+      "name": "Stylam Industrie",
+      "symbol": "STYLAMIND.NS",
+      "rec": "core",
+      "entryDate": "2026-07-07",
+      "entryPrice": 3076.95,
+      "status": "open",
+      "daysHeld": 0,
+      "lastPrice": 3083.6,
+      "lastReturn": 0.22,
+      "minReturn": 0.0,
+      "snap": {}
+    }
+  ]
+}
