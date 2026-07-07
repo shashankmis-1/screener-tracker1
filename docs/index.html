@@ -37,10 +37,16 @@ tr.row5{background:#f4fbf6;} tr.row1{background:#fffaf2;} tr.row2{background:#fd
 <h1>Screener Tracker</h1>
 <p class="sub" id="meta">Loading…</p>
 
+<div id="market"></div>
+<div id="sectorheat"></div>
+
 <div class="card">
   <div class="row">
     <div class="ctrl"><label>Strategy profile</label>
       <select id="profile"><option value="momentum">Momentum tilt</option><option value="balanced">Balanced</option><option value="value">Value / Quality tilt</option></select>
+    </div>
+    <div class="ctrl"><label>What next</label>
+      <select id="action"><option value="all">All actions</option><option value="core">Core pick — buy</option><option value="early">Early turn</option><option value="watch">Watch</option><option value="expensive">Check valuation</option><option value="wait">Wait — overbought</option><option value="skip">Skip</option></select>
     </div>
     <div class="ctrl"><label>Show</label>
       <select id="filter"><option value="today">Today's list</option><option value="all">All tracked</option><option value="persistent">Persistent (≥3 days)</option><option value="new">New today</option><option value="dropped">Dropped off</option></select>
@@ -57,7 +63,7 @@ tr.row5{background:#f4fbf6;} tr.row1{background:#fffaf2;} tr.row2{background:#fd
 const PROFILES = { balanced:{mom:25,prox:15,qual:15,inst:15,val:15,piot:15}, momentum:{mom:40,prox:25,qual:10,inst:10,val:5,piot:10}, value:{mom:10,prox:10,qual:25,inst:15,val:25,piot:15} };
 const PROFILE_LABEL = {balanced:'Balanced',momentum:'Momentum tilt',value:'Value / Quality tilt'};
 const $ = id => document.getElementById(id);
-function cfg(){ return { profile:$('profile').value, filter:$('filter').value, liqCr:+$('liqCr').value||0, rsiCap:+$('rsiCap').value||100, peMult:1.5, momMin:+$('momMin').value||0 }; }
+function cfg(){ return { profile:$('profile').value, filter:$('filter').value, action:$('action').value, liqCr:+$('liqCr').value||0, rsiCap:+$('rsiCap').value||100, peMult:1.5, momMin:+$('momMin').value||0 }; }
 function clamp(x,a,b){ return Math.max(a,Math.min(b,x)); }
 const isN = v => typeof v==='number' && !isNaN(v);
 
@@ -100,20 +106,20 @@ function flagsOf(r,c){
 }
 function actionOf(r){
   const fs=(r._flags||[]).map(f=>f.t); const has=s=>fs.some(t=>t.indexOf(s)===0);
-  if(r._b===2) return {t:'Skip — illiquid',d:'Turnover too low to enter/exit cleanly.',s:'warn'};
-  if(r._b===1) return {t:'Wait — overbought',d:'Let RSI cool; wait for a pullback toward the 50 DMA.',s:'warn'};
-  if(r._b===3) return {t:'Skip — weak fundamentals',d:'Negative 5-yr growth; fails the quality thesis.',s:'warn'};
-  if(r._b===4) return {t:'Check valuation first',d:'Is PEG < 1.5 / premium justified by growth & ROCE? If yes, treat as core.',s:'warn'};
-  if(has('low momentum')) return {t:'Skip — no momentum',d:'Weak recent trend; nothing to time.',s:'warn'};
-  if(has('uptrend')) return {t:'Core pick — confirm & buy',d:'Chart: daily CLOSE above resistance on rising volume, higher highs & lows, 200 DMA rising. Enter with a stop below the 50 DMA.',s:'good'};
-  if(has('early turn')) return {t:'Early turn — size small',d:'Chart: real base breakout, NOT a dead-cat bounce? 200 DMA flattening/up, volume sustained, retest holds. Smaller position, tight stop.',s:'good'};
-  if(has('recovering')) return {t:'Watch — mild bounce',d:'Wait for a stronger turn or a clean base breakout.',s:''};
-  if(r.score>=45) return {t:'Confirm on chart',d:'Check trend structure and volume before acting.',s:''};
-  return {t:'Watch',d:'',s:''};
+  if(r._b===2) return {t:'Skip — illiquid',d:'Turnover too low to enter/exit cleanly.',s:'warn',cat:'skip'};
+  if(r._b===1) return {t:'Wait — overbought',d:'Let RSI cool; wait for a pullback toward the 50 DMA.',s:'warn',cat:'wait'};
+  if(r._b===3) return {t:'Skip — weak fundamentals',d:'Negative 5-yr growth; fails the quality thesis.',s:'warn',cat:'skip'};
+  if(r._b===4) return {t:'Check valuation first',d:'Is PEG < 1.5 / premium justified by growth & ROCE? If yes, treat as core.',s:'warn',cat:'expensive'};
+  if(has('low momentum')) return {t:'Skip — no momentum',d:'Weak recent trend; nothing to time.',s:'warn',cat:'skip'};
+  if(has('uptrend')) return {t:'Core pick — confirm & buy',d:'Chart: daily CLOSE above resistance on rising volume, higher highs & lows, 200 DMA rising. Enter with a stop below the 50 DMA.',s:'good',cat:'core'};
+  if(has('early turn')) return {t:'Early turn — size small',d:'Chart: real base breakout, NOT a dead-cat bounce? 200 DMA flattening/up, volume sustained, retest holds. Smaller position, tight stop.',s:'good',cat:'early'};
+  if(has('recovering')) return {t:'Watch — mild bounce',d:'Wait for a stronger turn or a clean base breakout.',s:'',cat:'watch'};
+  if(r.score>=45) return {t:'Confirm on chart',d:'Check trend structure and volume before acting.',s:'',cat:'watch'};
+  return {t:'Watch',d:'',s:'',cat:'watch'};
 }
 const BUCKET={5:{label:'Shortlist',cls:'b5',rank:0},1:{label:'Extended',cls:'b1',rank:1},4:{label:'Expensive',cls:'b4',rank:2},3:{label:'Weak',cls:'b3',rank:3},2:{label:'Thin',cls:'b2',rank:4}};
 const COLS=[
-  {k:'status',t:'Status'},{k:'days',t:'Days'},{k:'bucket',t:'Bucket'},{k:'name',t:'Name'},{k:'score',t:'Score'},{k:'action',t:'What next'},{k:'flags',t:'Signals'},
+  {k:'status',t:'Status'},{k:'days',t:'Days'},{k:'bucket',t:'Bucket'},{k:'name',t:'Name'},{k:'sector',t:'Sector'},{k:'score',t:'Score'},{k:'action',t:'What next'},{k:'flags',t:'Signals'},
   {k:'cmp',t:'CMP'},{k:'volx',t:'Vol×'},{k:'rsi',t:'RSI'},{k:'down',t:'Down%'},{k:'r1m',t:'1m%'},{k:'r3m',t:'3m%'},{k:'r1y',t:'1y%'},
   {k:'qsales',t:'QSales%'},{k:'roe',t:'ROE'},{k:'roce',t:'ROCE'},{k:'debt',t:'D/E'},{k:'pe',t:'P/E'},{k:'indpe',t:'IndPE'},{k:'peg',t:'PEG'},{k:'piotroski',t:'Piot'},
   {k:'fii',t:'ΔFII'},{k:'dii',t:'ΔDII'},{k:'firstSeen',t:'First seen'},{k:'since',t:'Since drop%'}
@@ -138,6 +144,7 @@ function render(){
     x._b=bucketOf(x,c); x.score=scoreOf(x,c.profile); x._flags=flagsOf(x,c); x._action=actionOf(x);
     return x;
   });
+  if(c.action!=='all') rows=rows.filter(r=>r._action.cat===c.action);
   const sk=STATE.sortKey;
   rows.sort((a,b)=>{ const ra=BUCKET[a._b].rank,rb=BUCKET[b._b].rank; if(ra!==rb)return ra-rb;
     if(sk){let av=a[sk],bv=b[sk]; if(typeof av==='string'||typeof bv==='string'){av=String(av||'');bv=String(bv||'');return STATE.sortDir*av.localeCompare(bv);} av=isN(av)?av:-1e9;bv=isN(bv)?bv:-1e9;return STATE.sortDir*(bv-av);}
@@ -156,6 +163,7 @@ function render(){
       else if(k==='days') html+=`<td>${r._daysOnList||'–'}</td>`;
       else if(k==='bucket') html+=`<td class="bucket"><span class="tag ${BUCKET[r._b].cls}">${BUCKET[r._b].label}</span></td>`;
       else if(k==='name') html+=`<td class="name">${r.name}</td>`;
+      else if(k==='sector'){ const ind=r.industry||''; const hot=HOT.has(ind); html+=`<td class="bucket" style="white-space:normal;max-width:150px;font-size:11px">${hot?'🔥 ':''}${ind||'<span class="muted">–</span>'}</td>`; }
       else if(k==='score') html+=`<td class="score">${r.score}</td>`;
       else if(k==='action') html+=`<td class="bucket" style="max-width:300px;white-space:normal"><div class="flag ${r._action.s}" style="font-weight:700;font-size:12.5px">${r._action.t}</div>${r._action.d?`<div class="muted" style="font-size:11px;line-height:1.35;margin-top:2px">${r._action.d}</div>`:''}</td>`;
       else if(k==='flags'){ const hide=['uptrend','early turn','low momentum','recovering']; const sh=(r._flags||[]).filter(f=>!hide.some(h=>f.t.indexOf(h)===0)); html+=`<td class="bucket" style="white-space:normal;max-width:160px">${sh.map(f=>`<span class="flag ${f.s}">${f.t}</span>`).join('; ')||'<span class="muted">–</span>'}</td>`; }
@@ -170,10 +178,42 @@ function render(){
   $('out').innerHTML=html;
   document.querySelectorAll('th').forEach(th=>th.onclick=()=>{ const k=th.dataset.k; if(STATE.sortKey===k)STATE.sortDir*=-1; else{STATE.sortKey=k;STATE.sortDir=(k==='name'||k==='status')?1:-1;} render(); });
 }
-['profile','filter','liqCr','rsiCap','momMin'].forEach(id=>$(id).addEventListener('change',render));
+let HOT=new Set();
+function chip(x){ const c=x.pct>0?'#1a7f3c':(x.pct<0?'#b02525':'#5b6472'); const arrow=x.pct>0?'▲':(x.pct<0?'▼':'•'); return `<span style="display:inline-block;padding:4px 9px;border:1px solid #e3e6ee;border-radius:8px;margin:3px;font-size:12px;background:#fff">${x.name} <b style="color:${c}">${arrow}${Math.abs(x.pct).toFixed(2)}%</b></span>`; }
+function renderMarket(m){
+  if(!m){ $('market').innerHTML=''; return; }
+  const biasColor={positive:'#1a7f3c',negative:'#b02525',mixed:'#a65a00'}[m.bias]||'#5b6472';
+  let h='<div class="card" style="background:#fbfcff">';
+  h+=`<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><b style="font-size:13px">Market context</b>`;
+  h+=`<span style="padding:3px 10px;border-radius:999px;background:${biasColor}1a;color:${biasColor};font-weight:700;font-size:12px">Global bias: ${m.bias}</span>`;
+  h+=`<span class="muted" style="font-size:11px">context, not a prediction · ${m.generated?new Date(m.generated).toLocaleString():''}</span></div>`;
+  const line=(label,arr)=> arr&&arr.length?`<div style="margin-top:6px"><span class="muted" style="font-size:11px">${label}:</span> ${arr.map(chip).join('')}</div>`:'';
+  h+=line('Global indices',m.indices);
+  h+=line('Commodities',m.commodities)+line('Forex',m.forex)+line('Volatility',m.vix);
+  h+=line('NSE sector leaders',m.sectors);
+  if(m.news&&m.news.length){
+    h+='<div style="margin-top:8px"><span class="muted" style="font-size:11px">Headlines (rough tone — read yourself):</span><ul style="margin:4px 0 0;padding-left:18px">';
+    m.news.forEach(n=>{ const c=n.tone==='pos'?'#1a7f3c':(n.tone==='neg'?'#b02525':'#5b6472'); h+=`<li style="font-size:12px;margin:2px 0"><span style="color:${c}">●</span> ${n.t}</li>`; });
+    h+='</ul></div>';
+  }
+  h+='</div>';
+  $('market').innerHTML=h;
+}
+function renderSectorHeat(sh){
+  if(!sh||!sh.length){ $('sectorheat').innerHTML=''; HOT=new Set(); return; }
+  const ranked=sh.filter(s=>s.count>=2 && isN(s.avg3m));
+  HOT=new Set(ranked.slice(0,2).map(s=>s.sector));
+  let h='<div class="card" style="background:#fbfffb"><b style="font-size:13px">Sector heat (your list)</b> <span class="muted" style="font-size:11px">by avg 3-mth return · 🔥 = hottest, flagged in table</span><div style="margin-top:6px">';
+  sh.slice(0,8).forEach(s=>{ const hot=HOT.has(s.sector); const c=(s.avg3m||0)>0?'#1a7f3c':'#b02525';
+    h+=`<span style="display:inline-block;padding:4px 9px;border:1px solid ${hot?'#b8e6c6':'#e3e6ee'};border-radius:8px;margin:3px;font-size:12px;background:${hot?'#e7f6ec':'#fff'}">${hot?'🔥 ':''}${s.sector} <span class="muted">×${s.count}</span> <b style="color:${c}">${s.avg3m==null?'–':s.avg3m+'%'}</b></span>`; });
+  h+='</div></div>';
+  $('sectorheat').innerHTML=h;
+}
+['profile','filter','action','liqCr','rsiCap','momMin'].forEach(id=>$(id).addEventListener('change',render));
 fetch('data.json?_='+Date.now()).then(r=>r.json()).then(d=>{
   DATA=d;
   $('meta').textContent = d.today ? `Today: ${d.today} · ${d.rows.length} stocks tracked · data generated ${new Date(d.generated).toLocaleString()}` : 'No data yet — upload your first list to data/lists/.';
+  renderMarket(d.market); renderSectorHeat(d.sectorHeat);
   render();
 }).catch(e=>{ $('meta').textContent='Could not load data.json ('+e+'). Run scripts/process.py or push a list to data/lists/.'; });
 </script>
