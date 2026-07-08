@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """
 Screener list tracker.
@@ -275,6 +274,8 @@ def classify(r):
     cmp, vol, avgvol = _num(r, "cmp"), _num(r, "vol"), _num(r, "avgvol")
     rsi, r3m, r1y = _num(r, "rsi"), _num(r, "r3m"), _num(r, "r1y")
     sales5, profit5, pe, indpe = _num(r, "sales5"), _num(r, "profit5"), _num(r, "pe"), _num(r, "indpe")
+    peg, macd, macdsig = _num(r, "peg"), _num(r, "macd"), _num(r, "macdsig")
+    dma50, dma200 = _num(r, "dma50"), _num(r, "dma200")
     turnover = cmp * vol if (cmp and vol) else None
     if turnover is not None:
         if turnover < LIQ:
@@ -285,14 +286,19 @@ def classify(r):
         return "wait"
     if (sales5 is not None and sales5 < 0) or (profit5 is not None and profit5 < 0):
         return "skip"
-    if pe is not None and indpe and indpe > 0 and pe > PEM * indpe:
+    # (B) Expensive only if pricey AND not justified by growth (PEG > 2)
+    if pe is not None and indpe and indpe > 0 and pe > PEM * indpe and (peg is not None and peg > 2):
         return "expensive"
     has3 = r3m is not None
     n1 = (r1y is not None and r1y < 0)
     if (has3 and r3m < MOM) or (n1 and not has3):
         return "skip"
+    # (A) Core pick only if ALL gates pass: uptrend + above 50/200 DMA + MACD not negative + RSI not hot
     if r1y is not None and r1y >= 10 and has3 and r3m >= MOM:
-        return "core"
+        dma_ok = (dma50 is None or cmp is None or cmp > dma50) and (dma200 is None or cmp is None or cmp > dma200)
+        macd_ok = not (macd is not None and macdsig is not None and macd < macdsig)
+        rsi_ok = not (rsi is not None and rsi > 68)
+        return "core" if (dma_ok and macd_ok and rsi_ok) else "watch"
     if n1 and has3 and r3m >= 15:
         return "early"
     if n1 and has3:
