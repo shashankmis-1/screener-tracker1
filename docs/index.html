@@ -47,7 +47,7 @@ tr.row5{background:#f4fbf6;} tr.row1{background:#fffaf2;} tr.row2{background:#fd
       <select id="profile"><option value="momentum">Momentum tilt</option><option value="balanced">Balanced</option><option value="value">Value / Quality tilt</option></select>
     </div>
     <div class="ctrl"><label>What next</label>
-      <select id="action"><option value="all">All actions</option><option value="core">Core pick — buy</option><option value="early">Early turn</option><option value="watch">Watch</option><option value="expensive">Check valuation</option><option value="wait">Wait — overbought</option><option value="skip">Skip</option></select>
+      <select id="action"><option value="all">All actions</option><option value="core">Core pick — buy</option><option value="early">Early turn</option><option value="confirm">Confirm on chart</option><option value="watch">Watch</option><option value="expensive">Check valuation</option><option value="wait">Wait — overbought</option><option value="skip">Skip</option></select>
     </div>
     <div class="ctrl"><label>Show</label>
       <select id="filter"><option value="today">Today's list</option><option value="all">All tracked</option><option value="persistent">Persistent (≥3 days)</option><option value="new">New today</option><option value="dropped">Dropped off</option></select>
@@ -88,7 +88,7 @@ function bucketOf(r,c){
   if(isN(to)){ if(to<c.liqCr*1e7) return 2; } else if(isN(r.vol)&&r.vol<20000) return 2;
   if(isN(r.rsi)&&r.rsi>c.rsiCap) return 1;
   if((isN(r.sales5)&&r.sales5<0)||(isN(r.profit5)&&r.profit5<0)) return 3;
-  if(isN(r.pe)&&isN(r.indpe)&&r.indpe>0&&r.pe>c.peMult*r.indpe) return 4;
+  if(isN(r.pe)&&isN(r.indpe)&&r.indpe>0&&r.pe>c.peMult*r.indpe&&isN(r.peg)&&r.peg>2) return 4;
   return 5;
 }
 function flagsOf(r,c){
@@ -116,12 +116,21 @@ function actionOf(r){
   if(r._b===2) return {t:'Skip — illiquid',d:'Turnover too low to enter/exit cleanly.',s:'warn',cat:'skip'};
   if(r._b===1) return {t:'Wait — overbought',d:'Let RSI cool; wait for a pullback toward the 50 DMA.',s:'warn',cat:'wait'};
   if(r._b===3) return {t:'Skip — weak fundamentals',d:'Negative 5-yr growth; fails the quality thesis.',s:'warn',cat:'skip'};
-  if(r._b===4) return {t:'Check valuation first',d:'Is PEG < 1.5 / premium justified by growth & ROCE? If yes, treat as core.',s:'warn',cat:'expensive'};
+  if(r._b===4) return {t:'Check valuation first',d:'Pricey AND PEG > 2 — growth may not justify the premium. If PEG turns reasonable, treat as core.',s:'warn',cat:'expensive'};
   if(has('low momentum')) return {t:'Skip — no momentum',d:'Weak recent trend; nothing to time.',s:'warn',cat:'skip'};
-  if(has('uptrend')) return {t:'Core pick — confirm & buy',d:'Chart: daily CLOSE above resistance on rising volume, higher highs & lows, 200 DMA rising. Enter with a stop below the 50 DMA.',s:'good',cat:'core'};
+  if(has('uptrend')){
+    const dmaOk=(!(isN(r.cmp)&&isN(r.dma50))||r.cmp>r.dma50)&&(!(isN(r.cmp)&&isN(r.dma200))||r.cmp>r.dma200);
+    const macdOk=!(isN(r.macd)&&isN(r.macdsig)&&r.macd<r.macdsig);
+    const rsiOk=!(isN(r.rsi)&&r.rsi>68);
+    const fails=(!dmaOk?1:0)+(!macdOk?1:0)+(!rsiOk?1:0);
+    if(fails===0) return {t:'Core pick — confirm & buy',d:'All gates aligned — uptrend, above 50 & 200 DMA, MACD positive, RSI not hot. Confirm the chart (daily close above resistance on rising volume, 200 DMA rising) and enter with a stop below the 50 DMA.',s:'good',cat:'core'};
+    const off=[!dmaOk?'below a DMA':'', !macdOk?'MACD below signal':'', !rsiOk?'RSI hot (>68)':''].filter(Boolean).join(', ');
+    if(fails===1) return {t:'Confirm on chart',d:'Uptrend, but one timing gate is off ('+off+'). Not a clean buy — confirm on the chart before acting.',s:'',cat:'confirm'};
+    return {t:'Watch — timing off',d:'Uptrend, but timing gates are off ('+off+'). Wait for MACD to turn up / RSI to cool / price to reclaim its DMAs.',s:'',cat:'watch'};
+  }
   if(has('early turn')) return {t:'Early turn — size small',d:'Chart: real base breakout, NOT a dead-cat bounce? 200 DMA flattening/up, volume sustained, retest holds. Smaller position, tight stop.',s:'good',cat:'early'};
   if(has('recovering')) return {t:'Watch — mild bounce',d:'Wait for a stronger turn or a clean base breakout.',s:'',cat:'watch'};
-  if(r.score>=45) return {t:'Confirm on chart',d:'Check trend structure and volume before acting.',s:'',cat:'watch'};
+  if(r.score>=45) return {t:'Confirm on chart',d:'Decent setup but timing not fully clean — check trend structure and volume before acting.',s:'',cat:'confirm'};
   return {t:'Watch',d:'',s:'',cat:'watch'};
 }
 const BUCKET={5:{label:'Shortlist',cls:'b5',rank:0},1:{label:'Extended',cls:'b1',rank:1},4:{label:'Expensive',cls:'b4',rank:2},3:{label:'Weak',cls:'b3',rank:3},2:{label:'Thin',cls:'b2',rank:4}};
