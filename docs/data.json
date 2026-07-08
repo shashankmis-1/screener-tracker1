@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-08T20:24:18.798507Z",
+  "generated": "2026-07-08T20:28:27.518508Z",
   "today": "2026-07-08",
   "rows": [
     {
@@ -969,7 +969,7 @@
   ],
   "sectorHeat": [],
   "market": {
-    "generated": "2026-07-08T20:24:14.176284Z",
+    "generated": "2026-07-08T20:28:23.299160Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -995,11 +995,11 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": 6.57
+        "pct": 6.73
       },
       {
         "name": "WTI",
-        "pct": 5.76
+        "pct": 5.92
       }
     ],
     "forex": [
