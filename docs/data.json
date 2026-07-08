@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-08T06:12:32.909202Z",
+  "generated": "2026-07-08T12:25:14.665186Z",
   "today": "2026-07-07",
   "rows": [
     {
@@ -801,8 +801,8 @@
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
       "_status": "dropped",
-      "_followPrice": 1314.0,
-      "_sinceLast": -1.8
+      "_followPrice": 1297.2,
+      "_sinceLast": -3.1
     },
     {
       "name": "Page Industries",
@@ -847,7 +847,7 @@
   ],
   "sectorHeat": [],
   "market": {
-    "generated": "2026-07-08T06:12:30.067651Z",
+    "generated": "2026-07-08T12:25:08.560876Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -863,70 +863,70 @@
       },
       {
         "name": "Nikkei",
-        "pct": -1.15
+        "pct": -2.11
       },
       {
         "name": "Hang Seng",
-        "pct": 3.11
+        "pct": 2.99
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 3.28
+        "pct": 5.19
       },
       {
         "name": "WTI",
-        "pct": 3.31
+        "pct": 5.07
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.39
+        "pct": -0.05
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 4.79
+        "pct": 26.01
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Realty",
-        "pct": 1.03
-      },
-      {
         "name": "Nifty Auto",
-        "pct": 0.87
+        "pct": -0.94
       },
       {
         "name": "Nifty Pharma",
-        "pct": 0.11
+        "pct": -0.97
       },
       {
         "name": "Nifty Metal",
-        "pct": 0.09
-      },
-      {
-        "name": "Nifty IT",
-        "pct": -0.38
+        "pct": -1.03
       },
       {
         "name": "Nifty Energy",
-        "pct": -0.44
+        "pct": -1.23
       },
       {
-        "name": "Nifty Bank",
-        "pct": -0.51
+        "name": "Nifty IT",
+        "pct": -1.37
+      },
+      {
+        "name": "Nifty Realty",
+        "pct": -1.67
       },
       {
         "name": "Nifty FMCG",
-        "pct": -0.96
+        "pct": -2.23
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -2.51
       }
     ],
-    "biasScore": 0.02,
+    "biasScore": -0.2,
     "bias": "mixed",
     "news": [
       {
@@ -934,20 +934,20 @@
         "tone": "neu"
       },
       {
-        "t": "Sensex down 500 points: 3 reasons why stock market is falling today - India Today",
-        "tone": "neg"
-      },
-      {
-        "t": "Stock markets today: Sensex, Nifty down on renewed US-Iran tensions, crude spike - Rediff",
-        "tone": "neg"
-      },
-      {
-        "t": "Sensex falls 1,836 points, Nifty slumps 2.6 per cent as Middle East tensions intensify - DD News",
-        "tone": "neg"
-      },
-      {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 8 July - livemint.com",
+        "t": "Stock markets tumble over 2% on escalating U.S.-Iran tensions, sharp surge in oil prices - The Hindu",
         "tone": "neu"
+      },
+      {
+        "t": "Stock market crash: Bloodbath on Dalal Street! Sensex, Nifty50 tank 2% as Trump declares end of truce wit - The Times of India",
+        "tone": "neg"
+      },
+      {
+        "t": "Sensex ends 1,677 points lower: 3 reasons why stock market crashed today - India Today",
+        "tone": "neg"
+      },
+      {
+        "t": "Sensex sinks 1,680 points; Nifty closes below 23,900. 5 key factors behind today\u2019s market mayhem - The Economic Times",
+        "tone": "neg"
       }
     ]
   },
@@ -962,28 +962,28 @@
         "avgLoss": null,
         "openTrades": [
           {
-            "name": "Pricol Ltd",
-            "ret": 0.03,
-            "days": 0
-          },
-          {
             "name": "KSB",
-            "ret": -0.03,
-            "days": 0
-          },
-          {
-            "name": "Grindwell Norton",
-            "ret": -0.22,
+            "ret": 0.11,
             "days": 0
           },
           {
             "name": "Stylam Industrie",
-            "ret": -0.63,
+            "ret": -0.54,
+            "days": 0
+          },
+          {
+            "name": "Grindwell Norton",
+            "ret": -1.57,
             "days": 0
           },
           {
             "name": "Privi Speci.",
-            "ret": -1.43,
+            "ret": -2.4,
+            "days": 0
+          },
+          {
+            "name": "Pricol Ltd",
+            "ret": -2.58,
             "days": 0
           }
         ]
