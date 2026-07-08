@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-08T21:00:46.248502Z",
+  "generated": "2026-07-08T21:02:04.108818Z",
   "today": "2026-07-08",
   "rows": [
     {
@@ -400,9 +400,7 @@
       "_daysOnList": 2,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-07",
-      "_status": "dropped",
-      "_followPrice": 926.5,
-      "_sinceLast": 0.0
+      "_status": "dropped"
     },
     {
       "name": "Manorama Indust.",
@@ -969,7 +967,7 @@
   ],
   "sectorHeat": [],
   "market": {
-    "generated": "2026-07-08T21:00:42.973435Z",
+    "generated": "2026-07-08T21:01:59.063358Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -995,11 +993,11 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": 6.89
+        "pct": 6.67
       },
       {
         "name": "WTI",
-        "pct": 6.05
+        "pct": 5.92
       }
     ],
     "forex": [
