@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-09T20:30:56.105816Z",
+  "generated": "2026-07-09T20:34:39.417191Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -802,9 +802,7 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped",
-      "_followPrice": 1297.2,
-      "_sinceLast": -3.1
+      "_status": "dropped"
     },
     {
       "name": "Page Industries",
@@ -1089,7 +1087,7 @@
   ],
   "sectorHeat": [],
   "market": {
-    "generated": "2026-07-09T20:30:50.720168Z",
+    "generated": "2026-07-09T20:34:36.050595Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -1115,11 +1113,11 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.55
+        "pct": -2.58
       },
       {
         "name": "WTI",
-        "pct": -2.38
+        "pct": -2.37
       }
     ],
     "forex": [
@@ -1172,6 +1170,10 @@
     "bias": "positive",
     "news": [
       {
+        "t": "Nifty, Sensex open lower; market to stay range-bound with positive undertone: experts - DD News",
+        "tone": "neu"
+      },
+      {
         "t": "Why is Stock Market Falling Today? Sensex Down 405 Pts, Nifty Below 24,000 Mark | Key Reasons Explained - Goodreturns",
         "tone": "neg"
       },
@@ -1186,10 +1188,6 @@
       {
         "t": "Share Market Today: Nifty 50, Bank Nifty | July 09, 2026 - Liquide Blog",
         "tone": "neu"
-      },
-      {
-        "t": "Sensex jumps 600 points despite US-Iran tensions: Why is market rising today? - India Today",
-        "tone": "pos"
       }
     ]
   },
