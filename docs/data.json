@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-09T21:42:43.379036Z",
+  "generated": "2026-07-09T21:43:50.848443Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -1317,7 +1317,7 @@
     }
   ],
   "market": {
-    "generated": "2026-07-09T21:42:40.744758Z",
+    "generated": "2026-07-09T21:43:48.127079Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -1418,6 +1418,10 @@
     "bias": "positive",
     "news": [
       {
+        "t": "Nifty, Sensex open lower; market to stay range-bound with positive undertone: experts - DD News",
+        "tone": "neu"
+      },
+      {
         "t": "Indian equities rebound after sharp sell-off; Sensex, Nifty end higher on broad-based buying - Open Magazine",
         "tone": "neu"
       },
@@ -1431,10 +1435,6 @@
       },
       {
         "t": "Sensex Rallies 570 Points; Nifty Tops 24,050 Despite Iran War - HDFC Sky",
-        "tone": "neu"
-      },
-      {
-        "t": "Share Market Today: Nifty 50, Bank Nifty | July 09, 2026 - Liquide Blog",
         "tone": "neu"
       }
     ]
