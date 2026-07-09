@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-09T20:50:51.498323Z",
+  "generated": "2026-07-09T21:32:23.458703Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -1336,7 +1336,7 @@
     }
   ],
   "market": {
-    "generated": "2026-07-09T20:50:48.588715Z",
+    "generated": "2026-07-09T21:32:19.084804Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -1362,11 +1362,11 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.49
+        "pct": -2.54
       },
       {
         "name": "WTI",
-        "pct": -2.34
+        "pct": -2.33
       }
     ],
     "forex": [
@@ -1437,6 +1437,10 @@
     "bias": "positive",
     "news": [
       {
+        "t": "Nifty, Sensex open lower; market to stay range-bound with positive undertone: experts - DD News",
+        "tone": "neu"
+      },
+      {
         "t": "Why is Stock Market Falling Today? Sensex Down 405 Pts, Nifty Below 24,000 Mark | Key Reasons Explained - Goodreturns",
         "tone": "neg"
       },
@@ -1450,10 +1454,6 @@
       },
       {
         "t": "Sensex Rallies 570 Points; Nifty Tops 24,050 Despite Iran War - HDFC Sky",
-        "tone": "neu"
-      },
-      {
-        "t": "Share Market Today: Nifty 50, Bank Nifty | July 09, 2026 - Liquide Blog",
         "tone": "neu"
       }
     ]
