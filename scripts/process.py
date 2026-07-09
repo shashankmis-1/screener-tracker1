@@ -116,7 +116,7 @@ def parse_file(path):
             rec = {}
             for i, key in enumerate(fieldmap):
                 if key and i < len(cells):
-                    rec[key] = cells[i].strip() if key in ("name", "symbol") else num(cells[i])
+                    rec[key] = cells[i].strip() if key in ("name", "symbol", "industry") else num(cells[i])
             nm = rec.get("name")
             if not nm or re.match(r"^s\.?no", str(nm).lower()):
                 continue
@@ -166,6 +166,8 @@ VIX_TICKERS = {"India VIX": "^INDIAVIX"}
 SECTOR_TICKERS = {"Nifty Bank": "^NSEBANK", "Nifty IT": "^CNXIT", "Nifty Auto": "^CNXAUTO",
                   "Nifty Pharma": "^CNXPHARMA", "Nifty FMCG": "^CNXFMCG", "Nifty Metal": "^CNXMETAL",
                   "Nifty Energy": "^CNXENERGY", "Nifty Realty": "^CNXREALTY"}
+INDIA_INDICES = {"Sensex": "^BSESN", "Nifty 50": "^NSEI"}
+SECTOR_LOG = os.path.join(ROOT, "data", "sector_log.json")
  
  
 def _pct_change(tk):
@@ -175,6 +177,29 @@ def _pct_change(tk):
     if len(c) >= 2:
         return round((c.iloc[-1] / c.iloc[-2] - 1) * 100, 2)
     return None
+ 
+ 
+def _pct_1d_1w(tk):
+    """Return {'d1': 1-day %, 'w1': ~1-week (5 trading days) %} for a ticker."""
+    import yfinance as yf
+    h = yf.Ticker(tk).history(period="15d")
+    c = h["Close"].dropna()
+    out = {}
+    if len(c) >= 2:
+        out["d1"] = round((c.iloc[-1] / c.iloc[-2] - 1) * 100, 2)
+    if len(c) >= 6:
+        out["w1"] = round((c.iloc[-1] / c.iloc[-6] - 1) * 100, 2)
+    return out
+ 
+ 
+def _last_level(tk):
+    """Latest close for an index/stock (used for Sensex reference)."""
+    try:
+        import yfinance as yf
+        c = yf.Ticker(tk).history(period="5d")["Close"].dropna()
+        return float(c.iloc[-1]) if len(c) else None
+    except Exception:
+        return None
  
  
 def _group_pct(d):
@@ -214,7 +239,36 @@ def fetch_news(n=5):
         return []
  
  
-def market_context():
+def sector_trend(today, sectors):
+    """Track the market-wide leading NSE sector each day: is it persistent or rotating?"""
+    if not sectors:
+        return None
+    leader = sectors[0]["name"]
+    log = {"days": []}
+    if os.path.exists(SECTOR_LOG):
+        try:
+            log = json.load(open(SECTOR_LOG))
+        except Exception:
+            log = {"days": []}
+    days = log.get("days", [])
+    if not days or days[-1].get("date") != today:
+        days.append({"date": today, "leader": leader})
+    else:
+        days[-1]["leader"] = leader
+    log["days"] = days[-60:]
+    json.dump(log, open(SECTOR_LOG, "w"), indent=2)
+    streak = 0
+    for d in reversed(days):
+        if d["leader"] == leader:
+            streak += 1
+        else:
+            break
+    prev = next((d["leader"] for d in reversed(days) if d["leader"] != leader), None)
+    status = "persistent" if streak >= 3 else ("holding" if streak == 2 else "new / rotated")
+    return {"leader": leader, "streak": streak, "prev": prev, "status": status}
+ 
+ 
+def market_context(today=None):
     try:
         import yfinance  # noqa: F401
     except Exception as ex:
@@ -225,7 +279,17 @@ def market_context():
     ctx["commodities"] = _group_pct(COMMODITY_TICKERS)
     ctx["forex"] = _group_pct(FOREX_TICKERS)
     ctx["vix"] = _group_pct(VIX_TICKERS)
+    # Indian indices with 1-day AND 1-week change
+    ctx["india"] = []
+    for name, tk in INDIA_INDICES.items():
+        try:
+            p = _pct_1d_1w(tk)
+            if p:
+                ctx["india"].append({"name": name, **p})
+        except Exception:
+            pass
     ctx["sectors"] = sorted(_group_pct(SECTOR_TICKERS), key=lambda x: -x["pct"])
+    ctx["sectorTrend"] = sector_trend(today, ctx["sectors"]) if today else None
     eq = [x["pct"] for x in ctx["indices"]]
     usdinr = next((x["pct"] for x in ctx["forex"] if x["name"] == "USD/INR"), 0) or 0
     score = (sum(eq) / len(eq) if eq else 0) - (usdinr * 0.5 if usdinr > 0 else 0)
@@ -355,6 +419,7 @@ def update_paper_trades(out_rows, today):
             log = {"trades": []}
     trades = log.get("trades", [])
     open_keys = {(t["name"], t["rec"]) for t in trades if t.get("status") == "open"}
+    sensex_now = _last_level("^BSESN")   # current Sensex level for the market comparison
  
     # add new paper trades for today's core/early picks (not already open)
     for r in out_rows:
@@ -371,7 +436,8 @@ def update_paper_trades(out_rows, today):
         tk = sym if str(sym).upper().endswith(".NS") else str(sym) + ".NS"
         trades.append({"name": r["name"], "symbol": tk, "rec": rec, "entryDate": today,
                        "entryPrice": round(cmp, 2), "status": "open", "daysHeld": 0,
-                       "lastPrice": round(cmp, 2), "lastReturn": 0.0, "minReturn": 0.0, "snap": {}})
+                       "lastPrice": round(cmp, 2), "lastReturn": 0.0, "minReturn": 0.0, "snap": {},
+                       "sensexEntry": sensex_now})
  
     # update open trades via yfinance, apply stop / horizon
     try:
@@ -395,14 +461,34 @@ def update_paper_trades(out_rows, today):
                             t["snap"][str(m)] = ret
             except Exception:
                 pass
+        # Sensex return over the same holding period (market comparison)
+        if sensex_now and isinstance(t.get("sensexEntry"), (int, float)) and t["sensexEntry"]:
+            t["sensexReturn"] = round((sensex_now / t["sensexEntry"] - 1) * 100, 2)
         if t.get("minReturn", 0.0) <= -STOP_PCT:
-            t.update({"status": "closed", "exitReason": "stop", "closeDate": today, "finalReturn": -STOP_PCT})
+            t.update({"status": "closed", "exitReason": "stop", "closeDate": today, "finalReturn": -STOP_PCT,
+                      "finalSensexReturn": t.get("sensexReturn")})
         elif t["daysHeld"] >= HORIZON_DAYS:
-            t.update({"status": "closed", "exitReason": "horizon", "closeDate": today, "finalReturn": t.get("lastReturn", 0.0)})
+            t.update({"status": "closed", "exitReason": "horizon", "closeDate": today,
+                      "finalReturn": t.get("lastReturn", 0.0), "finalSensexReturn": t.get("sensexReturn")})
  
     log["trades"] = trades
     json.dump(log, open(PAPER_LOG, "w"), indent=2)
-    return {"stats": paper_stats(trades), "stopPct": STOP_PCT, "horizon": HORIZON_DAYS, "total": len(trades)}
+ 
+    # vs-Sensex breakdown: do picks go up when the market went up over the hold?
+    cl = [t for t in trades if t.get("status") == "closed" and isinstance(t.get("finalSensexReturn"), (int, float))]
+    up = [t for t in cl if t["finalSensexReturn"] > 0]
+    dn = [t for t in cl if t["finalSensexReturn"] <= 0]
+    def _wr(lst):
+        return round(sum(1 for t in lst if t.get("finalReturn", 0) > 0) / len(lst) * 100) if lst else None
+    def _avg(lst, k):
+        return round(sum(t.get(k, 0) for t in lst) / len(lst), 1) if lst else None
+    vs_market = {
+        "marketUp": {"n": len(up), "winRate": _wr(up), "avgStock": _avg(up, "finalReturn"), "avgSensex": _avg(up, "finalSensexReturn")},
+        "marketDown": {"n": len(dn), "winRate": _wr(dn), "avgStock": _avg(dn, "finalReturn"), "avgSensex": _avg(dn, "finalSensexReturn")},
+        "avgAlpha": round(sum(t.get("finalReturn", 0) - t.get("finalSensexReturn", 0) for t in cl) / len(cl), 1) if cl else None,
+    }
+    return {"stats": paper_stats(trades), "stopPct": STOP_PCT, "horizon": HORIZON_DAYS,
+            "total": len(trades), "vsMarket": vs_market}
  
  
 def main():
@@ -424,8 +510,17 @@ def main():
         all_dates.append(date)
         for rec in rows:
             nm = rec["name"]
-            e = seen.setdefault(nm, {"dates": set(), "latest": None, "latest_date": None})
+            e = seen.setdefault(nm, {"dates": set(), "latest": None, "latest_date": None,
+                                     "first_price": None, "prev_action": None,
+                                     "cur_action": None, "cur_action_date": None})
             e["dates"].add(date)
+            if e["first_price"] is None:
+                e["first_price"] = _num(rec, "cmp")   # price on first appearance
+            # track action label change across days (uses default-profile classify)
+            a = classify(rec)
+            if e["cur_action_date"] is not None and date != e["cur_action_date"]:
+                e["prev_action"] = e["cur_action"]
+            e["cur_action"], e["cur_action_date"] = a, date
             if e["latest_date"] is None or date >= e["latest_date"]:
                 e["latest"], e["latest_date"] = rec, date
  
@@ -435,6 +530,12 @@ def main():
     today = max(all_dates)
  
     symbols = load_symbols()
+    # fallback: use each stock's NSE Code (from its latest row) if not in symbols.csv
+    for nm, e in seen.items():
+        if nm not in symbols:
+            sy = (e["latest"] or {}).get("symbol")
+            if sy:
+                symbols[nm] = sy if str(sy).upper().endswith(".NS") else str(sy) + ".NS"
     dropped = [nm for nm, e in seen.items() if e["latest_date"] < today]
     follow = follow_up(dropped, symbols) if dropped else {}
  
@@ -451,20 +552,42 @@ def main():
             status = "persistent"
         else:
             status = "current"
-        rec.update({"_daysOnList": cnt, "_firstSeen": first, "_lastSeen": last, "_status": status})
+        rec.update({"_daysOnList": cnt, "_firstSeen": first, "_lastSeen": last, "_status": status,
+                    "_firstPrice": e.get("first_price"),
+                    "_actionNow": e.get("cur_action"), "_actionPrev": e.get("prev_action"),
+                    "_actionChanged": bool(e.get("prev_action") and e.get("prev_action") != e.get("cur_action"))})
+        cur_price = None
         if nm in follow:
             rec["_followPrice"] = round(follow[nm], 2)
+            cur_price = follow[nm]
             if rec.get("cmp"):
                 rec["_sinceLast"] = round((follow[nm] / rec["cmp"] - 1) * 100, 1)
+            if status == "dropped" and rec.get("_sinceLast") is not None:
+                sl = rec["_sinceLast"]
+                if sl <= -4:
+                    rec["_dropReason"] = "Price fell %.1f%% since last seen — likely lost momentum / slipped below a DMA." % sl
+                elif sl >= 6:
+                    rec["_dropReason"] = "Price rose +%.1f%% — may have become extended (RSI / too far above 50 DMA)." % sl
+                else:
+                    rec["_dropReason"] = "~flat (%+.1f%%) — likely a fundamental/threshold drift or data update, not price." % sl
+        if cur_price is None:
+            cur_price = _num(rec, "cmp")
+        fp = e.get("first_price")
+        if fp and cur_price:
+            rec["_sinceFirst"] = round((cur_price / fp - 1) * 100, 1)
         out_rows.append(rec)
+ 
+    top_persistent = [{"name": r["name"], "days": r.get("_daysOnList"), "firstSeen": r.get("_firstSeen"),
+                       "status": r.get("_status"), "sinceFirst": r.get("_sinceFirst")}
+                      for r in sorted(out_rows, key=lambda r: (-(r.get("_daysOnList") or 0), r.get("_firstSeen") or ""))[:5]]
  
     today_rows = [r for r in out_rows if r.get("_lastSeen") == today]
     heat = sector_heat(today_rows)
-    market = market_context()
+    market = market_context(today)
     paper = update_paper_trades(out_rows, today)
  
     json.dump({"generated": datetime.datetime.utcnow().isoformat() + "Z",
-               "today": today, "rows": out_rows,
+               "today": today, "rows": out_rows, "topPersistent": top_persistent,
                "sectorHeat": heat, "market": market, "paper": paper}, open(OUT, "w"), indent=2)
     print(f"Wrote {len(out_rows)} tracked stocks (today={today}) -> {OUT}")
     print(f"Paper trades: {paper['total']} total")
@@ -474,3 +597,4 @@ def main():
  
 if __name__ == "__main__":
     main()
+ 
