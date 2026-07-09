@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-09T20:34:39.417191Z",
+  "generated": "2026-07-09T20:50:51.498323Z",
   "today": "2026-07-09",
   "rows": [
     {
       "name": "CARE Ratings",
       "symbol": "CARERATING",
-      "industry": null,
+      "industry": "Ratings",
       "cmp": 1649.0,
       "mcap": 4956.94,
       "vol": 63705.0,
@@ -40,12 +40,20 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 1649.0,
+      "_actionNow": "skip",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_followPrice": 1610.1,
+      "_sinceLast": -2.4,
+      "_dropReason": "~flat (-2.4%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": -2.4
     },
     {
       "name": "CCL Products",
       "symbol": "CCL",
-      "industry": null,
+      "industry": "Tea & Coffee",
       "cmp": 1209.2,
       "mcap": 16175.64,
       "vol": 362910.0,
@@ -80,12 +88,17 @@
       "_daysOnList": 2,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-09",
-      "_status": "current"
+      "_status": "current",
+      "_firstPrice": 1191.75,
+      "_actionNow": "expensive",
+      "_actionPrev": "expensive",
+      "_actionChanged": false,
+      "_sinceFirst": 1.5
     },
     {
       "name": "Data Pattern",
       "symbol": "DATAPATTNS",
-      "industry": null,
+      "industry": "Aerospace & Defense",
       "cmp": 4406.35,
       "mcap": 24668.47,
       "vol": 1080277.0,
@@ -120,12 +133,20 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 4406.35,
+      "_actionNow": "expensive",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_followPrice": 4290.3,
+      "_sinceLast": -2.6,
+      "_dropReason": "~flat (-2.6%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": -2.6
     },
     {
       "name": "Emmvee Photovol.",
       "symbol": "EMMVEE",
-      "industry": null,
+      "industry": "Other Electrical Equipment",
       "cmp": 330.35,
       "mcap": 22871.66,
       "vol": 3366890.0,
@@ -160,12 +181,20 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 330.35,
+      "_actionNow": "watch",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_followPrice": 329.15,
+      "_sinceLast": -0.4,
+      "_dropReason": "~flat (-0.4%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": -0.4
     },
     {
       "name": "Endurance Tech.",
       "symbol": "ENDURANCE",
-      "industry": null,
+      "industry": "Auto Components & Equipments",
       "cmp": 2706.8,
       "mcap": 38075.33,
       "vol": 121548.0,
@@ -200,12 +229,17 @@
       "_daysOnList": 4,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-09",
-      "_status": "persistent"
+      "_status": "persistent",
+      "_firstPrice": 2667.35,
+      "_actionNow": "watch",
+      "_actionPrev": "watch",
+      "_actionChanged": false,
+      "_sinceFirst": 1.5
     },
     {
       "name": "Fine Organic",
       "symbol": "FINEORG",
-      "industry": null,
+      "industry": "Specialty Chemicals",
       "cmp": 5018.95,
       "mcap": 15388.09,
       "vol": 7218.0,
@@ -240,12 +274,20 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 5018.95,
+      "_actionNow": "watch",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_followPrice": 4878.0,
+      "_sinceLast": -2.8,
+      "_dropReason": "~flat (-2.8%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": -2.8
     },
     {
       "name": "Grindwell Norton",
       "symbol": "GRINDWELL",
-      "industry": null,
+      "industry": "Abrasives & Bearings",
       "cmp": 2050.1,
       "mcap": 22698.69,
       "vol": 39918.0,
@@ -280,12 +322,20 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 2050.1,
+      "_actionNow": "watch",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_followPrice": 2018.0,
+      "_sinceLast": -1.6,
+      "_dropReason": "~flat (-1.6%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": -1.6
     },
     {
       "name": "Inox India",
       "symbol": "INOXINDIA",
-      "industry": null,
+      "industry": "Other Industrial Products",
       "cmp": 1803.0,
       "mcap": 16364.67,
       "vol": 270988.0,
@@ -320,12 +370,20 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 1803.0,
+      "_actionNow": "expensive",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_followPrice": 1875.9,
+      "_sinceLast": 4.0,
+      "_dropReason": "~flat (+4.0%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": 4.0
     },
     {
       "name": "Kovai Medical",
       "symbol": "KOVAI",
-      "industry": null,
+      "industry": "Hospital",
       "cmp": 5970.5,
       "mcap": 6539.84,
       "vol": 2187.0,
@@ -360,12 +418,17 @@
       "_daysOnList": 4,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-09",
-      "_status": "persistent"
+      "_status": "persistent",
+      "_firstPrice": 6038.0,
+      "_actionNow": "watch",
+      "_actionPrev": "watch",
+      "_actionChanged": false,
+      "_sinceFirst": -1.1
     },
     {
       "name": "KSB",
       "symbol": "KSB",
-      "industry": null,
+      "industry": "Compressors, Pumps & Diesel Engines",
       "cmp": 926.5,
       "mcap": 16127.33,
       "vol": 158716.0,
@@ -401,13 +464,19 @@
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-07",
       "_status": "dropped",
+      "_firstPrice": 926.55,
+      "_actionNow": "core",
+      "_actionPrev": "core",
+      "_actionChanged": false,
       "_followPrice": 927.6,
-      "_sinceLast": 0.1
+      "_sinceLast": 0.1,
+      "_dropReason": "~flat (+0.1%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": 0.1
     },
     {
       "name": "Manorama Indust.",
       "symbol": "MANORAMA",
-      "industry": null,
+      "industry": "Other Food Products",
       "cmp": 1579.2,
       "mcap": 9971.26,
       "vol": 207013.0,
@@ -442,12 +511,17 @@
       "_daysOnList": 2,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-09",
-      "_status": "current"
+      "_status": "current",
+      "_firstPrice": 1530.55,
+      "_actionNow": "watch",
+      "_actionPrev": "watch",
+      "_actionChanged": false,
+      "_sinceFirst": 3.2
     },
     {
       "name": "Navin Fluo.Intl.",
       "symbol": "NAVINFLUOR",
-      "industry": null,
+      "industry": "Specialty Chemicals",
       "cmp": 7689.0,
       "mcap": 39514.14,
       "vol": 141656.0,
@@ -482,12 +556,17 @@
       "_daysOnList": 3,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-09",
-      "_status": "persistent"
+      "_status": "persistent",
+      "_firstPrice": 7574.55,
+      "_actionNow": "expensive",
+      "_actionPrev": "expensive",
+      "_actionChanged": false,
+      "_sinceFirst": 1.5
     },
     {
       "name": "Park Medi World",
       "symbol": "PARKHOSPS",
-      "industry": null,
+      "industry": "Hospital",
       "cmp": 285.0,
       "mcap": 12310.04,
       "vol": 493544.0,
@@ -522,12 +601,20 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 285.0,
+      "_actionNow": "watch",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_followPrice": 273.9,
+      "_sinceLast": -3.9,
+      "_dropReason": "~flat (-3.9%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": -3.9
     },
     {
       "name": "Pricol Ltd",
       "symbol": "PRICOLLTD",
-      "industry": null,
+      "industry": "Auto Components & Equipments",
       "cmp": 624.95,
       "mcap": 7617.07,
       "vol": 602124.0,
@@ -562,12 +649,20 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 624.95,
+      "_actionNow": "watch",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_followPrice": 608.8,
+      "_sinceLast": -2.6,
+      "_dropReason": "~flat (-2.6%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": -2.6
     },
     {
       "name": "Privi Speci.",
       "symbol": "PRIVISCL",
-      "industry": null,
+      "industry": "Specialty Chemicals",
       "cmp": 3621.3,
       "mcap": 14163.55,
       "vol": 32983.0,
@@ -602,12 +697,17 @@
       "_daysOnList": 3,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-09",
-      "_status": "persistent"
+      "_status": "persistent",
+      "_firstPrice": 3635.0,
+      "_actionNow": "watch",
+      "_actionPrev": "core",
+      "_actionChanged": true,
+      "_sinceFirst": -0.4
     },
     {
       "name": "Rainbow Child.",
       "symbol": "RAINBOW",
-      "industry": null,
+      "industry": "Hospital",
       "cmp": 1420.9,
       "mcap": 14431.59,
       "vol": 60525.0,
@@ -642,12 +742,20 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 1420.9,
+      "_actionNow": "watch",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_followPrice": 1431.1,
+      "_sinceLast": 0.7,
+      "_dropReason": "~flat (+0.7%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": 0.7
     },
     {
       "name": "Sai Life",
       "symbol": "SAILIFE",
-      "industry": null,
+      "industry": "Pharmaceuticals",
       "cmp": 1222.85,
       "mcap": 25959.41,
       "vol": 221084.0,
@@ -682,12 +790,20 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 1222.85,
+      "_actionNow": "watch",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_followPrice": 1208.3,
+      "_sinceLast": -1.2,
+      "_dropReason": "~flat (-1.2%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": -1.2
     },
     {
       "name": "Shivalik Bimetal",
       "symbol": "SBCL",
-      "industry": null,
+      "industry": "Iron & Steel Products",
       "cmp": 727.3,
       "mcap": 4189.59,
       "vol": 1815846.0,
@@ -722,12 +838,20 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 727.3,
+      "_actionNow": "expensive",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_followPrice": 695.8,
+      "_sinceLast": -4.3,
+      "_dropReason": "Price fell -4.3% since last seen \u2014 likely lost momentum / slipped below a DMA.",
+      "_sinceFirst": -4.3
     },
     {
       "name": "Stylam Industrie",
       "symbol": "STYLAMIND",
-      "industry": null,
+      "industry": "Plywood Boards/ Laminates",
       "cmp": 3076.95,
       "mcap": 5214.87,
       "vol": 19433.0,
@@ -762,12 +886,20 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 3076.95,
+      "_actionNow": "watch",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_followPrice": 3060.2,
+      "_sinceLast": -0.5,
+      "_dropReason": "~flat (-0.5%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": -0.5
     },
     {
       "name": "Travel Food",
       "symbol": "TRAVELFOOD",
-      "industry": null,
+      "industry": "Restaurants",
       "cmp": 1338.2,
       "mcap": 17621.34,
       "vol": 15718.0,
@@ -802,12 +934,20 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-06",
       "_lastSeen": "2026-07-06",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 1338.2,
+      "_actionNow": "skip",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_followPrice": 1297.2,
+      "_sinceLast": -3.1,
+      "_dropReason": "~flat (-3.1%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": -3.1
     },
     {
       "name": "Page Industries",
       "symbol": "PAGEIND",
-      "industry": null,
+      "industry": "Garments & Apparels",
       "cmp": 41415.0,
       "mcap": 46210.7,
       "vol": 79238.0,
@@ -842,12 +982,20 @@
       "_daysOnList": 2,
       "_firstSeen": "2026-07-07",
       "_lastSeen": "2026-07-08",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 41780.0,
+      "_actionNow": "expensive",
+      "_actionPrev": "expensive",
+      "_actionChanged": false,
+      "_followPrice": 41415.0,
+      "_sinceLast": 0.0,
+      "_dropReason": "~flat (+0.0%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": -0.9
     },
     {
       "name": "Accent Microcell",
       "symbol": "ACCENTMIC",
-      "industry": null,
+      "industry": "Pharmaceuticals",
       "cmp": 492.9,
       "mcap": 1182.42,
       "vol": 74500.0,
@@ -882,12 +1030,17 @@
       "_daysOnList": 2,
       "_firstSeen": "2026-07-08",
       "_lastSeen": "2026-07-09",
-      "_status": "current"
+      "_status": "current",
+      "_firstPrice": 490.55,
+      "_actionNow": "core",
+      "_actionPrev": "core",
+      "_actionChanged": false,
+      "_sinceFirst": 0.5
     },
     {
       "name": "Bosch",
       "symbol": "BOSCHLTD",
-      "industry": null,
+      "industry": "Auto Components & Equipments",
       "cmp": 42225.0,
       "mcap": 124673.72,
       "vol": 26399.0,
@@ -922,12 +1075,17 @@
       "_daysOnList": 2,
       "_firstSeen": "2026-07-08",
       "_lastSeen": "2026-07-09",
-      "_status": "current"
+      "_status": "current",
+      "_firstPrice": 41610.0,
+      "_actionNow": "expensive",
+      "_actionPrev": "expensive",
+      "_actionChanged": false,
+      "_sinceFirst": 1.5
     },
     {
       "name": "Varroc Engineer",
       "symbol": "VARROC",
-      "industry": null,
+      "industry": "Auto Components & Equipments",
       "cmp": 636.75,
       "mcap": 9737.65,
       "vol": 181593.0,
@@ -962,12 +1120,20 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-08",
       "_lastSeen": "2026-07-08",
-      "_status": "dropped"
+      "_status": "dropped",
+      "_firstPrice": 636.75,
+      "_actionNow": "core",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_followPrice": 636.75,
+      "_sinceLast": 0.0,
+      "_dropReason": "~flat (+0.0%) \u2014 likely a fundamental/threshold drift or data update, not price.",
+      "_sinceFirst": 0.0
     },
     {
       "name": "Auto.Corp.of Goa",
       "symbol": "",
-      "industry": null,
+      "industry": "Auto Components & Equipments",
       "cmp": 2276.2,
       "mcap": 1385.9,
       "vol": 1531.0,
@@ -1002,12 +1168,17 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-09",
       "_lastSeen": "2026-07-09",
-      "_status": "new"
+      "_status": "new",
+      "_firstPrice": 2276.2,
+      "_actionNow": "skip",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_sinceFirst": 0.0
     },
     {
       "name": "Pidilite Inds.",
       "symbol": "PIDILITIND",
-      "industry": null,
+      "industry": "Specialty Chemicals",
       "cmp": 1590.4,
       "mcap": 161872.14,
       "vol": 240102.0,
@@ -1042,12 +1213,17 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-09",
       "_lastSeen": "2026-07-09",
-      "_status": "new"
+      "_status": "new",
+      "_firstPrice": 1590.4,
+      "_actionNow": "expensive",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_sinceFirst": 0.0
     },
     {
       "name": "Saint-Gob. Sekur",
       "symbol": "",
-      "industry": null,
+      "industry": "Auto Components & Equipments",
       "cmp": 133.45,
       "mcap": 1215.86,
       "vol": 54128.0,
@@ -1082,12 +1258,85 @@
       "_daysOnList": 1,
       "_firstSeen": "2026-07-09",
       "_lastSeen": "2026-07-09",
-      "_status": "new"
+      "_status": "new",
+      "_firstPrice": 133.45,
+      "_actionNow": "skip",
+      "_actionPrev": null,
+      "_actionChanged": false,
+      "_sinceFirst": 0.0
     }
   ],
-  "sectorHeat": [],
+  "topPersistent": [
+    {
+      "name": "Endurance Tech.",
+      "days": 4,
+      "firstSeen": "2026-07-06",
+      "status": "persistent",
+      "sinceFirst": 1.5
+    },
+    {
+      "name": "Kovai Medical",
+      "days": 4,
+      "firstSeen": "2026-07-06",
+      "status": "persistent",
+      "sinceFirst": -1.1
+    },
+    {
+      "name": "Navin Fluo.Intl.",
+      "days": 3,
+      "firstSeen": "2026-07-06",
+      "status": "persistent",
+      "sinceFirst": 1.5
+    },
+    {
+      "name": "Privi Speci.",
+      "days": 3,
+      "firstSeen": "2026-07-06",
+      "status": "persistent",
+      "sinceFirst": -0.4
+    },
+    {
+      "name": "CCL Products",
+      "days": 2,
+      "firstSeen": "2026-07-06",
+      "status": "current",
+      "sinceFirst": 1.5
+    }
+  ],
+  "sectorHeat": [
+    {
+      "sector": "Other Food Products",
+      "count": 1,
+      "avg3m": 23.1
+    },
+    {
+      "sector": "Auto Components & Equipments",
+      "count": 4,
+      "avg3m": 22.2
+    },
+    {
+      "sector": "Specialty Chemicals",
+      "count": 3,
+      "avg3m": 22.2
+    },
+    {
+      "sector": "Pharmaceuticals",
+      "count": 1,
+      "avg3m": 18.2
+    },
+    {
+      "sector": "Tea & Coffee",
+      "count": 1,
+      "avg3m": 12.1
+    },
+    {
+      "sector": "Hospital",
+      "count": 1,
+      "avg3m": 10.8
+    }
+  ],
   "market": {
-    "generated": "2026-07-09T20:34:36.050595Z",
+    "generated": "2026-07-09T20:50:48.588715Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -1113,11 +1362,11 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.58
+        "pct": -2.49
       },
       {
         "name": "WTI",
-        "pct": -2.37
+        "pct": -2.34
       }
     ],
     "forex": [
@@ -1130,6 +1379,18 @@
       {
         "name": "India VIX",
         "pct": 26.01
+      }
+    ],
+    "india": [
+      {
+        "name": "Sensex",
+        "d1": -2.15,
+        "w1": -0.54
+      },
+      {
+        "name": "Nifty 50",
+        "d1": -2.12,
+        "w1": -0.52
       }
     ],
     "sectors": [
@@ -1166,13 +1427,15 @@
         "pct": -2.51
       }
     ],
+    "sectorTrend": {
+      "leader": "Nifty Realty",
+      "streak": 1,
+      "prev": null,
+      "status": "new / rotated"
+    },
     "biasScore": 0.65,
     "bias": "positive",
     "news": [
-      {
-        "t": "Nifty, Sensex open lower; market to stay range-bound with positive undertone: experts - DD News",
-        "tone": "neu"
-      },
       {
         "t": "Why is Stock Market Falling Today? Sensex Down 405 Pts, Nifty Below 24,000 Mark | Key Reasons Explained - Goodreturns",
         "tone": "neg"
@@ -1180,6 +1443,10 @@
       {
         "t": "Indian equities rebound after sharp sell-off; Sensex, Nifty end higher on broad-based buying - Open Magazine",
         "tone": "neu"
+      },
+      {
+        "t": "Indian Markets Rebound as Sensex Climbs 238 Points, Nifty Up 80 - Rediff",
+        "tone": "pos"
       },
       {
         "t": "Sensex Rallies 570 Points; Nifty Tops 24,050 Despite Iran War - HDFC Sky",
@@ -1250,6 +1517,21 @@
     },
     "stopPct": 8.0,
     "horizon": 20,
-    "total": 7
+    "total": 7,
+    "vsMarket": {
+      "marketUp": {
+        "n": 0,
+        "winRate": null,
+        "avgStock": null,
+        "avgSensex": null
+      },
+      "marketDown": {
+        "n": 0,
+        "winRate": null,
+        "avgStock": null,
+        "avgSensex": null
+      },
+      "avgAlpha": null
+    }
   }
 }
