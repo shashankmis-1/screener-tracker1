@@ -1,25 +1,25 @@
 #!/usr/bin/env python3
 """
 Screener list tracker.
- 
+
 Reads every daily Screener export in data/lists/ (files named YYYY-MM-DD.csv),
 merges them into a history, computes persistence (how many days each stock has
 appeared, first/last seen, status), optionally follows up on dropped names via
 Yahoo Finance, and writes docs/data.json which the dashboard renders.
- 
+
 Run locally:  python scripts/process.py
 In CI it is run by .github/workflows/daily.yml
 """
 import csv, json, os, glob, re, datetime
- 
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LISTS_DIR = os.path.join(ROOT, "data", "lists")
 SYMBOLS_CSV = os.path.join(ROOT, "data", "symbols.csv")
 OUT = os.path.join(ROOT, "docs", "data.json")
- 
+
 DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})")
- 
- 
+
+
 def field_of(h):
     """Map a Screener column header to a canonical key.
     Handles BOTH Screener's long export names ("Return on equity",
@@ -53,12 +53,14 @@ def field_of(h):
     if "3month" in h or "3 month" in h or "3mth" in h or "3m%" in h: return "r3m"
     if "6month" in h or "6 month" in h or "6mth" in h or "6m%" in h: return "r6m"
     if "1month" in h or "1 month" in h or "1mth" in h or "1m%" in h: return "r1m"
-    if "1year" in h or "1 year" in h or "1yr" in h or "1y%" in h or ("return" in h and "year" in h): return "r1y"
+    if "1year" in h or "1 year" in h or "1yr" in h or "1y%" in h or ("return over" in h and "1year" in h): return "r1y"
     # quality
+    if ("roce" in h or "return on capital" in h) and ("3yr" in h or "3year" in h or "3 year" in h): return "roce3"
     if "return on capital" in h or "roce" in h: return "roce"
     if "return on equity" in h or "roe" in h: return "roe"
     if "opm" in h or "operating margin" in h: return "opm"
     # growth
+    if "profit" in h and ("qtr" in h or "quarter" in h or "yoy" in h): return "qprofit"
     if "quarterly sales" in h or "qtr sales" in h or ("yoy" in h and "sales" in h): return "qsales"
     if "sales" in h and ("3year" in h or "3 year" in h or "3yrs" in h): return "sales3"
     if "sales" in h and ("growth" in h or "var" in h): return "sales5"
@@ -66,6 +68,8 @@ def field_of(h):
     if "profit" in h and ("growth" in h or "var" in h): return "profit5"
     # technical
     if "down from" in h or "down %" in h or h.startswith("down"): return "down"
+    if "dma" in h and "prev" in h and "200" in h: return "dma200prev"
+    if "dma" in h and "prev" in h and "50" in h: return "dma50prev"
     if "dma" in h and "200" in h: return "dma200"
     if "dma" in h and "50" in h: return "dma50"
     if "macd signal previous" in h: return "macdsigprev"
@@ -80,8 +84,8 @@ def field_of(h):
     if "fii" in h: return "fii"
     if "dii" in h: return "dii"
     return None
- 
- 
+
+
 def num(v):
     if v is None: return None
     s = str(v).replace(",", "").replace("%", "").strip()
@@ -90,8 +94,8 @@ def num(v):
         return float(s)
     except ValueError:
         return None
- 
- 
+
+
 def parse_file(path):
     m = DATE_RE.search(os.path.basename(path))
     date = m.group(1) if m else None
@@ -122,8 +126,8 @@ def parse_file(path):
                 continue
             rows.append(rec)
     return date, rows
- 
- 
+
+
 def load_symbols():
     m = {}
     if os.path.exists(SYMBOLS_CSV):
@@ -134,8 +138,8 @@ def load_symbols():
                 if nm and sy:
                     m[nm] = sy
     return m
- 
- 
+
+
 def follow_up(dropped_names, symbols):
     """Best-effort current price for dropped names via Yahoo Finance."""
     follow = {}
@@ -154,8 +158,8 @@ def follow_up(dropped_names, symbols):
     except Exception as ex:
         print("yfinance follow-up skipped:", ex)
     return follow
- 
- 
+
+
 # ---------------------------------------------------------------------------
 # Market context (global cues, sector leaders, news) + sector heat from list
 # ---------------------------------------------------------------------------
@@ -168,8 +172,8 @@ SECTOR_TICKERS = {"Nifty Bank": "^NSEBANK", "Nifty IT": "^CNXIT", "Nifty Auto": 
                   "Nifty Energy": "^CNXENERGY", "Nifty Realty": "^CNXREALTY"}
 INDIA_INDICES = {"Sensex": "^BSESN", "Nifty 50": "^NSEI"}
 SECTOR_LOG = os.path.join(ROOT, "data", "sector_log.json")
- 
- 
+
+
 def _pct_change(tk):
     import yfinance as yf
     h = yf.Ticker(tk).history(period="7d")
@@ -177,8 +181,8 @@ def _pct_change(tk):
     if len(c) >= 2:
         return round((c.iloc[-1] / c.iloc[-2] - 1) * 100, 2)
     return None
- 
- 
+
+
 def _pct_1d_1w(tk):
     """Return {'d1': 1-day %, 'w1': ~1-week (5 trading days) %} for a ticker."""
     import yfinance as yf
@@ -190,8 +194,8 @@ def _pct_1d_1w(tk):
     if len(c) >= 6:
         out["w1"] = round((c.iloc[-1] / c.iloc[-6] - 1) * 100, 2)
     return out
- 
- 
+
+
 def _last_level(tk):
     """Latest close for an index/stock (used for Sensex reference)."""
     try:
@@ -200,8 +204,8 @@ def _last_level(tk):
         return float(c.iloc[-1]) if len(c) else None
     except Exception:
         return None
- 
- 
+
+
 def _group_pct(d):
     out = []
     for name, tk in d.items():
@@ -212,8 +216,8 @@ def _group_pct(d):
         except Exception:
             pass
     return out
- 
- 
+
+
 def fetch_news(n=5):
     """Best-effort market headlines from Google News RSS with a crude tone tag.
     Rough by design — meant as a headline glance, not a real sentiment score."""
@@ -237,8 +241,8 @@ def fetch_news(n=5):
     except Exception as ex:
         print("news fetch skipped:", ex)
         return []
- 
- 
+
+
 def sector_trend(today, sectors):
     """Track the market-wide leading NSE sector each day: is it persistent or rotating?"""
     if not sectors:
@@ -266,8 +270,8 @@ def sector_trend(today, sectors):
     prev = next((d["leader"] for d in reversed(days) if d["leader"] != leader), None)
     status = "persistent" if streak >= 3 else ("holding" if streak == 2 else "new / rotated")
     return {"leader": leader, "streak": streak, "prev": prev, "status": status}
- 
- 
+
+
 def market_context(today=None):
     try:
         import yfinance  # noqa: F401
@@ -297,8 +301,8 @@ def market_context(today=None):
     ctx["bias"] = "positive" if score > 0.25 else ("negative" if score < -0.25 else "mixed")
     ctx["news"] = fetch_news()
     return ctx
- 
- 
+
+
 def sector_heat(rows):
     """Group today's stocks by Industry -> which sector is hot (count + avg 3-mth return)."""
     from collections import defaultdict
@@ -316,8 +320,8 @@ def sector_heat(rows):
         out.append({"sector": ind, "count": a["count"], "avg3m": avg3})
     out.sort(key=lambda x: (-(x["avg3m"] if x["avg3m"] is not None else -999), -x["count"]))
     return out
- 
- 
+
+
 # ---------------------------------------------------------------------------
 # Paper-test: log Core/Early picks, track forward returns, compute win rate
 # ---------------------------------------------------------------------------
@@ -325,13 +329,13 @@ PAPER_LOG = os.path.join(ROOT, "data", "paper_log.json")
 STOP_PCT = 8.0        # simulated stop-loss (%)
 HORIZON_DAYS = 20     # trading days to hold before scoring
 MILESTONES = [5, 10, 20]
- 
- 
+
+
 def _num(r, k):
     v = r.get(k)
     return v if isinstance(v, (int, float)) else None
- 
- 
+
+
 def classify(r):
     """Replicate the dashboard's action logic (defaults) to tag a row core/early/other."""
     LIQ, RSICAP, PEM, MOM = 1e7, 72, 1.5, 8
@@ -340,6 +344,7 @@ def classify(r):
     sales5, profit5, pe, indpe = _num(r, "sales5"), _num(r, "profit5"), _num(r, "pe"), _num(r, "indpe")
     peg, macd, macdsig = _num(r, "peg"), _num(r, "macd"), _num(r, "macdsig")
     dma50, dma200 = _num(r, "dma50"), _num(r, "dma200")
+    dma200prev = _num(r, "dma200prev")
     turnover = cmp * vol if (cmp and vol) else None
     if turnover is not None:
         if turnover < LIQ:
@@ -357,19 +362,20 @@ def classify(r):
     n1 = (r1y is not None and r1y < 0)
     if (has3 and r3m < MOM) or (n1 and not has3):
         return "skip"
-    # (A) Core pick only if ALL gates pass: uptrend + above 50/200 DMA + MACD not negative + RSI not hot
+    # (A) Core pick only if ALL gates pass: uptrend + above 50/200 DMA + 200 DMA rising + MACD not negative + RSI not hot
     if r1y is not None and r1y >= 10 and has3 and r3m >= MOM:
         dma_ok = (dma50 is None or cmp is None or cmp > dma50) and (dma200 is None or cmp is None or cmp > dma200)
+        rising_ok = (dma200 is None or dma200prev is None or dma200 > dma200prev)
         macd_ok = not (macd is not None and macdsig is not None and macd < macdsig)
         rsi_ok = not (rsi is not None and rsi > 68)
-        return "core" if (dma_ok and macd_ok and rsi_ok) else "watch"
+        return "core" if (dma_ok and rising_ok and macd_ok and rsi_ok) else "watch"
     if n1 and has3 and r3m >= 15:
         return "early"
     if n1 and has3:
         return "watch"
     return "watch"
- 
- 
+
+
 def _business_days(d1, d2):
     a = datetime.date.fromisoformat(d1)
     b = datetime.date.fromisoformat(d2)
@@ -381,15 +387,15 @@ def _business_days(d1, d2):
         if cur.weekday() < 5:
             days += 1
     return days
- 
- 
+
+
 def _last_price(sym):
     import yfinance as yf
     h = yf.Ticker(sym).history(period="5d")
     c = h["Close"].dropna()
     return float(c.iloc[-1]) if len(c) else None
- 
- 
+
+
 def paper_stats(trades):
     stats = {}
     for rec in ("core", "early"):
@@ -408,8 +414,8 @@ def paper_stats(trades):
                 key=lambda x: -(x["ret"] if isinstance(x["ret"], (int, float)) else -999))
         }
     return stats
- 
- 
+
+
 def update_paper_trades(out_rows, today):
     log = {"trades": []}
     if os.path.exists(PAPER_LOG):
@@ -420,7 +426,7 @@ def update_paper_trades(out_rows, today):
     trades = log.get("trades", [])
     open_keys = {(t["name"], t["rec"]) for t in trades if t.get("status") == "open"}
     sensex_now = _last_level("^BSESN")   # current Sensex level for the market comparison
- 
+
     # add new paper trades for today's core/early picks (not already open)
     for r in out_rows:
         if r.get("_lastSeen") != today:
@@ -438,7 +444,7 @@ def update_paper_trades(out_rows, today):
                        "entryPrice": round(cmp, 2), "status": "open", "daysHeld": 0,
                        "lastPrice": round(cmp, 2), "lastReturn": 0.0, "minReturn": 0.0, "snap": {},
                        "sensexEntry": sensex_now})
- 
+
     # update open trades via yfinance, apply stop / horizon
     try:
         import yfinance  # noqa: F401
@@ -470,10 +476,10 @@ def update_paper_trades(out_rows, today):
         elif t["daysHeld"] >= HORIZON_DAYS:
             t.update({"status": "closed", "exitReason": "horizon", "closeDate": today,
                       "finalReturn": t.get("lastReturn", 0.0), "finalSensexReturn": t.get("sensexReturn")})
- 
+
     log["trades"] = trades
     json.dump(log, open(PAPER_LOG, "w"), indent=2)
- 
+
     # vs-Sensex breakdown: do picks go up when the market went up over the hold?
     cl = [t for t in trades if t.get("status") == "closed" and isinstance(t.get("finalSensexReturn"), (int, float))]
     up = [t for t in cl if t["finalSensexReturn"] > 0]
@@ -489,8 +495,8 @@ def update_paper_trades(out_rows, today):
     }
     return {"stats": paper_stats(trades), "stopPct": STOP_PCT, "horizon": HORIZON_DAYS,
             "total": len(trades), "vsMarket": vs_market}
- 
- 
+
+
 def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     files = sorted(glob.glob(os.path.join(LISTS_DIR, "*.csv")))
@@ -499,8 +505,8 @@ def main():
                   open(OUT, "w"), indent=2)
         print("No list files found in data/lists/. Wrote empty data.json.")
         return
- 
-    seen = {}          # name -> {dates:set, latest:rec, latest_date:str}
+
+    seen = {}
     all_dates = []
     for path in files:
         date, rows = parse_file(path)
@@ -515,22 +521,20 @@ def main():
                                      "cur_action": None, "cur_action_date": None})
             e["dates"].add(date)
             if e["first_price"] is None:
-                e["first_price"] = _num(rec, "cmp")   # price on first appearance
-            # track action label change across days (uses default-profile classify)
+                e["first_price"] = _num(rec, "cmp")
             a = classify(rec)
             if e["cur_action_date"] is not None and date != e["cur_action_date"]:
                 e["prev_action"] = e["cur_action"]
             e["cur_action"], e["cur_action_date"] = a, date
             if e["latest_date"] is None or date >= e["latest_date"]:
                 e["latest"], e["latest_date"] = rec, date
- 
+
     if not all_dates:
         print("No dated files parsed.")
         return
     today = max(all_dates)
- 
+
     symbols = load_symbols()
-    # fallback: use each stock's NSE Code (from its latest row) if not in symbols.csv
     for nm, e in seen.items():
         if nm not in symbols:
             sy = (e["latest"] or {}).get("symbol")
@@ -538,7 +542,7 @@ def main():
                 symbols[nm] = sy if str(sy).upper().endswith(".NS") else str(sy) + ".NS"
     dropped = [nm for nm, e in seen.items() if e["latest_date"] < today]
     follow = follow_up(dropped, symbols) if dropped else {}
- 
+
     out_rows = []
     for nm, e in seen.items():
         rec = dict(e["latest"])
@@ -576,16 +580,16 @@ def main():
         if fp and cur_price:
             rec["_sinceFirst"] = round((cur_price / fp - 1) * 100, 1)
         out_rows.append(rec)
- 
+
     top_persistent = [{"name": r["name"], "days": r.get("_daysOnList"), "firstSeen": r.get("_firstSeen"),
                        "status": r.get("_status"), "sinceFirst": r.get("_sinceFirst")}
                       for r in sorted(out_rows, key=lambda r: (-(r.get("_daysOnList") or 0), r.get("_firstSeen") or ""))[:5]]
- 
+
     today_rows = [r for r in out_rows if r.get("_lastSeen") == today]
     heat = sector_heat(today_rows)
     market = market_context(today)
     paper = update_paper_trades(out_rows, today)
- 
+
     json.dump({"generated": datetime.datetime.utcnow().isoformat() + "Z",
                "today": today, "rows": out_rows, "topPersistent": top_persistent,
                "sectorHeat": heat, "market": market, "paper": paper}, open(OUT, "w"), indent=2)
@@ -593,8 +597,7 @@ def main():
     print(f"Paper trades: {paper['total']} total")
     if market:
         print(f"Market bias: {market.get('bias')} ({market.get('biasScore')})")
- 
- 
+
+
 if __name__ == "__main__":
     main()
- 
