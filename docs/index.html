@@ -40,6 +40,7 @@ tr.row5{background:#f4fbf6;} tr.row1{background:#fffaf2;} tr.row2{background:#fd
 <div id="market"></div>
 <div id="sectorheat"></div>
 <div id="perf"></div>
+<div id="persist"></div>
 
 <div class="card">
   <div class="row">
@@ -136,7 +137,7 @@ function actionOf(r){
 const BUCKET={5:{label:'Shortlist',cls:'b5',rank:0},1:{label:'Extended',cls:'b1',rank:1},4:{label:'Expensive',cls:'b4',rank:2},3:{label:'Weak',cls:'b3',rank:3},2:{label:'Thin',cls:'b2',rank:4}};
 const COLS=[
   {k:'status',t:'Status'},{k:'days',t:'Days'},{k:'bucket',t:'Bucket'},{k:'name',t:'Name'},{k:'sector',t:'Sector'},{k:'score',t:'Score'},{k:'action',t:'What next'},{k:'flags',t:'Signals'},
-  {k:'cmp',t:'CMP'},{k:'volx',t:'Vol×'},{k:'rsi',t:'RSI'},{k:'macd',t:'MACD'},{k:'down',t:'Down%'},{k:'r1m',t:'1m%'},{k:'r3m',t:'3m%'},{k:'r1y',t:'1y%'},
+  {k:'cmp',t:'CMP'},{k:'volx',t:'Vol×'},{k:'rsi',t:'RSI'},{k:'macd',t:'MACD'},{k:'down',t:'Down%'},{k:'sinceFirst',t:'Since1st%'},{k:'r1m',t:'1m%'},{k:'r3m',t:'3m%'},{k:'r1y',t:'1y%'},
   {k:'qsales',t:'QSales%'},{k:'roe',t:'ROE'},{k:'roce',t:'ROCE'},{k:'debt',t:'D/E'},{k:'pe',t:'P/E'},{k:'indpe',t:'IndPE'},{k:'peg',t:'PEG'},{k:'piotroski',t:'Piot'},
   {k:'fii',t:'ΔFII'},{k:'dii',t:'ΔDII'},{k:'firstSeen',t:'First seen'},{k:'since',t:'Since drop%'}
 ];
@@ -181,9 +182,13 @@ function render(){
       else if(k==='name') html+=`<td class="name">${r.name}</td>`;
       else if(k==='sector'){ const ind=r.industry||''; const hot=HOT.has(ind); html+=`<td class="bucket" style="white-space:normal;max-width:150px;font-size:11px">${hot?'🔥 ':''}${ind||'<span class="muted">–</span>'}</td>`; }
       else if(k==='score') html+=`<td class="score">${r.score}</td>`;
-      else if(k==='action') html+=`<td class="bucket" style="max-width:300px;white-space:normal"><div class="flag ${r._action.s}" style="font-weight:700;font-size:12.5px">${r._action.t}</div>${r._action.d?`<div class="muted" style="font-size:11px;line-height:1.35;margin-top:2px">${r._action.d}</div>`:''}</td>`;
+      else if(k==='action'){
+        if(r._status==='dropped'){ html+=`<td class="bucket" style="max-width:300px;white-space:normal"><div class="flag warn" style="font-weight:700;font-size:12.5px">Dropped off</div>${r._dropReason?`<div class="muted" style="font-size:11px;line-height:1.35;margin-top:2px">${r._dropReason}</div>`:'<div class="muted" style="font-size:11px;margin-top:2px">No longer in the list.</div>'}</td>`; }
+        else { const chg=r._actionChanged?`<div style="font-size:11px;margin-top:2px;color:#1a4bd6;font-weight:600">⤴ changed from "${r._actionPrev}" — review</div>`:''; html+=`<td class="bucket" style="max-width:300px;white-space:normal"><div class="flag ${r._action.s}" style="font-weight:700;font-size:12.5px">${r._action.t}</div>${chg}${r._action.d?`<div class="muted" style="font-size:11px;line-height:1.35;margin-top:2px">${r._action.d}</div>`:''}</td>`; }
+      }
       else if(k==='flags'){ const hide=['uptrend','early turn','low momentum','recovering']; const sh=(r._flags||[]).filter(f=>!hide.some(h=>f.t.indexOf(h)===0)); html+=`<td class="bucket" style="white-space:normal;max-width:160px">${sh.map(f=>`<span class="flag ${f.s}">${f.t}</span>`).join('; ')||'<span class="muted">–</span>'}</td>`; }
       else if(k==='volx') html+=`<td>${isN(r.volx)?`<span class="${r.volx>=1.5?'good':''}">${r.volx.toFixed(1)}×</span>`:'<span class="muted">–</span>'}</td>`;
+      else if(k==='sinceFirst') html+=`<td>${isN(r._sinceFirst)?`<span class="${r._sinceFirst>=0?'good':'flag'}">${r._sinceFirst>0?'+':''}${r._sinceFirst}%</span>`:'<span class="muted">–</span>'}</td>`;
       else if(k==='macd'){ if(isN(r.macd)&&isN(r.macdsig)){ const up=r.macd>r.macdsig; html+=`<td><span class="${up?'good':'flag'}">${up?'▲':'▼'}${r.macd.toFixed(1)}</span></td>`; } else html+=`<td><span class="muted">–</span></td>`; }
       else if(k==='firstSeen') html+=`<td>${r._firstSeen||'–'}</td>`;
       else if(k==='since') html+=`<td>${isN(r._sinceLast)?`<span class="${r._sinceLast>=0?'good':'flag'}">${r._sinceLast}%</span>`:'<span class="muted">–</span>'}</td>`;
@@ -206,8 +211,10 @@ function renderMarket(m){
   h+=`<span class="muted" style="font-size:11px">context, not a prediction · ${m.generated?new Date(m.generated).toLocaleString():''}</span></div>`;
   const line=(label,arr)=> arr&&arr.length?`<div style="margin-top:6px"><span class="muted" style="font-size:11px">${label}:</span> ${arr.map(chip).join('')}</div>`:'';
   h+=line('Global indices',m.indices);
+  if(m.india&&m.india.length){ h+='<div style="margin-top:6px"><span class="muted" style="font-size:11px">India (1d / 1wk):</span> '+m.india.map(x=>{ const c1=(x.d1||0)>0?'#1a7f3c':((x.d1||0)<0?'#b02525':'#5b6472'); const cw=(x.w1||0)>0?'#1a7f3c':((x.w1||0)<0?'#b02525':'#5b6472'); return `<span style="display:inline-block;padding:4px 9px;border:1px solid #e3e6ee;border-radius:8px;margin:3px;font-size:12px;background:#fff">${x.name} <b style="color:${c1}">${x.d1==null?'—':(x.d1>0?'+':'')+x.d1+'%'}</b> <span class="muted">/</span> <b style="color:${cw}">${x.w1==null?'—':(x.w1>0?'+':'')+x.w1+'%'}</b></span>`; }).join('')+'</div>'; }
   h+=line('Commodities',m.commodities)+line('Forex',m.forex)+line('Volatility',m.vix);
   h+=line('NSE sector leaders',m.sectors);
+  if(m.sectorTrend){ const st=m.sectorTrend; const stc=st.status==='persistent'?'#1a7f3c':(st.status==='holding'?'#a65a00':'#5b6472'); h+=`<div style="margin-top:6px;font-size:12px"><span class="muted">Sector trend:</span> <b>${st.leader}</b> leading <b>${st.streak}</b> day${st.streak>1?'s':''} <span style="color:${stc};font-weight:600">(${st.status})</span>${(st.prev&&st.status!=='persistent')?` <span class="muted">· rotated from ${st.prev}</span>`:''}</div>`; }
   if(m.news&&m.news.length){
     h+='<div style="margin-top:8px"><span class="muted" style="font-size:11px">Headlines (rough tone — read yourself):</span><ul style="margin:4px 0 0;padding-left:18px">';
     m.news.forEach(n=>{ const c=n.tone==='pos'?'#1a7f3c':(n.tone==='neg'?'#b02525':'#5b6472'); h+=`<li style="font-size:12px;margin:2px 0"><span style="color:${c}">●</span> ${n.t}</li>`; });
@@ -241,14 +248,28 @@ function renderPerf(p){
     h+='</div>';
   });
   h+='</div>';
+  const v=p.vsMarket;
+  if(v && (v.marketUp.n || v.marketDown.n)){
+    h+='<div style="margin-top:8px;padding-top:8px;border-top:1px solid #eef0f4;font-size:12px"><b>vs Sensex</b> <span class="muted">(closed trades — does a pick rise when the market rose over its hold?):</span><br>';
+    h+=`Market <b class="good">up</b>: ${v.marketUp.winRate==null?'—':v.marketUp.winRate+'% of picks up'} <span class="muted">(${v.marketUp.n} trades; picks avg ${v.marketUp.avgStock==null?'—':v.marketUp.avgStock+'%'} vs Sensex ${v.marketUp.avgSensex==null?'—':v.marketUp.avgSensex+'%'})</span> · `;
+    h+=`Market <b class="flag">down</b>: ${v.marketDown.winRate==null?'—':v.marketDown.winRate+'% up'} <span class="muted">(${v.marketDown.n})</span> · `;
+    h+=`avg alpha vs Sensex: <b class="${(v.avgAlpha||0)>=0?'good':'flag'}">${v.avgAlpha==null?'—':(v.avgAlpha>0?'+':'')+v.avgAlpha+'%'}</b></div>`;
+  }
   if(p.total===0){ h='<div class="card" style="background:#fffdf6"><b style="font-size:13px">Strategy performance (paper test)</b><div class="muted" style="font-size:12px;margin-top:4px">No paper trades yet — they start logging when a Core pick / Early turn first appears, and the win rate builds over the coming weeks.</div></div>'; }
   $('perf').innerHTML = any||p.total===0 ? h : '';
+}
+function renderPersist(tp){
+  if(!tp||!tp.length){ $('persist').innerHTML=''; return; }
+  let h='<div class="card" style="background:#f7f9ff"><b style="font-size:13px">Most persistent</b> <span class="muted" style="font-size:11px">appeared on the most days (top 5) — repeat appearances = a durable setup</span><div style="margin-top:6px">';
+  tp.forEach((t,i)=>{ const sc=(t.sinceFirst||0)>=0?'good':'flag'; h+=`<span style="display:inline-block;padding:4px 9px;border:1px solid #e3e6ee;border-radius:8px;margin:3px;font-size:12px;background:#fff">${i+1}. ${t.name} <b>${t.days}d</b>${t.sinceFirst!=null?` <span class="${sc}">${t.sinceFirst>0?'+':''}${t.sinceFirst}% since 1st</span>`:''} <span class="muted">${t.status}</span></span>`; });
+  h+='</div></div>';
+  $('persist').innerHTML=h;
 }
 ['profile','filter','action','liqCr','rsiCap','momMin'].forEach(id=>$(id).addEventListener('change',render));
 fetch('data.json?_='+Date.now()).then(r=>r.json()).then(d=>{
   DATA=d;
   $('meta').textContent = d.today ? `Today: ${d.today} · ${d.rows.length} stocks tracked · data generated ${new Date(d.generated).toLocaleString()}` : 'No data yet — upload your first list to data/lists/.';
-  renderMarket(d.market); renderSectorHeat(d.sectorHeat); renderPerf(d.paper);
+  renderMarket(d.market); renderSectorHeat(d.sectorHeat); renderPerf(d.paper); renderPersist(d.topPersistent);
   render();
 }).catch(e=>{ $('meta').textContent='Could not load data.json ('+e+'). Run scripts/process.py or push a list to data/lists/.'; });
 </script>
