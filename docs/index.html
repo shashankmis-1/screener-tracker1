@@ -72,11 +72,11 @@ const isN = v => typeof v==='number' && !isNaN(v);
 function scoreOf(r,prof){
   const W=PROFILES[prof]; const P=[];
   const mv=[]; if(isN(r.r3m))mv.push(clamp(r.r3m,0,40)/40); if(isN(r.r1m))mv.push(clamp(r.r1m,0,20)/20);
-  if(isN(r.qsales))mv.push(clamp(r.qsales,0,40)/40); if(isN(r.volx))mv.push(clamp((r.volx-1)/1,0,1));
+  if(isN(r.qsales))mv.push(clamp(r.qsales,0,40)/40); if(isN(r.qprofit))mv.push(clamp(r.qprofit,0,40)/40); if(isN(r.volx))mv.push(clamp((r.volx-1)/1,0,1));
   if(isN(r.macd)&&isN(r.macdsig))mv.push(r.macd>r.macdsig?1:0);
   if(mv.length)P.push({w:W.mom,v:mv.reduce((a,b)=>a+b,0)/mv.length});
   if(isN(r.down))P.push({w:W.prox,v:clamp((18-r.down)/16,0,1)});
-  const q=[]; if(isN(r.roe))q.push(clamp(r.roe,0,50)/50); if(isN(r.roce))q.push(clamp(r.roce,0,60)/60);
+  const q=[]; if(isN(r.roe))q.push(clamp(r.roe,0,50)/50); if(isN(r.roce))q.push(clamp(r.roce,0,60)/60); if(isN(r.roce3))q.push(clamp(r.roce3,0,60)/60);
   if(q.length)P.push({w:W.qual,v:q.reduce((a,b)=>a+b,0)/q.length});
   if(isN(r.fii)||isN(r.dii)){let s=0,n=0; if(isN(r.fii)){s+=r.fii>0?1:(r.fii<0?0:.5);n++;} if(isN(r.dii)){s+=r.dii>0?1:(r.dii<0?0:.5);n++;} P.push({w:W.inst,v:s/n});}
   const vv=[]; if(isN(r.pe)&&isN(r.indpe)&&r.indpe>0)vv.push(clamp((1.6-r.pe/r.indpe)/1.2,0,1)); if(isN(r.peg)&&r.peg>0)vv.push(clamp((2-r.peg)/1.5,0,1));
@@ -121,11 +121,12 @@ function actionOf(r){
   if(has('low momentum')) return {t:'Skip — no momentum',d:'Weak recent trend; nothing to time.',s:'warn',cat:'skip'};
   if(has('uptrend')){
     const dmaOk=(!(isN(r.cmp)&&isN(r.dma50))||r.cmp>r.dma50)&&(!(isN(r.cmp)&&isN(r.dma200))||r.cmp>r.dma200);
+    const risingOk=!(isN(r.dma200)&&isN(r.dma200prev)&&r.dma200<=r.dma200prev);
     const macdOk=!(isN(r.macd)&&isN(r.macdsig)&&r.macd<r.macdsig);
     const rsiOk=!(isN(r.rsi)&&r.rsi>68);
-    const fails=(!dmaOk?1:0)+(!macdOk?1:0)+(!rsiOk?1:0);
-    if(fails===0) return {t:'Core pick — confirm & buy',d:'All gates aligned — uptrend, above 50 & 200 DMA, MACD positive, RSI not hot. Confirm the chart (daily close above resistance on rising volume, 200 DMA rising) and enter with a stop below the 50 DMA.',s:'good',cat:'core'};
-    const off=[!dmaOk?'below a DMA':'', !macdOk?'MACD below signal':'', !rsiOk?'RSI hot (>68)':''].filter(Boolean).join(', ');
+    const fails=(!dmaOk?1:0)+(!risingOk?1:0)+(!macdOk?1:0)+(!rsiOk?1:0);
+    if(fails===0) return {t:'Core pick — confirm & buy',d:'All gates aligned — uptrend, above 50 & 200 DMA, 200 DMA rising, MACD positive, RSI not hot. Confirm the chart (daily close above resistance on rising volume) and enter with a stop below the 50 DMA.',s:'good',cat:'core'};
+    const off=[!dmaOk?'below a DMA':'', !risingOk?'200 DMA falling':'', !macdOk?'MACD below signal':'', !rsiOk?'RSI hot (>68)':''].filter(Boolean).join(', ');
     if(fails===1) return {t:'Confirm on chart',d:'Uptrend, but one timing gate is off ('+off+'). Not a clean buy — confirm on the chart before acting.',s:'',cat:'confirm'};
     return {t:'Watch — timing off',d:'Uptrend, but timing gates are off ('+off+'). Wait for MACD to turn up / RSI to cool / price to reclaim its DMAs.',s:'',cat:'watch'};
   }
