@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-10T13:15:56.996216Z",
+  "generated": "2026-07-13T06:37:10.274445Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,125 +357,125 @@
     }
   ],
   "market": {
-    "generated": "2026-07-10T13:15:51.941668Z",
+    "generated": "2026-07-13T06:37:07.243032Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.81
+        "pct": 0.42
       },
       {
         "name": "Dow",
-        "pct": 0.27
+        "pct": 0.29
       },
       {
         "name": "Nasdaq",
-        "pct": 1.3
+        "pct": 0.29
       },
       {
         "name": "Nikkei",
-        "pct": 1.2
+        "pct": -2.2
       },
       {
         "name": "Hang Seng",
-        "pct": 0.6
+        "pct": -0.23
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 0.13
+        "pct": 4.07
       },
       {
         "name": "WTI",
-        "pct": -0.08
+        "pct": 4.13
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.57
+        "pct": 0.47
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -8.29
+        "pct": 9.35
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 1.08,
-        "w1": -0.25
+        "d1": -0.19,
+        "w1": -1.1
       },
       {
         "name": "Nifty 50",
-        "d1": 1.02,
-        "w1": -0.26
+        "d1": -0.2,
+        "w1": -1.12
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Realty",
-        "pct": 5.37
-      },
-      {
         "name": "Nifty IT",
-        "pct": 1.96
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": 1.39
-      },
-      {
-        "name": "Nifty Metal",
-        "pct": 0.72
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": 0.16
-      },
-      {
-        "name": "Nifty Pharma",
-        "pct": 0.07
+        "pct": 3.45
       },
       {
         "name": "Nifty Auto",
-        "pct": -0.47
+        "pct": 0.08
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": -0.37
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -0.39
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": -0.43
       },
       {
         "name": "Nifty FMCG",
-        "pct": -1.57
+        "pct": -0.92
+      },
+      {
+        "name": "Nifty Metal",
+        "pct": -1.27
+      },
+      {
+        "name": "Nifty Realty",
+        "pct": -1.39
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Realty",
+      "leader": "Nifty IT",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.84,
-    "bias": "positive",
+    "biasScore": -0.52,
+    "bias": "negative",
     "news": [
       {
-        "t": "Share Market Today: Nifty 50, Bank Nifty | July 10, 2026 - Liquide Blog",
+        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 13 July - livemint.com",
         "tone": "neu"
       },
       {
-        "t": "Stock Market Today, July 10, 2026: Sensex Zooms 712 points, Nifty Surges 210 points at Open, Tracking Firm Asia, Wall Street Even as Iran War Tension Rises - HDFC Sky",
-        "tone": "pos"
-      },
-      {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 10 July - livemint.com",
+        "t": "Stock Markets Today: Sensex, Nifty Slump on West Asia Tensions, Oil Price Rise - Rediff",
         "tone": "neu"
       },
       {
-        "t": "Sensex Today Rallies 828 Points Higher | Nifty Above 24,200 | 5 Reasons Why Indian Share Markets Are Falling - Equitymaster",
+        "t": "Sensex Today Trades Lower | Nifty Below 24,100 | Metal Stocks Bleed - Equitymaster",
         "tone": "neu"
       },
       {
-        "t": "Sensex, Nifty Rally 2nd Day on IT Stocks, TCS Earnings - Rediff MoneyWiz",
-        "tone": "pos"
+        "t": "Sensex falls 670 points, Nifty slips as US-Iran tensions and rising oil prices weigh on markets - ChiniMandi",
+        "tone": "neg"
+      },
+      {
+        "t": "Stock market today: Gift Nifty hints a gap-down start; eight day trading stocks to buy on Monday, 13 July - livemint.com",
+        "tone": "neg"
       }
     ]
   },
@@ -491,37 +491,37 @@
         "openTrades": [
           {
             "name": "Stylam Industrie",
-            "ret": 6.76,
+            "ret": 7.77,
             "days": 2
           },
           {
             "name": "Varroc Engineer",
-            "ret": 3.88,
+            "ret": 4.75,
+            "days": 1
+          },
+          {
+            "name": "Accent Microcell",
+            "ret": 4.67,
             "days": 1
           },
           {
             "name": "KSB",
-            "ret": 1.48,
-            "days": 2
-          },
-          {
-            "name": "Privi Speci.",
-            "ret": 0.76,
-            "days": 2
-          },
-          {
-            "name": "Accent Microcell",
-            "ret": 0.48,
-            "days": 1
-          },
-          {
-            "name": "Grindwell Norton",
-            "ret": 0.41,
+            "ret": 2.84,
             "days": 2
           },
           {
             "name": "Pricol Ltd",
-            "ret": 0.37,
+            "ret": -0.09,
+            "days": 2
+          },
+          {
+            "name": "Privi Speci.",
+            "ret": -0.5,
+            "days": 2
+          },
+          {
+            "name": "Grindwell Norton",
+            "ret": -0.82,
             "days": 2
           }
         ]
