@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-13T13:32:00.928187Z",
+  "generated": "2026-07-14T05:51:00.528791Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,125 +357,125 @@
     }
   ],
   "market": {
-    "generated": "2026-07-13T13:31:53.778257Z",
+    "generated": "2026-07-14T05:50:57.515014Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.17
+        "pct": -0.79
       },
       {
         "name": "Dow",
-        "pct": 0.25
+        "pct": -0.26
       },
       {
         "name": "Nasdaq",
-        "pct": -0.59
+        "pct": -1.55
       },
       {
         "name": "Nikkei",
-        "pct": -1.92
+        "pct": 0.73
       },
       {
         "name": "Hang Seng",
-        "pct": 0.16
+        "pct": 0.33
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 3.16
+        "pct": 1.1
       },
       {
         "name": "WTI",
-        "pct": 3.01
+        "pct": 1.15
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.23
+        "pct": 0.83
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 8.41
+        "pct": 1.52
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.06,
-        "w1": -0.85
+        "d1": -0.4,
+        "w1": -1.12
       },
       {
         "name": "Nifty 50",
-        "d1": 0.02,
-        "w1": -0.9
+        "d1": -0.37,
+        "w1": -1.14
       }
     ],
     "sectors": [
       {
-        "name": "Nifty IT",
-        "pct": 3.59
-      },
-      {
-        "name": "Nifty Auto",
-        "pct": 0.45
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": 0.15
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": -0.06
-      },
-      {
         "name": "Nifty Pharma",
-        "pct": -0.12
-      },
-      {
-        "name": "Nifty Realty",
-        "pct": -0.15
+        "pct": 0.9
       },
       {
         "name": "Nifty Metal",
-        "pct": -0.69
+        "pct": 0.49
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": 0.13
+      },
+      {
+        "name": "Nifty IT",
+        "pct": -0.16
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -0.92
+      },
+      {
+        "name": "Nifty Auto",
+        "pct": -0.95
       },
       {
         "name": "Nifty FMCG",
-        "pct": -1.02
+        "pct": -1.21
+      },
+      {
+        "name": "Nifty Realty",
+        "pct": -1.83
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty IT",
+      "leader": "Nifty Pharma",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.57,
+    "biasScore": -0.72,
     "bias": "negative",
     "news": [
       {
-        "t": "Stock Market Mid-Day report, July 13, 2026: Sensex, Nifty Pare Early Losses to Trade Near Flat at Midday as IT Stocks Buck Hormuz Rising Tension - HDFC Sky",
+        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 14 July - livemint.com",
+        "tone": "neu"
+      },
+      {
+        "t": "Indian Markets Tumble: Sensex Drops 553 Pts, Oil Prices Soar - Rediff MoneyWiz",
         "tone": "neg"
       },
       {
-        "t": "BSE Sensex Today: 5 Reasons Why Market Fell and Recovered - Sahi",
-        "tone": "pos"
-      },
-      {
-        "t": "Share Market Today: Nifty 50, Bank Nifty | July 13, 2026 - Liquide Blog",
+        "t": "Sensex Today Trades Lower | Nifty Below 24,150 | Bajaj Finance &amp; HCL Tech Top Losers - Equitymaster",
         "tone": "neu"
       },
       {
-        "t": "Sensex settles 750 pts higher from day's low, Nifty ends above 24,200: Four key reasons behind markets... - Moneycontrol.com",
-        "tone": "pos"
+        "t": "Overnight Stock Market Movements: Key Developments - Equitypandit",
+        "tone": "neu"
       },
       {
-        "t": "Stock market today: Sensex, Nifty 50 end flat; IT stocks shine - livemint.com",
-        "tone": "neu"
+        "t": "Why Is Share Market Falling Today? Key Reasons Behind Sensex, Nifty Decline On July 14 - News18",
+        "tone": "neg"
       }
     ]
   },
@@ -491,7 +491,7 @@
         "openTrades": [
           {
             "name": "Stylam Industrie",
-            "ret": 5.48,
+            "ret": 4.94,
             "days": 2
           },
           {
@@ -501,27 +501,27 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 3.63,
+            "ret": 3.27,
             "days": 1
           },
           {
-            "name": "KSB",
-            "ret": 1.79,
+            "name": "Privi Speci.",
+            "ret": 1.41,
             "days": 2
           },
           {
-            "name": "Privi Speci.",
-            "ret": -0.36,
+            "name": "KSB",
+            "ret": 0.39,
             "days": 2
           },
           {
             "name": "Pricol Ltd",
-            "ret": -0.61,
+            "ret": -1.58,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": -0.77,
+            "ret": -2.99,
             "days": 2
           }
         ]
