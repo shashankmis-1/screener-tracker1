@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-17T12:14:45.807593Z",
+  "generated": "2026-07-20T06:32:11.354358Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,19 +357,19 @@
     }
   ],
   "market": {
-    "generated": "2026-07-17T12:14:42.667574Z",
+    "generated": "2026-07-20T06:32:01.610915Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.51
+        "pct": -1.01
       },
       {
         "name": "Dow",
-        "pct": -0.2
+        "pct": -0.77
       },
       {
         "name": "Nasdaq",
-        "pct": -1.47
+        "pct": -1.4
       },
       {
         "name": "Nikkei",
@@ -377,105 +377,105 @@
       },
       {
         "name": "Hang Seng",
-        "pct": -1.78
+        "pct": 1.83
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 2.14
+        "pct": 3.34
       },
       {
         "name": "WTI",
-        "pct": 1.56
+        "pct": 2.05
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.24
+        "pct": -0.14
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 2.1
+        "pct": 2.03
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 1.25,
-        "w1": 0.75
+        "d1": -0.73,
+        "w1": -0.04
       },
       {
         "name": "Nifty 50",
-        "d1": 1.09,
-        "w1": 0.53
+        "d1": -0.62,
+        "w1": -0.11
       }
     ],
     "sectors": [
       {
-        "name": "Nifty IT",
-        "pct": 1.75
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": 1.63
-      },
-      {
-        "name": "Nifty Auto",
-        "pct": 0.89
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": 0.09
-      },
-      {
-        "name": "Nifty FMCG",
-        "pct": -1.14
-      },
-      {
         "name": "Nifty Pharma",
-        "pct": -1.4
+        "pct": 1.24
       },
       {
         "name": "Nifty Metal",
-        "pct": -1.99
+        "pct": 0.9
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": 0.74
+      },
+      {
+        "name": "Nifty FMCG",
+        "pct": 0.38
+      },
+      {
+        "name": "Nifty IT",
+        "pct": -0.17
+      },
+      {
+        "name": "Nifty Auto",
+        "pct": -0.72
       },
       {
         "name": "Nifty Realty",
-        "pct": -2.12
+        "pct": -0.81
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -1.47
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty IT",
+      "leader": "Nifty Pharma",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -1.6,
+    "biasScore": -1.08,
     "bias": "negative",
     "news": [
       {
-        "t": "Sensex, Nifty surged nearly 4% following announcement of ceasefire agreement between Washington and Tehran - News On AIR",
-        "tone": "pos"
-      },
-      {
-        "t": "Stock market rally: Sensex rises over 750 points, Nifty50 crosses 24,250 - top reasons for rise - The Times of India",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex ends nearly 1,000 points up: 3 reasons why stock market jumped today - India Today",
-        "tone": "pos"
-      },
-      {
-        "t": "Share Market Today: Nifty 50, Bank Nifty | July 17, 2026 - Liquide Blog",
+        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 20 July - livemint.com",
         "tone": "neu"
       },
       {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 17 July - livemint.com",
+        "t": "Sensex cracks 700 pts intraday, Nifty at 24,150: What's dragging markets? - Business Standard",
         "tone": "neu"
+      },
+      {
+        "t": "Stock Markets Today: Sensex, Nifty Tumble, HDFC Bank, Oil Spike Hurt Sentiments - Rediff",
+        "tone": "neg"
+      },
+      {
+        "t": "Stock Market Outlook Today, June 29: Sensex, Nifty Likely to Open Positively as Rupee Strengthens, Crude Rises - Goodreturns",
+        "tone": "pos"
+      },
+      {
+        "t": "Markets take a breather; Sensex slips 1,236 pts, Nifty down 365 amid global tensions - DD News",
+        "tone": "neg"
       }
     ]
   },
@@ -491,37 +491,37 @@
         "openTrades": [
           {
             "name": "Stylam Industrie",
-            "ret": 5.64,
+            "ret": 10.12,
             "days": 2
           },
           {
             "name": "Accent Microcell",
-            "ret": 3.72,
-            "days": 1
-          },
-          {
-            "name": "Varroc Engineer",
-            "ret": 1.8,
+            "ret": 4.66,
             "days": 1
           },
           {
             "name": "Grindwell Norton",
-            "ret": 1.79,
+            "ret": 4.56,
             "days": 2
           },
           {
             "name": "Privi Speci.",
-            "ret": 1.14,
+            "ret": 0.88,
             "days": 2
           },
           {
+            "name": "Varroc Engineer",
+            "ret": 0.68,
+            "days": 1
+          },
+          {
             "name": "Pricol Ltd",
-            "ret": -1.54,
+            "ret": -2.02,
             "days": 2
           },
           {
             "name": "KSB",
-            "ret": -2.48,
+            "ret": -2.76,
             "days": 2
           }
         ]
