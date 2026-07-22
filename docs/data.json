@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-22T06:09:55.761037Z",
+  "generated": "2026-07-22T12:43:32.942664Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,7 +357,7 @@
     }
   ],
   "market": {
-    "generated": "2026-07-22T06:09:52.916806Z",
+    "generated": "2026-07-22T12:43:24.013805Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -373,108 +373,108 @@
       },
       {
         "name": "Nikkei",
-        "pct": -0.12
+        "pct": -0.18
       },
       {
         "name": "Hang Seng",
-        "pct": -1.12
+        "pct": -0.95
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 0.99
+        "pct": 3.14
       },
       {
         "name": "WTI",
-        "pct": 0.27
+        "pct": 2.14
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.02
+        "pct": 0.07
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 2.22
+        "pct": 5.5
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.73,
-        "w1": -0.37
+        "d1": -0.92,
+        "w1": -0.56
       },
       {
         "name": "Nifty 50",
-        "d1": -0.6,
-        "w1": -0.15
+        "d1": -0.79,
+        "w1": -0.34
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Auto",
-        "pct": 1.32
-      },
-      {
         "name": "Nifty Metal",
-        "pct": 1.2
+        "pct": 1.01
       },
       {
         "name": "Nifty FMCG",
-        "pct": 0.86
+        "pct": 1.0
+      },
+      {
+        "name": "Nifty Auto",
+        "pct": 0.85
       },
       {
         "name": "Nifty Energy",
-        "pct": 0.71
-      },
-      {
-        "name": "Nifty IT",
-        "pct": -0.75
+        "pct": 0.4
       },
       {
         "name": "Nifty Bank",
-        "pct": -0.94
+        "pct": -1.23
       },
       {
         "name": "Nifty Pharma",
-        "pct": -1.19
+        "pct": -1.31
+      },
+      {
+        "name": "Nifty IT",
+        "pct": -1.5
       },
       {
         "name": "Nifty Realty",
-        "pct": -1.2
+        "pct": -1.71
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Auto",
+      "leader": "Nifty Metal",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.34,
+    "biasScore": 0.32,
     "bias": "positive",
     "news": [
       {
-        "t": "Sensex tanks over 500 points: 3 reasons why the stock market is falling today - India Today",
+        "t": "Why did the stock market crash today? BSE Sensex ends over 700 points down, Nifty50 below 24,000; top rea - The Times of India",
         "tone": "neg"
       },
       {
-        "t": "Stock Markets Today: Sensex, Nifty down on high crude prices and selling in bank stocks - Rediff",
+        "t": "Nifty, Sensex decline for third day on higher crude oil prices, selling in bank stocks - The Hindu",
         "tone": "neu"
       },
       {
-        "t": "Sensex crashes over 700 points, Nifty 50 drops below 24,000- key factors behind stock market fall explained - livemint.com",
+        "t": "Sensex crashes over 700 points, Nifty 50 ends below 24,000- key factors behind stock market fall explained - livemint.com",
         "tone": "neg"
       },
       {
-        "t": "Sensex falls over 400 points, Nifty slips below 24,150 amid crude surge, pharma stocks under pressure following Trump's tariff announcement - ChiniMandi",
+        "t": "Share Market Today: Nifty 50, Bank Nifty | July 22, 2026 - Liquide Blog",
         "tone": "neu"
       },
       {
-        "t": "Why Is Share Market Falling Today? Know Key Reasons Behind Sensex, Nifty Crash on July 22 - News18",
+        "t": "Sensex tanks 700 points: 3 reasons why the stock market is falling today - India Today",
         "tone": "neg"
       }
     ]
@@ -491,37 +491,37 @@
         "openTrades": [
           {
             "name": "Stylam Industrie",
-            "ret": 14.69,
+            "ret": 16.59,
             "days": 2
           },
           {
             "name": "Accent Microcell",
-            "ret": 7.54,
+            "ret": 3.87,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 2.39,
+            "ret": 1.95,
             "days": 1
           },
           {
             "name": "Privi Speci.",
-            "ret": 1.71,
+            "ret": 1.14,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": -0.68,
-            "days": 2
-          },
-          {
-            "name": "KSB",
-            "ret": -3.1,
+            "ret": -1.43,
             "days": 2
           },
           {
             "name": "Pricol Ltd",
-            "ret": -3.19,
+            "ret": -3.14,
+            "days": 2
+          },
+          {
+            "name": "KSB",
+            "ret": -3.69,
             "days": 2
           }
         ]
