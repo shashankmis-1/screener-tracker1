@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-21T12:26:17.302387Z",
+  "generated": "2026-07-22T06:09:55.761037Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,124 +357,124 @@
     }
   ],
   "market": {
-    "generated": "2026-07-21T12:26:09.885192Z",
+    "generated": "2026-07-22T06:09:52.916806Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.19
+        "pct": 0.89
       },
       {
         "name": "Dow",
-        "pct": -0.59
+        "pct": 0.74
       },
       {
         "name": "Nasdaq",
-        "pct": -0.05
+        "pct": 1.29
       },
       {
         "name": "Nikkei",
-        "pct": 3.26
+        "pct": -0.12
       },
       {
         "name": "Hang Seng",
-        "pct": -0.04
+        "pct": -1.12
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 1.54
+        "pct": 0.99
       },
       {
         "name": "WTI",
-        "pct": 0.7
+        "pct": 0.27
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.05
+        "pct": -0.02
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -2.93
+        "pct": 2.22
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.31,
-        "w1": 0.54
+        "d1": -0.73,
+        "w1": -0.37
       },
       {
         "name": "Nifty 50",
-        "d1": -0.21,
-        "w1": 0.56
+        "d1": -0.6,
+        "w1": -0.15
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Metal",
-        "pct": 1.5
-      },
-      {
-        "name": "Nifty Realty",
-        "pct": 0.94
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": 0.79
-      },
-      {
         "name": "Nifty Auto",
-        "pct": 0.67
+        "pct": 1.32
+      },
+      {
+        "name": "Nifty Metal",
+        "pct": 1.2
       },
       {
         "name": "Nifty FMCG",
-        "pct": 0.35
+        "pct": 0.86
       },
       {
-        "name": "Nifty Pharma",
-        "pct": 0.34
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": -0.19
+        "name": "Nifty Energy",
+        "pct": 0.71
       },
       {
         "name": "Nifty IT",
-        "pct": -0.61
+        "pct": -0.75
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -0.94
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": -1.19
+      },
+      {
+        "name": "Nifty Realty",
+        "pct": -1.2
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Metal",
+      "leader": "Nifty Auto",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.48,
+    "biasScore": 0.34,
     "bias": "positive",
     "news": [
       {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 21 July - livemint.com",
-        "tone": "neu"
-      },
-      {
-        "t": "Sensex Today Ends 238 Points Lower | Nifty Below 24,200 | HDFC Bank &amp; Infosys Top Losers - Equitymaster",
-        "tone": "neu"
-      },
-      {
-        "t": "Sensex Falls 238 Points, Nifty Slips as Profit Booking and Geopolitical Concerns Weigh on Markets - Open Magazine",
+        "t": "Sensex tanks over 500 points: 3 reasons why the stock market is falling today - India Today",
         "tone": "neg"
       },
       {
-        "t": "Share Market Today: Nifty 50, Bank Nifty | July 21, 2026 - Liquide Blog",
+        "t": "Stock Markets Today: Sensex, Nifty down on high crude prices and selling in bank stocks - Rediff",
         "tone": "neu"
       },
       {
-        "t": "Sensex, Nifty open lower as HDFC Bank drags; IT stocks cap losses - India Today",
+        "t": "Sensex crashes over 700 points, Nifty 50 drops below 24,000- key factors behind stock market fall explained - livemint.com",
+        "tone": "neg"
+      },
+      {
+        "t": "Sensex falls over 400 points, Nifty slips below 24,150 amid crude surge, pharma stocks under pressure following Trump's tariff announcement - ChiniMandi",
+        "tone": "neu"
+      },
+      {
+        "t": "Why Is Share Market Falling Today? Know Key Reasons Behind Sensex, Nifty Crash on July 22 - News18",
         "tone": "neg"
       }
     ]
@@ -491,7 +491,7 @@
         "openTrades": [
           {
             "name": "Stylam Industrie",
-            "ret": 14.1,
+            "ret": 14.69,
             "days": 2
           },
           {
@@ -501,27 +501,27 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 3.36,
+            "ret": 2.39,
             "days": 1
           },
           {
-            "name": "Grindwell Norton",
-            "ret": 2.2,
+            "name": "Privi Speci.",
+            "ret": 1.71,
             "days": 2
           },
           {
-            "name": "Privi Speci.",
-            "ret": 1.08,
+            "name": "Grindwell Norton",
+            "ret": -0.68,
             "days": 2
           },
           {
             "name": "KSB",
-            "ret": -2.13,
+            "ret": -3.1,
             "days": 2
           },
           {
             "name": "Pricol Ltd",
-            "ret": -2.24,
+            "ret": -3.19,
             "days": 2
           }
         ]
