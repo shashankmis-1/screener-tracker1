@@ -6,12 +6,16 @@
       "rec": "core",
       "entryDate": "2026-07-07",
       "entryPrice": 926.55,
-      "status": "open",
+      "status": "closed",
       "daysHeld": 2,
-      "lastPrice": 854.65,
-      "lastReturn": -7.76,
-      "minReturn": -7.76,
-      "snap": {}
+      "lastPrice": 846.75,
+      "lastReturn": -8.61,
+      "minReturn": -8.61,
+      "snap": {},
+      "exitReason": "stop",
+      "closeDate": "2026-07-09",
+      "finalReturn": -8.0,
+      "finalSensexReturn": null
     },
     {
       "name": "Pricol Ltd",
@@ -21,8 +25,8 @@
       "entryPrice": 624.95,
       "status": "open",
       "daysHeld": 2,
-      "lastPrice": 662.2,
-      "lastReturn": 5.96,
+      "lastPrice": 665.1,
+      "lastReturn": 6.42,
       "minReturn": -3.19,
       "snap": {}
     },
@@ -34,8 +38,8 @@
       "entryPrice": 2050.1,
       "status": "open",
       "daysHeld": 2,
-      "lastPrice": 1992.0,
-      "lastReturn": -2.83,
+      "lastPrice": 2043.3,
+      "lastReturn": -0.33,
       "minReturn": -2.99,
       "snap": {}
     },
@@ -47,8 +51,8 @@
       "entryPrice": 3635.0,
       "status": "open",
       "daysHeld": 2,
-      "lastPrice": 3620.6,
-      "lastReturn": -0.4,
+      "lastPrice": 3629.2,
+      "lastReturn": -0.16,
       "minReturn": -2.44,
       "snap": {}
     },
@@ -60,8 +64,8 @@
       "entryPrice": 3076.95,
       "status": "open",
       "daysHeld": 2,
-      "lastPrice": 3396.4,
-      "lastReturn": 10.38,
+      "lastPrice": 3407.3,
+      "lastReturn": 10.74,
       "minReturn": -0.63,
       "snap": {}
     },
@@ -73,8 +77,8 @@
       "entryPrice": 490.55,
       "status": "open",
       "daysHeld": 1,
-      "lastPrice": 494.95,
-      "lastReturn": 0.9,
+      "lastPrice": 504.25,
+      "lastReturn": 2.79,
       "minReturn": 0.0,
       "snap": {}
     },
@@ -86,8 +90,8 @@
       "entryPrice": 636.75,
       "status": "open",
       "daysHeld": 1,
-      "lastPrice": 660.9,
-      "lastReturn": 3.79,
+      "lastPrice": 658.7,
+      "lastReturn": 3.45,
       "minReturn": -0.1,
       "snap": {}
     }
