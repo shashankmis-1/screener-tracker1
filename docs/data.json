@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28T12:57:48.985294Z",
+  "generated": "2026-07-29T06:13:24.276634Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,75 +357,75 @@
     }
   ],
   "market": {
-    "generated": "2026-07-28T12:57:43.305583Z",
+    "generated": "2026-07-29T06:13:21.379656Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.02
+        "pct": 0.21
       },
       {
         "name": "Dow",
-        "pct": 0.51
+        "pct": 1.03
       },
       {
         "name": "Nasdaq",
-        "pct": -0.18
+        "pct": -0.22
       },
       {
         "name": "Nikkei",
-        "pct": -3.95
+        "pct": -1.7
       },
       {
         "name": "Hang Seng",
-        "pct": 0.41
+        "pct": 1.2
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.13
+        "pct": 3.75
       },
       {
         "name": "WTI",
-        "pct": -1.89
+        "pct": 3.61
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.75
+        "pct": -0.06
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -0.77
+        "pct": -3.8
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.09,
-        "w1": -0.91
+        "d1": 1.11,
+        "w1": 1.13
       },
       {
         "name": "Nifty 50",
-        "d1": -0.04,
-        "w1": -0.84
+        "d1": 1.02,
+        "w1": 0.97
       }
     ],
     "sectors": [
       {
         "name": "Nifty IT",
-        "pct": 3.32
+        "pct": 2.8
       },
       {
         "name": "Nifty Pharma",
-        "pct": 0.2
+        "pct": 1.13
       },
       {
         "name": "Nifty Bank",
-        "pct": -0.58
+        "pct": 0.73
       }
     ],
     "sectorTrend": {
@@ -434,28 +434,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.64,
-    "bias": "negative",
+    "biasScore": 0.1,
+    "bias": "mixed",
     "news": [
       {
-        "t": "Indian stock markets open higher; global cues support sentiment - DD News",
+        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 29 July - livemint.com",
+        "tone": "neu"
+      },
+      {
+        "t": "Sensex jumps 700 points: 3 reasons why the stock market is rising today - India Today",
         "tone": "pos"
       },
       {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 28 July - livemint.com",
-        "tone": "neu"
+        "t": "Indian Stock Markets Rebound; Sensex Jumps 726 Points - Rediff MoneyWiz",
+        "tone": "pos"
       },
       {
-        "t": "Sensex, Nifty End Flat Amid Global Central Bank Caution - Rediff MoneyWiz",
-        "tone": "neu"
+        "t": "Sensex zooms 800 points intraday, Nifty tops 24,200: What's behind rally? - Business Standard",
+        "tone": "pos"
       },
       {
-        "t": "Stock market ends flat; Sensex dips nearly 70 points - The Hindu",
-        "tone": "neu"
-      },
-      {
-        "t": "Share Market Today: Nifty 50, Bank Nifty | July 28, 2026 - Liquide Blog",
-        "tone": "neu"
+        "t": "Sensex Today Rallies 735 Points | Nifty Above 24,000 | Infosys &amp; HDFC Bank Top Gainers - Equitymaster",
+        "tone": "pos"
       }
     ]
   },
@@ -471,17 +471,17 @@
         "openTrades": [
           {
             "name": "Stylam Industrie",
-            "ret": 10.74,
+            "ret": 9.83,
             "days": 2
           },
           {
             "name": "Pricol Ltd",
-            "ret": 6.42,
+            "ret": 5.62,
             "days": 2
           },
           {
             "name": "Varroc Engineer",
-            "ret": 3.45,
+            "ret": 3.1,
             "days": 1
           },
           {
@@ -490,13 +490,13 @@
             "days": 1
           },
           {
-            "name": "Privi Speci.",
-            "ret": -0.16,
+            "name": "Grindwell Norton",
+            "ret": 0.27,
             "days": 2
           },
           {
-            "name": "Grindwell Norton",
-            "ret": -0.33,
+            "name": "Privi Speci.",
+            "ret": -0.19,
             "days": 2
           }
         ]
