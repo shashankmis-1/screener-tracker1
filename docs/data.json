@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-03T06:43:39.370019Z",
+  "generated": "2026-08-03T13:44:10.388158Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,75 +357,75 @@
     }
   ],
   "market": {
-    "generated": "2026-08-03T06:43:36.331578Z",
+    "generated": "2026-08-03T13:44:05.534085Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.7
+        "pct": 0.63
       },
       {
         "name": "Dow",
-        "pct": 0.53
+        "pct": 1.1
       },
       {
         "name": "Nasdaq",
-        "pct": 1.0
+        "pct": 0.74
       },
       {
         "name": "Nikkei",
-        "pct": -1.01
+        "pct": -0.94
       },
       {
         "name": "Hang Seng",
-        "pct": 0.27
+        "pct": 0.48
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 1.22
+        "pct": -7.73
       },
       {
         "name": "WTI",
-        "pct": -6.42
+        "pct": -6.9
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.45
+        "pct": -0.37
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 1.96
+        "pct": 1.4
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.81,
-        "w1": 2.46
+        "d1": 0.7,
+        "w1": 2.35
       },
       {
         "name": "Nifty 50",
-        "d1": 0.88,
-        "w1": 2.5
+        "d1": 1.6,
+        "w1": 3.24
       }
     ],
     "sectors": [
       {
         "name": "Nifty IT",
-        "pct": 1.99
+        "pct": 3.28
       },
       {
         "name": "Nifty Bank",
-        "pct": 0.95
+        "pct": 1.72
       },
       {
         "name": "Nifty Pharma",
-        "pct": 0.34
+        "pct": 0.48
       }
     ],
     "sectorTrend": {
@@ -434,28 +434,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.3,
+    "biasScore": 0.4,
     "bias": "positive",
     "news": [
       {
-        "t": "Markets trade higher as Nifty crosses 24,500, Sensex up 0.7% - The Indian Express",
-        "tone": "pos"
-      },
-      {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 3 August - livemint.com",
+        "t": "India's Nifty and Sensex diverge following launch of new auction mechanism - Reuters",
         "tone": "neu"
       },
       {
-        "t": "Sensex jumps 800 points intraday, Nifty at 24,590: What's behind the rally? - Business Standard",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex, Nifty surged nearly 4% following announcement of ceasefire agreement between Washington and Tehran - News On AIR",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex, Nifty Surge: Crude Oil Drop Fuels Indian Markets - Rediff MoneyWiz",
+        "t": "Stock markets take winning run to 4th day as crude oil prices drop sharply; Nifty surges 1.6% - The Hindu",
         "tone": "neu"
+      },
+      {
+        "t": "Sensex jumps over 500 points, Nifty 50 ends above 24,750; investors earn \u20b94 lakh crore in a day - livemint.com",
+        "tone": "pos"
+      },
+      {
+        "t": "Share Market Today: Nifty 50, Bank Nifty | Aug 03, 2026 - Liquide Blog",
+        "tone": "neu"
+      },
+      {
+        "t": "Markets Extend Winning Streak for Fourth Day; Sensex Rises 544 Pts, Nifty Nears 24,800 - The Indian Awaaz",
+        "tone": "pos"
       }
     ]
   },
@@ -471,22 +471,22 @@
         "openTrades": [
           {
             "name": "Pricol Ltd",
-            "ret": 17.05,
+            "ret": 17.27,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 11.41,
+            "ret": 12.22,
             "days": 2
           },
           {
             "name": "Varroc Engineer",
-            "ret": 9.4,
+            "ret": 7.88,
             "days": 1
           },
           {
             "name": "Grindwell Norton",
-            "ret": 2.63,
+            "ret": 1.84,
             "days": 2
           },
           {
@@ -496,7 +496,7 @@
           },
           {
             "name": "Privi Speci.",
-            "ret": 0.14,
+            "ret": -1.05,
             "days": 2
           }
         ]
