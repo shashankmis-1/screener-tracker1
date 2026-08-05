@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-05T06:05:50.052090Z",
+  "generated": "2026-08-05T12:58:18.046172Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,7 +357,7 @@
     }
   ],
   "market": {
-    "generated": "2026-08-05T06:05:47.024155Z",
+    "generated": "2026-08-05T12:58:14.859152Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -373,89 +373,89 @@
       },
       {
         "name": "Nikkei",
-        "pct": 3.62
+        "pct": 3.66
       },
       {
         "name": "Hang Seng",
-        "pct": 0.12
+        "pct": 0.24
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -6.16
+        "pct": 1.18
       },
       {
         "name": "WTI",
-        "pct": -6.82
+        "pct": 0.61
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.23
+        "pct": -0.22
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -0.37
+        "pct": -1.07
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.45,
-        "w1": 1.45
+        "d1": 0.19,
+        "w1": 1.19
       },
       {
         "name": "Nifty 50",
-        "d1": -0.11,
-        "w1": 1.4
+        "d1": 0.04,
+        "w1": 1.54
       }
     ],
     "sectors": [
       {
+        "name": "Nifty Pharma",
+        "pct": -0.13
+      },
+      {
         "name": "Nifty IT",
-        "pct": 0.01
+        "pct": -0.16
       },
       {
         "name": "Nifty Bank",
-        "pct": -0.35
-      },
-      {
-        "name": "Nifty Pharma",
-        "pct": -0.4
+        "pct": -0.29
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty IT",
+      "leader": "Nifty Pharma",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 1.97,
+    "biasScore": 2.0,
     "bias": "positive",
     "news": [
       {
-        "t": "India's Nifty flat, Sensex holds gains after RBI rate pause - Reuters",
+        "t": "Indian share benchmarks inch higher after RBI rate pause - Reuters",
         "tone": "pos"
       },
       {
-        "t": "Sensex Today Trades Higher | Nifty Below 24,650 | RBI MPC keeps repo rate unchanged at 5.25% - Equitymaster",
-        "tone": "pos"
-      },
-      {
-        "t": "Stock market today: Gift Nifty hints a gap-up start; eight day trading stocks to buy on Wednesday, 5 August - livemint.com",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex, Nifty surged nearly 4% following announcement of ceasefire agreement between Washington and Tehran - News On AIR",
-        "tone": "pos"
-      },
-      {
-        "t": "Overnight Stock Market Movements: Key Developments - Equitypandit",
+        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 5 August - TradingView",
         "tone": "neu"
+      },
+      {
+        "t": "Share Market Today: Nifty 50, Bank Nifty | Aug 05, 2026 - Liquide Blog",
+        "tone": "neu"
+      },
+      {
+        "t": "Sensex Today Ends 152 Points Higher | Nifty Above 24,620 | Hindalco &amp; NTPC Top Gainers - Equitymaster",
+        "tone": "pos"
+      },
+      {
+        "t": "Stock Market Today: Sensex Ends Up 152 Points, Nifty Settles Above 24,500; Grasim, Shriram Finance Top Gainers - APAC Media",
+        "tone": "pos"
       }
     ]
   },
@@ -471,32 +471,32 @@
         "openTrades": [
           {
             "name": "Pricol Ltd",
-            "ret": 23.14,
+            "ret": 22.68,
             "days": 2
           },
           {
             "name": "Varroc Engineer",
-            "ret": 14.44,
+            "ret": 12.7,
             "days": 1
           },
           {
             "name": "Stylam Industrie",
-            "ret": 14.23,
+            "ret": 12.64,
             "days": 2
           },
           {
             "name": "Accent Microcell",
-            "ret": 3.56,
+            "ret": 2.79,
             "days": 1
           },
           {
             "name": "Grindwell Norton",
-            "ret": 2.52,
+            "ret": 2.47,
             "days": 2
           },
           {
             "name": "Privi Speci.",
-            "ret": 2.47,
+            "ret": 0.36,
             "days": 2
           }
         ]
