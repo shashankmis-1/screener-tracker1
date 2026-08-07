@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T13:00:04.724997Z",
+  "generated": "2026-08-07T05:12:21.620076Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,104 +357,104 @@
     }
   ],
   "market": {
-    "generated": "2026-08-06T13:00:01.307350Z",
+    "generated": "2026-08-07T05:12:16.189651Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.17
+        "pct": -0.18
       },
       {
         "name": "Dow",
-        "pct": 0.49
+        "pct": -0.85
       },
       {
         "name": "Nasdaq",
-        "pct": -0.83
+        "pct": -0.06
       },
       {
         "name": "Nikkei",
-        "pct": -0.93
+        "pct": -0.56
       },
       {
         "name": "Hang Seng",
-        "pct": -1.49
+        "pct": 0.15
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 1.52
+        "pct": 1.6
       },
       {
         "name": "WTI",
-        "pct": 1.34
+        "pct": 1.35
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.12
+        "pct": 0.21
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 0.81
+        "pct": 2.47
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.48,
-        "w1": 1.32
+        "d1": -0.51,
+        "w1": 0.58
       },
       {
         "name": "Nifty 50",
-        "d1": 0.05,
-        "w1": 1.31
+        "d1": -0.28,
+        "w1": 0.75
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Bank",
-        "pct": 0.56
+        "name": "Nifty IT",
+        "pct": 1.02
       },
       {
         "name": "Nifty Pharma",
-        "pct": 0.0
+        "pct": -0.18
       },
       {
-        "name": "Nifty IT",
-        "pct": -0.95
+        "name": "Nifty Bank",
+        "pct": -0.43
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Bank",
+      "leader": "Nifty IT",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.65,
+    "biasScore": -0.4,
     "bias": "negative",
     "news": [
       {
-        "t": "Share Market Today: Nifty 50, Bank Nifty | Aug 06, 2026 - blog.liquide.life",
+        "t": "S&amp;P BSE SENSEX (^BSESN) charts, data and news - Yahoo Finance UK",
         "tone": "neu"
       },
       {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 6 August - TradingView",
+        "t": "Sensex Today Trades Lower | Nifty Below 24,650 | Bajaj Finance Share Price Drops 5% - Equitymaster",
+        "tone": "neg"
+      },
+      {
+        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 7 August - livemint.com",
         "tone": "neu"
       },
       {
-        "t": "Stock Market Today: Sensex Jumps 373 Pts, Nifty Ends Flat as Bank Stocks, Reliance Lead Gains - APAC Media",
-        "tone": "pos"
+        "t": "Indian stock markets open with losses as oil prices rise: Banking shares face selling - Bhaskar English",
+        "tone": "neu"
       },
       {
-        "t": "Sensex Today Ends 374 Points Higher | Nifty Above 24,600 | Navin Fluorine Up 13% - equitymaster.com",
-        "tone": "pos"
-      },
-      {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 6 August - livemint.com",
+        "t": "Gift Nifty, US Markets To Oil Prices - Five Things Investors Must Know Ahead Of Indian Stock Market Opening Today - NDTV Profit",
         "tone": "neu"
       }
     ]
@@ -470,19 +470,19 @@
         "avgLoss": -8.0,
         "openTrades": [
           {
+            "name": "Varroc Engineer",
+            "ret": 25.69,
+            "days": 1
+          },
+          {
             "name": "Pricol Ltd",
-            "ret": 21.84,
+            "ret": 18.96,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 16.81,
+            "ret": 15.18,
             "days": 2
-          },
-          {
-            "name": "Varroc Engineer",
-            "ret": 15.88,
-            "days": 1
           },
           {
             "name": "Accent Microcell",
@@ -491,12 +491,12 @@
           },
           {
             "name": "Grindwell Norton",
-            "ret": 2.8,
+            "ret": 3.51,
             "days": 2
           },
           {
             "name": "Privi Speci.",
-            "ret": 0.69,
+            "ret": 0.86,
             "days": 2
           }
         ]
