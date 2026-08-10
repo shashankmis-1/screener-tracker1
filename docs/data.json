@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-10T05:05:15.618227Z",
+  "generated": "2026-08-10T11:52:18.424321Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,7 +357,7 @@
     }
   ],
   "market": {
-    "generated": "2026-08-10T05:05:08.213965Z",
+    "generated": "2026-08-10T11:52:15.308166Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -373,59 +373,59 @@
       },
       {
         "name": "Nikkei",
-        "pct": 1.85
+        "pct": 2.08
       },
       {
         "name": "Hang Seng",
-        "pct": 0.72
+        "pct": 1.05
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 0.53
+        "pct": 1.47
       },
       {
         "name": "WTI",
-        "pct": 0.36
+        "pct": 1.61
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.11
+        "pct": -0.02
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 3.68
+        "pct": 0.7
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.03,
-        "w1": -0.14
+        "d1": 0.06,
+        "w1": -0.12
       },
       {
         "name": "Nifty 50",
-        "d1": 0.06,
-        "w1": -0.76
+        "d1": 0.05,
+        "w1": -0.77
       }
     ],
     "sectors": [
       {
         "name": "Nifty IT",
-        "pct": 1.14
-      },
-      {
-        "name": "Nifty Pharma",
-        "pct": 0.1
+        "pct": 0.27
       },
       {
         "name": "Nifty Bank",
-        "pct": -0.08
+        "pct": -0.1
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": -0.23
       }
     ],
     "sectorTrend": {
@@ -434,28 +434,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.95,
+    "biasScore": 1.07,
     "bias": "positive",
     "news": [
+      {
+        "t": "Share Market Today: Nifty 50, Bank Nifty | Aug 10, 2026 - Liquide Blog",
+        "tone": "neu"
+      },
+      {
+        "t": "Sensex Today Ends Flat | Nifty Above 24,550 | Hitachi Energy Up 10% - Equitymaster",
+        "tone": "pos"
+      },
+      {
+        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 10 August - TradingView",
+        "tone": "neu"
+      },
       {
         "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 10 August - livemint.com",
         "tone": "neu"
       },
       {
-        "t": "Sensex Today Trades Higher | Nifty Above 24,600 | Trent &amp; Titan Company Top Gainers - Equitymaster",
+        "t": "Sensex rises 43 points, Nifty gains marginally amid crude surge - Telangana Today",
         "tone": "pos"
-      },
-      {
-        "t": "Stock market opening: Sensex, Nifty to open higher or lower today? - India Today",
-        "tone": "pos"
-      },
-      {
-        "t": "Stock Markets Today: Sensex, Nifty Dip as Geopolitical Tensions Fuel Crude Price Surge - Rediff",
-        "tone": "pos"
-      },
-      {
-        "t": "Stock market today: Gift Nifty hints a flat start; eight day trading stocks to buy on Monday, 10 August - livemint.com",
-        "tone": "neu"
       }
     ]
   },
@@ -471,17 +471,17 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 30.51,
+            "ret": 29.71,
             "days": 1
           },
           {
-            "name": "Pricol Ltd",
-            "ret": 19.26,
+            "name": "Stylam Industrie",
+            "ret": 18.66,
             "days": 2
           },
           {
-            "name": "Stylam Industrie",
-            "ret": 16.81,
+            "name": "Pricol Ltd",
+            "ret": 17.26,
             "days": 2
           },
           {
@@ -491,12 +491,12 @@
           },
           {
             "name": "Grindwell Norton",
-            "ret": 2.78,
+            "ret": 3.24,
             "days": 2
           },
           {
             "name": "Privi Speci.",
-            "ret": -0.5,
+            "ret": -0.61,
             "days": 2
           }
         ]
