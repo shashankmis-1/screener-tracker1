@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14T05:14:11.046649Z",
+  "generated": "2026-08-14T11:49:56.308555Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,7 +357,7 @@
     }
   ],
   "market": {
-    "generated": "2026-08-14T05:14:07.991521Z",
+    "generated": "2026-08-14T11:49:53.914311Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -373,59 +373,59 @@
       },
       {
         "name": "Nikkei",
-        "pct": 0.33
+        "pct": 0.59
       },
       {
         "name": "Hang Seng",
-        "pct": -0.93
+        "pct": -1.1
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 0.08
+        "pct": -0.06
       },
       {
         "name": "WTI",
-        "pct": 0.2
+        "pct": 0.34
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.06
+        "pct": 0.07
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -0.07
+        "pct": -1.01
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.37,
-        "w1": -0.91
+        "d1": -0.09,
+        "w1": -0.62
       },
       {
         "name": "Nifty 50",
-        "d1": -0.31,
-        "w1": -1.01
+        "d1": -0.12,
+        "w1": -0.83
       }
     ],
     "sectors": [
       {
         "name": "Nifty Bank",
-        "pct": -0.23
-      },
-      {
-        "name": "Nifty Pharma",
-        "pct": -0.37
+        "pct": -0.25
       },
       {
         "name": "Nifty IT",
-        "pct": -0.55
+        "pct": -0.31
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": -0.9
       }
     ],
     "sectorTrend": {
@@ -434,27 +434,27 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.17,
+    "biasScore": 0.18,
     "bias": "mixed",
     "news": [
+      {
+        "t": "Indian Stock Market Next Week, April 13-17: Sensex, Nifty May Consolidate; US-Iran Talks, Q4 Results in Focus - Goodreturns",
+        "tone": "neu"
+      },
       {
         "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 14 August - livemint.com",
         "tone": "neu"
       },
       {
-        "t": "Stock Market Today: Gift Nifty To Trump Tariffs \u2014 Five Key Factors That May Drive Sensex, Nifty 50 on August 14 - NDTV Profit",
+        "t": "Sensex, Nifty End Lower on Geopolitical Uncertainty &amp; Oil - Rediff MoneyWiz",
         "tone": "neu"
       },
       {
-        "t": "Stock Markets Decline: Sensex Down 300 Points on US-Iran Impasse - Rediff MoneyWiz",
-        "tone": "neg"
-      },
-      {
-        "t": "Sensex Today Trades Lower | Nifty Below 24,350 | Tata Steel &amp; Axis Bank Top Losers - Equitymaster",
+        "t": "Share Market Today: Nifty 50, Bank Nifty | Aug 14, 2026 - blog.liquide.life",
         "tone": "neu"
       },
       {
-        "t": "Indian benchmark indices open lower amid range-bound trade; Nifty slips over 75 points - ChiniMandi",
+        "t": "Sensex Today Ends 71 Points Lower | Nifty below 24,400 | ONGC &amp; Hindalco Among Top Losers - Equitymaster",
         "tone": "neu"
       }
     ]
@@ -471,32 +471,32 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 34.63,
+            "ret": 33.16,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 24.35,
+            "ret": 26.74,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 19.11,
+            "ret": 18.36,
             "days": 2
           },
           {
             "name": "Accent Microcell",
-            "ret": 14.25,
+            "ret": 16.06,
             "days": 1
           },
           {
             "name": "Grindwell Norton",
-            "ret": 6.15,
+            "ret": 5.73,
             "days": 2
           },
           {
             "name": "Privi Speci.",
-            "ret": -3.17,
+            "ret": -4.2,
             "days": 2
           }
         ]
