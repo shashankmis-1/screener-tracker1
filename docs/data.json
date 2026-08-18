@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-18T04:06:18.429301Z",
+  "generated": "2026-08-18T11:30:16.815215Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,7 +357,7 @@
     }
   ],
   "market": {
-    "generated": "2026-08-18T04:06:14.668601Z",
+    "generated": "2026-08-18T11:30:13.416930Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -373,59 +373,59 @@
       },
       {
         "name": "Nikkei",
-        "pct": -1.09
+        "pct": -1.82
       },
       {
         "name": "Hang Seng",
-        "pct": 0.7
+        "pct": 1.41
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 1.67
+        "pct": 0.03
       },
       {
         "name": "WTI",
-        "pct": 1.42
+        "pct": -0.51
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.21
+        "pct": 0.23
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 1.06
+        "pct": 0.69
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.69,
-        "w1": -1.36
+        "d1": -0.99,
+        "w1": -1.66
       },
       {
         "name": "Nifty 50",
-        "d1": -0.54,
-        "w1": -1.42
+        "d1": -0.87,
+        "w1": -1.74
       }
     ],
     "sectors": [
       {
         "name": "Nifty Pharma",
-        "pct": 0.0
+        "pct": -0.32
       },
       {
         "name": "Nifty Bank",
-        "pct": -0.17
+        "pct": -0.4
       },
       {
         "name": "Nifty IT",
-        "pct": -2.9
+        "pct": -3.65
       }
     ],
     "sectorTrend": {
@@ -434,27 +434,27 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.31,
+    "biasScore": -0.33,
     "bias": "negative",
     "news": [
+      {
+        "t": "#MarketsWithMC \ud83c\udfa5 | BFSI Could Lead The Next Market Upside; Metals In A Super Upcycle, Says Dharmesh Kant In conversation with Surabhi Upadhyay \ud83d\udc47 #StockMarket #Nifty #Sensex #BFSI #BankingStocks #FinancialStocks #Metals #IndianStockMarket # - linkedin.com",
+        "tone": "neu"
+      },
+      {
+        "t": "Stock Market Today: Sensex, Nifty Fall as Crude Oil Surges Amid West Asia Tensions - India Infoline",
+        "tone": "neu"
+      },
+      {
+        "t": "Sensex Nifty Tank as Crude Oil Jumps to $91/Barrel - Rediff MoneyWiz",
+        "tone": "pos"
+      },
       {
         "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 18 August - livemint.com",
         "tone": "neu"
       },
       {
-        "t": "Stock Market Today: Gift Nifty To US Treasury Yields \u2014 Five Key Factors That May Drive Sensex, Nifty 50 on August 18 - ndtvprofit.com",
-        "tone": "neu"
-      },
-      {
-        "t": "Overnight Stock Market Movements: Key Developments - Equitypandit",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock recommendations for 18 August from MarketSmith India - TradingView",
-        "tone": "neu"
-      },
-      {
-        "t": "Indian stock markets to remain closed on account of Holi - ddnews.gov.in",
+        "t": "Share Market Today: Nifty 50, Bank Nifty | Aug 18, 2026 - Liquide Blog",
         "tone": "neu"
       }
     ]
@@ -471,32 +471,32 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 33.14,
+            "ret": 32.53,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 29.02,
+            "ret": 28.02,
+            "days": 2
+          },
+          {
+            "name": "Stylam Industrie",
+            "ret": 21.43,
             "days": 2
           },
           {
             "name": "Accent Microcell",
-            "ret": 18.85,
+            "ret": 19.78,
             "days": 1
           },
           {
-            "name": "Stylam Industrie",
-            "ret": 16.04,
-            "days": 2
-          },
-          {
             "name": "Grindwell Norton",
-            "ret": 3.95,
+            "ret": 2.5,
             "days": 2
           },
           {
             "name": "Privi Speci.",
-            "ret": -4.55,
+            "ret": -4.96,
             "days": 2
           }
         ]
