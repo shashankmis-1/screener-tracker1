@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-21T04:08:56.972657Z",
+  "generated": "2026-08-21T11:31:25.830728Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,7 +357,7 @@
     }
   ],
   "market": {
-    "generated": "2026-08-21T04:08:52.219708Z",
+    "generated": "2026-08-21T11:31:23.200165Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -373,59 +373,59 @@
       },
       {
         "name": "Nikkei",
-        "pct": -0.51
+        "pct": -0.3
       },
       {
         "name": "Hang Seng",
-        "pct": 0.75
+        "pct": 1.21
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 2.36
+        "pct": 0.25
       },
       {
         "name": "WTI",
-        "pct": 2.33
+        "pct": -0.87
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.21
+        "pct": 0.2
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 4.02
+        "pct": 4.04
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.07,
-        "w1": -0.68
+        "d1": 0.0,
+        "w1": -0.6
       },
       {
         "name": "Nifty 50",
-        "d1": -0.06,
-        "w1": -0.61
+        "d1": 0.08,
+        "w1": -0.47
       }
     ],
     "sectors": [
       {
         "name": "Nifty Bank",
-        "pct": 0.18
+        "pct": 0.46
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.23
+        "pct": -0.21
       },
       {
         "name": "Nifty IT",
-        "pct": -1.04
+        "pct": -0.46
       }
     ],
     "sectorTrend": {
@@ -434,27 +434,27 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.7,
+    "biasScore": -0.56,
     "bias": "negative",
     "news": [
+      {
+        "t": "Stock Market Today August 21, 2026: Nifty, Sensex, Sectors and Global Cues - Univest",
+        "tone": "neu"
+      },
+      {
+        "t": "Today's Market: Sensex Today Ends Flat | Nifty Above 24,250 | Urban Company Up 8% - Indian Stock Market News - Equitymaster",
+        "tone": "pos"
+      },
       {
         "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 21 August - livemint.com",
         "tone": "neu"
       },
       {
-        "t": "Stock Market Live: GIFT Nifty Points To Positive Open For Nifty, Sensex; Nikkei Leads Asian Markets Losses - NDTV Profit",
-        "tone": "neg"
-      },
-      {
-        "t": "Stock Market Today: Gift Nifty, Crude Oil To Gold Rate \u2014 Five Key Factors That May Drive Sensex, Nifty 50 on August 21 - NDTV Profit",
-        "tone": "neu"
-      },
-      {
-        "t": "Why is stock market up today? Top 3 reasons behind the rise in Sensex, Nifty, and the biggest gaining stocks - livemint.com",
+        "t": "Sensex, Nifty Flat: Crude Oil &amp; US Yields Cap Gains - Rediff MoneyWiz",
         "tone": "pos"
       },
       {
-        "t": "Stock market today: Gift Nifty hints a flat start; five day trading stocks to buy on Friday, 21 August - livemint.com",
+        "t": "Sensex ends flat as financial stocks offset crude and bond yield concerns - India Today",
         "tone": "neu"
       }
     ]
@@ -471,32 +471,32 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 28.4,
+            "ret": 27.99,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 26.86,
+            "ret": 27.56,
             "days": 2
           },
           {
             "name": "Accent Microcell",
-            "ret": 22.03,
+            "ret": 21.97,
             "days": 1
           },
           {
             "name": "Stylam Industrie",
-            "ret": 18.14,
+            "ret": 17.05,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": 0.27,
+            "ret": 0.47,
             "days": 2
           },
           {
             "name": "Privi Speci.",
-            "ret": -4.32,
+            "ret": -4.27,
             "days": 2
           }
         ]
