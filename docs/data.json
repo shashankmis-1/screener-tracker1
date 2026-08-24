@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T04:13:12.173049Z",
+  "generated": "2026-08-24T11:34:16.871032Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,7 +357,7 @@
     }
   ],
   "market": {
-    "generated": "2026-08-24T04:13:08.321143Z",
+    "generated": "2026-08-24T11:34:10.606991Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -373,59 +373,59 @@
       },
       {
         "name": "Nikkei",
-        "pct": -0.66
+        "pct": -0.74
       },
       {
         "name": "Hang Seng",
-        "pct": -2.1
+        "pct": -1.89
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.4
+        "pct": -1.31
       },
       {
         "name": "WTI",
-        "pct": -1.6
+        "pct": -1.92
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.13
+        "pct": -0.04
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -0.13
+        "pct": 2.9
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.24,
-        "w1": 0.0
+        "d1": -0.22,
+        "w1": -0.46
       },
       {
         "name": "Nifty 50",
-        "d1": 0.11,
-        "w1": -0.03
+        "d1": -0.14,
+        "w1": -0.28
       }
     ],
     "sectors": [
       {
         "name": "Nifty IT",
-        "pct": 1.01
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": -0.04
+        "pct": 0.21
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.3
+        "pct": -0.08
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -0.41
       }
     ],
     "sectorTrend": {
@@ -434,28 +434,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.18,
+    "biasScore": -0.16,
     "bias": "mixed",
     "news": [
       {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 24 August - livemint.com",
-        "tone": "neu"
+        "t": "Sensex Today Ends 172 Points Lower | Nifty Below 24,250 | Bank of Baroda Down 3% - Equitymaster",
+        "tone": "neg"
       },
       {
-        "t": "Stock Market Today: Gift Nifty, Nikkei To Crude Oil Prices \u2014 Five Key Factors That May Drive Sensex, Nifty 50 on August 24 - NDTV Profit",
-        "tone": "neu"
+        "t": "Stock market today: Sensex falls 170 points, Nifty 50 ends below 24,219; metal stocks shine - livemint.com",
+        "tone": "neg"
       },
       {
-        "t": "Sensex, Nifty surged nearly 4% following announcement of ceasefire agreement between Washington and Tehran - News On AIR",
+        "t": "Indian stock markets rise in early trade on blue-chip buying - Free Press Kashmir",
         "tone": "pos"
       },
       {
-        "t": "Indian Stock Market News, Equity Market and Sensex Today in India - Equitymaster",
-        "tone": "neu"
+        "t": "Indian Stocks Fall Amid Iran Sanctions &amp; Elevated Crude Oil - Rediff MoneyWiz",
+        "tone": "neg"
       },
       {
-        "t": "Sensex rises 200 points, Nifty above 24,300 as oil prices slip ahead of US sanctions on Iran. What to expe - The Economic Times",
-        "tone": "pos"
+        "t": "Sensex rebounds over 400 points, Nifty holds above 24,200 as markets snap losing streak - DD India",
+        "tone": "neu"
       }
     ]
   },
@@ -471,12 +471,12 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 30.94,
+            "ret": 27.59,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 27.59,
+            "ret": 26.55,
             "days": 2
           },
           {
@@ -486,17 +486,17 @@
           },
           {
             "name": "Stylam Industrie",
-            "ret": 17.77,
+            "ret": 16.13,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": 0.84,
+            "ret": 0.15,
             "days": 2
           },
           {
             "name": "Privi Speci.",
-            "ret": -4.7,
+            "ret": -5.18,
             "days": 2
           }
         ]
