@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-25T04:07:46.911645Z",
+  "generated": "2026-08-25T11:33:40.910468Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,7 +357,7 @@
     }
   ],
   "market": {
-    "generated": "2026-08-25T04:07:41.057973Z",
+    "generated": "2026-08-25T11:33:36.729388Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -373,89 +373,89 @@
       },
       {
         "name": "Nikkei",
-        "pct": 0.18
+        "pct": 0.5
       },
       {
         "name": "Hang Seng",
-        "pct": -0.3
+        "pct": -0.02
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.35
+        "pct": -4.22
       },
       {
         "name": "WTI",
-        "pct": -2.35
+        "pct": -2.83
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.01
+        "pct": -0.3
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -5.66
+        "pct": -3.95
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.02,
-        "w1": 0.15
+        "d1": 0.37,
+        "w1": 0.54
       },
       {
         "name": "Nifty 50",
-        "d1": -0.16,
-        "w1": 0.11
+        "d1": 0.48,
+        "w1": 0.74
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Bank",
-        "pct": 0.03
-      },
-      {
         "name": "Nifty Pharma",
-        "pct": -0.14
+        "pct": 0.85
       },
       {
         "name": "Nifty IT",
-        "pct": -0.51
+        "pct": 0.57
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -0.02
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Bank",
+      "leader": "Nifty Pharma",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.19,
+    "biasScore": -0.06,
     "bias": "mixed",
     "news": [
       {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 25 August - Livemint",
-        "tone": "neu"
+        "t": "Sensex gains 287 points, Nifty 50 ends at 24,335- What drove the stock market up today? - Livemint",
+        "tone": "pos"
       },
       {
-        "t": "Indian Stock Market News, Equity Market and Sensex Today in India - Equitymaster",
-        "tone": "neu"
+        "t": "Sensex Today Ends 287 Points Higher | Nifty Above 24,300 | Vodafone Idea Up 7% - Equitymaster",
+        "tone": "pos"
       },
       {
-        "t": "Sensex, Nifty, Nikkei, KOSPI to Dow Jones: Global equity heatmap before the opening bell of the Indian stock market - Livemint",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock Market Today: Gift Nifty, Gold Rate To Bitcoin Prices \u2014 Five Key Factors That May Drive Sensex, Nifty 50 on August 26 - NDTV Profit",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock market today: Gift Nifty hints a weak start; eight day trading stocks to buy on Tuesday, 25 August - Livemint",
+        "t": "D-Street Mayhem: Rs 15 Lakh Cr Wiped Out As Nifty-Sensex Close 2.5% Lower, Rupee In Free-Fall Amid Iran-US War - Goodreturns",
         "tone": "neg"
+      },
+      {
+        "t": "Sensex, Nifty Recover Losses as Crude Oil Drops Below $90 a Barrel - Rediff",
+        "tone": "neg"
+      },
+      {
+        "t": "Sensex Today | Stock Market Live: Sensex, Nifty off day's low; media, PSU Banks gain, IT, metal drag - India IPO",
+        "tone": "pos"
       }
     ]
   },
@@ -471,12 +471,12 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 27.7,
+            "ret": 27.26,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 25.64,
+            "ret": 26.49,
             "days": 2
           },
           {
@@ -486,17 +486,17 @@
           },
           {
             "name": "Stylam Industrie",
-            "ret": 15.63,
+            "ret": 15.57,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": -0.08,
+            "ret": -2.16,
             "days": 2
           },
           {
             "name": "Privi Speci.",
-            "ret": -5.42,
+            "ret": -5.23,
             "days": 2
           }
         ]
