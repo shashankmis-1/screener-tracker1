@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T11:34:16.871032Z",
+  "generated": "2026-08-25T04:07:46.911645Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,105 +357,105 @@
     }
   ],
   "market": {
-    "generated": "2026-08-24T11:34:10.606991Z",
+    "generated": "2026-08-25T04:07:41.057973Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.43
+        "pct": -0.28
       },
       {
         "name": "Dow",
-        "pct": 0.98
+        "pct": 0.26
       },
       {
         "name": "Nasdaq",
-        "pct": 0.43
+        "pct": -0.76
       },
       {
         "name": "Nikkei",
-        "pct": -0.74
+        "pct": 0.18
       },
       {
         "name": "Hang Seng",
-        "pct": -1.89
+        "pct": -0.3
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.31
+        "pct": -2.35
       },
       {
         "name": "WTI",
-        "pct": -1.92
+        "pct": -2.35
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.04
+        "pct": 0.01
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 2.9
+        "pct": -5.66
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.22,
-        "w1": -0.46
+        "d1": -0.02,
+        "w1": 0.15
       },
       {
         "name": "Nifty 50",
-        "d1": -0.14,
-        "w1": -0.28
+        "d1": -0.16,
+        "w1": 0.11
       }
     ],
     "sectors": [
       {
-        "name": "Nifty IT",
-        "pct": 0.21
+        "name": "Nifty Bank",
+        "pct": 0.03
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.08
+        "pct": -0.14
       },
       {
-        "name": "Nifty Bank",
-        "pct": -0.41
+        "name": "Nifty IT",
+        "pct": -0.51
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty IT",
+      "leader": "Nifty Bank",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.16,
+    "biasScore": -0.19,
     "bias": "mixed",
     "news": [
       {
-        "t": "Sensex Today Ends 172 Points Lower | Nifty Below 24,250 | Bank of Baroda Down 3% - Equitymaster",
-        "tone": "neg"
-      },
-      {
-        "t": "Stock market today: Sensex falls 170 points, Nifty 50 ends below 24,219; metal stocks shine - livemint.com",
-        "tone": "neg"
-      },
-      {
-        "t": "Indian stock markets rise in early trade on blue-chip buying - Free Press Kashmir",
-        "tone": "pos"
-      },
-      {
-        "t": "Indian Stocks Fall Amid Iran Sanctions &amp; Elevated Crude Oil - Rediff MoneyWiz",
-        "tone": "neg"
-      },
-      {
-        "t": "Sensex rebounds over 400 points, Nifty holds above 24,200 as markets snap losing streak - DD India",
+        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 25 August - Livemint",
         "tone": "neu"
+      },
+      {
+        "t": "Indian Stock Market News, Equity Market and Sensex Today in India - Equitymaster",
+        "tone": "neu"
+      },
+      {
+        "t": "Sensex, Nifty, Nikkei, KOSPI to Dow Jones: Global equity heatmap before the opening bell of the Indian stock market - Livemint",
+        "tone": "neu"
+      },
+      {
+        "t": "Stock Market Today: Gift Nifty, Gold Rate To Bitcoin Prices \u2014 Five Key Factors That May Drive Sensex, Nifty 50 on August 26 - NDTV Profit",
+        "tone": "neu"
+      },
+      {
+        "t": "Stock market today: Gift Nifty hints a weak start; eight day trading stocks to buy on Tuesday, 25 August - Livemint",
+        "tone": "neg"
       }
     ]
   },
@@ -471,12 +471,12 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 27.59,
+            "ret": 27.7,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 26.55,
+            "ret": 25.64,
             "days": 2
           },
           {
@@ -486,17 +486,17 @@
           },
           {
             "name": "Stylam Industrie",
-            "ret": 16.13,
+            "ret": 15.63,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": 0.15,
+            "ret": -0.08,
             "days": 2
           },
           {
             "name": "Privi Speci.",
-            "ret": -5.18,
+            "ret": -5.42,
             "days": 2
           }
         ]
