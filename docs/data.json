@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-25T11:33:40.910468Z",
+  "generated": "2026-08-26T04:09:19.812064Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,107 +357,86 @@
     }
   ],
   "market": {
-    "generated": "2026-08-25T11:33:36.729388Z",
+    "generated": "2026-08-26T04:09:08.308607Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.28
+        "pct": 0.32
       },
       {
         "name": "Dow",
-        "pct": 0.26
+        "pct": 0.3
       },
       {
         "name": "Nasdaq",
-        "pct": -0.76
+        "pct": 0.66
       },
       {
         "name": "Nikkei",
-        "pct": 0.5
+        "pct": 0.72
       },
       {
         "name": "Hang Seng",
-        "pct": -0.02
+        "pct": 0.7
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -4.22
+        "pct": -3.89
       },
       {
         "name": "WTI",
-        "pct": -2.83
+        "pct": -3.12
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.3
+        "pct": -0.34
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -3.95
+        "pct": -4.02
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.37,
-        "w1": 0.54
+        "d1": 0.34,
+        "w1": 1.31
       },
       {
         "name": "Nifty 50",
-        "d1": 0.48,
-        "w1": 0.74
+        "d1": 0.08,
+        "w1": 1.15
       }
     ],
     "sectors": [
       {
+        "name": "Nifty Bank",
+        "pct": 0.75
+      },
+      {
         "name": "Nifty Pharma",
-        "pct": 0.85
+        "pct": 0.23
       },
       {
         "name": "Nifty IT",
-        "pct": 0.57
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": -0.02
+        "pct": -0.28
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Pharma",
+      "leader": "Nifty Bank",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.06,
-    "bias": "mixed",
-    "news": [
-      {
-        "t": "Sensex gains 287 points, Nifty 50 ends at 24,335- What drove the stock market up today? - Livemint",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex Today Ends 287 Points Higher | Nifty Above 24,300 | Vodafone Idea Up 7% - Equitymaster",
-        "tone": "pos"
-      },
-      {
-        "t": "D-Street Mayhem: Rs 15 Lakh Cr Wiped Out As Nifty-Sensex Close 2.5% Lower, Rupee In Free-Fall Amid Iran-US War - Goodreturns",
-        "tone": "neg"
-      },
-      {
-        "t": "Sensex, Nifty Recover Losses as Crude Oil Drops Below $90 a Barrel - Rediff",
-        "tone": "neg"
-      },
-      {
-        "t": "Sensex Today | Stock Market Live: Sensex, Nifty off day's low; media, PSU Banks gain, IT, metal drag - India IPO",
-        "tone": "pos"
-      }
-    ]
+    "biasScore": 0.54,
+    "bias": "positive",
+    "news": []
   },
   "paper": {
     "stats": {
@@ -470,33 +449,33 @@
         "avgLoss": -8.0,
         "openTrades": [
           {
-            "name": "Varroc Engineer",
-            "ret": 27.26,
-            "days": 1
-          },
-          {
             "name": "Pricol Ltd",
-            "ret": 26.49,
+            "ret": 26.29,
             "days": 2
           },
           {
+            "name": "Varroc Engineer",
+            "ret": 25.68,
+            "days": 1
+          },
+          {
             "name": "Accent Microcell",
-            "ret": 23.34,
+            "ret": 20.28,
             "days": 1
           },
           {
             "name": "Stylam Industrie",
-            "ret": 15.57,
+            "ret": 15.94,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": -2.16,
+            "ret": 0.33,
             "days": 2
           },
           {
             "name": "Privi Speci.",
-            "ret": -5.23,
+            "ret": -4.73,
             "days": 2
           }
         ]
