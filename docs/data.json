@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-28T21:20:12.459191Z",
+  "generated": "2026-08-31T09:59:31.343274Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,7 +357,7 @@
     }
   ],
   "market": {
-    "generated": "2026-08-28T21:20:09.137701Z",
+    "generated": "2026-08-31T09:59:27.549490Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -373,89 +373,89 @@
       },
       {
         "name": "Nikkei",
-        "pct": -0.2
+        "pct": -0.14
       },
       {
         "name": "Hang Seng",
-        "pct": -0.34
+        "pct": -0.07
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.57
+        "pct": -0.55
       },
       {
         "name": "WTI",
-        "pct": -0.11
+        "pct": 3.62
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.06
+        "pct": -0.32
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 4.73
+        "pct": 3.77
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.7,
-        "w1": -0.78
+        "d1": -0.39,
+        "w1": -0.53
       },
       {
         "name": "Nifty 50",
-        "d1": -0.48,
-        "w1": -0.58
+        "d1": -0.52,
+        "w1": -0.7
       }
     ],
     "sectors": [
       {
+        "name": "Nifty Bank",
+        "pct": -0.17
+      },
+      {
         "name": "Nifty Pharma",
-        "pct": 0.84
+        "pct": -0.79
       },
       {
         "name": "Nifty IT",
-        "pct": -0.32
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": -0.47
+        "pct": -1.36
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Pharma",
+      "leader": "Nifty Bank",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.27,
-    "bias": "negative",
+    "biasScore": -0.2,
+    "bias": "mixed",
     "news": [
       {
-        "t": "Sensex Jumps 331 Points as IT Stocks Lead Market Rebound - Rediff",
-        "tone": "pos"
-      },
-      {
-        "t": "Indian Stock Market Falls Today As Elections Cheer Fade: Why Sensex Fell 620 Pts &amp; Nifty Sank 197 Pts Today? - Goodreturns",
-        "tone": "neg"
-      },
-      {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 28 August - Livemint",
+        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 31 August - Livemint",
         "tone": "neu"
       },
       {
-        "t": "Sensex Today Ends 331 Points Higher | Nifty Above 24,150 | Precision Wires India Up 20% - Equitymaster",
-        "tone": "pos"
+        "t": "Sensex Falls Over 500 Points, Nifty Near 24,000: Why Indian Stock Market Is Falling Today - Goodreturns",
+        "tone": "neg"
       },
       {
-        "t": "Aug 28: Sensex Gains 331 Pts, Nifty 85 as IT Stocks Lead Rebound - The Indian Awaaz",
-        "tone": "pos"
+        "t": "Sensex, Nifty Open Sharply Lower as Global Cues Turn Risk-Off - HDFC Sky",
+        "tone": "neu"
+      },
+      {
+        "t": "Stock Markets Today: Sensex, Nifty Dip on Renewed West Asia Tensions, rising crude - Rediff",
+        "tone": "neu"
+      },
+      {
+        "t": "Why Is Share Market Falling Today? Key Reasons Behind Sensex, Nifty Decline On August 31 - News18",
+        "tone": "neg"
       }
     ]
   },
@@ -471,12 +471,12 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 27.7,
+            "ret": 36.3,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 24.28,
+            "ret": 30.51,
             "days": 2
           },
           {
@@ -486,17 +486,17 @@
           },
           {
             "name": "Stylam Industrie",
-            "ret": 12.81,
+            "ret": 12.9,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": -1.27,
+            "ret": -0.98,
             "days": 2
           },
           {
             "name": "Privi Speci.",
-            "ret": -4.91,
+            "ret": -4.29,
             "days": 2
           }
         ]
