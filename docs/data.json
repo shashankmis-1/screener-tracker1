@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T09:59:31.343274Z",
+  "generated": "2026-08-31T17:57:40.230255Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,75 +357,75 @@
     }
   ],
   "market": {
-    "generated": "2026-08-31T09:59:27.549490Z",
+    "generated": "2026-08-31T17:57:36.470708Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.25
+        "pct": -0.37
       },
       {
         "name": "Dow",
-        "pct": -0.02
+        "pct": -0.57
       },
       {
         "name": "Nasdaq",
-        "pct": -0.52
+        "pct": -0.31
       },
       {
         "name": "Nikkei",
-        "pct": -0.14
+        "pct": 0.41
       },
       {
         "name": "Hang Seng",
-        "pct": -0.07
+        "pct": 0.07
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -0.55
+        "pct": -1.22
       },
       {
         "name": "WTI",
-        "pct": 3.62
+        "pct": 2.67
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.32
+        "pct": -0.33
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 3.77
+        "pct": 4.78
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.39,
+        "d1": -0.4,
         "w1": -0.53
       },
       {
         "name": "Nifty 50",
-        "d1": -0.52,
-        "w1": -0.7
+        "d1": -0.39,
+        "w1": -0.57
       }
     ],
     "sectors": [
       {
         "name": "Nifty Bank",
-        "pct": -0.17
+        "pct": 0.92
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.79
+        "pct": 0.72
       },
       {
         "name": "Nifty IT",
-        "pct": -1.36
+        "pct": -0.29
       }
     ],
     "sectorTrend": {
@@ -434,28 +434,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.2,
+    "biasScore": -0.15,
     "bias": "mixed",
     "news": [
       {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 31 August - Livemint",
+        "t": "Indian Stock Market Next Week, April 13-17: Sensex, Nifty May Consolidate; US-Iran Talks, Q4 Results in Focus - Goodreturns",
         "tone": "neu"
       },
       {
-        "t": "Sensex Falls Over 500 Points, Nifty Near 24,000: Why Indian Stock Market Is Falling Today - Goodreturns",
+        "t": "Stock Market prediction tomorrow, September 1: What will happen to Sensex, Nifty, Bank Nifty, KOSPI, Nikkei on Tuesday? - Livemint",
+        "tone": "neu"
+      },
+      {
+        "t": "Indian stock market opens lower; sensex falls 300 points, nifty slips 150 points - Punjab Newsline",
         "tone": "neg"
       },
       {
-        "t": "Sensex, Nifty Open Sharply Lower as Global Cues Turn Risk-Off - HDFC Sky",
+        "t": "Indian Stocks Fall as West Asia Tensions Push Crude Oil Higher - Rediff",
         "tone": "neu"
       },
       {
-        "t": "Stock Markets Today: Sensex, Nifty Dip on Renewed West Asia Tensions, rising crude - Rediff",
-        "tone": "neu"
-      },
-      {
-        "t": "Why Is Share Market Falling Today? Key Reasons Behind Sensex, Nifty Decline On August 31 - News18",
-        "tone": "neg"
+        "t": "Sensex Today Ends 307 Points Lower | Nifty Below 24,100 | Precision Wires India Up 20% - Equitymaster",
+        "tone": "pos"
       }
     ]
   },
@@ -471,32 +471,32 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 36.3,
+            "ret": 35.37,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 30.51,
+            "ret": 28.53,
             "days": 2
           },
           {
             "name": "Accent Microcell",
-            "ret": 20.7,
+            "ret": 23.5,
             "days": 1
           },
           {
             "name": "Stylam Industrie",
-            "ret": 12.9,
+            "ret": 12.6,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": -0.98,
+            "ret": -1.32,
             "days": 2
           },
           {
             "name": "Privi Speci.",
-            "ret": -4.29,
+            "ret": -4.43,
             "days": 2
           }
         ]
