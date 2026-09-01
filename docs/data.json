@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T08:49:52.061745Z",
+  "generated": "2026-09-01T15:26:03.434944Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,23 +357,23 @@
     }
   ],
   "market": {
-    "generated": "2026-09-01T08:49:48.730343Z",
+    "generated": "2026-09-01T15:26:00.037708Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.58
+        "pct": -0.47
       },
       {
         "name": "Dow",
-        "pct": -0.72
+        "pct": -0.43
       },
       {
         "name": "Nasdaq",
-        "pct": -0.64
+        "pct": -0.76
       },
       {
         "name": "Nikkei",
-        "pct": -0.15
+        "pct": -0.14
       },
       {
         "name": "Hang Seng",
@@ -383,11 +383,11 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": 2.04
+        "pct": 1.92
       },
       {
         "name": "WTI",
-        "pct": 2.3
+        "pct": 2.34
       }
     ],
     "forex": [
@@ -399,33 +399,33 @@
     "vix": [
       {
         "name": "India VIX",
-        "pct": 6.75
+        "pct": 0.0
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.28,
-        "w1": -0.81
+        "d1": -0.02,
+        "w1": -0.92
       },
       {
         "name": "Nifty 50",
-        "d1": -0.48,
-        "w1": -1.05
+        "d1": -0.1,
+        "w1": -1.15
       }
     ],
     "sectors": [
       {
         "name": "Nifty IT",
-        "pct": 0.56
+        "pct": 0.98
       },
       {
         "name": "Nifty Bank",
-        "pct": -1.47
+        "pct": -1.06
       },
       {
         "name": "Nifty Pharma",
-        "pct": -1.76
+        "pct": -1.45
       }
     ],
     "sectorTrend": {
@@ -434,28 +434,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.6,
+    "biasScore": -0.55,
     "bias": "negative",
     "news": [
       {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 1 September - Livemint",
-        "tone": "neu"
+        "t": "Stock markets close marginally lower amid higher oil prices, fresh US-Iran tensions - bfsi.economictimes.indiatimes.com",
+        "tone": "pos"
       },
       {
-        "t": "Sensex Today Trades Lower | Nifty Below 24,050 | SBI &amp; Titan Company Top Losers - Equitymaster",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock Market Crash: Sensex, Nifty Hit 1-Year Low; How US-Israel-Iran War Wiped Out Rs 4,753,333 Crore - Goodreturns",
+        "t": "Indian Stock Market Falls Today As Elections Cheer Fade: Why Sensex Fell 620 Pts &amp; Nifty Sank 197 Pts Today? - Goodreturns",
         "tone": "neg"
       },
       {
-        "t": "Markets drift lower in early trade amid higher oil prices, fresh US-Iran tensions - The New Indian Express",
+        "t": "Stock Market Today: Sensex Ends Flat, Nifty Slips Below 24,100; ITC, Airtel Gain - apacnewsnetwork.com",
         "tone": "pos"
       },
       {
-        "t": "Markets drift lower in early trade amid higher oil prices, fresh U.S.-Iran tensions - The Hindu",
-        "tone": "pos"
+        "t": "Sensex Today Ends Flat | Nifty Below 24,100 | Maruti Suzuki &amp; SBI Top Losers - Equitymaster",
+        "tone": "neu"
+      },
+      {
+        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 1 September - Livemint",
+        "tone": "neu"
       }
     ]
   },
@@ -471,27 +471,27 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 37.88,
+            "ret": 37.73,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 25.74,
+            "ret": 27.53,
             "days": 2
           },
           {
             "name": "Accent Microcell",
-            "ret": 23.5,
+            "ret": 21.63,
             "days": 1
           },
           {
             "name": "Stylam Industrie",
-            "ret": 8.74,
+            "ret": 8.69,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": -2.43,
+            "ret": -3.26,
             "days": 2
           }
         ]
