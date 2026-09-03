@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03T08:12:41.160388Z",
+  "generated": "2026-09-03T14:55:57.192610Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,19 +357,19 @@
     }
   ],
   "market": {
-    "generated": "2026-09-03T08:12:38.470788Z",
+    "generated": "2026-09-03T14:55:48.723865Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.46
+        "pct": 0.47
       },
       {
         "name": "Dow",
-        "pct": 0.56
+        "pct": 0.75
       },
       {
         "name": "Nasdaq",
-        "pct": 0.45
+        "pct": 0.69
       },
       {
         "name": "Nikkei",
@@ -377,55 +377,55 @@
       },
       {
         "name": "Hang Seng",
-        "pct": -0.57
+        "pct": -0.39
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -0.28
+        "pct": 1.04
       },
       {
         "name": "WTI",
-        "pct": -0.34
+        "pct": 1.23
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.5
+        "pct": -0.51
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -2.74
+        "pct": -2.18
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.05,
-        "w1": -1.11
+        "d1": -0.55,
+        "w1": -1.01
       },
       {
         "name": "Nifty 50",
-        "d1": -0.03,
-        "w1": -1.24
+        "d1": -0.17,
+        "w1": -0.9
       }
     ],
     "sectors": [
       {
         "name": "Nifty Bank",
-        "pct": 0.66
+        "pct": 0.36
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.36
+        "pct": -0.46
       },
       {
         "name": "Nifty IT",
-        "pct": -0.87
+        "pct": -0.85
       }
     ],
     "sectorTrend": {
@@ -434,30 +434,9 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.15,
-    "bias": "mixed",
-    "news": [
-      {
-        "t": "Inside India newsletter: India\u2019s economic growth is smashing forecasts, but its biggest stocks aren't feeling the love - CNBC",
-        "tone": "neu"
-      },
-      {
-        "t": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 3 September - Livemint",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock Market Today: Gift Nifty, Nasdaq To Gold Rates \u2014 Five Key Factors That May Drive Sensex, Nifty 50 on September 3 - NDTV Profit",
-        "tone": "neu"
-      },
-      {
-        "t": "Sensex, Nifty Rebound In Early Trade After 3-Day Slide; Bank Stocks Lead Recovery - ETV Bharat",
-        "tone": "pos"
-      },
-      {
-        "t": "Overnight Stock Market Movements: Key Developments - Equitypandit",
-        "tone": "neu"
-      }
-    ]
+    "biasScore": 0.27,
+    "bias": "positive",
+    "news": []
   },
   "paper": {
     "stats": {
@@ -471,27 +450,27 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 31.73,
-            "days": 1
-          },
-          {
-            "name": "Accent Microcell",
-            "ret": 23.51,
+            "ret": 31.79,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 23.37,
+            "ret": 22.95,
             "days": 2
           },
           {
+            "name": "Accent Microcell",
+            "ret": 22.74,
+            "days": 1
+          },
+          {
             "name": "Stylam Industrie",
-            "ret": 6.51,
+            "ret": 5.33,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": -2.47,
+            "ret": -3.69,
             "days": 2
           }
         ]
