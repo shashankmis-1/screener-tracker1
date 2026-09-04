@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T08:07:39.926978Z",
+  "generated": "2026-09-04T14:53:14.449732Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,19 +357,19 @@
     }
   ],
   "market": {
-    "generated": "2026-09-04T08:07:35.220121Z",
+    "generated": "2026-09-04T14:53:09.721554Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 1.06
+        "pct": -0.41
       },
       {
         "name": "Dow",
-        "pct": 1.18
+        "pct": -0.6
       },
       {
         "name": "Nasdaq",
-        "pct": 1.4
+        "pct": -0.35
       },
       {
         "name": "Nikkei",
@@ -377,17 +377,17 @@
       },
       {
         "name": "Hang Seng",
-        "pct": 1.81
+        "pct": 1.74
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -0.38
+        "pct": -0.6
       },
       {
         "name": "WTI",
-        "pct": -0.51
+        "pct": -1.07
       }
     ],
     "forex": [
@@ -399,33 +399,33 @@
     "vix": [
       {
         "name": "India VIX",
-        "pct": -3.44
+        "pct": -5.82
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.75,
-        "w1": -0.7
+        "d1": 0.48,
+        "w1": -0.97
       },
       {
         "name": "Nifty 50",
-        "d1": 0.28,
-        "w1": -0.97
+        "d1": 0.1,
+        "w1": -1.15
       }
     ],
     "sectors": [
       {
         "name": "Nifty Bank",
-        "pct": 0.39
+        "pct": -0.02
       },
       {
         "name": "Nifty IT",
-        "pct": -0.3
+        "pct": -0.47
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.55
+        "pct": -0.68
       }
     ],
     "sectorTrend": {
@@ -434,28 +434,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 1.34,
+    "biasScore": 0.33,
     "bias": "positive",
     "news": [
       {
-        "t": "Sensex zooms 730 pts intraday, Nifty reclaims 24K: What's driving markets? - Business Standard",
+        "t": "Share Market Live, Share Market Today: Latest Share Market News, Share Market Live Updates on The Economic Times - The Economic Times",
         "tone": "neu"
       },
       {
-        "t": "Indian Markets Open Higher as Sensex Gains 0.72% and Nifty Rises 0.38% - Investing.com India",
+        "t": "Indian stocks climb after four-day losing streak; Sensex jumps 530 points - freepresskashmir.news",
         "tone": "pos"
       },
       {
-        "t": "Stock Markets Today: Sensex, Nifty Jump on Gains in Asian Markets - Rediff",
+        "t": "Indian Stock Market Outlook Next Week, 23-27 March: Sensex, Nifty Likely to Trade Volatile With Negative Bias - goodreturns.in",
+        "tone": "neu"
+      },
+      {
+        "t": "Sep 4: Sensex Gains 363 Pts, Nifty Ends Near 23,900 as Markets Break 4-Session Losing Streak - The Indian Awaaz",
         "tone": "pos"
       },
       {
-        "t": "Sensex, Nifty surged nearly 4% following announcement of ceasefire agreement between Washington and Tehran - News On AIR",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex Today Trades Higher | Nifty Above 23,900 | Bharat Elec &amp; Trent Top Gainers - equitymaster.com",
-        "tone": "pos"
+        "t": "Taking Stock: Market snaps 4-day fall; Sensex jumps 363 pts, Nifty at 23,900 - tradingview.com",
+        "tone": "neu"
       }
     ]
   },
@@ -471,27 +471,27 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 28.03,
+            "ret": 29.78,
             "days": 1
           },
           {
             "name": "Accent Microcell",
-            "ret": 22.74,
+            "ret": 23.82,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 22.11,
+            "ret": 22.4,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 9.96,
+            "ret": 10.09,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": -3.65,
+            "ret": -4.27,
             "days": 2
           }
         ]
