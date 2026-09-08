@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-08T08:15:29.482676Z",
+  "generated": "2026-09-08T15:00:53.749388Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,23 +357,23 @@
     }
   ],
   "market": {
-    "generated": "2026-09-08T08:15:26.787542Z",
+    "generated": "2026-09-08T15:00:49.209505Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.38
+        "pct": -0.35
       },
       {
         "name": "Dow",
-        "pct": -0.51
+        "pct": -1.06
       },
       {
         "name": "Nasdaq",
-        "pct": -0.29
+        "pct": -0.27
       },
       {
         "name": "Nikkei",
-        "pct": -1.7
+        "pct": 2.12
       },
       {
         "name": "Hang Seng",
@@ -383,49 +383,49 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": 2.97
+        "pct": 1.58
       },
       {
         "name": "WTI",
-        "pct": 3.22
+        "pct": 1.44
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.34
+        "pct": 0.4
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -0.11
+        "pct": 0.0
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.66,
-        "w1": -1.71
+        "d1": -0.73,
+        "w1": -1.78
       },
       {
         "name": "Nifty 50",
-        "d1": -0.59,
-        "w1": -1.73
+        "d1": -0.61,
+        "w1": -1.75
       }
     ],
     "sectors": [
       {
         "name": "Nifty Pharma",
-        "pct": 0.59
+        "pct": 0.77
       },
       {
         "name": "Nifty IT",
-        "pct": -0.14
+        "pct": -0.37
       },
       {
         "name": "Nifty Bank",
-        "pct": -0.61
+        "pct": -0.54
       }
     ],
     "sectorTrend": {
@@ -434,28 +434,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.82,
-    "bias": "negative",
+    "biasScore": -0.19,
+    "bias": "mixed",
     "news": [
       {
         "t": "Why is stock market down today? 3 key factors driving Sensex, Nifty lower explained- Top contributors to falling market - Livemint",
         "tone": "neg"
       },
       {
-        "t": "Stock Markets Today: Sensex, Nifty dip on West Asia crisis, oil prices - Rediff",
+        "t": "Indian Stock Market Outlook Next Week, 23-27 March: Sensex, Nifty Likely to Trade Volatile With Negative Bias - Goodreturns",
         "tone": "neu"
       },
       {
-        "t": "Sensex Today | Stock Market Live: Sensex falls 470 pts, Nifty below 23,700; banks, Oil &amp; Gas drag, m - IndiaIPO",
+        "t": "Stock markets fall for second day amid rising oil prices, West Asia crisis; Sensex tanks 555 points - The Hindu",
         "tone": "neg"
       },
       {
-        "t": "Sensex Today Trades Lower | Nifty Below 23,700 | Trent &amp; ICICI Bank Top Losers - Equitymaster",
-        "tone": "neu"
+        "t": "Nifty, Sensex Today: Markets decline for 2nd straight session as Crude Oil nears $100 a barrel - indiainfoline.com",
+        "tone": "neg"
       },
       {
-        "t": "Global Markets Rebound; Sensex, Nifty Open Higher - DD News",
-        "tone": "pos"
+        "t": "Share Market Today: Nifty 50, Bank Nifty | Sep 08, 2026 - Liquide Blog",
+        "tone": "neu"
       }
     ]
   },
@@ -471,12 +471,12 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 29.98,
+            "ret": 33.4,
             "days": 1
           },
           {
             "name": "Accent Microcell",
-            "ret": 25.94,
+            "ret": 27.12,
             "days": 1
           },
           {
@@ -486,12 +486,12 @@
           },
           {
             "name": "Stylam Industrie",
-            "ret": 8.95,
+            "ret": 8.87,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": -5.89,
+            "ret": -6.21,
             "days": 2
           }
         ]
