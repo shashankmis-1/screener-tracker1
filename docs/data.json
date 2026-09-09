@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-09T08:18:20.686360Z",
+  "generated": "2026-09-09T15:03:29.718165Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,84 +357,84 @@
     }
   ],
   "market": {
-    "generated": "2026-09-09T08:18:17.626406Z",
+    "generated": "2026-09-09T15:03:26.281269Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.58
+        "pct": -0.39
       },
       {
         "name": "Dow",
-        "pct": -1.18
+        "pct": -0.67
       },
       {
         "name": "Nasdaq",
-        "pct": -0.32
+        "pct": -0.53
       },
       {
         "name": "Nikkei",
-        "pct": -0.19
+        "pct": -1.7
       },
       {
         "name": "Hang Seng",
-        "pct": -0.24
+        "pct": -0.17
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 2.01
+        "pct": 3.26
       },
       {
         "name": "WTI",
-        "pct": 1.5
+        "pct": 3.42
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.6
+        "pct": 0.64
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 3.05
+        "pct": 6.14
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.53,
-        "w1": -1.82
+        "d1": -1.08,
+        "w1": -2.36
       },
       {
         "name": "Nifty 50",
-        "d1": -0.35,
-        "w1": -1.51
+        "d1": -0.86,
+        "w1": -2.02
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Bank",
-        "pct": -0.23
+        "name": "Nifty Pharma",
+        "pct": -0.7
       },
       {
-        "name": "Nifty Pharma",
-        "pct": -0.54
+        "name": "Nifty Bank",
+        "pct": -0.85
       },
       {
         "name": "Nifty IT",
-        "pct": -3.14
+        "pct": -3.24
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Bank",
+      "leader": "Nifty Pharma",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.8,
+    "biasScore": -1.01,
     "bias": "negative",
     "news": [
       {
@@ -442,20 +442,20 @@
         "tone": "neg"
       },
       {
-        "t": "Three Reasons Why Stock Market Is Falling: Nifty Below 23,500, Sensex Down Over 600 Points - NDTV Profit",
+        "t": "Today's Market: Sensex Today Tanks 813 Points | Nifty Below 23,450 | Infosys Down 5% - Indian Stock Market News - Equitymaster",
         "tone": "neg"
       },
       {
-        "t": "Sensex Falls 600 Points, Nifty Slips below 23,500 as Crude Oil Nears $100; Rupee Hits 94.83 - India Infoline",
-        "tone": "neg"
+        "t": "Sensex, Nifty end lower as US-Iran tensions weigh on market sentiment - ddnews.gov.in",
+        "tone": "neu"
       },
       {
-        "t": "Sensex down 500 points: 5 reasons why stock market is falling today - India Today",
-        "tone": "neg"
+        "t": "Share Market Today: Nifty 50, Bank Nifty | Sep 09, 2026 - Liquide Blog",
+        "tone": "neu"
       },
       {
-        "t": "Nifty, Sensex open lower as IT stocks fall amid Middle East tensions - Telangana Today",
-        "tone": "neg"
+        "t": "Sensex tumbles 813 points to 3-month low amid escalating tensions in West Asia, oil price surge - The New Indian Express",
+        "tone": "neu"
       }
     ]
   },
@@ -471,27 +471,27 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 32.11,
+            "ret": 31.83,
             "days": 1
           },
           {
             "name": "Accent Microcell",
-            "ret": 27.12,
+            "ret": 31.07,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 19.2,
+            "ret": 19.34,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 10.79,
+            "ret": 9.92,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": -7.4,
+            "ret": -7.66,
             "days": 2
           }
         ]
