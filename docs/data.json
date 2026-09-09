@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-08T15:00:53.749388Z",
+  "generated": "2026-09-09T08:18:20.686360Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,105 +357,105 @@
     }
   ],
   "market": {
-    "generated": "2026-09-08T15:00:49.209505Z",
+    "generated": "2026-09-09T08:18:17.626406Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.35
+        "pct": -0.58
       },
       {
         "name": "Dow",
-        "pct": -1.06
+        "pct": -1.18
       },
       {
         "name": "Nasdaq",
-        "pct": -0.27
+        "pct": -0.32
       },
       {
         "name": "Nikkei",
-        "pct": 2.12
+        "pct": -0.19
       },
       {
         "name": "Hang Seng",
-        "pct": -0.38
+        "pct": -0.24
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 1.58
+        "pct": 2.01
       },
       {
         "name": "WTI",
-        "pct": 1.44
+        "pct": 1.5
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.4
+        "pct": 0.6
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 0.0
+        "pct": 3.05
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.73,
-        "w1": -1.78
+        "d1": -0.53,
+        "w1": -1.82
       },
       {
         "name": "Nifty 50",
-        "d1": -0.61,
-        "w1": -1.75
+        "d1": -0.35,
+        "w1": -1.51
       }
     ],
     "sectors": [
       {
+        "name": "Nifty Bank",
+        "pct": -0.23
+      },
+      {
         "name": "Nifty Pharma",
-        "pct": 0.77
+        "pct": -0.54
       },
       {
         "name": "Nifty IT",
-        "pct": -0.37
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": -0.54
+        "pct": -3.14
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Pharma",
+      "leader": "Nifty Bank",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.19,
-    "bias": "mixed",
+    "biasScore": -0.8,
+    "bias": "negative",
     "news": [
       {
-        "t": "Why is stock market down today? 3 key factors driving Sensex, Nifty lower explained- Top contributors to falling market - Livemint",
+        "t": "Why is Indian stock market down? 3 key factors explained - Top losers contributing to the fall in Sensex, Nifty today - Livemint",
         "tone": "neg"
       },
       {
-        "t": "Indian Stock Market Outlook Next Week, 23-27 March: Sensex, Nifty Likely to Trade Volatile With Negative Bias - Goodreturns",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock markets fall for second day amid rising oil prices, West Asia crisis; Sensex tanks 555 points - The Hindu",
+        "t": "Three Reasons Why Stock Market Is Falling: Nifty Below 23,500, Sensex Down Over 600 Points - NDTV Profit",
         "tone": "neg"
       },
       {
-        "t": "Nifty, Sensex Today: Markets decline for 2nd straight session as Crude Oil nears $100 a barrel - indiainfoline.com",
+        "t": "Sensex Falls 600 Points, Nifty Slips below 23,500 as Crude Oil Nears $100; Rupee Hits 94.83 - India Infoline",
         "tone": "neg"
       },
       {
-        "t": "Share Market Today: Nifty 50, Bank Nifty | Sep 08, 2026 - Liquide Blog",
-        "tone": "neu"
+        "t": "Sensex down 500 points: 5 reasons why stock market is falling today - India Today",
+        "tone": "neg"
+      },
+      {
+        "t": "Nifty, Sensex open lower as IT stocks fall amid Middle East tensions - Telangana Today",
+        "tone": "neg"
       }
     ]
   },
@@ -471,7 +471,7 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 33.4,
+            "ret": 32.11,
             "days": 1
           },
           {
@@ -481,17 +481,17 @@
           },
           {
             "name": "Pricol Ltd",
-            "ret": 21.39,
+            "ret": 19.2,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 8.87,
+            "ret": 10.79,
             "days": 2
           },
           {
             "name": "Grindwell Norton",
-            "ret": -6.21,
+            "ret": -7.4,
             "days": 2
           }
         ]
