@@ -25,8 +25,8 @@
       "entryPrice": 624.95,
       "status": "open",
       "daysHeld": 2,
-      "lastPrice": 739.6,
-      "lastReturn": 18.35,
+      "lastPrice": 764.0,
+      "lastReturn": 22.25,
       "minReturn": -3.19,
       "snap": {}
     },
@@ -36,12 +36,16 @@
       "rec": "core",
       "entryDate": "2026-07-07",
       "entryPrice": 2050.1,
-      "status": "open",
+      "status": "closed",
       "daysHeld": 2,
-      "lastPrice": 1907.7,
-      "lastReturn": -6.95,
-      "minReturn": -7.66,
-      "snap": {}
+      "lastPrice": 1867.7,
+      "lastReturn": -8.9,
+      "minReturn": -8.9,
+      "snap": {},
+      "exitReason": "stop",
+      "closeDate": "2026-07-09",
+      "finalReturn": -8.0,
+      "finalSensexReturn": null
     },
     {
       "name": "Privi Speci.",
@@ -68,8 +72,8 @@
       "entryPrice": 3076.95,
       "status": "open",
       "daysHeld": 2,
-      "lastPrice": 3310.6,
-      "lastReturn": 7.59,
+      "lastPrice": 3352.1,
+      "lastReturn": 8.94,
       "minReturn": -0.63,
       "snap": {}
     },
@@ -94,8 +98,8 @@
       "entryPrice": 636.75,
       "status": "open",
       "daysHeld": 1,
-      "lastPrice": 884.4,
-      "lastReturn": 38.89,
+      "lastPrice": 879.85,
+      "lastReturn": 38.18,
       "minReturn": -0.1,
       "snap": {}
     }
