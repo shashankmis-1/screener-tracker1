@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-14T09:09:51.396758Z",
+  "generated": "2026-09-14T16:54:14.141002Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,37 +357,37 @@
     }
   ],
   "market": {
-    "generated": "2026-09-14T09:09:45.625992Z",
+    "generated": "2026-09-14T16:54:10.688991Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.86
+        "pct": -0.14
       },
       {
         "name": "Dow",
-        "pct": 0.98
+        "pct": 0.1
       },
       {
         "name": "Nasdaq",
-        "pct": 0.96
+        "pct": -0.1
       },
       {
         "name": "Nikkei",
-        "pct": -0.81
+        "pct": -1.93
       },
       {
         "name": "Hang Seng",
-        "pct": 0.45
+        "pct": -0.6
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 3.31
+        "pct": 2.35
       },
       {
         "name": "WTI",
-        "pct": 3.33
+        "pct": 2.51
       }
     ],
     "forex": [
@@ -434,27 +434,27 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.49,
-    "bias": "positive",
+    "biasScore": -0.53,
+    "bias": "negative",
     "news": [
+      {
+        "t": "Sensex, Nifty surged nearly 4% following announcement of ceasefire agreement between Washington and Tehran - News On AIR",
+        "tone": "pos"
+      },
+      {
+        "t": "Stock Market prediction tomorrow: Sensex, Nifty outlook for Tue | Kospi, Taiwan Index, Nikkei cues to watch | 15 Sept - Livemint",
+        "tone": "neu"
+      },
       {
         "t": "Stock market holiday today on September 14: BSE, NSE to remain closed today on account of Ganesh Chaturthi - Moneycontrol.com",
         "tone": "neu"
       },
       {
-        "t": "Stock Market Strategy: Nifty 50 Slips Below Key Moving Averages \u2014 How To Trade This Week? - NDTV Profit",
+        "t": "Stock market closed today as Sensex, Nifty observe Ganesh Chaturthi - The Assam Tribune",
         "tone": "neu"
       },
       {
-        "t": "From US Fed rate decision to crude oil - 3 factors that may dictate Sensex, Nifty 50 this week - Livemint",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock market holiday: BSE, NSE closed today for Ganesh Chaturthi - Business Standard",
-        "tone": "neu"
-      },
-      {
-        "t": "Sensex, Nifty to remain closed on Ganesh Chaturthi - investmentguruindia.com",
+        "t": "Stock market outlook: Crude oil prices, US Fed's policy decision among key factors to watch out for this week - Business Today",
         "tone": "neu"
       }
     ]
