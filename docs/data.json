@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-11T14:56:05.215915Z",
+  "generated": "2026-09-14T09:09:51.396758Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,49 +357,49 @@
     }
   ],
   "market": {
-    "generated": "2026-09-11T14:55:59.860616Z",
+    "generated": "2026-09-14T09:09:45.625992Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.79
+        "pct": 0.86
       },
       {
         "name": "Dow",
-        "pct": 0.75
+        "pct": 0.98
       },
       {
         "name": "Nasdaq",
-        "pct": 0.92
+        "pct": 0.96
       },
       {
         "name": "Nikkei",
-        "pct": -1.93
+        "pct": -0.81
       },
       {
         "name": "Hang Seng",
-        "pct": -0.6
+        "pct": 0.45
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.72
+        "pct": 3.31
       },
       {
         "name": "WTI",
-        "pct": -3.06
+        "pct": 3.33
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.45
+        "pct": -0.16
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 4.11
+        "pct": 4.15
       }
     ],
     "india": [
@@ -434,27 +434,27 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.24,
-    "bias": "mixed",
+    "biasScore": 0.49,
+    "bias": "positive",
     "news": [
       {
-        "t": "Stock markets fall in early trade amid soaring crude oil prices, West Asia conflict - The Hindu",
+        "t": "Stock market holiday today on September 14: BSE, NSE to remain closed today on account of Ganesh Chaturthi - Moneycontrol.com",
         "tone": "neu"
       },
       {
-        "t": "Sensex Crashes 649 Points, Nifty Falls 1% on Oil Surge - HDFC Sky",
-        "tone": "neg"
+        "t": "Stock Market Strategy: Nifty 50 Slips Below Key Moving Averages \u2014 How To Trade This Week? - NDTV Profit",
+        "tone": "neu"
       },
       {
-        "t": "Sensex, Nifty crash today: Freaky Friday for stock market - What led to major fall? Experts decode plunge; top 3 factors - Livemint",
-        "tone": "neg"
+        "t": "From US Fed rate decision to crude oil - 3 factors that may dictate Sensex, Nifty 50 this week - Livemint",
+        "tone": "neu"
       },
       {
-        "t": "Indian Equities Close Marginally Lower as Oil Cools, IT Stocks Gain - Rediff",
-        "tone": "pos"
+        "t": "Stock market holiday: BSE, NSE closed today for Ganesh Chaturthi - Business Standard",
+        "tone": "neu"
       },
       {
-        "t": "Sensex plunges 593 points, Nifty falls 0.88% at open as crude price surge to 4-month high - ChiniMandi",
+        "t": "Sensex, Nifty to remain closed on Ganesh Chaturthi - investmentguruindia.com",
         "tone": "neu"
       }
     ]
@@ -471,7 +471,7 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 44.1,
+            "ret": 47.95,
             "days": 1
           },
           {
