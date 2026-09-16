@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-15T15:30:06.345241Z",
+  "generated": "2026-09-16T08:45:55.141537Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,104 +357,104 @@
     }
   ],
   "market": {
-    "generated": "2026-09-15T15:30:02.998456Z",
+    "generated": "2026-09-16T08:45:49.910845Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.44
+        "pct": -0.45
       },
       {
         "name": "Dow",
-        "pct": -0.85
+        "pct": -0.63
       },
       {
         "name": "Nasdaq",
-        "pct": -0.7
+        "pct": -0.78
       },
       {
         "name": "Nikkei",
-        "pct": -0.81
+        "pct": 0.69
       },
       {
         "name": "Hang Seng",
-        "pct": -1.0
+        "pct": 0.19
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.54
+        "pct": -0.63
       },
       {
         "name": "WTI",
-        "pct": 3.26
+        "pct": -1.14
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.96
+        "pct": 0.14
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 9.3
+        "pct": -1.97
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -1.04,
-        "w1": -2.8
+        "d1": 0.4,
+        "w1": -1.7
       },
       {
         "name": "Nifty 50",
-        "d1": -1.19,
-        "w1": -2.78
+        "d1": 0.52,
+        "w1": -1.68
       }
     ],
     "sectors": [
       {
-        "name": "Nifty IT",
-        "pct": 2.19
+        "name": "Nifty Bank",
+        "pct": 0.88
       },
       {
         "name": "Nifty Pharma",
-        "pct": -1.3
+        "pct": -0.21
       },
       {
-        "name": "Nifty Bank",
-        "pct": -1.43
+        "name": "Nifty IT",
+        "pct": -1.39
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty IT",
+      "leader": "Nifty Bank",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -1.24,
+    "biasScore": -0.27,
     "bias": "negative",
     "news": [
       {
-        "t": "India VIX jumps over 10% as SENSEX, NIFTY50 decline; here are 5 key triggers behind market fall on Tuesday - Upstox",
-        "tone": "neg"
+        "t": "Sensex, Nifty opening: Will stock markets crash again today? Paytm to be in focus - India Today",
+        "tone": "neu"
       },
       {
-        "t": "Sensex, Nifty today: Why is stock market down today? Top 3 factors driving the selloff explained - livemint.com",
-        "tone": "neg"
+        "t": "Markets rebound after sharp sell-off; Sensex rises over 300 points, Nifty crosses 23,200 - ChiniMandi",
+        "tone": "neu"
       },
       {
-        "t": "Indian equity markets snap 5-day losing streak; Sensex gains over 400 points, Nifty crosses 23,500; IT leads - ChiniMandi",
+        "t": "Stock market today: Trade guide for Sensex, Nifty 50, crude oil and gold | Seven stocks to buy - Livemint",
+        "tone": "neu"
+      },
+      {
+        "t": "Indian Stocks Open Higher as Nifty, Sensex Gain Amid Easing Oil Prices - Investing.com India",
         "tone": "pos"
       },
       {
-        "t": "Sensex Today Plunges 777 Points | Nifty Below 23,200 | 3 Reasons Why Indian Stock Markets Are Falling - Equitymaster",
-        "tone": "neg"
-      },
-      {
-        "t": "Share Market Today: Nifty 50, Bank Nifty | Sep 15, 2026 - Liquide Blog",
+        "t": "Stock Markets Today: Sensex, Nifty Rebound in Early Trade, Fed Decision Looms - Rediff",
         "tone": "neu"
       }
     ]
@@ -476,17 +476,17 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 31.29,
+            "ret": 33.21,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 18.53,
+            "ret": 19.37,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 6.64,
+            "ret": 3.63,
             "days": 2
           }
         ]
