@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T08:45:55.141537Z",
+  "generated": "2026-09-16T15:22:40.610443Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,23 +357,23 @@
     }
   ],
   "market": {
-    "generated": "2026-09-16T08:45:49.910845Z",
+    "generated": "2026-09-16T15:22:36.160208Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.45
+        "pct": 0.39
       },
       {
         "name": "Dow",
-        "pct": -0.63
+        "pct": -0.04
       },
       {
         "name": "Nasdaq",
-        "pct": -0.78
+        "pct": 0.83
       },
       {
         "name": "Nikkei",
-        "pct": 0.69
+        "pct": -0.01
       },
       {
         "name": "Hang Seng",
@@ -383,49 +383,49 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": -0.63
+        "pct": -3.71
       },
       {
         "name": "WTI",
-        "pct": -1.14
+        "pct": -4.19
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.14
+        "pct": 0.11
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -1.97
+        "pct": -1.95
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.4,
-        "w1": -1.7
+        "d1": 0.45,
+        "w1": -1.64
       },
       {
         "name": "Nifty 50",
-        "d1": 0.52,
-        "w1": -1.68
+        "d1": 0.43,
+        "w1": -1.77
       }
     ],
     "sectors": [
       {
         "name": "Nifty Bank",
-        "pct": 0.88
+        "pct": 0.89
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.21
+        "pct": -0.16
       },
       {
         "name": "Nifty IT",
-        "pct": -1.39
+        "pct": -1.58
       }
     ],
     "sectorTrend": {
@@ -434,28 +434,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.27,
-    "bias": "negative",
+    "biasScore": 0.22,
+    "bias": "mixed",
     "news": [
       {
-        "t": "Sensex, Nifty opening: Will stock markets crash again today? Paytm to be in focus - India Today",
-        "tone": "neu"
-      },
-      {
-        "t": "Markets rebound after sharp sell-off; Sensex rises over 300 points, Nifty crosses 23,200 - ChiniMandi",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock market today: Trade guide for Sensex, Nifty 50, crude oil and gold | Seven stocks to buy - Livemint",
-        "tone": "neu"
-      },
-      {
-        "t": "Indian Stocks Open Higher as Nifty, Sensex Gain Amid Easing Oil Prices - Investing.com India",
+        "t": "Markets rebound on value buying; Sensex climbs nearly 333 pts, Nifty ends above 23,200 - The Hindu",
         "tone": "pos"
       },
       {
-        "t": "Stock Markets Today: Sensex, Nifty Rebound in Early Trade, Fed Decision Looms - Rediff",
+        "t": "Indian Stock Market Falls Today As Elections Cheer Fade: Why Sensex Fell 620 Pts &amp; Nifty Sank 197 Pts Today? - Goodreturns",
+        "tone": "neg"
+      },
+      {
+        "t": "Sensex, Nifty opening: Will stock markets crash again today? Paytm to be in focus - indiatoday.in",
         "tone": "neu"
+      },
+      {
+        "t": "Stock Market Today: Sensex Rises 333 Pts, Nifty Above 23,200; ITC, Axis Bank Lead Gains - APAC Media",
+        "tone": "pos"
+      },
+      {
+        "t": "Indian Markets Rebound: Sensex Climbs 333 Pts, Nifty Above 23,200 - Rediff MoneyWiz",
+        "tone": "pos"
       }
     ]
   },
@@ -471,22 +471,22 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 47.95,
+            "ret": 39.96,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 33.21,
+            "ret": 33.67,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 19.37,
+            "ret": 19.18,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 3.63,
+            "ret": 3.61,
             "days": 2
           }
         ]
