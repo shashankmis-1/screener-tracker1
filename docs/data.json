@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T15:22:40.610443Z",
+  "generated": "2026-09-17T08:49:19.051311Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,105 +357,105 @@
     }
   ],
   "market": {
-    "generated": "2026-09-16T15:22:36.160208Z",
+    "generated": "2026-09-17T08:49:16.464058Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.39
+        "pct": -0.45
       },
       {
         "name": "Dow",
-        "pct": -0.04
+        "pct": -1.21
       },
       {
         "name": "Nasdaq",
-        "pct": 0.83
-      },
-      {
-        "name": "Nikkei",
         "pct": -0.01
       },
       {
+        "name": "Nikkei",
+        "pct": 0.33
+      },
+      {
         "name": "Hang Seng",
-        "pct": 0.19
+        "pct": -0.44
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -3.71
+        "pct": -1.29
       },
       {
         "name": "WTI",
-        "pct": -4.19
+        "pct": -1.0
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.11
+        "pct": -0.09
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -1.95
+        "pct": -5.41
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.45,
-        "w1": -1.64
+        "d1": 0.04,
+        "w1": -0.53
       },
       {
         "name": "Nifty 50",
-        "d1": 0.43,
-        "w1": -1.77
+        "d1": 0.29,
+        "w1": -0.62
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Bank",
-        "pct": 0.89
-      },
-      {
         "name": "Nifty Pharma",
-        "pct": -0.16
+        "pct": 1.33
       },
       {
         "name": "Nifty IT",
-        "pct": -1.58
+        "pct": -0.04
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -0.31
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Bank",
+      "leader": "Nifty Pharma",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.22,
-    "bias": "mixed",
+    "biasScore": -0.36,
+    "bias": "negative",
     "news": [
       {
-        "t": "Markets rebound on value buying; Sensex climbs nearly 333 pts, Nifty ends above 23,200 - The Hindu",
+        "t": "Indian equity market opens flat after Fed rate hike; Sensex up 80 points; Nifty above 23,200 - ChiniMandi",
         "tone": "pos"
       },
       {
-        "t": "Indian Stock Market Falls Today As Elections Cheer Fade: Why Sensex Fell 620 Pts &amp; Nifty Sank 197 Pts Today? - Goodreturns",
-        "tone": "neg"
-      },
-      {
-        "t": "Sensex, Nifty opening: Will stock markets crash again today? Paytm to be in focus - indiatoday.in",
+        "t": "How Asian markets, crude will impact Sensex, Nifty today: What GIFT Nifty, Nikkei, Kospi, Taiwan signals for India - Livemint",
         "tone": "neu"
       },
       {
-        "t": "Stock Market Today: Sensex Rises 333 Pts, Nifty Above 23,200; ITC, Axis Bank Lead Gains - APAC Media",
+        "t": "Indian Stocks Open Slightly Higher as Oil Holds Above $100 - Investing.com India",
         "tone": "pos"
       },
       {
-        "t": "Indian Markets Rebound: Sensex Climbs 333 Pts, Nifty Above 23,200 - Rediff MoneyWiz",
-        "tone": "pos"
+        "t": "Indian stock markets slump 2% amid fresh jitters as US-Iran talks fail - DD News",
+        "tone": "neg"
+      },
+      {
+        "t": "Stock Market Today: Gift Nifty, US Fed Rate Hike To Trump Tariffs \u2014 Five Key Factors For Sensex, Nifty 50 On September 17 - NDTV Profit",
+        "tone": "neu"
       }
     ]
   },
@@ -476,17 +476,17 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 33.67,
+            "ret": 32.86,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 19.18,
+            "ret": 20.84,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 3.61,
+            "ret": 5.33,
             "days": 2
           }
         ]
