@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T08:49:19.051311Z",
+  "generated": "2026-09-17T15:29:09.053425Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,23 +357,23 @@
     }
   ],
   "market": {
-    "generated": "2026-09-17T08:49:16.464058Z",
+    "generated": "2026-09-17T15:29:04.373547Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.45
+        "pct": 1.0
       },
       {
         "name": "Dow",
-        "pct": -1.21
+        "pct": 0.53
       },
       {
         "name": "Nasdaq",
-        "pct": -0.01
+        "pct": 1.55
       },
       {
         "name": "Nikkei",
-        "pct": 0.33
+        "pct": 0.69
       },
       {
         "name": "Hang Seng",
@@ -383,49 +383,49 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.29
+        "pct": -2.14
       },
       {
         "name": "WTI",
-        "pct": -1.0
+        "pct": -1.71
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.09
+        "pct": -0.08
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -5.41
+        "pct": -6.68
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.04,
-        "w1": -0.53
+        "d1": -0.03,
+        "w1": -0.6
       },
       {
         "name": "Nifty 50",
-        "d1": 0.29,
-        "w1": -0.62
+        "d1": 0.23,
+        "w1": -0.69
       }
     ],
     "sectors": [
       {
         "name": "Nifty Pharma",
-        "pct": 1.33
+        "pct": 1.66
       },
       {
         "name": "Nifty IT",
-        "pct": -0.04
+        "pct": 0.23
       },
       {
         "name": "Nifty Bank",
-        "pct": -0.31
+        "pct": -0.42
       }
     ],
     "sectorTrend": {
@@ -434,11 +434,19 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.36,
-    "bias": "negative",
+    "biasScore": 0.67,
+    "bias": "positive",
     "news": [
       {
+        "t": "Stock Markets Flat After US Fed Hike; NSE IPO in Focus - Rediff MoneyWiz",
+        "tone": "neu"
+      },
+      {
         "t": "Indian equity market opens flat after Fed rate hike; Sensex up 80 points; Nifty above 23,200 - ChiniMandi",
+        "tone": "pos"
+      },
+      {
+        "t": "Sensex Today Ends Flat | Nifty Above 23,250 | Syrma SGS Technology Up 7% - Equitymaster",
         "tone": "pos"
       },
       {
@@ -446,16 +454,8 @@
         "tone": "neu"
       },
       {
-        "t": "Indian Stocks Open Slightly Higher as Oil Holds Above $100 - Investing.com India",
-        "tone": "pos"
-      },
-      {
-        "t": "Indian stock markets slump 2% amid fresh jitters as US-Iran talks fail - DD News",
+        "t": "Sensex falls 1,836 points, Nifty slumps 2.6 per cent as Middle East tensions intensify - DD News",
         "tone": "neg"
-      },
-      {
-        "t": "Stock Market Today: Gift Nifty, US Fed Rate Hike To Trump Tariffs \u2014 Five Key Factors For Sensex, Nifty 50 On September 17 - NDTV Profit",
-        "tone": "neu"
       }
     ]
   },
@@ -471,22 +471,22 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 39.96,
+            "ret": 34.56,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 32.86,
+            "ret": 32.89,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 20.84,
+            "ret": 20.41,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 5.33,
+            "ret": 5.24,
             "days": 2
           }
         ]
