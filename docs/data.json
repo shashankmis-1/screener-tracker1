@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T09:11:54.251051Z",
+  "generated": "2026-09-21T16:55:37.251549Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,19 +357,19 @@
     }
   ],
   "market": {
-    "generated": "2026-09-21T09:11:50.148648Z",
+    "generated": "2026-09-21T16:55:30.107464Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.17
+        "pct": 1.33
       },
       {
         "name": "Dow",
-        "pct": -0.18
+        "pct": 0.61
       },
       {
         "name": "Nasdaq",
-        "pct": 0.39
+        "pct": 1.96
       },
       {
         "name": "Nikkei",
@@ -377,55 +377,55 @@
       },
       {
         "name": "Hang Seng",
-        "pct": 1.18
+        "pct": 0.6
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -5.83
+        "pct": -8.17
       },
       {
         "name": "WTI",
-        "pct": -5.9
+        "pct": -8.78
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.0
+        "pct": 0.01
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -0.79
+        "pct": -1.25
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.88,
-        "w1": 0.23
+        "d1": 0.76,
+        "w1": 0.1
       },
       {
         "name": "Nifty 50",
-        "d1": 0.44,
-        "w1": 0.22
+        "d1": 0.29,
+        "w1": 0.07
       }
     ],
     "sectors": [
       {
         "name": "Nifty Pharma",
-        "pct": 1.19
+        "pct": 1.16
       },
       {
         "name": "Nifty Bank",
-        "pct": 0.4
+        "pct": 0.2
       },
       {
         "name": "Nifty IT",
-        "pct": 0.07
+        "pct": -0.08
       }
     ],
     "sectorTrend": {
@@ -434,11 +434,19 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.59,
+    "biasScore": 1.17,
     "bias": "positive",
     "news": [
       {
+        "t": "Markets end on mixed note; Nifty up 76 points, Sensex dips - ddindia.co.in",
+        "tone": "pos"
+      },
+      {
         "t": "Sensex, Nifty jump: 3 reasons why stock market is rising despite West Asia tensions - India Today",
+        "tone": "pos"
+      },
+      {
+        "t": "Stock Market Today: Sensex Jumps 564 Points, Nifty Ends Above 23,400; Oil Prices Ease - apacnewsnetwork.com",
         "tone": "pos"
       },
       {
@@ -446,16 +454,8 @@
         "tone": "pos"
       },
       {
-        "t": "Sensex jumps over 400 points, Nifty holds above 23,360 as crude oil prices ease - ddindia.co.in",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex Today Trades Higher | Nifty Above 23,350 | Sun Pharma &amp; HCL Tech Top Gainers - equitymaster.com",
-        "tone": "pos"
-      },
-      {
-        "t": "Stock Markets Today: Sensex, Nifty climb as oil prices cool, foreign funds return - Rediff",
-        "tone": "pos"
+        "t": "Sensex, Nifty Rebound After Six Weekly Falls: Can The Stock Market Recovery Last? - Outlook Money",
+        "tone": "neu"
       }
     ]
   },
@@ -476,17 +476,17 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 37.09,
+            "ret": 37.03,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 21.7,
+            "ret": 21.05,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 5.12,
+            "ret": 3.85,
             "days": 2
           }
         ]
