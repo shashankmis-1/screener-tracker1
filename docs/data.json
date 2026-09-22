@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T08:43:36.368411Z",
+  "generated": "2026-09-22T15:28:01.593914Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,19 +357,19 @@
     }
   ],
   "market": {
-    "generated": "2026-09-22T08:43:27.853011Z",
+    "generated": "2026-09-22T15:27:58.351811Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 1.49
+        "pct": 0.02
       },
       {
         "name": "Dow",
-        "pct": 0.71
+        "pct": -0.45
       },
       {
         "name": "Nasdaq",
-        "pct": 2.26
+        "pct": 0.41
       },
       {
         "name": "Nikkei",
@@ -383,49 +383,49 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": 1.07
+        "pct": -0.67
       },
       {
         "name": "WTI",
-        "pct": -3.19
+        "pct": -4.91
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.25
+        "pct": -0.45
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -0.24
+        "pct": -2.24
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.51,
-        "w1": 0.64
+        "d1": -0.44,
+        "w1": 0.71
       },
       {
         "name": "Nifty 50",
-        "d1": -0.33,
-        "w1": 0.94
+        "d1": -0.36,
+        "w1": 0.91
       }
     ],
     "sectors": [
       {
         "name": "Nifty Pharma",
-        "pct": -0.42
+        "pct": -0.41
       },
       {
         "name": "Nifty Bank",
-        "pct": -0.43
+        "pct": -0.45
       },
       {
         "name": "Nifty IT",
-        "pct": -0.9
+        "pct": -0.86
       }
     ],
     "sectorTrend": {
@@ -434,28 +434,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 1.2,
+    "biasScore": 0.31,
     "bias": "positive",
     "news": [
+      {
+        "t": "Stock Market Today: Sensex Falls 330 Points, Nifty Ends Below 23,350; IT Stocks Drag Markets - APAC Media",
+        "tone": "neg"
+      },
       {
         "t": "Sensex, Nifty open marginally higher over crude price correction - DD India",
         "tone": "pos"
       },
       {
-        "t": "Stock market today: Sensex, Nifty see positive start; NSE IPO receives 6x subscription on final day | Business News - Hindustan Times",
-        "tone": "neu"
+        "t": "Sensex drops 330 points, Nifty down to 23,329 dragged by IT stocks - The Hindu",
+        "tone": "neg"
       },
       {
-        "t": "Sensex, Nifty prediction today: How Asian markets, crude will impact Indian markets? GIFT Nifty, KOSPI, Taiwan signals - Livemint",
-        "tone": "neu"
+        "t": "Taking Stock: Market snaps 4-day winning streak; Nifty below 23,350, Sensex down 330 pts - TradingView",
+        "tone": "neg"
       },
       {
-        "t": "Sensex, Nifty opening: Will stock market rise or fall today? - India Today",
+        "t": "Stock Market prediction tomorrow: Sensex, Nifty outlook for Wed | Kospi, Taiwan Index, Nikkei cues to watch | 23 Sept - Livemint",
         "tone": "neu"
-      },
-      {
-        "t": "Sensex, Nifty Open Higher as Asian Markets Rally - HDFC Sky",
-        "tone": "pos"
       }
     ]
   },
@@ -476,17 +476,17 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 37.27,
+            "ret": 35.77,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 22.87,
+            "ret": 22.91,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 5.32,
+            "ret": 7.55,
             "days": 2
           }
         ]
