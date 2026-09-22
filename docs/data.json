@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T16:55:37.251549Z",
+  "generated": "2026-09-22T08:43:36.368411Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,19 +357,19 @@
     }
   ],
   "market": {
-    "generated": "2026-09-21T16:55:30.107464Z",
+    "generated": "2026-09-22T08:43:27.853011Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 1.33
+        "pct": 1.49
       },
       {
         "name": "Dow",
-        "pct": 0.61
+        "pct": 0.71
       },
       {
         "name": "Nasdaq",
-        "pct": 1.96
+        "pct": 2.26
       },
       {
         "name": "Nikkei",
@@ -377,55 +377,55 @@
       },
       {
         "name": "Hang Seng",
-        "pct": 0.6
+        "pct": 0.18
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -8.17
+        "pct": 1.07
       },
       {
         "name": "WTI",
-        "pct": -8.78
+        "pct": -3.19
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.01
+        "pct": -0.25
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -1.25
+        "pct": -0.24
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.76,
-        "w1": 0.1
+        "d1": -0.51,
+        "w1": 0.64
       },
       {
         "name": "Nifty 50",
-        "d1": 0.29,
-        "w1": 0.07
+        "d1": -0.33,
+        "w1": 0.94
       }
     ],
     "sectors": [
       {
         "name": "Nifty Pharma",
-        "pct": 1.16
+        "pct": -0.42
       },
       {
         "name": "Nifty Bank",
-        "pct": 0.2
+        "pct": -0.43
       },
       {
         "name": "Nifty IT",
-        "pct": -0.08
+        "pct": -0.9
       }
     ],
     "sectorTrend": {
@@ -434,28 +434,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 1.17,
+    "biasScore": 1.2,
     "bias": "positive",
     "news": [
       {
-        "t": "Markets end on mixed note; Nifty up 76 points, Sensex dips - ddindia.co.in",
+        "t": "Sensex, Nifty open marginally higher over crude price correction - DD India",
         "tone": "pos"
       },
       {
-        "t": "Sensex, Nifty jump: 3 reasons why stock market is rising despite West Asia tensions - India Today",
-        "tone": "pos"
-      },
-      {
-        "t": "Stock Market Today: Sensex Jumps 564 Points, Nifty Ends Above 23,400; Oil Prices Ease - apacnewsnetwork.com",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex Jumps 420 Points, Nifty Gains as Crude Prices Fall - HDFC Sky",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex, Nifty Rebound After Six Weekly Falls: Can The Stock Market Recovery Last? - Outlook Money",
+        "t": "Stock market today: Sensex, Nifty see positive start; NSE IPO receives 6x subscription on final day | Business News - Hindustan Times",
         "tone": "neu"
+      },
+      {
+        "t": "Sensex, Nifty prediction today: How Asian markets, crude will impact Indian markets? GIFT Nifty, KOSPI, Taiwan signals - Livemint",
+        "tone": "neu"
+      },
+      {
+        "t": "Sensex, Nifty opening: Will stock market rise or fall today? - India Today",
+        "tone": "neu"
+      },
+      {
+        "t": "Sensex, Nifty Open Higher as Asian Markets Rally - HDFC Sky",
+        "tone": "pos"
       }
     ]
   },
@@ -471,22 +471,22 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 38.98,
+            "ret": 39.34,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 37.03,
+            "ret": 37.27,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 21.05,
+            "ret": 22.87,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 3.85,
+            "ret": 5.32,
             "days": 2
           }
         ]
