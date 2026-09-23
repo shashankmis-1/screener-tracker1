@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-23T08:45:10.313070Z",
+  "generated": "2026-09-23T15:22:58.922777Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,19 +357,19 @@
     }
   ],
   "market": {
-    "generated": "2026-09-23T08:45:03.783519Z",
+    "generated": "2026-09-23T15:22:55.011067Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 1.49
+        "pct": -0.46
       },
       {
         "name": "Dow",
-        "pct": 0.71
+        "pct": -0.71
       },
       {
         "name": "Nasdaq",
-        "pct": 2.26
+        "pct": -0.37
       },
       {
         "name": "Nikkei",
@@ -383,49 +383,49 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": -3.37
+        "pct": -2.28
       },
       {
         "name": "WTI",
-        "pct": -4.55
+        "pct": -3.31
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.01
+        "pct": 0.02
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -8.6
+        "pct": -8.04
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.07,
-        "w1": 1.09
+        "d1": -0.04,
+        "w1": 1.11
       },
       {
         "name": "Nifty 50",
-        "d1": 0.16,
-        "w1": 1.44
+        "d1": 0.14,
+        "w1": 1.42
       }
     ],
     "sectors": [
       {
         "name": "Nifty Pharma",
-        "pct": 0.32
+        "pct": 0.48
       },
       {
         "name": "Nifty Bank",
-        "pct": 0.24
+        "pct": 0.14
       },
       {
         "name": "Nifty IT",
-        "pct": -1.82
+        "pct": -1.72
       }
     ],
     "sectorTrend": {
@@ -434,27 +434,27 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 1.0,
-    "bias": "positive",
+    "biasScore": -0.21,
+    "bias": "mixed",
     "news": [
       {
-        "t": "Sensex, Nifty 50 prediction today: How Asian markets, crude will impact Indian markets? Gift Nifty, Kospi, Taiwan signal - Livemint",
-        "tone": "neu"
-      },
-      {
-        "t": "Sensex Today Trades Higher | Nifty Above 23,350 | Kotak Mahindra &amp; Bajaj Finance Top Gainers - Equitymaster",
+        "t": "Markets open higher; Sensex tops 77,400, Nifty trades above 24,100 - ddnews.gov.in",
         "tone": "pos"
       },
       {
-        "t": "Stock Markets Today: Sensex, Nifty Rebound on Easing Crude Prices - Rediff",
+        "t": "Stock market prediction for tomorrow: Sensex, Nifty outlook for Thursday | Kospi, Taiwan cues to watch | 24 Sept 2026 - Livemint",
         "tone": "neu"
       },
       {
-        "t": "Stock Market Today: Gift Nifty, US-Iran Talks To Oil Prices \u2014 Five Key Factors That May Drive Sensex, Nifty 50 On Sept 23 - ndtvprofit.com",
-        "tone": "neu"
+        "t": "Stock Market Crash: Sensex Sinks 950 Pts, Nifty Falls Over 265 Pts | Why Stock Market Is Down Today? - Goodreturns",
+        "tone": "neg"
       },
       {
-        "t": "Indian Stock Market Outlook Next Week, 23-27 March: Sensex, Nifty Likely to Trade Volatile With Negative Bias - Goodreturns",
+        "t": "Sensex Today Ends 299 Points Higher | Nifty Above 23,400 | Ola Electric Mobility Up 11% - Equitymaster",
+        "tone": "pos"
+      },
+      {
+        "t": "Sensex, Nifty Rebound on Easing Crude, Hopes of West Asia De-escalation - Rediff",
         "tone": "neu"
       }
     ]
@@ -471,22 +471,22 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 39.34,
+            "ret": 37.92,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 32.15,
+            "ret": 31.37,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 22.59,
+            "ret": 22.19,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 8.79,
+            "ret": 9.06,
             "days": 2
           }
         ]
