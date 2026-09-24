@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-23T15:22:58.922777Z",
+  "generated": "2026-09-24T08:38:35.226256Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,27 +357,27 @@
     }
   ],
   "market": {
-    "generated": "2026-09-23T15:22:55.011067Z",
+    "generated": "2026-09-24T08:38:30.232402Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.46
+        "pct": -0.76
       },
       {
         "name": "Dow",
-        "pct": -0.71
+        "pct": -1.03
       },
       {
         "name": "Nasdaq",
-        "pct": -0.37
+        "pct": -0.69
       },
       {
         "name": "Nikkei",
-        "pct": 1.38
+        "pct": 0.76
       },
       {
         "name": "Hang Seng",
-        "pct": -0.83
+        "pct": -0.29
       }
     ],
     "commodities": [
@@ -387,45 +387,45 @@
       },
       {
         "name": "WTI",
-        "pct": -3.31
+        "pct": 2.67
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.02
+        "pct": 0.27
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -8.04
+        "pct": 24.23
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.04,
-        "w1": 1.11
+        "d1": -1.51,
+        "w1": -0.86
       },
       {
         "name": "Nifty 50",
-        "d1": 0.14,
-        "w1": 1.42
+        "d1": -1.6,
+        "w1": -0.63
       }
     ],
     "sectors": [
       {
         "name": "Nifty Pharma",
-        "pct": 0.48
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": 0.14
+        "pct": -0.4
       },
       {
         "name": "Nifty IT",
-        "pct": -1.72
+        "pct": -0.6
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -1.98
       }
     ],
     "sectorTrend": {
@@ -434,28 +434,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.21,
-    "bias": "mixed",
+    "biasScore": -0.54,
+    "bias": "negative",
     "news": [
       {
-        "t": "Markets open higher; Sensex tops 77,400, Nifty trades above 24,100 - ddnews.gov.in",
-        "tone": "pos"
-      },
-      {
-        "t": "Stock market prediction for tomorrow: Sensex, Nifty outlook for Thursday | Kospi, Taiwan cues to watch | 24 Sept 2026 - Livemint",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock Market Crash: Sensex Sinks 950 Pts, Nifty Falls Over 265 Pts | Why Stock Market Is Down Today? - Goodreturns",
+        "t": "Indian Stocks Slide At Open As Nifty, Sensex Extend Market Weakness - Investing.com India",
         "tone": "neg"
       },
       {
-        "t": "Sensex Today Ends 299 Points Higher | Nifty Above 23,400 | Ola Electric Mobility Up 11% - Equitymaster",
-        "tone": "pos"
+        "t": "Stock market crash: Sensex falls over 630 points, Nifty slips as crude oil surges above $100; rupee also falls - ptcnews.tv",
+        "tone": "neg"
       },
       {
-        "t": "Sensex, Nifty Rebound on Easing Crude, Hopes of West Asia De-escalation - Rediff",
-        "tone": "neu"
+        "t": "Why is market falling today? Sensex tumbles over 850 points, Nifty below 23,150. 5 factors behind D-St rou - economictimes.com",
+        "tone": "neg"
+      },
+      {
+        "t": "Stock market crash: Nifty 50, Sensex fall 1% as crude tops $102; financial, insurance stocks slide on IRDAI proposal - Livemint",
+        "tone": "neg"
+      },
+      {
+        "t": "Why is the stock market crashing today? 4 factors behind the sharp fall in the Nifty and Sensex indices - theweek.in",
+        "tone": "neg"
       }
     ]
   },
@@ -476,17 +476,17 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 31.37,
+            "ret": 30.35,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 22.19,
+            "ret": 22.53,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 9.06,
+            "ret": 8.32,
             "days": 2
           }
         ]
