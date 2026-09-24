@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T08:38:35.226256Z",
+  "generated": "2026-09-24T15:46:05.891796Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,23 +357,23 @@
     }
   ],
   "market": {
-    "generated": "2026-09-24T08:38:30.232402Z",
+    "generated": "2026-09-24T15:46:02.834753Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.76
+        "pct": -0.44
       },
       {
         "name": "Dow",
-        "pct": -1.03
+        "pct": -0.64
       },
       {
         "name": "Nasdaq",
-        "pct": -0.69
+        "pct": -0.71
       },
       {
         "name": "Nikkei",
-        "pct": 0.76
+        "pct": 1.38
       },
       {
         "name": "Hang Seng",
@@ -383,11 +383,11 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.28
+        "pct": 4.66
       },
       {
         "name": "WTI",
-        "pct": 2.67
+        "pct": 4.46
       }
     ],
     "forex": [
@@ -399,62 +399,62 @@
     "vix": [
       {
         "name": "India VIX",
-        "pct": 24.23
+        "pct": 22.58
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -1.51,
-        "w1": -0.86
+        "d1": -1.67,
+        "w1": -1.02
       },
       {
         "name": "Nifty 50",
-        "d1": -1.6,
-        "w1": -0.63
+        "d1": -1.64,
+        "w1": -0.67
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Pharma",
-        "pct": -0.4
+        "name": "Nifty IT",
+        "pct": -0.44
       },
       {
-        "name": "Nifty IT",
-        "pct": -0.6
+        "name": "Nifty Pharma",
+        "pct": -0.45
       },
       {
         "name": "Nifty Bank",
-        "pct": -1.98
+        "pct": -1.96
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Pharma",
+      "leader": "Nifty IT",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.54,
+    "biasScore": -0.28,
     "bias": "negative",
     "news": [
+      {
+        "t": "Markets Hit 3-Month Low, 5 Reasons Behind Sensex Crashing 1,250 Points Today - NDTV",
+        "tone": "neg"
+      },
+      {
+        "t": "Indian Stock Market Next Week, April 13-17: Sensex, Nifty May Consolidate; US-Iran Talks, Q4 Results in Focus - Goodreturns",
+        "tone": "neu"
+      },
       {
         "t": "Indian Stocks Slide At Open As Nifty, Sensex Extend Market Weakness - Investing.com India",
         "tone": "neg"
       },
       {
-        "t": "Stock market crash: Sensex falls over 630 points, Nifty slips as crude oil surges above $100; rupee also falls - ptcnews.tv",
+        "t": "Sensex, Nifty Crash! Why Indian Stock Market Fell Sharply Today - Pragativadi",
         "tone": "neg"
       },
       {
-        "t": "Why is market falling today? Sensex tumbles over 850 points, Nifty below 23,150. 5 factors behind D-St rou - economictimes.com",
-        "tone": "neg"
-      },
-      {
-        "t": "Stock market crash: Nifty 50, Sensex fall 1% as crude tops $102; financial, insurance stocks slide on IRDAI proposal - Livemint",
-        "tone": "neg"
-      },
-      {
-        "t": "Why is the stock market crashing today? 4 factors behind the sharp fall in the Nifty and Sensex indices - theweek.in",
+        "t": "Stock market crash: Sensex falls over 630 points, Nifty slips as crude oil surges above $100; rupee also falls - PTC News",
         "tone": "neg"
       }
     ]
@@ -471,22 +471,22 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 37.92,
+            "ret": 36.65,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 30.35,
+            "ret": 30.88,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 22.53,
+            "ret": 22.22,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 8.32,
+            "ret": 7.87,
             "days": 2
           }
         ]
