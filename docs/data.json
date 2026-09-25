@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25T09:00:17.244186Z",
+  "generated": "2026-09-25T15:46:17.928414Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,23 +357,23 @@
     }
   ],
   "market": {
-    "generated": "2026-09-25T09:00:12.864305Z",
+    "generated": "2026-09-25T15:46:10.917029Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.02
+        "pct": 0.02
       },
       {
         "name": "Dow",
-        "pct": -0.31
+        "pct": 0.25
       },
       {
         "name": "Nasdaq",
-        "pct": 0.01
+        "pct": -0.01
       },
       {
         "name": "Nikkei",
-        "pct": 1.3
+        "pct": 0.76
       },
       {
         "name": "Hang Seng",
@@ -383,49 +383,49 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": -7.6
+        "pct": -6.65
       },
       {
         "name": "WTI",
-        "pct": -1.93
+        "pct": -0.48
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.09
+        "pct": 0.06
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -2.7
+        "pct": -4.18
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.37,
-        "w1": -0.62
+        "d1": 0.43,
+        "w1": -0.54
       },
       {
         "name": "Nifty 50",
-        "d1": 0.25,
-        "w1": -0.65
+        "d1": 0.34,
+        "w1": -0.88
       }
     ],
     "sectors": [
       {
         "name": "Nifty Bank",
-        "pct": 0.39
+        "pct": 0.26
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.29
+        "pct": -0.1
       },
       {
         "name": "Nifty IT",
-        "pct": -0.45
+        "pct": -0.17
       }
     ],
     "sectorTrend": {
@@ -434,27 +434,27 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.05,
+    "biasScore": -0.03,
     "bias": "mixed",
     "news": [
       {
-        "t": "Stock market today: BSE Sensex opens over 100 points up, NSE Nifty50 trades above 23,000 - The Times of India",
+        "t": "Sensex, Nifty Today: Indian Markets Recover After Heavy Thursday Losses - APAC Media",
         "tone": "neu"
       },
       {
-        "t": "Sensex, Nifty 50 prediction today: Stock market outlook for 25 Sept 2026 | GIFT Nifty, Nikkei, Taiwan cues to watch - Livemint",
+        "t": "Sensex opens in red, Nifty below 23,300 points - DD India",
         "tone": "neu"
       },
       {
-        "t": "Sensex Today | Stock Market Live: Sensex rises 150 pts, Nifty eyes 23,100; realty gains, IT slips - IndiaIPO",
+        "t": "Sensex Today Ends 315 Points Higher | Nifty Above 23,100 | Whirlpool of India Up 6% - Equitymaster",
         "tone": "pos"
       },
       {
-        "t": "Stock Markets Today: Sensex, Nifty up in Volatile Trade - Rediff",
-        "tone": "pos"
+        "t": "Sensex, Nifty Rebound on Value Buying After Sharp Losses - Rediff MoneyWiz",
+        "tone": "neg"
       },
       {
-        "t": "Nifty, Sensex open lower; market to stay range-bound with positive undertone: experts - DD News",
+        "t": "Stock markets rebound after recent losses on value buying, Sensex jumps 315 points - Telegraph India",
         "tone": "neu"
       }
     ]
@@ -476,17 +476,17 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 31.5,
+            "ret": 31.11,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 21.63,
+            "ret": 21.51,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 9.52,
+            "ret": 9.5,
             "days": 2
           }
         ]
