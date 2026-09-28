@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T10:03:31.548442Z",
+  "generated": "2026-09-28T18:32:51.319486Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,104 +357,104 @@
     }
   ],
   "market": {
-    "generated": "2026-09-28T10:03:28.276496Z",
+    "generated": "2026-09-28T18:32:49.082419Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.51
+        "pct": -0.63
       },
       {
         "name": "Dow",
-        "pct": 0.93
+        "pct": -0.53
       },
       {
         "name": "Nasdaq",
-        "pct": 0.48
+        "pct": -0.7
       },
       {
         "name": "Nikkei",
-        "pct": -0.73
+        "pct": 1.3
       },
       {
         "name": "Hang Seng",
-        "pct": 0.54
+        "pct": -1.01
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -3.43
+        "pct": -6.34
       },
       {
         "name": "WTI",
-        "pct": 3.56
+        "pct": 0.03
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.18
+        "pct": -0.2
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 11.84
+        "pct": -4.18
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -1.47,
-        "w1": -2.74
+        "d1": 0.43,
+        "w1": -0.54
       },
       {
         "name": "Nifty 50",
-        "d1": -1.56,
-        "w1": -2.71
+        "d1": 0.34,
+        "w1": -0.88
       }
     ],
     "sectors": [
       {
-        "name": "Nifty IT",
-        "pct": -0.26
+        "name": "Nifty Bank",
+        "pct": 0.26
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.89
+        "pct": -0.1
       },
       {
-        "name": "Nifty Bank",
-        "pct": -1.99
+        "name": "Nifty IT",
+        "pct": -0.17
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty IT",
+      "leader": "Nifty Bank",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.35,
-    "bias": "positive",
+    "biasScore": -0.31,
+    "bias": "negative",
     "news": [
       {
-        "t": "Stock market live updates today: BSE Sensex tumbles over 1,000 points, NSE Nifty50 trades below 22,900 - The Times of India",
+        "t": "Stock market crash takes Sensex to 6-month low; index tanks 5% in a month as investors lose Rs 17 lakh cr - The Times of India",
         "tone": "neg"
       },
       {
-        "t": "Stock Market Crash: Key factors behind Sensex falling 1,000 points and Nifty dropping below 23,000 - CNBC TV18",
+        "t": "Sensex, Nifty open with marginal gains amid mixed global cues - DD India",
+        "tone": "pos"
+      },
+      {
+        "t": "Stock market prediction for tomorrow: Sensex, Nifty outlook for Tuesday | Kospi, Taiwan cues to watch | 29 Sept 2026 - Livemint",
+        "tone": "neu"
+      },
+      {
+        "t": "Sensex Falls 1,124 Points, Nifty Slips Below 22,800 - HDFC Sky",
         "tone": "neg"
       },
       {
-        "t": "Stock Market Crash: Investors Lose Rs 6 lakh Crore; Why Did Sensex, Nifty Plunge? - ETV Bharat",
-        "tone": "neg"
-      },
-      {
-        "t": "Nifty Sensex drops 1% each as Iran US Conflict and FII Outflows raise concern - India Infoline",
-        "tone": "neg"
-      },
-      {
-        "t": "Why is market down today: Sensex, Nifty fall in Monday trade - Top 3 factors behind plunge - Livemint",
+        "t": "Nifty falls 1.56% as Brent futures near $108, riskoff mood deepens - Business Standard",
         "tone": "neg"
       }
     ]
@@ -476,17 +476,17 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 33.23,
+            "ret": 31.11,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 20.51,
+            "ret": 21.51,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 6.64,
+            "ret": 9.5,
             "days": 2
           }
         ]
