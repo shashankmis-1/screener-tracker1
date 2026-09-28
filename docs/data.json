@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25T15:46:17.928414Z",
+  "generated": "2026-09-28T10:03:31.548442Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,105 +357,105 @@
     }
   ],
   "market": {
-    "generated": "2026-09-25T15:46:10.917029Z",
+    "generated": "2026-09-28T10:03:28.276496Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.02
+        "pct": 0.51
       },
       {
         "name": "Dow",
-        "pct": 0.25
+        "pct": 0.93
       },
       {
         "name": "Nasdaq",
-        "pct": -0.01
+        "pct": 0.48
       },
       {
         "name": "Nikkei",
-        "pct": 0.76
+        "pct": -0.73
       },
       {
         "name": "Hang Seng",
-        "pct": -1.01
+        "pct": 0.54
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -6.65
+        "pct": -3.43
       },
       {
         "name": "WTI",
-        "pct": -0.48
+        "pct": 3.56
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.06
+        "pct": -0.18
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -4.18
+        "pct": 11.84
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.43,
-        "w1": -0.54
+        "d1": -1.47,
+        "w1": -2.74
       },
       {
         "name": "Nifty 50",
-        "d1": 0.34,
-        "w1": -0.88
+        "d1": -1.56,
+        "w1": -2.71
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Bank",
-        "pct": 0.26
+        "name": "Nifty IT",
+        "pct": -0.26
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.1
+        "pct": -0.89
       },
       {
-        "name": "Nifty IT",
-        "pct": -0.17
+        "name": "Nifty Bank",
+        "pct": -1.99
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Bank",
+      "leader": "Nifty IT",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.03,
-    "bias": "mixed",
+    "biasScore": 0.35,
+    "bias": "positive",
     "news": [
       {
-        "t": "Sensex, Nifty Today: Indian Markets Recover After Heavy Thursday Losses - APAC Media",
-        "tone": "neu"
-      },
-      {
-        "t": "Sensex opens in red, Nifty below 23,300 points - DD India",
-        "tone": "neu"
-      },
-      {
-        "t": "Sensex Today Ends 315 Points Higher | Nifty Above 23,100 | Whirlpool of India Up 6% - Equitymaster",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex, Nifty Rebound on Value Buying After Sharp Losses - Rediff MoneyWiz",
+        "t": "Stock market live updates today: BSE Sensex tumbles over 1,000 points, NSE Nifty50 trades below 22,900 - The Times of India",
         "tone": "neg"
       },
       {
-        "t": "Stock markets rebound after recent losses on value buying, Sensex jumps 315 points - Telegraph India",
-        "tone": "neu"
+        "t": "Stock Market Crash: Key factors behind Sensex falling 1,000 points and Nifty dropping below 23,000 - CNBC TV18",
+        "tone": "neg"
+      },
+      {
+        "t": "Stock Market Crash: Investors Lose Rs 6 lakh Crore; Why Did Sensex, Nifty Plunge? - ETV Bharat",
+        "tone": "neg"
+      },
+      {
+        "t": "Nifty Sensex drops 1% each as Iran US Conflict and FII Outflows raise concern - India Infoline",
+        "tone": "neg"
+      },
+      {
+        "t": "Why is market down today: Sensex, Nifty fall in Monday trade - Top 3 factors behind plunge - Livemint",
+        "tone": "neg"
       }
     ]
   },
@@ -471,22 +471,22 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 37.45,
+            "ret": 37.57,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 31.11,
+            "ret": 33.23,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 21.51,
+            "ret": 20.51,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 9.5,
+            "ret": 6.64,
             "days": 2
           }
         ]
