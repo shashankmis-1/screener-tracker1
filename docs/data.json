@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29T10:02:15.319435Z",
+  "generated": "2026-09-29T16:50:41.602746Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,56 +357,56 @@
     }
   ],
   "market": {
-    "generated": "2026-09-29T10:02:09.449416Z",
+    "generated": "2026-09-29T16:50:35.563934Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.77
+        "pct": -0.31
       },
       {
         "name": "Dow",
-        "pct": -0.67
+        "pct": -0.58
       },
       {
         "name": "Nasdaq",
-        "pct": -0.92
+        "pct": -0.19
       },
       {
         "name": "Nikkei",
-        "pct": -0.6
+        "pct": -0.73
       },
       {
         "name": "Hang Seng",
-        "pct": -0.48
+        "pct": 0.54
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -7.45
+        "pct": -8.06
       },
       {
         "name": "WTI",
-        "pct": -0.27
+        "pct": -2.22
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.2
+        "pct": 0.19
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -2.49
+        "pct": -1.67
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.44,
-        "w1": -2.79
+        "d1": -0.33,
+        "w1": -2.68
       },
       {
         "name": "Nifty 50",
@@ -434,15 +434,11 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.79,
+    "biasScore": -0.35,
     "bias": "negative",
     "news": [
       {
-        "t": "Stock market crash today: BSE Sensex continues to be in bear grip; Nifty50 below 22,600 - top reasons for - The Times of India",
-        "tone": "neg"
-      },
-      {
-        "t": "Stock market crash: Why Sensex crashed 1800 points, Nifty lost 550 points in 2 days? Top 5 reasons - Livemint",
+        "t": "Stock market closing: Sensex, Nifty end lower; Sept losses mount on FII selling, oil - The Federal",
         "tone": "neg"
       },
       {
@@ -450,12 +446,16 @@
         "tone": "neg"
       },
       {
-        "t": "Oil rise, bond yields: Top factors behind Tuesday's stock market crash - Business Standard",
+        "t": "Stock market crash: Why Sensex crashed 1800 points, Nifty lost 550 points in 2 days? Top 5 reasons - Livemint",
+        "tone": "neg"
+      },
+      {
+        "t": "Markets ride expiry-day seesaw as derivatives swings jolt Nifty - Business Standard",
         "tone": "neu"
       },
       {
-        "t": "Stock markets open red: Sensex tumbles 503 points, Nifty drops 151 points - Telegraph India",
-        "tone": "neg"
+        "t": "Sensex, Nifty End Lower for Second Day; Global Tensions, FII Selling Hurt Investor Mood - The Indian Awaaz",
+        "tone": "neu"
       }
     ]
   },
