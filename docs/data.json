@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01T10:21:43.119183Z",
+  "generated": "2026-10-01T17:19:21.120444Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,23 +357,23 @@
     }
   ],
   "market": {
-    "generated": "2026-10-01T10:21:40.016899Z",
+    "generated": "2026-10-01T17:19:17.406203Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.25
+        "pct": 0.05
       },
       {
         "name": "Dow",
-        "pct": -0.86
+        "pct": -0.05
       },
       {
         "name": "Nasdaq",
-        "pct": 0.24
+        "pct": -0.02
       },
       {
         "name": "Nikkei",
-        "pct": 3.3
+        "pct": 1.94
       },
       {
         "name": "Hang Seng",
@@ -383,17 +383,17 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.99
+        "pct": -2.19
       },
       {
         "name": "WTI",
-        "pct": 1.9
+        "pct": 1.88
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.28
+        "pct": 0.26
       }
     ],
     "vix": [
@@ -434,11 +434,15 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.42,
+    "biasScore": 0.33,
     "bias": "positive",
     "news": [
       {
-        "t": "Sensex Crashes 900 Points: Rs 9 Lakh Crore Wiped Out As Foreign Investors Sell Indian Stocks En-Masse - NDTV",
+        "t": "Indian benchmark shares post longest weekly losing run in 25 years - Reuters",
+        "tone": "neu"
+      },
+      {
+        "t": "Sensex Crashes 1,000 Points: Rs 9 Lakh Crore Wiped Out As Foreign Investors Sell Indian Stocks En-Masse - NDTV",
         "tone": "neg"
       },
       {
@@ -446,16 +450,12 @@
         "tone": "neg"
       },
       {
-        "t": "Why is market crashing today? Sensex slumps 1,200 points, Nifty below 22,250. 5 key factors behind Rs 10 l - The Economic Times",
-        "tone": "neg"
+        "t": "Sensex Today Trades 113 Points Lower | Nifty Below 22,600 | Eternal &amp; Maruti Suzuki Top Losers - Equitymaster",
+        "tone": "neu"
       },
       {
-        "t": "Blood Bath on Dalal Street As Bears Take Over: Why Did Sensex, Nifty plunge today? - ETV Bharat",
-        "tone": "neg"
-      },
-      {
-        "t": "Sensex down 1,000 points: Why is stock market falling today? - India Today",
-        "tone": "neg"
+        "t": "Stock market extends losing streak to four sessions; Sensex hits fresh 52-week low - The Federal",
+        "tone": "neu"
       }
     ]
   },
