@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T16:45:10.358129Z",
+  "generated": "2026-10-01T10:21:43.119183Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,104 +357,104 @@
     }
   ],
   "market": {
-    "generated": "2026-09-30T16:45:07.305510Z",
+    "generated": "2026-10-01T10:21:40.016899Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.54
+        "pct": -0.25
       },
       {
         "name": "Dow",
-        "pct": -0.04
+        "pct": -0.86
       },
       {
         "name": "Nasdaq",
-        "pct": 1.01
+        "pct": 0.24
       },
       {
         "name": "Nikkei",
-        "pct": -0.6
+        "pct": 3.3
       },
       {
         "name": "Hang Seng",
-        "pct": -0.48
+        "pct": 0.37
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -3.54
+        "pct": -2.99
       },
       {
         "name": "WTI",
-        "pct": 2.35
+        "pct": 1.9
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.17
+        "pct": 0.28
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 0.6
+        "pct": 7.15
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.07,
-        "w1": -3.14
+        "d1": -0.79,
+        "w1": -2.27
       },
       {
         "name": "Nifty 50",
-        "d1": -0.42,
-        "w1": -3.52
+        "d1": -0.88,
+        "w1": -2.78
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Bank",
-        "pct": 0.69
+        "name": "Nifty IT",
+        "pct": 2.17
       },
       {
-        "name": "Nifty IT",
-        "pct": 0.13
+        "name": "Nifty Bank",
+        "pct": -0.33
       },
       {
         "name": "Nifty Pharma",
-        "pct": -1.84
+        "pct": -0.48
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Bank",
+      "leader": "Nifty IT",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.09,
-    "bias": "mixed",
+    "biasScore": 0.42,
+    "bias": "positive",
     "news": [
       {
-        "t": "India benchmark shares log worst month since March as oil, global rate hikes spark outflows - Reuters",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock Market Today: Sensex Falls 48 Points, Nifty Slips 95 Points on FII Outflow, Crude Oil Prices - APAC Media",
+        "t": "Sensex Crashes 900 Points: Rs 9 Lakh Crore Wiped Out As Foreign Investors Sell Indian Stocks En-Masse - NDTV",
         "tone": "neg"
       },
       {
-        "t": "Indian markets end September on a weak note amid global headwinds - The New Indian Express",
+        "t": "Stock Market Crash: How investors lost \u20b99.5 lakh crore in over an hour \u2014 Top losers of Sensex, Nifty - Livemint",
         "tone": "neg"
       },
       {
-        "t": "Share Market Today: Nifty 50, Bank Nifty | Sep 30, 2026 - Liquide Blog",
-        "tone": "neu"
+        "t": "Why is market crashing today? Sensex slumps 1,200 points, Nifty below 22,250. 5 key factors behind Rs 10 l - The Economic Times",
+        "tone": "neg"
       },
       {
-        "t": "Sensex, Nifty Crash! Why Indian Stock Market Fell Sharply Today - Pragativadi",
+        "t": "Blood Bath on Dalal Street As Bears Take Over: Why Did Sensex, Nifty plunge today? - ETV Bharat",
+        "tone": "neg"
+      },
+      {
+        "t": "Sensex down 1,000 points: Why is stock market falling today? - India Today",
         "tone": "neg"
       }
     ]
@@ -471,22 +471,22 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 37.4,
+            "ret": 37.53,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 35.52,
+            "ret": 30.44,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 19.63,
+            "ret": 17.53,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 7.53,
+            "ret": 4.65,
             "days": 2
           }
         ]
