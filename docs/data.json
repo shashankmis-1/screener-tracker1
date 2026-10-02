@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T09:58:17.899562Z",
+  "generated": "2026-10-02T16:34:14.519486Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,37 +357,37 @@
     }
   ],
   "market": {
-    "generated": "2026-10-02T09:58:11.807267Z",
+    "generated": "2026-10-02T16:34:11.668903Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.19
+        "pct": 0.72
       },
       {
         "name": "Dow",
-        "pct": 0.04
+        "pct": 0.36
       },
       {
         "name": "Nasdaq",
-        "pct": 0.04
+        "pct": 1.22
       },
       {
         "name": "Nikkei",
-        "pct": -0.94
+        "pct": 3.3
       },
       {
         "name": "Hang Seng",
-        "pct": -2.6
+        "pct": 0.37
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.5
+        "pct": -0.95
       },
       {
         "name": "WTI",
-        "pct": -3.61
+        "pct": -2.35
       }
     ],
     "forex": [
@@ -434,27 +434,27 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.85,
-    "bias": "negative",
+    "biasScore": 1.0,
+    "bias": "positive",
     "news": [
+      {
+        "t": "D-Street Bloodbath: Nifty Crashes 500 Pts, Sensex Down 2.2%; HDFC Bank Falls 5%; Why Is Stock Market Falling? - Goodreturns",
+        "tone": "neg"
+      },
+      {
+        "t": "Stock Market: Sensex, Nifty Extend Losing Streak To 8th Consecutive Week Amid FII Selling, Global Risks - ETV Bharat",
+        "tone": "neg"
+      },
       {
         "t": "Stock market holiday today on October 2: BSE, NSE to remain closed for Gandhi Jayanti - Moneycontrol.com",
         "tone": "neu"
       },
       {
-        "t": "Sensex Today | Stock Market Live: Sensex flat, Nifty nears 22,500; auto, media down, IT stocks gain - IndiaIPO",
-        "tone": "neu"
-      },
-      {
-        "t": "Share market closed today on Gandhi Jayanti: Sensex &amp; Nifty near bear market falling for eighth consecutive... - Bhaskar English",
+        "t": "Sensex, Nifty Fall For Eighth Straight Week Amid FII Selling - Deccan Chronicle",
         "tone": "neg"
       },
       {
-        "t": "Stock market holiday: BSE, NSE closed today | Gandhi Jayanti, 2nd October 2026; how Sensex, Nifty fared on Thursday - Livemint",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock market holiday: BSE, NSE closed today for Gandhi Jayanti - Business Standard",
+        "t": "Sensex Today | Stock Market Live: Sensex flat, Nifty nears 22,500; auto, media down, IT stocks gain - indiaipo.in",
         "tone": "neu"
       }
     ]
