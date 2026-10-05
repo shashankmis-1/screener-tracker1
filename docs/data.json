@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T16:34:14.519486Z",
+  "generated": "2026-10-05T10:44:22.652638Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,104 +357,104 @@
     }
   ],
   "market": {
-    "generated": "2026-10-02T16:34:11.668903Z",
+    "generated": "2026-10-05T10:44:17.776027Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.72
+        "pct": 0.73
       },
       {
         "name": "Dow",
-        "pct": 0.36
+        "pct": 0.49
       },
       {
         "name": "Nasdaq",
-        "pct": 1.22
+        "pct": 1.19
       },
       {
         "name": "Nikkei",
-        "pct": 3.3
+        "pct": 2.4
       },
       {
         "name": "Hang Seng",
-        "pct": 0.37
+        "pct": 0.28
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -0.95
+        "pct": 0.49
       },
       {
         "name": "WTI",
-        "pct": -2.35
+        "pct": -0.44
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.39
+        "pct": 0.07
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 7.19
+        "pct": 2.18
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.79,
-        "w1": -2.27
+        "d1": 0.66,
+        "w1": -2.05
       },
       {
         "name": "Nifty 50",
-        "d1": -0.88,
-        "w1": -2.78
+        "d1": 0.6,
+        "w1": -2.53
       }
     ],
     "sectors": [
       {
-        "name": "Nifty IT",
-        "pct": 2.17
+        "name": "Nifty Bank",
+        "pct": 0.48
       },
       {
-        "name": "Nifty Bank",
-        "pct": -0.33
+        "name": "Nifty IT",
+        "pct": -0.01
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.48
+        "pct": -0.74
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty IT",
+      "leader": "Nifty Bank",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 1.0,
+    "biasScore": 0.98,
     "bias": "positive",
     "news": [
       {
-        "t": "D-Street Bloodbath: Nifty Crashes 500 Pts, Sensex Down 2.2%; HDFC Bank Falls 5%; Why Is Stock Market Falling? - Goodreturns",
-        "tone": "neg"
+        "t": "Sensex Today Ends 473 Points Higher | Nifty Above 22,550 | Raymond Realty Up 6% - Equitymaster",
+        "tone": "pos"
       },
       {
-        "t": "Stock Market: Sensex, Nifty Extend Losing Streak To 8th Consecutive Week Amid FII Selling, Global Risks - ETV Bharat",
-        "tone": "neg"
+        "t": "Sensex Jumps 453 Points; Nifty Rebounds Above 22,500 - HDFC Sky",
+        "tone": "pos"
       },
       {
-        "t": "Stock market holiday today on October 2: BSE, NSE to remain closed for Gandhi Jayanti - Moneycontrol.com",
+        "t": "Stock Markets Today: Sensex, Nifty Jump on Global Cues - Rediff",
+        "tone": "pos"
+      },
+      {
+        "t": "Stock Market Outlook Today, July 14, 2026: Sensex, Nifty Likely to Stay Resilient Despite Global Uncertainty - Goodreturns",
         "tone": "neu"
       },
       {
-        "t": "Sensex, Nifty Fall For Eighth Straight Week Amid FII Selling - Deccan Chronicle",
-        "tone": "neg"
-      },
-      {
-        "t": "Sensex Today | Stock Market Live: Sensex flat, Nifty nears 22,500; auto, media down, IT stocks gain - indiaipo.in",
+        "t": "Stock market outlook today, 5 Oct: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Nikkei, Taiwan cues - TradingView",
         "tone": "neu"
       }
     ]
@@ -476,17 +476,17 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 30.44,
+            "ret": 28.78,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 17.53,
+            "ret": 12.72,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 4.65,
+            "ret": 8.07,
             "days": 2
           }
         ]
