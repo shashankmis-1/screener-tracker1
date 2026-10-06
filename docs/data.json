@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06T10:37:21.919967Z",
+  "generated": "2026-10-06T17:06:32.450781Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,37 +357,37 @@
     }
   ],
   "market": {
-    "generated": "2026-10-06T10:37:18.159215Z",
+    "generated": "2026-10-06T17:06:28.429713Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.66
+        "pct": 0.68
       },
       {
         "name": "Dow",
-        "pct": 0.18
+        "pct": 0.53
       },
       {
         "name": "Nasdaq",
-        "pct": 1.05
+        "pct": 0.59
       },
       {
         "name": "Nikkei",
-        "pct": 1.05
+        "pct": 2.4
       },
       {
         "name": "Hang Seng",
-        "pct": 1.0
+        "pct": 0.28
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.72
+        "pct": -0.16
       },
       {
         "name": "WTI",
-        "pct": -1.77
+        "pct": 0.02
       }
     ],
     "forex": [
@@ -434,7 +434,7 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.74,
+    "biasScore": 0.85,
     "bias": "positive",
     "news": [
       {
@@ -442,19 +442,19 @@
         "tone": "neu"
       },
       {
-        "t": "Stock market outlook today, 6 Oct: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Nikkei, Taiwan cues - TradingView",
+        "t": "Share Market Today: Nifty 50, Bank Nifty | Oct 06, 2026 - Liquide Blog",
         "tone": "neu"
       },
       {
-        "t": "Five reasons India's stock market is sinking even when its economy is growing - BBC",
-        "tone": "neg"
+        "t": "Sensex Today Rallies 685 Points | Nifty Above 22,750 | 3 Reasons Why Indian Share Markets Are Rising - Equitymaster",
+        "tone": "neu"
       },
       {
-        "t": "Sensex Today Trades Higher | Nifty Above 22,550 | Asian Paints &amp; Bharti Airtel Top Gainers - Equitymaster",
+        "t": "Stock Market Outlook Today, 15 June 2026: Sensex, Nifty Eye Fresh Highs After US-Iran Peace Deal - Goodreturns",
         "tone": "pos"
       },
       {
-        "t": "Sensex, Nifty end higher for 2nd straight day: 5 reasons why market rallied today - CNBC TV18",
+        "t": "Sensex, Nifty Surge 2nd Day on Easing Oil, Bank Stock Buying - Rediff MoneyWiz",
         "tone": "pos"
       }
     ]
