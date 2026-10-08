@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T10:49:27.990521Z",
+  "generated": "2026-10-08T17:47:45.458192Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,43 +357,43 @@
     }
   ],
   "market": {
-    "generated": "2026-10-08T10:49:24.508856Z",
+    "generated": "2026-10-08T17:47:39.689306Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.22
-      },
-      {
-        "name": "Dow",
         "pct": -0.66
       },
       {
+        "name": "Dow",
+        "pct": 0.06
+      },
+      {
         "name": "Nasdaq",
-        "pct": -0.22
+        "pct": -1.47
       },
       {
         "name": "Nikkei",
-        "pct": -1.42
+        "pct": -0.92
       },
       {
         "name": "Hang Seng",
-        "pct": -1.43
+        "pct": -0.62
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 4.95
+        "pct": 3.79
       },
       {
         "name": "WTI",
-        "pct": 5.07
+        "pct": 3.56
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.43
+        "pct": 0.41
       }
     ],
     "vix": [
@@ -434,7 +434,7 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -1.01,
+    "biasScore": -0.93,
     "bias": "negative",
     "news": [
       {
@@ -446,16 +446,16 @@
         "tone": "neg"
       },
       {
-        "t": "Stock market crash: Terrible Thursday for Sensex, Nifty as over \u20b97 lakh cr investors' wealth eroded - what went wrong? - Livemint",
+        "t": "Why Did The Stock Market Fall Today? Sensex Crashes 1,045 Points, Nifty Ends Below 22,300 - Outlook Money",
         "tone": "neg"
       },
       {
-        "t": "D-St meltdown erodes \u20b910.2 trn in investor wealth; what caused market rout? - Business Standard",
-        "tone": "neg"
+        "t": "Stock market prediction for tomorrow: Sensex, Nifty outlook for Friday | Kospi, Taiwan cues to watch | 9 Oct 2026 - Livemint",
+        "tone": "neu"
       },
       {
-        "t": "Stock Market Crash: Why Did Sensex Plunge Nearly 1,000 Pts &amp; Nifty Cracked Below 22,300 - ETV Bharat",
-        "tone": "neg"
+        "t": "Ahead of Market: 10 things that will decide stock market action on Thursday - The Economic Times",
+        "tone": "neu"
       }
     ]
   },
