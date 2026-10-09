@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T10:48:10.538592Z",
+  "generated": "2026-10-09T17:23:40.806349Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,43 +357,43 @@
     }
   ],
   "market": {
-    "generated": "2026-10-09T10:48:06.566893Z",
+    "generated": "2026-10-09T17:23:37.208155Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.47
+        "pct": 0.51
       },
       {
         "name": "Dow",
-        "pct": 0.1
+        "pct": 0.71
       },
       {
         "name": "Nasdaq",
-        "pct": -1.25
+        "pct": 0.51
       },
       {
         "name": "Nikkei",
-        "pct": -0.02
+        "pct": -1.42
       },
       {
         "name": "Hang Seng",
-        "pct": 1.79
+        "pct": -1.43
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.42
+        "pct": -0.3
       },
       {
         "name": "WTI",
-        "pct": -1.02
+        "pct": -0.16
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.03
+        "pct": 0.0
       }
     ],
     "vix": [
@@ -434,15 +434,15 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.03,
+    "biasScore": -0.22,
     "bias": "mixed",
     "news": [
       {
-        "t": "Why is stock market up today? 'Good Friday' for Sensex, Nifty - 5 biggest contributors to D-Street party - Livemint",
+        "t": "Relief rally in Indian stock market; biggest weekly losing streak in 25 years snapped: What's next for Sensex, Nifty? - Livemint",
         "tone": "pos"
       },
       {
-        "t": "Why is market rising today? Sensex jumps 800 points, Nifty above 22,500. 6 key factors driving D-Street re - The Economic Times",
+        "t": "Markets open higher; Sensex tops 77,400, Nifty trades above 24,100 - DD News",
         "tone": "pos"
       },
       {
@@ -450,12 +450,12 @@
         "tone": "neu"
       },
       {
-        "t": "Why Is the Stock Market Rising Today? Sensex Jumps 745 Points, Nifty Gains 1.13% - India Infoline",
+        "t": "Why did market rise today? Sensex jumps over 800 points, Nifty closes above 22,500. 6 key factors behind D - The Economic Times",
         "tone": "pos"
       },
       {
-        "t": "Sensex jumps 1,000 points: 3 reasons why markets are rising today - India Today",
-        "tone": "pos"
+        "t": "TCS\u2019 Q2 earnings lift market sentiment, Nifty and Sensex rallies over 1% each - The New Indian Express",
+        "tone": "neu"
       }
     ]
   },
