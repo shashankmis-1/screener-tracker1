@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T11:12:02.214274Z",
+  "generated": "2026-10-12T20:11:52.875301Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,19 +357,19 @@
     }
   ],
   "market": {
-    "generated": "2026-10-12T11:11:58.638914Z",
+    "generated": "2026-10-12T20:11:47.485943Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.59
+        "pct": -0.06
       },
       {
         "name": "Dow",
-        "pct": 0.83
+        "pct": 0.38
       },
       {
         "name": "Nasdaq",
-        "pct": 0.64
+        "pct": -0.44
       },
       {
         "name": "Nikkei",
@@ -377,17 +377,17 @@
       },
       {
         "name": "Hang Seng",
-        "pct": 0.25
+        "pct": 1.79
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 1.07
+        "pct": 1.31
       },
       {
         "name": "WTI",
-        "pct": 1.07
+        "pct": 1.55
       }
     ],
     "forex": [
@@ -399,63 +399,63 @@
     "vix": [
       {
         "name": "India VIX",
-        "pct": 6.07
+        "pct": -5.89
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.76,
-        "w1": -0.63
+        "d1": 1.23,
+        "w1": 0.78
       },
       {
         "name": "Nifty 50",
-        "d1": -0.7,
-        "w1": -0.85
+        "d1": 1.3,
+        "w1": 0.44
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Pharma",
-        "pct": 0.45
+        "name": "Nifty IT",
+        "pct": 3.02
       },
       {
         "name": "Nifty Bank",
-        "pct": -0.61
+        "pct": 1.36
       },
       {
-        "name": "Nifty IT",
-        "pct": -0.79
+        "name": "Nifty Pharma",
+        "pct": 0.54
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Pharma",
+      "leader": "Nifty IT",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.46,
+    "biasScore": 0.33,
     "bias": "positive",
     "news": [
       {
-        "t": "Why is market falling today? Sensex sinks 1,200 pts from day\u2019s high, Nifty below 22,350. 5 key triggers be - The Economic Times",
-        "tone": "neg"
+        "t": "S&amp;P BSE SENSEX (^BSESN) Charts, Data &amp; News - Yahoo! Finance Canada",
+        "tone": "neu"
       },
       {
         "t": "Why is stock market down today? Sensex, Nifty 50 crash - Top 3 factors behind stock market decline explained - Livemint",
         "tone": "neg"
       },
       {
+        "t": "Stock Market Opens Strong: Nifty Up 1.5%, Sensex Rallies 1,516 Pts; Rupee Recovers as Trump Delays Iran Strike - Goodreturns",
+        "tone": "pos"
+      },
+      {
+        "t": "Why did market fall today? Sensex ends 548 pts lower, Nifty below 22,400. 5 triggers behind today's sellof - The Economic Times",
+        "tone": "neg"
+      },
+      {
         "t": "Sensex Today Tanks 547 Points | Nifty Below 22,400 | 3 Reasons Why Indian Share Markets Are Falling - Equitymaster",
         "tone": "neg"
-      },
-      {
-        "t": "Sensex falls 500 points: 4 reasons why stock market is down today - India Today",
-        "tone": "neg"
-      },
-      {
-        "t": "Market Wrap, Oct 12: SENSEX falls 548 pts, NIFTY50 ends at 22,363 as crude prices rise; NIFTY Smallcap 100 outshines - Upstox",
-        "tone": "neu"
       }
     ]
   },
@@ -476,17 +476,17 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 28.87,
+            "ret": 24.63,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 6.73,
+            "ret": 7.34,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 4.98,
+            "ret": 6.31,
             "days": 2
           }
         ]
