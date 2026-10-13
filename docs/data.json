@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T10:53:15.918539Z",
+  "generated": "2026-10-13T18:04:10.912640Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,37 +357,37 @@
     }
   ],
   "market": {
-    "generated": "2026-10-13T10:53:12.439389Z",
+    "generated": "2026-10-13T18:04:04.295916Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.06
+        "pct": -0.15
       },
       {
         "name": "Dow",
-        "pct": 0.38
+        "pct": -0.47
       },
       {
         "name": "Nasdaq",
-        "pct": -0.44
+        "pct": -0.3
       },
       {
         "name": "Nikkei",
-        "pct": -1.82
+        "pct": -0.02
       },
       {
         "name": "Hang Seng",
-        "pct": 0.3
+        "pct": 0.25
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.93
+        "pct": -0.85
       },
       {
         "name": "WTI",
-        "pct": -1.95
+        "pct": 0.42
       }
     ],
     "forex": [
@@ -434,28 +434,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.33,
-    "bias": "negative",
+    "biasScore": -0.14,
+    "bias": "mixed",
     "news": [
       {
-        "t": "Why is market rising today? Sensex surges 1,000 points, Nifty above 22,700. 5 key factors behind D-Street - The Economic Times",
-        "tone": "pos"
-      },
-      {
-        "t": "Why are Sensex and Nifty rising today? IT stocks, stronger Rupee among 3 key reasons | Business News - Hindustan Times",
+        "t": "Indian Stock Market Outlook Next Week, 23-27 March: Sensex, Nifty Likely to Trade Volatile With Negative Bias - Goodreturns",
         "tone": "neu"
       },
       {
-        "t": "Why is stock market up today? Top 3 reasons behind a 1% jump in Sensex, Nifty 50 explained - Livemint",
+        "t": "Sensex surges 1,109 points, Nifty closes above 22,700 as IT stocks lead market recovery - DD News",
         "tone": "pos"
       },
       {
-        "t": "Sensex surges 1,109 points, Nifty closes above 22,700 as IT stocks lead market recovery - DD India",
+        "t": "Why is stock market up today? Top 3 reasons behind a jump in Sensex, Nifty 50 explained - Livemint",
         "tone": "pos"
       },
       {
-        "t": "Stock Market Rally: Why Are Sensex and Nifty Rising? - ETV Bharat",
+        "t": "Why did Sensex and Nifty rise today? IT stocks, stronger rupee among 3 key reasons | Business News - Hindustan Times",
         "tone": "pos"
+      },
+      {
+        "t": "Sensex Today Rallies 1,109 Points | Nifty Above 22,700 | 3 Reasons Why Indian Share Markets Are Rising - Equitymaster",
+        "tone": "neu"
       }
     ]
   },
