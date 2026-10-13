@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T20:11:52.875301Z",
+  "generated": "2026-10-13T10:53:15.918539Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,7 +357,7 @@
     }
   ],
   "market": {
-    "generated": "2026-10-12T20:11:47.485943Z",
+    "generated": "2026-10-13T10:53:12.439389Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -373,59 +373,59 @@
       },
       {
         "name": "Nikkei",
-        "pct": -0.02
+        "pct": -1.82
       },
       {
         "name": "Hang Seng",
-        "pct": 1.79
+        "pct": 0.3
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 1.31
+        "pct": -1.93
       },
       {
         "name": "WTI",
-        "pct": 1.55
+        "pct": -1.95
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -1.1
+        "pct": -1.6
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -5.89
+        "pct": -7.41
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 1.23,
-        "w1": 0.78
+        "d1": 1.54,
+        "w1": -0.05
       },
       {
         "name": "Nifty 50",
-        "d1": 1.3,
-        "w1": 0.44
+        "d1": 1.6,
+        "w1": -0.24
       }
     ],
     "sectors": [
       {
         "name": "Nifty IT",
-        "pct": 3.02
+        "pct": 5.22
       },
       {
         "name": "Nifty Bank",
-        "pct": 1.36
+        "pct": 1.03
       },
       {
         "name": "Nifty Pharma",
-        "pct": 0.54
+        "pct": -0.01
       }
     ],
     "sectorTrend": {
@@ -434,28 +434,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.33,
-    "bias": "positive",
+    "biasScore": -0.33,
+    "bias": "negative",
     "news": [
       {
-        "t": "S&amp;P BSE SENSEX (^BSESN) Charts, Data &amp; News - Yahoo! Finance Canada",
-        "tone": "neu"
-      },
-      {
-        "t": "Why is stock market down today? Sensex, Nifty 50 crash - Top 3 factors behind stock market decline explained - Livemint",
-        "tone": "neg"
-      },
-      {
-        "t": "Stock Market Opens Strong: Nifty Up 1.5%, Sensex Rallies 1,516 Pts; Rupee Recovers as Trump Delays Iran Strike - Goodreturns",
+        "t": "Why is market rising today? Sensex surges 1,000 points, Nifty above 22,700. 5 key factors behind D-Street - The Economic Times",
         "tone": "pos"
       },
       {
-        "t": "Why did market fall today? Sensex ends 548 pts lower, Nifty below 22,400. 5 triggers behind today's sellof - The Economic Times",
-        "tone": "neg"
+        "t": "Why are Sensex and Nifty rising today? IT stocks, stronger Rupee among 3 key reasons | Business News - Hindustan Times",
+        "tone": "neu"
       },
       {
-        "t": "Sensex Today Tanks 547 Points | Nifty Below 22,400 | 3 Reasons Why Indian Share Markets Are Falling - Equitymaster",
-        "tone": "neg"
+        "t": "Why is stock market up today? Top 3 reasons behind a 1% jump in Sensex, Nifty 50 explained - Livemint",
+        "tone": "pos"
+      },
+      {
+        "t": "Sensex surges 1,109 points, Nifty closes above 22,700 as IT stocks lead market recovery - DD India",
+        "tone": "pos"
+      },
+      {
+        "t": "Stock Market Rally: Why Are Sensex and Nifty Rising? - ETV Bharat",
+        "tone": "pos"
       }
     ]
   },
@@ -476,17 +476,17 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 24.63,
+            "ret": 29.01,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 7.34,
+            "ret": 7.09,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 6.31,
+            "ret": 6.63,
             "days": 2
           }
         ]
