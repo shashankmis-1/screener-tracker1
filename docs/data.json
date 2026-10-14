@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T18:04:10.912640Z",
+  "generated": "2026-10-14T08:55:52.195545Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,75 +357,75 @@
     }
   ],
   "market": {
-    "generated": "2026-10-13T18:04:04.295916Z",
+    "generated": "2026-10-14T08:55:46.709698Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.15
-      },
-      {
-        "name": "Dow",
-        "pct": -0.47
-      },
-      {
-        "name": "Nasdaq",
-        "pct": -0.3
-      },
-      {
-        "name": "Nikkei",
         "pct": -0.02
       },
       {
+        "name": "Dow",
+        "pct": -0.35
+      },
+      {
+        "name": "Nasdaq",
+        "pct": -0.15
+      },
+      {
+        "name": "Nikkei",
+        "pct": -0.05
+      },
+      {
         "name": "Hang Seng",
-        "pct": 0.25
+        "pct": -0.13
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -0.85
+        "pct": 0.11
       },
       {
         "name": "WTI",
-        "pct": 0.42
+        "pct": 0.37
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -1.6
+        "pct": -0.76
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -7.41
+        "pct": 4.04
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 1.54,
-        "w1": -0.05
+        "d1": -0.35,
+        "w1": 0.2
       },
       {
         "name": "Nifty 50",
-        "d1": 1.6,
-        "w1": -0.24
+        "d1": -0.44,
+        "w1": 0.09
       }
     ],
     "sectors": [
       {
         "name": "Nifty IT",
-        "pct": 5.22
+        "pct": 1.37
       },
       {
         "name": "Nifty Bank",
-        "pct": 1.03
+        "pct": -0.34
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.01
+        "pct": -1.58
       }
     ],
     "sectorTrend": {
@@ -438,24 +438,24 @@
     "bias": "mixed",
     "news": [
       {
-        "t": "Indian Stock Market Outlook Next Week, 23-27 March: Sensex, Nifty Likely to Trade Volatile With Negative Bias - Goodreturns",
+        "t": "Stock market outlook today, 14 Oct: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues - TradingView",
         "tone": "neu"
       },
       {
-        "t": "Sensex surges 1,109 points, Nifty closes above 22,700 as IT stocks lead market recovery - DD News",
+        "t": "Stock Markets Today: Sensex, Nifty Pared Early Losses in Volatile Trade - Rediff",
+        "tone": "neg"
+      },
+      {
+        "t": "Stock Market Today: Sensex holds 73,000; Nifty below 22,700; Nifty IT up 1.5% - Zee Business",
         "tone": "pos"
       },
       {
-        "t": "Why is stock market up today? Top 3 reasons behind a jump in Sensex, Nifty 50 explained - Livemint",
+        "t": "Nifty 50 Rises 1.60%, Sensex Gains 1.54%: Five Factors to Watch Before the October 14 Market Session - www.nationpathindia.com",
         "tone": "pos"
       },
       {
-        "t": "Why did Sensex and Nifty rise today? IT stocks, stronger rupee among 3 key reasons | Business News - Hindustan Times",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex Today Rallies 1,109 Points | Nifty Above 22,700 | 3 Reasons Why Indian Share Markets Are Rising - Equitymaster",
-        "tone": "neu"
+        "t": "Stock Market Outlook Today, September 16: Sensex, Nifty May Fall Further; Fed Decision in Focus - Goodreturns",
+        "tone": "neg"
       }
     ]
   },
@@ -471,22 +471,22 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 32.45,
+            "ret": 38.28,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 29.01,
+            "ret": 29.43,
             "days": 1
           },
           {
-            "name": "Pricol Ltd",
-            "ret": 7.09,
+            "name": "Stylam Industrie",
+            "ret": 8.37,
             "days": 2
           },
           {
-            "name": "Stylam Industrie",
-            "ret": 6.63,
+            "name": "Pricol Ltd",
+            "ret": 7.86,
             "days": 2
           }
         ]
