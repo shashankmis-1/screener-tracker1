@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T08:29:43.093470Z",
+  "generated": "2026-10-15T15:32:48.908664Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,23 +357,23 @@
     }
   ],
   "market": {
-    "generated": "2026-10-15T08:29:39.421795Z",
+    "generated": "2026-10-15T15:32:45.009692Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -1.11
+        "pct": 0.1
       },
       {
         "name": "Dow",
-        "pct": -0.09
+        "pct": 0.99
       },
       {
         "name": "Nasdaq",
-        "pct": -1.88
+        "pct": -0.35
       },
       {
         "name": "Nikkei",
-        "pct": -4.9
+        "pct": -0.05
       },
       {
         "name": "Hang Seng",
@@ -383,49 +383,49 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.14
+        "pct": 0.18
       },
       {
         "name": "WTI",
-        "pct": -0.81
+        "pct": 0.91
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.34
+        "pct": -0.25
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -2.19
+        "pct": -4.14
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 2.06,
-        "w1": 3.76
+        "d1": 2.11,
+        "w1": 3.8
       },
       {
         "name": "Nifty 50",
-        "d1": 1.88,
-        "w1": 3.67
+        "d1": 1.66,
+        "w1": 3.44
       }
     ],
     "sectors": [
       {
         "name": "Nifty IT",
-        "pct": 2.07
+        "pct": 1.82
       },
       {
         "name": "Nifty Bank",
-        "pct": 1.23
+        "pct": 0.89
       },
       {
         "name": "Nifty Pharma",
-        "pct": 0.7
+        "pct": 0.31
       }
     ],
     "sectorTrend": {
@@ -434,27 +434,27 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -1.8,
-    "bias": "negative",
+    "biasScore": -0.07,
+    "bias": "mixed",
     "news": [
       {
-        "t": "Why is stock market up today? Sensex jumps 1,400 points, Nifty above 23,000 - Top 3 reasons explained - Livemint",
+        "t": "Indian markets continue rally; Nifty and Sensex close 2% up as rupee strengths - The Hindu",
         "tone": "pos"
       },
       {
-        "t": "Bulls Return To Dalal Street! Stock Markets Rise as Sensex, Nifty Skyrocket; IT Stocks Rally - ETV Bharat",
+        "t": "Sensex Rallies 1,534 Points, Nifty Nears 23,000 - HDFC Sky",
+        "tone": "neu"
+      },
+      {
+        "t": "Why is stock market up today? Sensex jumps 1,400 points, Nifty above 23,000 - Top 3 reasons explained - TradingView",
         "tone": "pos"
       },
       {
-        "t": "Sensex rallies 1,100 points despite global sell-off: Why are markets rising today? - India Today",
+        "t": "Indian share benchmarks log best day in four months on global AI slump - Reuters",
         "tone": "neg"
       },
       {
-        "t": "Sensex Today Trades Higher | Nifty Above 22,650 | Tata Tech Rallies 7% - Equitymaster",
-        "tone": "pos"
-      },
-      {
-        "t": "Stock market opening: Sensex over 400 points up, Nifty also in green | Business News - Hindustan Times",
+        "t": "Share Market Today: Nifty 50, Bank Nifty | Oct 15, 2026 - Liquide Blog",
         "tone": "neu"
       }
     ]
@@ -471,22 +471,22 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 38.28,
+            "ret": 41.85,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 28.62,
+            "ret": 28.84,
             "days": 1
           },
           {
             "name": "Stylam Industrie",
-            "ret": 8.13,
+            "ret": 7.31,
             "days": 2
           },
           {
             "name": "Pricol Ltd",
-            "ret": 7.81,
+            "ret": 6.71,
             "days": 2
           }
         ]
