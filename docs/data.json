@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T09:11:28.024692Z",
+  "generated": "2026-10-19T17:23:29.178454Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,23 +357,23 @@
     }
   ],
   "market": {
-    "generated": "2026-10-19T09:11:15.706835Z",
+    "generated": "2026-10-19T17:23:24.968977Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -1.09
+        "pct": 0.52
       },
       {
         "name": "Dow",
-        "pct": -0.34
+        "pct": -0.03
       },
       {
         "name": "Nasdaq",
-        "pct": -2.15
+        "pct": 1.24
       },
       {
         "name": "Nikkei",
-        "pct": -0.62
+        "pct": 1.39
       },
       {
         "name": "Hang Seng",
@@ -383,80 +383,101 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.52
+        "pct": 0.26
       },
       {
         "name": "WTI",
-        "pct": -3.56
+        "pct": -2.13
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.44
+        "pct": 0.41
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 6.22
+        "pct": 5.07
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -1.36,
-        "w1": 2.49
+        "d1": -1.17,
+        "w1": 2.68
       },
       {
         "name": "Nifty 50",
-        "d1": -1.23,
-        "w1": 2.22
+        "d1": -1.11,
+        "w1": 2.35
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Energy",
-        "pct": -0.54
-      },
-      {
-        "name": "Nifty Auto",
-        "pct": -0.57
-      },
-      {
         "name": "Nifty Metal",
-        "pct": -0.57
+        "pct": -0.55
       },
       {
-        "name": "Nifty Pharma",
-        "pct": -0.61
+        "name": "Nifty Energy",
+        "pct": -0.6
       },
       {
         "name": "Nifty Bank",
-        "pct": -0.68
+        "pct": -0.64
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": -0.65
+      },
+      {
+        "name": "Nifty Auto",
+        "pct": -0.69
       },
       {
         "name": "Nifty Realty",
-        "pct": -0.99
-      },
-      {
-        "name": "Nifty FMCG",
-        "pct": -1.48
+        "pct": -1.2
       },
       {
         "name": "Nifty IT",
-        "pct": -1.56
+        "pct": -1.28
+      },
+      {
+        "name": "Nifty FMCG",
+        "pct": -1.44
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Energy",
+      "leader": "Nifty Metal",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.96,
-    "bias": "negative",
-    "news": []
+    "biasScore": 0.52,
+    "bias": "positive",
+    "news": [
+      {
+        "t": "Stock Market Crash: Investors Lose Rs 5 Lakh Crore As Sensex, Nifty Tank. 3 Reasons Why Market Are Falling Today - NDTV",
+        "tone": "neg"
+      },
+      {
+        "t": "Nifty Sensex Today: Stock Market Crashes as Sensex Falls 876 Points, Nifty Drops 1.11%; Banking and IT Stocks Lead the Losses - India Infoline",
+        "tone": "neg"
+      },
+      {
+        "t": "Sensex, Nifty crash: Why is stock market down today? Massive wealth eroded; investors lose \u20b94 lakh crore - Top 3 reasons - Livemint",
+        "tone": "neg"
+      },
+      {
+        "t": "Sensex Today Tanks 876 Points | Nifty Below 28,900 | 3 Reasons Why Indian Share Markets Are Falling - Equitymaster",
+        "tone": "neg"
+      },
+      {
+        "t": "Share Market Today: Nifty 50, Bank Nifty | Oct 19, 2026 - Liquide Blog",
+        "tone": "neu"
+      }
+    ]
   },
   "paper": {
     "stats": {
@@ -475,17 +496,17 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 26.78,
+            "ret": 26.11,
             "days": 1
           },
           {
             "name": "Stylam Industrie",
-            "ret": 8.85,
+            "ret": 7.42,
             "days": 2
           },
           {
             "name": "Pricol Ltd",
-            "ret": 7.01,
+            "ret": 6.04,
             "days": 2
           }
         ]
