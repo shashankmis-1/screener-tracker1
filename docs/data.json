@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T15:35:43.552553Z",
+  "generated": "2026-10-21T08:46:51.283027Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,125 +357,125 @@
     }
   ],
   "market": {
-    "generated": "2026-10-20T15:35:39.652957Z",
+    "generated": "2026-10-21T08:46:44.756673Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.31
+        "pct": 0.28
       },
       {
         "name": "Dow",
-        "pct": 0.9
+        "pct": 1.02
       },
       {
         "name": "Nasdaq",
-        "pct": 0.1
+        "pct": -0.02
       },
       {
         "name": "Nikkei",
-        "pct": -0.62
+        "pct": 0.85
       },
       {
         "name": "Hang Seng",
-        "pct": -1.32
+        "pct": -0.9
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.21
+        "pct": 1.23
       },
       {
         "name": "WTI",
-        "pct": -5.97
+        "pct": -2.84
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.07
+        "pct": -0.39
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 5.05
+        "pct": 8.72
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -1.17,
-        "w1": 2.68
+        "d1": -0.62,
+        "w1": 0.5
       },
       {
         "name": "Nifty 50",
-        "d1": -1.11,
-        "w1": 2.35
+        "d1": -0.9,
+        "w1": -0.17
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Metal",
-        "pct": -0.55
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": -0.6
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": -0.64
+        "name": "Nifty IT",
+        "pct": 2.42
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.65
-      },
-      {
-        "name": "Nifty Auto",
-        "pct": -0.69
-      },
-      {
-        "name": "Nifty Realty",
-        "pct": -1.2
-      },
-      {
-        "name": "Nifty IT",
-        "pct": -1.28
+        "pct": -1.23
       },
       {
         "name": "Nifty FMCG",
-        "pct": -1.44
+        "pct": -1.27
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -1.3
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": -1.91
+      },
+      {
+        "name": "Nifty Realty",
+        "pct": -1.91
+      },
+      {
+        "name": "Nifty Metal",
+        "pct": -2.18
+      },
+      {
+        "name": "Nifty Auto",
+        "pct": -2.42
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Metal",
+      "leader": "Nifty IT",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.13,
+    "biasScore": 0.25,
     "bias": "mixed",
     "news": [
       {
-        "t": "Ahead of Market: 10 things that will decide stock market action on Wednesday - The Economic Times",
+        "t": "Sensex up 500 points: 3 reasons why the stock market is rising today - India Today",
+        "tone": "pos"
+      },
+      {
+        "t": "Stock market outlook today, 21 Oct: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues - TradingView",
         "tone": "neu"
       },
       {
-        "t": "Stock market holiday today: BSE, NSE to remain closed for Dussehra - Moneycontrol.com",
-        "tone": "neu"
-      },
-      {
-        "t": "Sensex Falls 876 Pts, Nifty Below 22,900 on Bank Stocks, Oil Prices - Kalkine India",
+        "t": "Sensex Crashes Over 1,150 Points From Day's High, Nifty Below 22,800: Why Is Share Market Falling Today? Kn - News18",
         "tone": "neg"
       },
       {
-        "t": "Indian stock markets closed today for Dussehra, trading to resume on Wednesday - cfo.economictimes.indiatimes.com",
-        "tone": "neu"
+        "t": "Stock Market Crash: Sensex Sinks 950 Pts, Nifty Falls Over 265 Pts | Why Stock Market Is Down Today? - Goodreturns",
+        "tone": "neg"
       },
       {
-        "t": "Stock market holiday: BSE, NSE shut for trading today due to Dussehra - Business Standard",
-        "tone": "neu"
+        "t": "Sensex, Nifty Rally 1% on IT Stocks, Global Cues - Rediff MoneyWiz",
+        "tone": "pos"
       }
     ]
   },
@@ -496,17 +496,17 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 26.11,
+            "ret": 24.68,
             "days": 1
           },
           {
-            "name": "Stylam Industrie",
-            "ret": 7.42,
+            "name": "Pricol Ltd",
+            "ret": 4.26,
             "days": 2
           },
           {
-            "name": "Pricol Ltd",
-            "ret": 6.04,
+            "name": "Stylam Industrie",
+            "ret": 1.7,
             "days": 2
           }
         ]
