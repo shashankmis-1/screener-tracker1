@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22T08:48:52.635301Z",
+  "generated": "2026-10-22T15:50:07.968721Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,23 +357,23 @@
     }
   ],
   "market": {
-    "generated": "2026-10-22T08:48:49.247338Z",
+    "generated": "2026-10-22T15:50:03.472204Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.58
+        "pct": -1.25
       },
       {
         "name": "Dow",
-        "pct": 0.69
+        "pct": -0.21
       },
       {
         "name": "Nasdaq",
-        "pct": 1.05
+        "pct": -2.24
       },
       {
         "name": "Nikkei",
-        "pct": -2.65
+        "pct": 0.85
       },
       {
         "name": "Hang Seng",
@@ -383,69 +383,69 @@
     "commodities": [
       {
         "name": "Brent",
-        "pct": 3.18
+        "pct": 2.13
       },
       {
         "name": "WTI",
-        "pct": 2.86
+        "pct": 1.13
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.17
+        "pct": 0.1
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 2.04
+        "pct": 0.53
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.72,
-        "w1": 0.55
+        "d1": -0.62,
+        "w1": 0.64
       },
       {
         "name": "Nifty 50",
-        "d1": -0.78,
-        "w1": 0.05
+        "d1": -0.54,
+        "w1": 0.29
       }
     ],
     "sectors": [
       {
         "name": "Nifty Pharma",
-        "pct": -0.25
+        "pct": 0.12
       },
       {
         "name": "Nifty Bank",
-        "pct": -0.35
+        "pct": -0.09
       },
       {
         "name": "Nifty Realty",
-        "pct": -0.66
+        "pct": -0.3
       },
       {
         "name": "Nifty Metal",
-        "pct": -0.79
+        "pct": -0.52
       },
       {
         "name": "Nifty Auto",
-        "pct": -1.06
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": -1.25
+        "pct": -0.73
       },
       {
         "name": "Nifty IT",
-        "pct": -1.37
+        "pct": -1.05
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": -1.05
       },
       {
         "name": "Nifty FMCG",
-        "pct": -1.85
+        "pct": -1.41
       }
     ],
     "sectorTrend": {
@@ -454,11 +454,15 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.76,
+    "biasScore": -1.23,
     "bias": "negative",
     "news": [
       {
-        "t": "Three Reasons Why Market Is Falling Today: Sensex Tumbles 600 Points, Nifty Tests 22,600 - NDTV Profit",
+        "t": "Market Close: Nifty, Sensex Fall for 3rd Day as Oil Tops $110 - HDFC Sky",
+        "tone": "neg"
+      },
+      {
+        "t": "Stock Market Today: Sensex Falls 460 Points, Nifty Closes Below 22,700; Media, FMCG and IT Stocks Drag - India Infoline",
         "tone": "neg"
       },
       {
@@ -466,15 +470,11 @@
         "tone": "neg"
       },
       {
-        "t": "Why is market falling today? Sensex drops 600 points, Nifty below 22,600. Key factors behind Rs 5 lakh cro - The Economic Times",
+        "t": "Why is stock market down today? Sensex drops 460 points, Nifty ends at 22,688 - Top 3 reasons explained - Livemint",
         "tone": "neg"
       },
       {
-        "t": "Stock market outlook today, 22 Oct: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues - Livemint",
-        "tone": "neu"
-      },
-      {
-        "t": "Why is the Stock Market falling today? 4 factors dragging Nifty, Sensex - Zee Business",
+        "t": "Sensex Today Ends 460 Points Lower | Nifty Below 22,700 | KEI Industries Down 8% - Equitymaster",
         "tone": "neg"
       }
     ]
@@ -501,12 +501,12 @@
           },
           {
             "name": "Pricol Ltd",
-            "ret": 4.0,
+            "ret": 3.7,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": 1.45,
+            "ret": 1.43,
             "days": 2
           }
         ]
