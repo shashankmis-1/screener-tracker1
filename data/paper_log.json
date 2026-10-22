@@ -25,8 +25,8 @@
       "entryPrice": 624.95,
       "status": "open",
       "daysHeld": 2,
-      "lastPrice": 659.6,
-      "lastReturn": 5.54,
+      "lastPrice": 649.95,
+      "lastReturn": 4.0,
       "minReturn": -3.19,
       "snap": {}
     },
@@ -72,8 +72,8 @@
       "entryPrice": 3076.95,
       "status": "open",
       "daysHeld": 2,
-      "lastPrice": 3141.1,
-      "lastReturn": 2.08,
+      "lastPrice": 3121.6,
+      "lastReturn": 1.45,
       "minReturn": -0.63,
       "snap": {}
     },
@@ -85,8 +85,8 @@
       "entryPrice": 490.55,
       "status": "open",
       "daysHeld": 1,
-      "lastPrice": 654.4,
-      "lastReturn": 33.4,
+      "lastPrice": 635.25,
+      "lastReturn": 29.5,
       "minReturn": 0.0,
       "snap": {}
     },
@@ -98,8 +98,8 @@
       "entryPrice": 636.75,
       "status": "open",
       "daysHeld": 1,
-      "lastPrice": 796.75,
-      "lastReturn": 25.13,
+      "lastPrice": 791.0,
+      "lastReturn": 24.22,
       "minReturn": -0.1,
       "snap": {}
     }
