@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22T15:50:07.968721Z",
+  "generated": "2026-10-23T08:45:10.331412Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,125 +357,125 @@
     }
   ],
   "market": {
-    "generated": "2026-10-22T15:50:03.472204Z",
+    "generated": "2026-10-23T08:45:07.105559Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -1.25
+        "pct": -1.21
       },
       {
         "name": "Dow",
-        "pct": -0.21
+        "pct": 0.02
       },
       {
         "name": "Nasdaq",
-        "pct": -2.24
+        "pct": -2.6
       },
       {
         "name": "Nikkei",
-        "pct": 0.85
+        "pct": -0.34
       },
       {
         "name": "Hang Seng",
-        "pct": -3.03
+        "pct": 0.69
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 2.13
+        "pct": -3.6
       },
       {
         "name": "WTI",
-        "pct": 1.13
+        "pct": 0.81
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.1
+        "pct": 0.68
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 0.53
+        "pct": 6.39
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.62,
-        "w1": 0.64
+        "d1": -0.44,
+        "w1": -1.86
       },
       {
         "name": "Nifty 50",
-        "d1": -0.54,
-        "w1": 0.29
+        "d1": -0.59,
+        "w1": -1.93
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Pharma",
-        "pct": 0.12
+        "name": "Nifty IT",
+        "pct": 0.03
       },
       {
         "name": "Nifty Bank",
-        "pct": -0.09
-      },
-      {
-        "name": "Nifty Realty",
-        "pct": -0.3
-      },
-      {
-        "name": "Nifty Metal",
-        "pct": -0.52
+        "pct": -1.16
       },
       {
         "name": "Nifty Auto",
-        "pct": -0.73
-      },
-      {
-        "name": "Nifty IT",
-        "pct": -1.05
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": -1.05
+        "pct": -1.28
       },
       {
         "name": "Nifty FMCG",
-        "pct": -1.41
+        "pct": -1.44
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": -1.56
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": -2.27
+      },
+      {
+        "name": "Nifty Metal",
+        "pct": -2.65
+      },
+      {
+        "name": "Nifty Realty",
+        "pct": -2.71
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Pharma",
+      "leader": "Nifty IT",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -1.23,
+    "biasScore": -1.03,
     "bias": "negative",
     "news": [
       {
-        "t": "Market Close: Nifty, Sensex Fall for 3rd Day as Oil Tops $110 - HDFC Sky",
+        "t": "Why Stock Market Is Falling Today? Sensex Drops Over 500 Points, Nifty 50 Slips Below 22,500; Key Reasons - NDTV Profit",
         "tone": "neg"
       },
       {
-        "t": "Stock Market Today: Sensex Falls 460 Points, Nifty Closes Below 22,700; Media, FMCG and IT Stocks Drag - India Infoline",
+        "t": "Sensex, Nifty rebound after 3-day fall on IT stocks buying - The Hindu",
         "tone": "neg"
       },
       {
-        "t": "Sensex down 500 points today: Why is stock market falling today? - India Today",
+        "t": "Sensex falls 600 points: Why is stock market down today? - India Today",
         "tone": "neg"
       },
       {
-        "t": "Why is stock market down today? Sensex drops 460 points, Nifty ends at 22,688 - Top 3 reasons explained - Livemint",
+        "t": "Why Is Share Market Falling Today? Know 5 Key Reasons Behind Sensex, Nifty Crash on October 23 - News18",
         "tone": "neg"
       },
       {
-        "t": "Sensex Today Ends 460 Points Lower | Nifty Below 22,700 | KEI Industries Down 8% - Equitymaster",
-        "tone": "neg"
+        "t": "Stock market outlook today, 23 Oct: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues - Livemint",
+        "tone": "neu"
       }
     ]
   },
@@ -491,22 +491,22 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 29.5,
+            "ret": 25.71,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 24.22,
+            "ret": 18.65,
             "days": 1
           },
           {
-            "name": "Pricol Ltd",
-            "ret": 3.7,
+            "name": "Stylam Industrie",
+            "ret": 0.99,
             "days": 2
           },
           {
-            "name": "Stylam Industrie",
-            "ret": 1.43,
+            "name": "Pricol Ltd",
+            "ret": -0.74,
             "days": 2
           }
         ]
