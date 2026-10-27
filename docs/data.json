@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T17:13:46.466954Z",
+  "generated": "2026-10-27T09:14:20.290216Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,11 +357,11 @@
     }
   ],
   "market": {
-    "generated": "2026-10-26T17:13:41.138363Z",
+    "generated": "2026-10-27T09:14:14.470725Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.81
+        "pct": 0.7
       },
       {
         "name": "Dow",
@@ -369,112 +369,112 @@
       },
       {
         "name": "Nasdaq",
-        "pct": 1.09
+        "pct": 0.82
       },
       {
         "name": "Nikkei",
-        "pct": -0.34
+        "pct": 1.73
       },
       {
         "name": "Hang Seng",
-        "pct": 0.69
+        "pct": -0.73
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -4.54
+        "pct": -3.98
       },
       {
         "name": "WTI",
-        "pct": -0.82
+        "pct": 0.35
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.49
+        "pct": 0.19
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 1.78
+        "pct": -4.15
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.66,
-        "w1": -1.5
+        "d1": -0.44,
+        "w1": -0.77
       },
       {
         "name": "Nifty 50",
-        "d1": 0.68,
-        "w1": -1.7
+        "d1": -0.17,
+        "w1": -0.76
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Metal",
-        "pct": 2.21
-      },
-      {
         "name": "Nifty Pharma",
-        "pct": 1.76
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": 1.46
-      },
-      {
-        "name": "Nifty IT",
-        "pct": 0.87
+        "pct": 1.92
       },
       {
         "name": "Nifty Realty",
-        "pct": 0.68
+        "pct": 1.69
       },
       {
         "name": "Nifty Auto",
-        "pct": 0.44
+        "pct": 1.0
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": 0.36
+      },
+      {
+        "name": "Nifty Metal",
+        "pct": 0.12
       },
       {
         "name": "Nifty FMCG",
-        "pct": 0.28
+        "pct": -0.29
+      },
+      {
+        "name": "Nifty IT",
+        "pct": -0.4
       },
       {
         "name": "Nifty Bank",
-        "pct": 0.15
+        "pct": -0.58
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Metal",
+      "leader": "Nifty Pharma",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.26,
+    "biasScore": 0.46,
     "bias": "positive",
     "news": [
       {
-        "t": "Mind-boggling Monday at Indian stock markets: Sensex, Nifty mirror life\u2019s ups and downs \u2014 October 26 trade details - Livemint",
-        "tone": "neg"
-      },
-      {
-        "t": "Sensex Today Trades Higher | Nifty Above 22,600 | Kotak Mahindra &amp; Sun Pharma Top Gainers - Equitymaster",
+        "t": "Markets open higher; Sensex tops 77,400, Nifty trades above 24,100 - DD News",
         "tone": "pos"
       },
       {
-        "t": "Sensex Jumps 483 Points, Nifty Closes Above 22,750 - Rediff",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex, Nifty Fall as Asia Weak, Oil High, Middle East Tense - HDFC Sky",
+        "t": "India stock market crash: Is India's Share Market Heading For Its Worst Year Since 2008 Crisis? - NDTV",
         "tone": "neg"
       },
       {
-        "t": "Sensex surges over 480 points, Nifty settles at 22,753 amid buying in metals, pharma - ChiniMandi",
+        "t": "Stock market outlook today, 27 Oct: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues - Livemint",
+        "tone": "neu"
+      },
+      {
+        "t": "Sensex falls over 300 points, Nifty slips below 22,690 as crude prices hover near USD 115 - ChiniMandi",
+        "tone": "neg"
+      },
+      {
+        "t": "Sensex Today Trades Flat | Nifty Above 22,750 | Bharat Elec &amp; Kotak Mahindra Top Gainers - Equitymaster",
         "tone": "pos"
       }
     ]
@@ -490,23 +490,23 @@
         "avgLoss": -8.0,
         "openTrades": [
           {
-            "name": "Varroc Engineer",
-            "ret": 22.27,
+            "name": "Accent Microcell",
+            "ret": 35.0,
             "days": 1
           },
           {
-            "name": "Accent Microcell",
-            "ret": 20.78,
+            "name": "Varroc Engineer",
+            "ret": 26.3,
             "days": 1
           },
           {
             "name": "Stylam Industrie",
-            "ret": 1.69,
+            "ret": 3.57,
             "days": 2
           },
           {
             "name": "Pricol Ltd",
-            "ret": -1.48,
+            "ret": 2.96,
             "days": 2
           }
         ]
