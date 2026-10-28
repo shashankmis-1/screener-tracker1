@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T09:55:01.476430Z",
+  "generated": "2026-10-28T17:03:59.458811Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,95 +357,95 @@
     }
   ],
   "market": {
-    "generated": "2026-10-28T09:54:56.642784Z",
+    "generated": "2026-10-28T17:03:54.117591Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.6
+        "pct": 0.26
       },
       {
         "name": "Dow",
-        "pct": 0.03
+        "pct": 0.3
       },
       {
         "name": "Nasdaq",
-        "pct": 1.18
+        "pct": 0.1
       },
       {
         "name": "Nikkei",
-        "pct": 1.08
+        "pct": 1.73
       },
       {
         "name": "Hang Seng",
-        "pct": 0.23
+        "pct": -0.73
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.79
+        "pct": -1.32
       },
       {
         "name": "WTI",
-        "pct": 1.46
+        "pct": 3.56
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.04
+        "pct": 0.03
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -1.16
+        "pct": -0.95
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.42,
-        "w1": -0.57
+        "d1": -0.48,
+        "w1": -0.63
       },
       {
         "name": "Nifty 50",
-        "d1": -0.19,
-        "w1": -0.46
+        "d1": -0.22,
+        "w1": -0.49
       }
     ],
     "sectors": [
       {
         "name": "Nifty Auto",
-        "pct": 1.51
+        "pct": 1.45
       },
       {
         "name": "Nifty Pharma",
-        "pct": 1.08
+        "pct": 1.04
       },
       {
         "name": "Nifty Bank",
-        "pct": 0.56
+        "pct": 0.54
       },
       {
         "name": "Nifty Metal",
-        "pct": -0.29
+        "pct": -0.32
       },
       {
         "name": "Nifty FMCG",
-        "pct": -0.7
+        "pct": -0.56
       },
       {
         "name": "Nifty Energy",
-        "pct": -0.82
+        "pct": -0.89
       },
       {
         "name": "Nifty Realty",
-        "pct": -0.82
+        "pct": -0.89
       },
       {
         "name": "Nifty IT",
-        "pct": -2.35
+        "pct": -1.98
       }
     ],
     "sectorTrend": {
@@ -454,7 +454,7 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.6,
+    "biasScore": 0.32,
     "bias": "positive",
     "news": [
       {
@@ -466,15 +466,15 @@
         "tone": "neg"
       },
       {
-        "t": "Sensex, Nifty Slide as Crude Near $116 and IT Stocks Tumble - HDFC Sky",
+        "t": "Indian Stock Markets Close Lower as Auto and Banking Shares Help Limit Losses - INDIA New England News",
         "tone": "neg"
       },
       {
-        "t": "Sensex Jumps Over 1,100 Points as Finance Minister\u2019s Tax Comments Lift Indian Markets - INDIA New England News",
-        "tone": "pos"
+        "t": "Stock market crash today: Sensex plunges 995 points, Nifty sheds 1% ahead of Fed decision: Here's what spooked D-Street - TradingView",
+        "tone": "neg"
       },
       {
-        "t": "Stock market crash today: Sensex plunges 995 points, Nifty sheds 1% ahead of Fed decision: Here's what spooked D-Street - TradingView",
+        "t": "Sensex Today Ends 353 Points Lower | Nifty Below 22,700 | AWL Agri Business Down 6% - Equitymaster",
         "tone": "neg"
       }
     ]
@@ -496,17 +496,17 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 26.85,
+            "ret": 26.82,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 3.56,
+            "ret": 3.26,
             "days": 2
           },
           {
             "name": "Stylam Industrie",
-            "ret": -6.19,
+            "ret": -6.26,
             "days": 2
           }
         ]
