@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-29T10:17:45.926553Z",
+  "generated": "2026-10-29T17:21:33.163062Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,37 +357,37 @@
     }
   ],
   "market": {
-    "generated": "2026-10-29T10:17:42.222654Z",
+    "generated": "2026-10-29T17:21:29.404082Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.28
+        "pct": -0.46
       },
       {
         "name": "Dow",
-        "pct": 0.19
+        "pct": -0.41
       },
       {
         "name": "Nasdaq",
-        "pct": 0.27
+        "pct": -1.45
       },
       {
         "name": "Nikkei",
-        "pct": 1.1
+        "pct": 1.08
       },
       {
         "name": "Hang Seng",
-        "pct": -0.59
+        "pct": 0.23
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -4.5
+        "pct": -4.2
       },
       {
         "name": "WTI",
-        "pct": -1.47
+        "pct": -1.05
       }
     ],
     "forex": [
@@ -454,27 +454,27 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.21,
+    "biasScore": -0.24,
     "bias": "mixed",
     "news": [
       {
-        "t": "Why is market rallying today? Sensex jumps 850 points, Nifty above 22,900. 6 key factors behind Rs 5 lakh - The Economic Times",
-        "tone": "pos"
-      },
-      {
-        "t": "Three Reasons Why Markets Are Rising: Sensex Jumps 600 Points, Nifty Hovers Around 22,850 - NDTV Profit",
-        "tone": "pos"
-      },
-      {
-        "t": "Stock market outlook today, 29 Oct: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues - Livemint",
+        "t": "Sensex Today Rallies 905 Points | Nifty Above 22,900 | 5 Reasons Why Indian Stock Markets Are Rising - Equitymaster",
         "tone": "neu"
       },
       {
-        "t": "Sensex, Nifty Rise as Reliance Industries and IT Stocks Gain; Crude Oil Limits Upside - India Infoline",
-        "tone": "pos"
+        "t": "Sensex Jumps 1,534 Points as Falling Oil Prices Lift Indian Stocks - INDIA New England News",
+        "tone": "neu"
       },
       {
-        "t": "Sensex Today Trades Higher | Nifty Above 22,700 | Jio Platforms Up 4% - Equitymaster",
+        "t": "Stock Market Crash: Sensex, Nifty Hit 1-Year Low; How US-Israel-Iran War Wiped Out Rs 4,753,333 Crore - Goodreturns",
+        "tone": "neg"
+      },
+      {
+        "t": "Indian markets stage a strong rebound, recouping yesterday\u2019s losses as Sensex surges over 1% - The New Indian Express",
+        "tone": "neu"
+      },
+      {
+        "t": "Three Reasons Why Markets Are Rising: Sensex Jumps Over 800 Points, Nifty Crosses 22,900 - NDTV Profit",
         "tone": "pos"
       }
     ]
