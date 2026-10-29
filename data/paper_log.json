@@ -25,8 +25,8 @@
       "entryPrice": 624.95,
       "status": "open",
       "daysHeld": 2,
-      "lastPrice": 645.35,
-      "lastReturn": 3.26,
+      "lastPrice": 642.45,
+      "lastReturn": 2.8,
       "minReturn": -3.19,
       "snap": {}
     },
@@ -70,12 +70,16 @@
       "rec": "core",
       "entryDate": "2026-07-07",
       "entryPrice": 3076.95,
-      "status": "open",
+      "status": "closed",
       "daysHeld": 2,
-      "lastPrice": 2884.3,
-      "lastReturn": -6.26,
-      "minReturn": -6.26,
-      "snap": {}
+      "lastPrice": 2823.0,
+      "lastReturn": -8.25,
+      "minReturn": -8.25,
+      "snap": {},
+      "exitReason": "stop",
+      "closeDate": "2026-07-09",
+      "finalReturn": -8.0,
+      "finalSensexReturn": null
     },
     {
       "name": "Accent Microcell",
@@ -85,8 +89,8 @@
       "entryPrice": 490.55,
       "status": "open",
       "daysHeld": 1,
-      "lastPrice": 640.8,
-      "lastReturn": 30.63,
+      "lastPrice": 621.25,
+      "lastReturn": 26.64,
       "minReturn": 0.0,
       "snap": {}
     },
@@ -98,8 +102,8 @@
       "entryPrice": 636.75,
       "status": "open",
       "daysHeld": 1,
-      "lastPrice": 807.5,
-      "lastReturn": 26.82,
+      "lastPrice": 804.4,
+      "lastReturn": 26.33,
       "minReturn": -0.1,
       "snap": {}
     }

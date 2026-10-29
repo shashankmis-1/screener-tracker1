@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T17:03:59.458811Z",
+  "generated": "2026-10-29T10:17:45.926553Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,133 +357,133 @@
     }
   ],
   "market": {
-    "generated": "2026-10-28T17:03:54.117591Z",
+    "generated": "2026-10-29T10:17:42.222654Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.26
+        "pct": 0.28
       },
       {
         "name": "Dow",
-        "pct": 0.3
+        "pct": 0.19
       },
       {
         "name": "Nasdaq",
-        "pct": 0.1
+        "pct": 0.27
       },
       {
         "name": "Nikkei",
-        "pct": 1.73
+        "pct": 1.1
       },
       {
         "name": "Hang Seng",
-        "pct": -0.73
+        "pct": -0.59
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.32
+        "pct": -4.5
       },
       {
         "name": "WTI",
-        "pct": 3.56
+        "pct": -1.47
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.03
+        "pct": 0.08
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -0.95
+        "pct": -6.97
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.48,
-        "w1": -0.63
+        "d1": 1.24,
+        "w1": 1.23
       },
       {
         "name": "Nifty 50",
-        "d1": -0.22,
-        "w1": -0.49
+        "d1": 1.05,
+        "w1": 1.1
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Auto",
-        "pct": 1.45
-      },
-      {
-        "name": "Nifty Pharma",
-        "pct": 1.04
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": 0.54
-      },
-      {
-        "name": "Nifty Metal",
-        "pct": -0.32
+        "name": "Nifty Realty",
+        "pct": 2.75
       },
       {
         "name": "Nifty FMCG",
-        "pct": -0.56
+        "pct": 2.34
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": 1.18
       },
       {
         "name": "Nifty Energy",
-        "pct": -0.89
-      },
-      {
-        "name": "Nifty Realty",
-        "pct": -0.89
+        "pct": 1.01
       },
       {
         "name": "Nifty IT",
-        "pct": -1.98
+        "pct": 0.99
+      },
+      {
+        "name": "Nifty Metal",
+        "pct": 0.67
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": 0.64
+      },
+      {
+        "name": "Nifty Auto",
+        "pct": -0.24
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Auto",
+      "leader": "Nifty Realty",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.32,
-    "bias": "positive",
+    "biasScore": 0.21,
+    "bias": "mixed",
     "news": [
       {
-        "t": "Why Is Stock Market Falling Today? 4 Key Reasons Behind Sensex, Nifty Crash - NDTV",
-        "tone": "neg"
+        "t": "Why is market rallying today? Sensex jumps 850 points, Nifty above 22,900. 6 key factors behind Rs 5 lakh - The Economic Times",
+        "tone": "pos"
       },
       {
-        "t": "Stock market crash today: Sensex plunges 995 points, Nifty sheds 1% ahead of Fed decision: Here's what spooked D-Street - Livemint",
-        "tone": "neg"
+        "t": "Three Reasons Why Markets Are Rising: Sensex Jumps 600 Points, Nifty Hovers Around 22,850 - NDTV Profit",
+        "tone": "pos"
       },
       {
-        "t": "Indian Stock Markets Close Lower as Auto and Banking Shares Help Limit Losses - INDIA New England News",
-        "tone": "neg"
+        "t": "Stock market outlook today, 29 Oct: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues - Livemint",
+        "tone": "neu"
       },
       {
-        "t": "Stock market crash today: Sensex plunges 995 points, Nifty sheds 1% ahead of Fed decision: Here's what spooked D-Street - TradingView",
-        "tone": "neg"
+        "t": "Sensex, Nifty Rise as Reliance Industries and IT Stocks Gain; Crude Oil Limits Upside - India Infoline",
+        "tone": "pos"
       },
       {
-        "t": "Sensex Today Ends 353 Points Lower | Nifty Below 22,700 | AWL Agri Business Down 6% - Equitymaster",
-        "tone": "neg"
+        "t": "Sensex Today Trades Higher | Nifty Above 22,700 | Jio Platforms Up 4% - Equitymaster",
+        "tone": "pos"
       }
     ]
   },
   "paper": {
     "stats": {
       "core": {
-        "closed": 3,
-        "open": 4,
+        "closed": 4,
+        "open": 3,
         "winRate": 0,
         "avgReturn": -8.0,
         "avgWin": null,
@@ -491,22 +491,17 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 30.63,
+            "ret": 26.64,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 26.82,
+            "ret": 26.33,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 3.26,
-            "days": 2
-          },
-          {
-            "name": "Stylam Industrie",
-            "ret": -6.26,
+            "ret": 2.8,
             "days": 2
           }
         ]
