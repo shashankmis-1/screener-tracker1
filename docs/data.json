@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T10:19:41.161843Z",
+  "generated": "2026-10-30T16:58:26.251466Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,43 +357,43 @@
     }
   ],
   "market": {
-    "generated": "2026-10-30T10:19:38.378819Z",
+    "generated": "2026-10-30T16:58:22.269038Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.3
+        "pct": -1.85
       },
       {
         "name": "Dow",
-        "pct": -0.25
+        "pct": -0.92
       },
       {
         "name": "Nasdaq",
-        "pct": -1.38
+        "pct": -2.92
       },
       {
         "name": "Nikkei",
-        "pct": -2.12
+        "pct": 1.1
       },
       {
         "name": "Hang Seng",
-        "pct": 1.46
+        "pct": -0.59
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.45
+        "pct": -1.11
       },
       {
         "name": "WTI",
-        "pct": 1.97
+        "pct": 2.08
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.27
+        "pct": -0.28
       }
     ],
     "vix": [
@@ -454,27 +454,27 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.52,
+    "biasScore": -1.04,
     "bias": "negative",
     "news": [
       {
-        "t": "Stock Market Today: Sensex Rises, Nifty 50 Near 23,000; Trent Zooms 6%, Sun Pharma 2%; RIL, Jio Platforms Q2 Results Eyed - NDTV Profit",
+        "t": "Sensex, Nifty Rise; IT &amp; Pharma Lift Markets as Midcaps Slide - HDFC Sky",
         "tone": "pos"
       },
       {
-        "t": "Stock market outlook today, 30 Oct: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues - TradingView",
+        "t": "Sensex, Nifty close with gain of 0.5% as IT, pharma stocks rally; weak broader market limits gains - ChiniMandi",
+        "tone": "pos"
+      },
+      {
+        "t": "Indian Shares Snap Two-Month Losing Streak, Nifty And Sensex Gain In October - TradingView",
+        "tone": "pos"
+      },
+      {
+        "t": "Sensex Plunges 1,045 Points, Nifty Hits 2026 Low as Oil Prices Surge - INDIA New England News",
         "tone": "neu"
       },
       {
-        "t": "Stock Market Today: Sensex And Nifty Jump Amid Buying In IT Stocks; Trent Up 6% - ETV Bharat",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex Today Trades Flat | Nifty Below 22,950 | BSE Telecommunication Down 1.7% - Equitymaster",
-        "tone": "neg"
-      },
-      {
-        "t": "Stock Markets Today: Sensex, Nifty Up on Gains in IT Stocks - Rediff",
+        "t": "Market Wrap: Sensex Gains 308 Points, Nifty 50 Ends Above 23,000; Trent, IndiGo, Infosys Lead - NDTV Profit",
         "tone": "pos"
       }
     ]
