@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-29T17:21:33.163062Z",
+  "generated": "2026-10-30T10:19:41.161843Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,124 +357,124 @@
     }
   ],
   "market": {
-    "generated": "2026-10-29T17:21:29.404082Z",
+    "generated": "2026-10-30T10:19:38.378819Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.46
+        "pct": -0.3
       },
       {
         "name": "Dow",
-        "pct": -0.41
+        "pct": -0.25
       },
       {
         "name": "Nasdaq",
-        "pct": -1.45
+        "pct": -1.38
       },
       {
         "name": "Nikkei",
-        "pct": 1.08
+        "pct": -2.12
       },
       {
         "name": "Hang Seng",
-        "pct": 0.23
+        "pct": 1.46
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -4.2
+        "pct": -1.45
       },
       {
         "name": "WTI",
-        "pct": -1.05
+        "pct": 1.97
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.08
+        "pct": -0.27
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -6.97
+        "pct": 1.21
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 1.24,
-        "w1": 1.23
+        "d1": 0.42,
+        "w1": 1.83
       },
       {
         "name": "Nifty 50",
-        "d1": 1.05,
-        "w1": 1.1
+        "d1": 0.51,
+        "w1": 2.0
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Realty",
-        "pct": 2.75
-      },
-      {
-        "name": "Nifty FMCG",
-        "pct": 2.34
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": 1.18
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": 1.01
-      },
-      {
         "name": "Nifty IT",
-        "pct": 0.99
-      },
-      {
-        "name": "Nifty Metal",
-        "pct": 0.67
+        "pct": 2.32
       },
       {
         "name": "Nifty Pharma",
-        "pct": 0.64
+        "pct": 1.55
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -0.41
+      },
+      {
+        "name": "Nifty Metal",
+        "pct": -0.54
+      },
+      {
+        "name": "Nifty FMCG",
+        "pct": -0.62
+      },
+      {
+        "name": "Nifty Realty",
+        "pct": -0.72
       },
       {
         "name": "Nifty Auto",
-        "pct": -0.24
+        "pct": -0.87
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": -0.97
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Realty",
+      "leader": "Nifty IT",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.24,
-    "bias": "mixed",
+    "biasScore": -0.52,
+    "bias": "negative",
     "news": [
       {
-        "t": "Sensex Today Rallies 905 Points | Nifty Above 22,900 | 5 Reasons Why Indian Stock Markets Are Rising - Equitymaster",
+        "t": "Stock Market Today: Sensex Rises, Nifty 50 Near 23,000; Trent Zooms 6%, Sun Pharma 2%; RIL, Jio Platforms Q2 Results Eyed - NDTV Profit",
+        "tone": "pos"
+      },
+      {
+        "t": "Stock market outlook today, 30 Oct: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues - TradingView",
         "tone": "neu"
       },
       {
-        "t": "Sensex Jumps 1,534 Points as Falling Oil Prices Lift Indian Stocks - INDIA New England News",
-        "tone": "neu"
+        "t": "Stock Market Today: Sensex And Nifty Jump Amid Buying In IT Stocks; Trent Up 6% - ETV Bharat",
+        "tone": "pos"
       },
       {
-        "t": "Stock Market Crash: Sensex, Nifty Hit 1-Year Low; How US-Israel-Iran War Wiped Out Rs 4,753,333 Crore - Goodreturns",
+        "t": "Sensex Today Trades Flat | Nifty Below 22,950 | BSE Telecommunication Down 1.7% - Equitymaster",
         "tone": "neg"
       },
       {
-        "t": "Indian markets stage a strong rebound, recouping yesterday\u2019s losses as Sensex surges over 1% - The New Indian Express",
-        "tone": "neu"
-      },
-      {
-        "t": "Three Reasons Why Markets Are Rising: Sensex Jumps Over 800 Points, Nifty Crosses 22,900 - NDTV Profit",
+        "t": "Stock Markets Today: Sensex, Nifty Up on Gains in IT Stocks - Rediff",
         "tone": "pos"
       }
     ]
@@ -491,17 +491,17 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 26.64,
+            "ret": 29.24,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 26.33,
+            "ret": 20.33,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 2.8,
+            "ret": 3.06,
             "days": 2
           }
         ]
