@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T16:58:26.251466Z",
+  "generated": "2026-11-02T11:31:46.929922Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,124 +357,124 @@
     }
   ],
   "market": {
-    "generated": "2026-10-30T16:58:22.269038Z",
+    "generated": "2026-11-02T11:31:44.339805Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -1.85
+        "pct": -1.82
       },
       {
         "name": "Dow",
-        "pct": -0.92
+        "pct": -1.09
       },
       {
         "name": "Nasdaq",
-        "pct": -2.92
+        "pct": -2.86
       },
       {
         "name": "Nikkei",
-        "pct": 1.1
+        "pct": -0.33
       },
       {
         "name": "Hang Seng",
-        "pct": -0.59
+        "pct": 0.42
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.11
+        "pct": -7.85
       },
       {
         "name": "WTI",
-        "pct": 2.08
+        "pct": -4.55
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.28
+        "pct": -0.27
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 1.21
+        "pct": 1.31
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.42,
-        "w1": 1.83
+        "d1": 1.66,
+        "w1": 2.83
       },
       {
         "name": "Nifty 50",
-        "d1": 0.51,
-        "w1": 2.0
+        "d1": 1.68,
+        "w1": 3.02
       }
     ],
     "sectors": [
       {
-        "name": "Nifty IT",
-        "pct": 2.32
-      },
-      {
-        "name": "Nifty Pharma",
-        "pct": 1.55
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": -0.41
+        "name": "Nifty Energy",
+        "pct": 3.92
       },
       {
         "name": "Nifty Metal",
-        "pct": -0.54
-      },
-      {
-        "name": "Nifty FMCG",
-        "pct": -0.62
-      },
-      {
-        "name": "Nifty Realty",
-        "pct": -0.72
+        "pct": 3.21
       },
       {
         "name": "Nifty Auto",
-        "pct": -0.87
+        "pct": 1.33
       },
       {
-        "name": "Nifty Energy",
-        "pct": -0.97
+        "name": "Nifty Realty",
+        "pct": 1.03
+      },
+      {
+        "name": "Nifty FMCG",
+        "pct": 0.84
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": 0.58
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": -0.07
+      },
+      {
+        "name": "Nifty IT",
+        "pct": -0.5
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty IT",
+      "leader": "Nifty Energy",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -1.04,
+    "biasScore": -1.14,
     "bias": "negative",
     "news": [
       {
-        "t": "Sensex, Nifty Rise; IT &amp; Pharma Lift Markets as Midcaps Slide - HDFC Sky",
+        "t": "Why Stock Market Is Rising Today? Sensex Jumps 900 Points, Nifty 50 Above 23,300; Five Key Reasons - NDTV Profit",
         "tone": "pos"
       },
       {
-        "t": "Sensex, Nifty close with gain of 0.5% as IT, pharma stocks rally; weak broader market limits gains - ChiniMandi",
+        "t": "Why is stock market up today? Bulls are back with Monday Motivation as Sensex, Nifty soar over 1% each | Top 4 reasons - Livemint",
         "tone": "pos"
       },
       {
-        "t": "Indian Shares Snap Two-Month Losing Streak, Nifty And Sensex Gain In October - TradingView",
+        "t": "Sensex jumps 1,000 points: 3 reasons why stock market is rising today - India Today",
         "tone": "pos"
       },
       {
-        "t": "Sensex Plunges 1,045 Points, Nifty Hits 2026 Low as Oil Prices Surge - INDIA New England News",
+        "t": "Sensex Today Rallies 1,233 Points | Nifty Above 23,400 | 5 Reasons Why Indian Share Markets Are Rising - Equitymaster",
         "tone": "neu"
       },
       {
-        "t": "Market Wrap: Sensex Gains 308 Points, Nifty 50 Ends Above 23,000; Trent, IndiGo, Infosys Lead - NDTV Profit",
+        "t": "Sensex surges 1,233 points, Nifty reclaims 23,400: 5 reasons why stock market rallied today - IndiaIPO",
         "tone": "pos"
       }
     ]
@@ -491,17 +491,17 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 29.24,
+            "ret": 30.26,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 20.33,
+            "ret": 24.3,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 3.06,
+            "ret": 5.37,
             "days": 2
           }
         ]
