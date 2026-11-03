@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02T20:41:34.291868Z",
+  "generated": "2026-11-03T11:11:16.941360Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,124 +357,124 @@
     }
   ],
   "market": {
-    "generated": "2026-11-02T20:41:27.658264Z",
+    "generated": "2026-11-03T11:11:12.457477Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.46
+        "pct": -0.51
       },
       {
         "name": "Dow",
-        "pct": 0.51
+        "pct": 0.41
       },
       {
         "name": "Nasdaq",
-        "pct": -1.05
+        "pct": -1.07
       },
       {
         "name": "Nikkei",
-        "pct": -2.12
+        "pct": -0.33
       },
       {
         "name": "Hang Seng",
-        "pct": 1.46
+        "pct": 0.57
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -11.35
+        "pct": 0.72
       },
       {
         "name": "WTI",
-        "pct": -7.68
+        "pct": 1.0
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.28
+        "pct": -0.17
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 1.19
+        "pct": 1.44
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.42,
-        "w1": 1.83
+        "d1": 1.62,
+        "w1": 4.51
       },
       {
         "name": "Nifty 50",
-        "d1": 0.51,
-        "w1": 2.0
+        "d1": 1.58,
+        "w1": 4.66
       }
     ],
     "sectors": [
       {
-        "name": "Nifty IT",
-        "pct": 2.32
-      },
-      {
-        "name": "Nifty Pharma",
-        "pct": 1.55
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": -0.41
-      },
-      {
-        "name": "Nifty Metal",
-        "pct": -0.54
-      },
-      {
         "name": "Nifty FMCG",
-        "pct": -0.62
+        "pct": 3.65
       },
       {
         "name": "Nifty Realty",
-        "pct": -0.72
+        "pct": 2.33
       },
       {
         "name": "Nifty Auto",
-        "pct": -0.87
+        "pct": 1.71
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": 0.98
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": 0.42
+      },
+      {
+        "name": "Nifty IT",
+        "pct": 0.34
       },
       {
         "name": "Nifty Energy",
-        "pct": -0.97
+        "pct": -0.11
+      },
+      {
+        "name": "Nifty Metal",
+        "pct": -0.14
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty IT",
+      "leader": "Nifty FMCG",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.33,
-    "bias": "negative",
+    "biasScore": -0.19,
+    "bias": "mixed",
     "news": [
       {
-        "t": "Why Stock Market Is Rising Today? Sensex Jumps 900 Points, Nifty 50 Above 23,300; Five Key Reasons - NDTV Profit",
+        "t": "Why is market rising today? Sensex jumps over 1,000 pts, Nifty above 23,700. 6 key factors behind today's - The Economic Times",
         "tone": "pos"
       },
       {
-        "t": "Why is stock market up today? Bulls are back with Monday Motivation as Sensex, Nifty soar over 1% each | Top 4 reasons - Livemint",
+        "t": "Sensex Up 705, Nifty Above 23,600 as Rally Extends on Tuesday - HDFC Sky",
         "tone": "pos"
       },
       {
-        "t": "Sensex jumps 1,000 points: 3 reasons why stock market is rising today - India Today",
+        "t": "Taking Stock: Markets near 2-month high; Nifty above 23,800, Sensex jumps 1,225 pts - TradingView",
         "tone": "pos"
       },
       {
-        "t": "Indian Stocks Rally as Sensex Surges 1,233 Points, Nifty Closes Above 23,440 - INDIA New England News",
+        "t": "Why Is Stock Market Rising Today? Sensex Jumps Over 3,400 Points In Four Sessions, Nifty 50 Above 23,700; 3 Key Reasons - NDTV Profit",
         "tone": "pos"
       },
       {
-        "t": "Sensex surges 1,233 points, Nifty reclaims 23,400: 5 reasons why stock market rallied today - IndiaIPO",
+        "t": "Sensex up 1,000 points: Why stock market is rising for the second straight day - India Today",
         "tone": "pos"
       }
     ]
@@ -491,17 +491,17 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 30.26,
+            "ret": 26.33,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 20.33,
+            "ret": 23.97,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 3.06,
+            "ret": 6.48,
             "days": 2
           }
         ]
