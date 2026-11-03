@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03T11:11:16.941360Z",
+  "generated": "2026-11-03T18:19:53.926419Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,19 +357,19 @@
     }
   ],
   "market": {
-    "generated": "2026-11-03T11:11:12.457477Z",
+    "generated": "2026-11-03T18:19:48.195156Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.51
+        "pct": 0.6
       },
       {
         "name": "Dow",
-        "pct": 0.41
+        "pct": -0.19
       },
       {
         "name": "Nasdaq",
-        "pct": -1.07
+        "pct": 1.07
       },
       {
         "name": "Nikkei",
@@ -377,17 +377,17 @@
       },
       {
         "name": "Hang Seng",
-        "pct": 0.57
+        "pct": 0.42
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 0.72
+        "pct": -1.07
       },
       {
         "name": "WTI",
-        "pct": 1.0
+        "pct": -0.4
       }
     ],
     "forex": [
@@ -454,27 +454,27 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.19,
-    "bias": "mixed",
+    "biasScore": 0.31,
+    "bias": "positive",
     "news": [
       {
-        "t": "Why is market rising today? Sensex jumps over 1,000 pts, Nifty above 23,700. 6 key factors behind today's - The Economic Times",
+        "t": "Sensex Surges 1,225 Points, Nifty Crosses 23,800 as Indian Markets Extend Four-Day Rally - www.nationpathindia.com",
         "tone": "pos"
       },
       {
-        "t": "Sensex Up 705, Nifty Above 23,600 as Rally Extends on Tuesday - HDFC Sky",
+        "t": "Sensex Today Rallies 1,225 Points | Nifty Above 23,800 | 3 Reasons Why Indian Stock Markets Are Rising - Equitymaster",
+        "tone": "neu"
+      },
+      {
+        "t": "Ahead of Market: 10 things that will decide stock market action on Wednesday - The Economic Times",
+        "tone": "neu"
+      },
+      {
+        "t": "Stock Market Today: Sensex jumps 953 points, Nifty tops 23,700 - Multibagg AI",
         "tone": "pos"
       },
       {
-        "t": "Taking Stock: Markets near 2-month high; Nifty above 23,800, Sensex jumps 1,225 pts - TradingView",
-        "tone": "pos"
-      },
-      {
-        "t": "Why Is Stock Market Rising Today? Sensex Jumps Over 3,400 Points In Four Sessions, Nifty 50 Above 23,700; 3 Key Reasons - NDTV Profit",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex up 1,000 points: Why stock market is rising for the second straight day - India Today",
+        "t": "Indian Markets Rally for 4th Day on Easing Macro Pressures, FII Inflows - Rediff",
         "tone": "pos"
       }
     ]
