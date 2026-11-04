@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-04T11:21:41.920813Z",
+  "generated": "2026-11-04T18:32:09.474311Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,87 +357,79 @@
     }
   ],
   "market": {
-    "generated": "2026-11-04T11:21:39.502969Z",
+    "generated": "2026-11-04T18:32:05.464488Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.36
+        "pct": 1.78
       },
       {
         "name": "Dow",
-        "pct": -0.38
+        "pct": 2.88
       },
       {
         "name": "Nasdaq",
-        "pct": 0.83
+        "pct": 1.94
       },
       {
         "name": "Nikkei",
-        "pct": -1.42
+        "pct": -0.33
       },
       {
         "name": "Hang Seng",
-        "pct": 1.67
+        "pct": 0.57
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.05
+        "pct": -7.81
       },
       {
         "name": "WTI",
-        "pct": -0.61
+        "pct": -7.61
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.09
+        "pct": -0.1
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -3.39
+        "pct": 1.42
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.5,
-        "w1": 5.54
+        "d1": 1.62,
+        "w1": 4.51
       },
       {
         "name": "Nifty 50",
-        "d1": 0.63,
-        "w1": 5.56
+        "d1": 1.58,
+        "w1": 4.66
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Realty",
-        "pct": 2.85
-      },
-      {
-        "name": "Nifty Metal",
-        "pct": 2.8
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": 2.17
-      },
-      {
         "name": "Nifty FMCG",
-        "pct": 1.5
+        "pct": 3.65
+      },
+      {
+        "name": "Nifty Realty",
+        "pct": 2.33
       },
       {
         "name": "Nifty Auto",
-        "pct": 1.16
+        "pct": 1.71
       },
       {
         "name": "Nifty Bank",
-        "pct": 0.67
+        "pct": 0.98
       },
       {
         "name": "Nifty Pharma",
@@ -445,36 +437,44 @@
       },
       {
         "name": "Nifty IT",
-        "pct": -1.5
+        "pct": 0.34
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": -0.11
+      },
+      {
+        "name": "Nifty Metal",
+        "pct": -0.14
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Realty",
+      "leader": "Nifty FMCG",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.21,
-    "bias": "mixed",
+    "biasScore": 1.37,
+    "bias": "positive",
     "news": [
+      {
+        "t": "Indian markets defy mixed Asian cues, Sensex and Nifty extend winning streak - The New Indian Express",
+        "tone": "neu"
+      },
+      {
+        "t": "Ahead of Market: 10 things that will decide stock market action on Thursday - The Economic Times",
+        "tone": "neu"
+      },
+      {
+        "t": "US Midterm Election Results Impact Decoded: Can Sensex, Nifty hit new peak? Gold, silver rates rebound with Trump loss - Livemint",
+        "tone": "neg"
+      },
       {
         "t": "Stock Market Today: Sensex gains 384 points, Nifty above 23,900 - Multibagg AI",
         "tone": "pos"
       },
       {
-        "t": "Stock Market Rally: Bulls to stay? Nifty, Sensex gain 5.5% in 5 sessions; Can the momentum sustain? Key levels to watch - Livemint",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex, Nifty Open Higher; FPIs, Soft Crude Support Sentiment - HDFC Sky",
-        "tone": "pos"
-      },
-      {
         "t": "Stock Markets Today: Sensex, Nifty Gain as FIIs Return, Oil Prices Ease - Rediff",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex Today Ends 383 Points Higher | Nifty Above 24,900 | GMDC &amp; Emcure Pharma Among Top Gainers - Equitymaster",
         "tone": "pos"
       }
     ]
@@ -496,12 +496,12 @@
           },
           {
             "name": "Varroc Engineer",
-            "ret": 22.36,
+            "ret": 23.97,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 8.26,
+            "ret": 6.48,
             "days": 2
           }
         ]
