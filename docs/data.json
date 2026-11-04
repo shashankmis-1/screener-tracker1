@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03T18:19:53.926419Z",
+  "generated": "2026-11-04T11:21:41.920813Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,79 +357,87 @@
     }
   ],
   "market": {
-    "generated": "2026-11-03T18:19:48.195156Z",
+    "generated": "2026-11-04T11:21:39.502969Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 0.6
+        "pct": 0.36
       },
       {
         "name": "Dow",
-        "pct": -0.19
+        "pct": -0.38
       },
       {
         "name": "Nasdaq",
-        "pct": 1.07
+        "pct": 0.83
       },
       {
         "name": "Nikkei",
-        "pct": -0.33
+        "pct": -1.42
       },
       {
         "name": "Hang Seng",
-        "pct": 0.42
+        "pct": 1.67
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.07
+        "pct": -1.05
       },
       {
         "name": "WTI",
-        "pct": -0.4
+        "pct": -0.61
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.17
+        "pct": -0.09
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 1.44
+        "pct": -3.39
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 1.62,
-        "w1": 4.51
+        "d1": 0.5,
+        "w1": 5.54
       },
       {
         "name": "Nifty 50",
-        "d1": 1.58,
-        "w1": 4.66
+        "d1": 0.63,
+        "w1": 5.56
       }
     ],
     "sectors": [
       {
-        "name": "Nifty FMCG",
-        "pct": 3.65
+        "name": "Nifty Realty",
+        "pct": 2.85
       },
       {
-        "name": "Nifty Realty",
-        "pct": 2.33
+        "name": "Nifty Metal",
+        "pct": 2.8
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": 2.17
+      },
+      {
+        "name": "Nifty FMCG",
+        "pct": 1.5
       },
       {
         "name": "Nifty Auto",
-        "pct": 1.71
+        "pct": 1.16
       },
       {
         "name": "Nifty Bank",
-        "pct": 0.98
+        "pct": 0.67
       },
       {
         "name": "Nifty Pharma",
@@ -437,44 +445,36 @@
       },
       {
         "name": "Nifty IT",
-        "pct": 0.34
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": -0.11
-      },
-      {
-        "name": "Nifty Metal",
-        "pct": -0.14
+        "pct": -1.5
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty FMCG",
+      "leader": "Nifty Realty",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.31,
-    "bias": "positive",
+    "biasScore": 0.21,
+    "bias": "mixed",
     "news": [
       {
-        "t": "Sensex Surges 1,225 Points, Nifty Crosses 23,800 as Indian Markets Extend Four-Day Rally - www.nationpathindia.com",
+        "t": "Stock Market Today: Sensex gains 384 points, Nifty above 23,900 - Multibagg AI",
         "tone": "pos"
       },
       {
-        "t": "Sensex Today Rallies 1,225 Points | Nifty Above 23,800 | 3 Reasons Why Indian Stock Markets Are Rising - Equitymaster",
-        "tone": "neu"
-      },
-      {
-        "t": "Ahead of Market: 10 things that will decide stock market action on Wednesday - The Economic Times",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock Market Today: Sensex jumps 953 points, Nifty tops 23,700 - Multibagg AI",
+        "t": "Stock Market Rally: Bulls to stay? Nifty, Sensex gain 5.5% in 5 sessions; Can the momentum sustain? Key levels to watch - Livemint",
         "tone": "pos"
       },
       {
-        "t": "Indian Markets Rally for 4th Day on Easing Macro Pressures, FII Inflows - Rediff",
+        "t": "Sensex, Nifty Open Higher; FPIs, Soft Crude Support Sentiment - HDFC Sky",
+        "tone": "pos"
+      },
+      {
+        "t": "Stock Markets Today: Sensex, Nifty Gain as FIIs Return, Oil Prices Ease - Rediff",
+        "tone": "pos"
+      },
+      {
+        "t": "Sensex Today Ends 383 Points Higher | Nifty Above 24,900 | GMDC &amp; Emcure Pharma Among Top Gainers - Equitymaster",
         "tone": "pos"
       }
     ]
@@ -491,17 +491,17 @@
         "openTrades": [
           {
             "name": "Accent Microcell",
-            "ret": 26.33,
+            "ret": 28.27,
             "days": 1
           },
           {
             "name": "Varroc Engineer",
-            "ret": 23.97,
+            "ret": 22.36,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 6.48,
+            "ret": 8.26,
             "days": 2
           }
         ]
