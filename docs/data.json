@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T11:20:08.469115Z",
+  "generated": "2026-11-05T18:38:12.010530Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,124 +357,124 @@
     }
   ],
   "market": {
-    "generated": "2026-11-05T11:20:02.271919Z",
+    "generated": "2026-11-05T18:38:08.217856Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 1.58
+        "pct": -4.03
       },
       {
         "name": "Dow",
-        "pct": 3.03
+        "pct": -3.1
       },
       {
         "name": "Nasdaq",
-        "pct": 1.44
+        "pct": -5.3
       },
       {
         "name": "Nikkei",
-        "pct": -1.79
+        "pct": -1.42
       },
       {
         "name": "Hang Seng",
-        "pct": 3.67
+        "pct": 1.67
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 1.66
+        "pct": 3.65
       },
       {
         "name": "WTI",
-        "pct": 0.81
+        "pct": 2.93
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.29
+        "pct": -0.3
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 2.57
+        "pct": -3.37
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 2.6,
-        "w1": 6.96
+        "d1": 0.5,
+        "w1": 5.54
       },
       {
         "name": "Nifty 50",
-        "d1": 2.4,
-        "w1": 6.98
+        "d1": 0.63,
+        "w1": 5.56
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Auto",
-        "pct": 4.14
-      },
-      {
         "name": "Nifty Realty",
-        "pct": 3.52
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": 3.33
-      },
-      {
-        "name": "Nifty IT",
-        "pct": 2.42
-      },
-      {
-        "name": "Nifty Pharma",
-        "pct": 1.0
+        "pct": 2.85
       },
       {
         "name": "Nifty Metal",
-        "pct": 0.87
-      },
-      {
-        "name": "Nifty FMCG",
-        "pct": 0.45
+        "pct": 2.8
       },
       {
         "name": "Nifty Energy",
-        "pct": -0.52
+        "pct": 2.17
+      },
+      {
+        "name": "Nifty FMCG",
+        "pct": 1.5
+      },
+      {
+        "name": "Nifty Auto",
+        "pct": 1.16
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": 0.67
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": 0.42
+      },
+      {
+        "name": "Nifty IT",
+        "pct": -1.5
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Auto",
+      "leader": "Nifty Realty",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 1.59,
-    "bias": "positive",
+    "biasScore": -2.44,
+    "bias": "negative",
     "news": [
       {
-        "t": "Why did market rally today? Sensex zooms 2,009 pts, Nifty above 24,500. Trump\u2019s setback, 6 other factors b - The Economic Times",
+        "t": "Indian shares log biggest gains in seven months on oil slide, foreign flows - Reuters",
         "tone": "pos"
       },
       {
-        "t": "Sensex Today Rallies 2,009 Points | Nifty Above 24,500 | 3 Reasons Why Indian Share Markets Are Falling - Equitymaster",
-        "tone": "neg"
-      },
-      {
-        "t": "Sensex jumps over 2,000 points, Nifty surges 576 points as oil eases after Democrats sweep Congress - Telegraph India",
+        "t": "Indian Stock Markets Surge as Sensex Jumps 2,009 Points, Nifty Closes Above 24,500 - INDIA New England News",
         "tone": "pos"
       },
       {
-        "t": "Sensex Today | Stock Market Live: Sensex erases 500 pts form day's high, Nifty at 23,800; IT stocks - IndiaIPO",
+        "t": "Why Indian Stock Market Is Rising Today? Three Key Reasons Behind 2% Rally In Nifty 50, Sensex - NDTV Profit",
         "tone": "pos"
       },
       {
-        "t": "Sensex gains 2,000 points, investors richer by Rs 7 lakh crore: 3 reasons behind rally - India Today",
+        "t": "Ahead of Market: 10 things that will decide stock market action on Friday - The Economic Times",
+        "tone": "neu"
+      },
+      {
+        "t": "Indian Stock Market Logs Six Gains, Nifty Reclaims 24,500 - Multibagg AI",
         "tone": "pos"
       }
     ]
@@ -490,18 +490,18 @@
         "avgLoss": -8.0,
         "openTrades": [
           {
-            "name": "Varroc Engineer",
-            "ret": 24.0,
-            "days": 1
-          },
-          {
             "name": "Accent Microcell",
             "ret": 22.98,
             "days": 1
           },
           {
+            "name": "Varroc Engineer",
+            "ret": 22.36,
+            "days": 1
+          },
+          {
             "name": "Pricol Ltd",
-            "ret": 16.47,
+            "ret": 8.26,
             "days": 2
           }
         ]
