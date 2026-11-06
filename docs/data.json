@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T11:17:35.257912Z",
+  "generated": "2026-11-06T17:52:08.774572Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,43 +357,43 @@
     }
   ],
   "market": {
-    "generated": "2026-11-06T11:17:31.638699Z",
+    "generated": "2026-11-06T17:52:03.422548Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -4.36
+        "pct": 0.44
       },
       {
         "name": "Dow",
-        "pct": -3.44
+        "pct": -0.16
       },
       {
         "name": "Nasdaq",
-        "pct": -5.52
+        "pct": 0.98
       },
       {
         "name": "Nikkei",
-        "pct": -5.96
+        "pct": -1.79
       },
       {
         "name": "Hang Seng",
-        "pct": -1.27
+        "pct": 3.67
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -0.03
+        "pct": -0.97
       },
       {
         "name": "WTI",
-        "pct": 0.24
+        "pct": -0.62
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.65
+        "pct": -0.66
       }
     ],
     "vix": [
@@ -454,28 +454,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -4.11,
-    "bias": "negative",
+    "biasScore": 0.63,
+    "bias": "positive",
     "news": [
       {
-        "t": "India bucks Asia tech rout as oil slide reverses market fortunes - Reuters",
+        "t": "Indian stocks buck global tech rout, post best week in 6 years - Reuters",
         "tone": "neu"
       },
       {
-        "t": "Stock Market: Why is the Nifty, Sensex rising despite global sell-off? 5 key factors, red alerts and levels to watch - Zee Business",
-        "tone": "neg"
-      },
-      {
-        "t": "Sensex Today Rallies 1,718 Points | Nifty Above 25,000 | 5 Reasons Why Indian Share Markets Are Rising - Equitymaster",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock Market Today: Sensex, Nifty Trade Flat Amid Bloodbath In Global Markets - ETV Bharat",
-        "tone": "neu"
-      },
-      {
-        "t": "Dhanteras bonanza on D-Street! Sensex jumps 1,718 points, Nifty tops 25,000 - ChiniMandi",
+        "t": "Indian Stock Markets Extend Winning Streak to Seven Sessions as Sensex Surges 1,718 Points - INDIA New England News",
         "tone": "pos"
+      },
+      {
+        "t": "Why Is Stock Market Rising Today? Sensex Reclaims 80,500, Nifty Nears 24,850: Four Reasons Explained - NDTV Profit",
+        "tone": "neu"
+      },
+      {
+        "t": "Why did market rally today? Sensex ends 1,718 pts higher, Nifty reclaims 25,000 as D-Street concludes bump - The Economic Times",
+        "tone": "pos"
+      },
+      {
+        "t": "Diwali 2026 stock market holiday: NSE, BSE open on Sunday but closed this day - Muhurat trading date, time | Samvat 2083 - TradingView",
+        "tone": "neu"
       }
     ]
   },
