@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10T11:29:52.750327Z",
+  "generated": "2026-11-10T18:33:02.635599Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,37 +357,37 @@
     }
   ],
   "market": {
-    "generated": "2026-11-10T11:29:49.473796Z",
+    "generated": "2026-11-10T18:32:58.772508Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 2.35
+        "pct": -0.75
       },
       {
         "name": "Dow",
-        "pct": 2.15
+        "pct": -0.54
       },
       {
         "name": "Nasdaq",
-        "pct": 2.74
+        "pct": -1.26
       },
       {
         "name": "Nikkei",
-        "pct": 2.87
+        "pct": 2.33
       },
       {
         "name": "Hang Seng",
-        "pct": 0.44
+        "pct": -0.13
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.43
+        "pct": -0.95
       },
       {
         "name": "WTI",
-        "pct": -1.11
+        "pct": -0.75
       }
     ],
     "forex": [
@@ -454,28 +454,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 2.1,
-    "bias": "positive",
+    "biasScore": -0.08,
+    "bias": "mixed",
     "news": [
       {
-        "t": "Stock Market Holiday Today: NSE, BSE Shut, When Will Trading Resume? - NDTV",
+        "t": "Ahead of Market: 10 things that will decide stock market action on Wednesday - The Economic Times",
         "tone": "neu"
       },
       {
-        "t": "Sensex Today Ends 121 Points Lower | Nifty Below 23,400 | Cochin Shipyard Down 9% - Equitymaster",
-        "tone": "neg"
+        "t": "Stock Market Holiday Today: NSE, BSE Shut, When Will Trading Resume? - NDTV",
+        "tone": "neu"
       },
       {
         "t": "Stock market holiday today: Are NSE, BSE open or closed on November 10 for Diwali-Balipratipada? Check de - The Times of India",
         "tone": "neu"
       },
       {
-        "t": "India VIX jumps 68% in three weeks despite 7% rally in Sensex, Nifty - The Economic Times",
+        "t": "Individual ownership in NSE-listed firms hits record 19.5% in Q2FY27 - Business Standard",
         "tone": "pos"
       },
       {
-        "t": "Stock market holiday today: Are NSE, BSE open or closed today? Check GIFT Nifty levels - Moneycontrol.com",
-        "tone": "neu"
+        "t": "Sensex Today Ends 121 Points Lower | Nifty Below 23,400 | Cochin Shipyard Down 9% - Equitymaster",
+        "tone": "neg"
       }
     ]
   },
