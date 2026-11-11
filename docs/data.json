@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10T18:33:02.635599Z",
+  "generated": "2026-11-11T11:19:16.165963Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,125 +357,125 @@
     }
   ],
   "market": {
-    "generated": "2026-11-10T18:32:58.772508Z",
+    "generated": "2026-11-11T11:19:12.716088Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.75
+        "pct": -0.38
       },
       {
         "name": "Dow",
-        "pct": -0.54
+        "pct": -0.3
       },
       {
         "name": "Nasdaq",
-        "pct": -1.26
+        "pct": -0.74
       },
       {
         "name": "Nikkei",
-        "pct": 2.33
+        "pct": 1.31
       },
       {
         "name": "Hang Seng",
-        "pct": -0.13
+        "pct": -0.98
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -0.95
+        "pct": 1.64
       },
       {
         "name": "WTI",
-        "pct": -0.75
+        "pct": 0.93
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.02
+        "pct": -0.28
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": -0.29
+        "pct": 0.77
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.1,
-        "w1": 7.15
+        "d1": 0.95,
+        "w1": 6.45
       },
       {
         "name": "Nifty 50",
-        "d1": 0.06,
-        "w1": 6.84
+        "d1": 0.84,
+        "w1": 6.07
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Pharma",
-        "pct": 3.42
+        "name": "Nifty Auto",
+        "pct": 2.14
       },
       {
         "name": "Nifty Bank",
-        "pct": 1.11
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": 0.81
-      },
-      {
-        "name": "Nifty Auto",
-        "pct": 0.41
-      },
-      {
-        "name": "Nifty Realty",
-        "pct": 0.11
-      },
-      {
-        "name": "Nifty Metal",
-        "pct": -0.11
+        "pct": 1.76
       },
       {
         "name": "Nifty FMCG",
-        "pct": -0.27
+        "pct": 1.13
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": 1.03
+      },
+      {
+        "name": "Nifty Metal",
+        "pct": 0.96
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": -0.41
+      },
+      {
+        "name": "Nifty Realty",
+        "pct": -0.42
       },
       {
         "name": "Nifty IT",
-        "pct": -1.54
+        "pct": -0.53
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Pharma",
+      "leader": "Nifty Auto",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.08,
+    "biasScore": -0.22,
     "bias": "mixed",
     "news": [
       {
-        "t": "Ahead of Market: 10 things that will decide stock market action on Wednesday - The Economic Times",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock Market Holiday Today: NSE, BSE Shut, When Will Trading Resume? - NDTV",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock market holiday today: Are NSE, BSE open or closed on November 10 for Diwali-Balipratipada? Check de - The Times of India",
-        "tone": "neu"
-      },
-      {
-        "t": "Individual ownership in NSE-listed firms hits record 19.5% in Q2FY27 - Business Standard",
+        "t": "Why Is Indian Stock Market Rising Today? Sensex Jumps Over 1,000 Points, Nifty 50 Above 25,300; Three Reasons Explained - NDTV Profit",
         "tone": "pos"
       },
       {
-        "t": "Sensex Today Ends 121 Points Lower | Nifty Below 23,400 | Cochin Shipyard Down 9% - Equitymaster",
+        "t": "Indian stocks hit eight-month high as foreign investors return - Reuters",
+        "tone": "pos"
+      },
+      {
+        "t": "Sensex Today Rallies 722 Points | Nifty Above 25,250 | 4 Reasons Why Indian Share Markets Are Falling - Equitymaster",
         "tone": "neg"
+      },
+      {
+        "t": "Stock Market Today: Massive jump in Sensex, Nifty! \u20b94.5 lakh cr wealth added in a few mins - Reasons for bullish party - Livemint",
+        "tone": "pos"
+      },
+      {
+        "t": "Sensex gains 1200 points, Nifty above 25,300. Why is the stock market going up today? Explained - India Infoline",
+        "tone": "pos"
       }
     ]
   },
@@ -491,7 +491,7 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 26.56,
+            "ret": 29.26,
             "days": 1
           },
           {
@@ -501,7 +501,7 @@
           },
           {
             "name": "Pricol Ltd",
-            "ret": 14.35,
+            "ret": 15.27,
             "days": 2
           }
         ]
