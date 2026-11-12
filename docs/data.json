@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-11T18:29:57.740192Z",
+  "generated": "2026-11-12T11:38:28.766256Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,11 +357,11 @@
     }
   ],
   "market": {
-    "generated": "2026-11-11T18:29:54.390334Z",
+    "generated": "2026-11-12T11:38:25.726520Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 1.63
+        "pct": 1.31
       },
       {
         "name": "Dow",
@@ -369,113 +369,113 @@
       },
       {
         "name": "Nasdaq",
-        "pct": 2.28
+        "pct": 1.6
       },
       {
         "name": "Nikkei",
-        "pct": 2.87
+        "pct": -0.7
       },
       {
         "name": "Hang Seng",
-        "pct": 0.44
+        "pct": -1.26
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": 1.87
+        "pct": -0.46
       },
       {
         "name": "WTI",
-        "pct": 1.22
+        "pct": -0.54
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.28
+        "pct": 0.12
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 0.77
+        "pct": -5.37
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 0.95,
-        "w1": 6.45
+        "d1": 0.04,
+        "w1": 5.96
       },
       {
         "name": "Nifty 50",
-        "d1": 0.84,
-        "w1": 6.07
+        "d1": 0.18,
+        "w1": 5.59
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Auto",
-        "pct": 2.14
+        "name": "Nifty Realty",
+        "pct": 4.51
       },
       {
         "name": "Nifty Bank",
-        "pct": 1.76
-      },
-      {
-        "name": "Nifty FMCG",
-        "pct": 1.13
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": 1.03
+        "pct": 1.19
       },
       {
         "name": "Nifty Metal",
-        "pct": 0.96
+        "pct": -0.11
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.41
-      },
-      {
-        "name": "Nifty Realty",
-        "pct": -0.42
+        "pct": -0.35
       },
       {
         "name": "Nifty IT",
-        "pct": -0.53
+        "pct": -0.41
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": -0.42
+      },
+      {
+        "name": "Nifty FMCG",
+        "pct": -0.74
+      },
+      {
+        "name": "Nifty Auto",
+        "pct": -1.02
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Auto",
+      "leader": "Nifty Realty",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 1.54,
-    "bias": "positive",
+    "biasScore": 0.23,
+    "bias": "mixed",
     "news": [
       {
-        "t": "Stock markets end higher; Sensex and Nifty jump nearly 1% - The Hindu",
+        "t": "Sensex surges over 1,100 points, Nifty crosses 25,350 as oil prices decline - DD News",
+        "tone": "neu"
+      },
+      {
+        "t": "Sensex, Nifty Rebound as Banks Lead Early Trade - HDFC Sky",
+        "tone": "neu"
+      },
+      {
+        "t": "Today's Market: Sensex Today Ends Flat | Nifty Above 25,250 | Roto Pumps Up 14% - Indian Stock Market News - Equitymaster",
         "tone": "pos"
       },
       {
-        "t": "Stock Market Highlights: Sensex Jumps 773 Points, Nifty 50 Ends Above 25,250; IndiGo, M&amp;M, Trent Top Gainers - NDTV Profit",
-        "tone": "pos"
+        "t": "Market wrap, Nov 12: NIFTY50 ends at 25,229, SENSEX flat; NIFTY Smallcap 100 outperforms for second straight session - Upstox",
+        "tone": "neu"
       },
       {
-        "t": "Indian shares rise on foreign flow optimism; financials, autos lead - Reuters",
-        "tone": "pos"
-      },
-      {
-        "t": "Nifty eyes record as largecaps lead charge on strong corporate earnings - Business Standard",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex gains 1200 points, Nifty above 25,300. Why is the stock market going up today? Explained - India Infoline",
-        "tone": "pos"
+        "t": "Stock market outlook today, 12 Nov: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues - TradingView",
+        "tone": "neu"
       }
     ]
   },
@@ -491,17 +491,17 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 29.26,
+            "ret": 30.32,
             "days": 1
           },
           {
             "name": "Accent Microcell",
-            "ret": 22.86,
+            "ret": 23.11,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 15.27,
+            "ret": 17.41,
             "days": 2
           }
         ]
