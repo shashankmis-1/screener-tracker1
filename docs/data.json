@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T11:21:51.227311Z",
+  "generated": "2026-11-13T18:27:32.111355Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,37 +357,37 @@
     }
   ],
   "market": {
-    "generated": "2026-11-13T11:21:46.627829Z",
+    "generated": "2026-11-13T18:27:27.209216Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.35
+        "pct": -0.66
       },
       {
         "name": "Dow",
-        "pct": -0.36
+        "pct": -0.08
       },
       {
         "name": "Nasdaq",
-        "pct": -0.39
+        "pct": -1.12
       },
       {
         "name": "Nikkei",
-        "pct": 0.53
+        "pct": -0.7
       },
       {
         "name": "Hang Seng",
-        "pct": -1.55
+        "pct": -1.26
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -0.13
+        "pct": 0.05
       },
       {
         "name": "WTI",
-        "pct": -0.65
+        "pct": -0.03
       }
     ],
     "forex": [
@@ -454,24 +454,24 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.71,
+    "biasScore": -1.05,
     "bias": "negative",
     "news": [
       {
-        "t": "Stock Market Today: Sensex Falls 289 Points, Nifty Slips - HDFC Sky",
-        "tone": "neg"
+        "t": "Indian markets extend gains for 3rd straight week despite Nvidia crisis - Business Standard",
+        "tone": "pos"
       },
       {
-        "t": "Stock market outlook today, 13 Nov: Sensex, Nifty prediction - DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues - TradingView",
-        "tone": "neu"
-      },
-      {
-        "t": "Sensex Today Ends 318 Points Lower | Nifty Below 25,150 | Manappuram Finance Down 4% - Equitymaster",
+        "t": "Sensex Falls 319 Points, Nifty Slips Below 25,150 - HDFC Sky",
         "tone": "neg"
       },
       {
         "t": "Stock Markets Today: Sensex, Nifty fall as inflation concerns weigh on markets - Rediff",
         "tone": "neg"
+      },
+      {
+        "t": "Markets snap 3-day rally; Sensex drops 318 points, Nifty slips below 25,150 - The Hindu",
+        "tone": "neu"
       },
       {
         "t": "Indian Stock Markets Surge as Sensex Jumps 2,009 Points, Nifty Closes Above 24,500 - INDIA New England News",
