@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-18T12:01:58.321921Z",
+  "generated": "2026-11-18T19:18:19.798673Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,108 +357,116 @@
     }
   ],
   "market": {
-    "generated": "2026-11-18T12:01:54.166540Z",
+    "generated": "2026-11-18T19:18:16.095058Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -1.03
+        "pct": -0.17
       },
       {
         "name": "Dow",
-        "pct": -1.64
+        "pct": -1.08
       },
       {
         "name": "Nasdaq",
-        "pct": -0.74
+        "pct": 0.48
       },
       {
         "name": "Nikkei",
-        "pct": 0.28
+        "pct": -1.34
       },
       {
         "name": "Hang Seng",
-        "pct": -0.91
+        "pct": -1.03
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -3.38
+        "pct": -4.81
       },
       {
         "name": "WTI",
-        "pct": -2.38
+        "pct": -4.85
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.56
+        "pct": -0.55
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 0.0
+        "pct": -1.02
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -0.61,
-        "w1": 0.19
+        "d1": 0.52,
+        "w1": 1.76
       },
       {
         "name": "Nifty 50",
-        "d1": -0.63,
-        "w1": -0.11
+        "d1": 0.38,
+        "w1": 1.37
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Pharma",
-        "pct": 0.15
-      },
-      {
-        "name": "Nifty FMCG",
-        "pct": -0.09
+        "name": "Nifty Realty",
+        "pct": 1.94
       },
       {
         "name": "Nifty Bank",
-        "pct": -0.38
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": -0.53
-      },
-      {
-        "name": "Nifty Realty",
-        "pct": -0.85
-      },
-      {
-        "name": "Nifty IT",
-        "pct": -1.24
+        "pct": 1.13
       },
       {
         "name": "Nifty Auto",
-        "pct": -1.35
+        "pct": 0.72
       },
       {
         "name": "Nifty Metal",
-        "pct": -2.46
+        "pct": 0.58
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": 0.21
+      },
+      {
+        "name": "Nifty FMCG",
+        "pct": -0.2
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": -0.27
+      },
+      {
+        "name": "Nifty IT",
+        "pct": -0.9
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Pharma",
+      "leader": "Nifty Realty",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.81,
+    "biasScore": -0.63,
     "bias": "negative",
     "news": [
       {
+        "t": "Stock markets snap 2-day rally; Sensex drops 500 points amid profit booking, U.S. Fed rate hike fears - The Hindu",
+        "tone": "neu"
+      },
+      {
         "t": "Sensex Falls 500 Pts; Nifty Slips Below 25,250 on Profit Booking - HDFC Sky",
+        "tone": "neg"
+      },
+      {
+        "t": "Indian Stocks Slide as Sensex Falls 500 Points, Nifty Drops Below 25,250 - INDIA New England News",
         "tone": "neg"
       },
       {
@@ -468,14 +476,6 @@
       {
         "t": "Sensex Today Tanks 502 Points | Nifty Below 25,250 | Nifty IT Index Down 1.2% - Equitymaster",
         "tone": "neg"
-      },
-      {
-        "t": "Sensex Today | Stock Market Live: Sensex falls over 400 pts, Nifty near 25,250; consumer durables, metals plunge; Titan, Bajaj Finance drag - LinkedIn",
-        "tone": "neg"
-      },
-      {
-        "t": "Stock market outlook today,18 Nov:Sensex, Nifty prediction-DJIA, S&amp;P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues - TradingView",
-        "tone": "neu"
       }
     ]
   },
@@ -491,7 +491,7 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 29.06,
+            "ret": 31.28,
             "days": 1
           },
           {
@@ -501,7 +501,7 @@
           },
           {
             "name": "Pricol Ltd",
-            "ret": -1.77,
+            "ret": -1.01,
             "days": 2
           }
         ]
