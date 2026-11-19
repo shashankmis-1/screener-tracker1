@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-19T11:58:22.541590Z",
+  "generated": "2026-11-19T19:26:09.087298Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,104 +357,104 @@
     }
   ],
   "market": {
-    "generated": "2026-11-19T11:58:19.936145Z",
+    "generated": "2026-11-19T19:26:06.345006Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.23
+        "pct": -1.42
       },
       {
         "name": "Dow",
-        "pct": -1.11
+        "pct": -1.71
       },
       {
         "name": "Nasdaq",
-        "pct": 0.42
+        "pct": -1.49
       },
       {
         "name": "Nikkei",
-        "pct": 0.71
+        "pct": 0.28
       },
       {
         "name": "Hang Seng",
-        "pct": -1.95
+        "pct": -0.91
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -3.16
+        "pct": -2.51
       },
       {
         "name": "WTI",
-        "pct": -1.43
+        "pct": -0.61
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.2
+        "pct": -0.21
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 3.47
+        "pct": 0.32
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 1.21,
-        "w1": 1.36
+        "d1": -0.61,
+        "w1": 0.19
       },
       {
         "name": "Nifty 50",
-        "d1": 1.14,
-        "w1": 0.85
+        "d1": -0.63,
+        "w1": -0.11
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Auto",
-        "pct": 4.4
+        "name": "Nifty Pharma",
+        "pct": 0.15
       },
       {
         "name": "Nifty FMCG",
-        "pct": 2.09
+        "pct": -0.09
       },
       {
         "name": "Nifty Bank",
-        "pct": 1.65
+        "pct": -0.38
       },
       {
         "name": "Nifty Energy",
-        "pct": 1.15
-      },
-      {
-        "name": "Nifty Metal",
-        "pct": 0.63
-      },
-      {
-        "name": "Nifty Pharma",
-        "pct": 0.61
+        "pct": -0.53
       },
       {
         "name": "Nifty Realty",
-        "pct": 0.48
+        "pct": -0.85
       },
       {
         "name": "Nifty IT",
-        "pct": -1.1
+        "pct": -1.24
+      },
+      {
+        "name": "Nifty Auto",
+        "pct": -1.35
+      },
+      {
+        "name": "Nifty Metal",
+        "pct": -2.46
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Auto",
+      "leader": "Nifty Pharma",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -0.43,
+    "biasScore": -1.05,
     "bias": "negative",
     "news": [
       {
@@ -462,19 +462,19 @@
         "tone": "pos"
       },
       {
+        "t": "Nifty tops 25,500 for first time since February; Sensex reclaims 83K - Business Standard",
+        "tone": "neu"
+      },
+      {
+        "t": "Sensex surges 990 points as buying interest broadens across key sectors - The New Indian Express",
+        "tone": "pos"
+      },
+      {
+        "t": "Sensex Jumps Nearly 1,000 Points, Nifty Reclaims 25,500 Amid Strong FII Inflows - Rediff",
+        "tone": "pos"
+      },
+      {
         "t": "Sensex Today Rallies 990 Points | Nifty Above 25,500 | 3 Reasons Why Indian Share Markets Are Rising - Equitymaster",
-        "tone": "neu"
-      },
-      {
-        "t": "NIFTY 50 (^NSEI) Charts, Data &amp; News - Yahoo Finance - Yahoo! Finance Canada",
-        "tone": "neu"
-      },
-      {
-        "t": "Sensex, Nifty trade lower as IT, metal stocks face selling pressure - Free Press Kashmir",
-        "tone": "neu"
-      },
-      {
-        "t": "News by CNBC TV18 on TradingView, 2026-11-19 \u2014 cnbctv:cea9ae4e3094b:0 - TradingView",
         "tone": "neu"
       }
     ]
@@ -491,7 +491,7 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 28.69,
+            "ret": 29.06,
             "days": 1
           },
           {
@@ -501,7 +501,7 @@
           },
           {
             "name": "Pricol Ltd",
-            "ret": 1.19,
+            "ret": -1.77,
             "days": 2
           }
         ]
