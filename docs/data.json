@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-23T13:27:00.456579Z",
+  "generated": "2026-11-23T22:30:25.413217Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,19 +357,19 @@
     }
   ],
   "market": {
-    "generated": "2026-11-23T13:26:57.910293Z",
+    "generated": "2026-11-23T22:30:19.268568Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -3.7
+        "pct": 4.73
       },
       {
         "name": "Dow",
-        "pct": -1.93
+        "pct": 3.01
       },
       {
         "name": "Nasdaq",
-        "pct": -5.28
+        "pct": 6.51
       },
       {
         "name": "Nikkei",
@@ -377,90 +377,86 @@
       },
       {
         "name": "Hang Seng",
-        "pct": -0.12
+        "pct": -1.89
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -4.4
+        "pct": -6.32
       },
       {
         "name": "WTI",
-        "pct": -2.18
+        "pct": -4.44
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.61
+        "pct": -0.42
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 2.18
+        "pct": 7.51
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -1.77,
-        "w1": 0.4
+        "d1": 1.08,
+        "w1": 2.85
       },
       {
         "name": "Nifty 50",
-        "d1": -1.75,
-        "w1": 0.23
+        "d1": 1.12,
+        "w1": 2.61
       }
     ],
     "sectors": [
       {
-        "name": "Nifty IT",
-        "pct": 1.69
+        "name": "Nifty Bank",
+        "pct": 2.49
       },
       {
         "name": "Nifty Realty",
-        "pct": 0.31
+        "pct": 1.71
       },
       {
-        "name": "Nifty Pharma",
-        "pct": -0.35
-      },
-      {
-        "name": "Nifty FMCG",
-        "pct": -0.46
+        "name": "Nifty IT",
+        "pct": 1.3
       },
       {
         "name": "Nifty Auto",
-        "pct": -1.03
+        "pct": 0.65
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": 0.05
+      },
+      {
+        "name": "Nifty FMCG",
+        "pct": -0.06
       },
       {
         "name": "Nifty Energy",
-        "pct": -1.78
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": -3.17
+        "pct": -0.22
       },
       {
         "name": "Nifty Metal",
-        "pct": -3.68
+        "pct": -0.23
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty IT",
+      "leader": "Nifty Bank",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -3.22,
-    "bias": "negative",
+    "biasScore": 1.46,
+    "bias": "positive",
     "news": [
-      {
-        "t": "Sensex sheds 1,484 points, Nifty drops below 25,400 amid heavy selling in banking, metal stocks - DD News",
-        "tone": "neg"
-      },
       {
         "t": "Sensex, Nifty Open Higher Despite Weak Global Market Cues - HDFC Sky",
         "tone": "neu"
@@ -470,11 +466,15 @@
         "tone": "neg"
       },
       {
-        "t": "Sensex Plunges 1,484 Pts, Nifty Below 25,350: Worst Fall in 4 Months - Rediff MoneyWiz",
+        "t": "Financials drag Indian shares down on profit-taking after four-week rally - Reuters",
+        "tone": "neu"
+      },
+      {
+        "t": "Sensex sheds 1,484 points, Nifty drops below 25,400 amid heavy selling in banking, metal stocks - DD News",
         "tone": "neg"
       },
       {
-        "t": "Nifty crashes by 350 points, Sensex down 1.35%. Why is the market down today? - India Infoline",
+        "t": "\u20b95.6 trn wiped off investor wealth as Sensex, Nifty slump over 1.7% - Business Standard",
         "tone": "neg"
       }
     ]
@@ -491,7 +491,7 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 24.2,
+            "ret": 25.46,
             "days": 1
           },
           {
@@ -501,7 +501,7 @@
           },
           {
             "name": "Pricol Ltd",
-            "ret": -0.37,
+            "ret": 1.66,
             "days": 2
           }
         ]
