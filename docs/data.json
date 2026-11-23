@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-20T19:01:10.731844Z",
+  "generated": "2026-11-23T13:27:00.456579Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,125 +357,125 @@
     }
   ],
   "market": {
-    "generated": "2026-11-20T19:01:05.798955Z",
+    "generated": "2026-11-23T13:26:57.910293Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -1.99
+        "pct": -3.7
       },
       {
         "name": "Dow",
-        "pct": -0.51
+        "pct": -1.93
       },
       {
         "name": "Nasdaq",
-        "pct": -3.31
+        "pct": -5.28
       },
       {
         "name": "Nikkei",
-        "pct": 0.71
+        "pct": -5.06
       },
       {
         "name": "Hang Seng",
-        "pct": -1.95
+        "pct": -0.12
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.74
+        "pct": -4.4
       },
       {
         "name": "WTI",
-        "pct": -0.14
+        "pct": -2.18
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.85
+        "pct": -0.61
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 3.47
+        "pct": 2.18
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 1.21,
-        "w1": 1.36
+        "d1": -1.77,
+        "w1": 0.4
       },
       {
         "name": "Nifty 50",
-        "d1": 1.14,
-        "w1": 0.85
+        "d1": -1.75,
+        "w1": 0.23
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Auto",
-        "pct": 4.4
-      },
-      {
-        "name": "Nifty FMCG",
-        "pct": 2.09
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": 1.65
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": 1.15
-      },
-      {
-        "name": "Nifty Metal",
-        "pct": 0.63
-      },
-      {
-        "name": "Nifty Pharma",
-        "pct": 0.61
+        "name": "Nifty IT",
+        "pct": 1.69
       },
       {
         "name": "Nifty Realty",
-        "pct": 0.48
+        "pct": 0.31
       },
       {
-        "name": "Nifty IT",
-        "pct": -1.1
+        "name": "Nifty Pharma",
+        "pct": -0.35
+      },
+      {
+        "name": "Nifty FMCG",
+        "pct": -0.46
+      },
+      {
+        "name": "Nifty Auto",
+        "pct": -1.03
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": -1.78
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -3.17
+      },
+      {
+        "name": "Nifty Metal",
+        "pct": -3.68
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Auto",
+      "leader": "Nifty IT",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -1.41,
+    "biasScore": -3.22,
     "bias": "negative",
     "news": [
       {
-        "t": "Why is the Stock Market Up Today? Sensex Soars Close to 700 Pts, Nifty Surpasses 25,700: Reasons for Market Rally - Kotak Neo",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex jumps over 400 points, Nifty holds above 23,360 as crude oil prices ease - DD News",
-        "tone": "pos"
-      },
-      {
-        "t": "Stock Market Open Report November 20, 2026: Sensex, Nifty Edge Lower, Managing To Buck Global Selloff - HDFC Sky",
+        "t": "Sensex sheds 1,484 points, Nifty drops below 25,400 amid heavy selling in banking, metal stocks - DD News",
         "tone": "neg"
       },
       {
-        "t": "Sensex surges 898 points, Nifty reclaims 25,800 as bank stocks, foreign inflows lift markets - The New Indian Express",
-        "tone": "pos"
+        "t": "Sensex, Nifty Open Higher Despite Weak Global Market Cues - HDFC Sky",
+        "tone": "neu"
       },
       {
-        "t": "Stock Market Weekly Round-Up (16-20 November 2026) - The Indian Awaaz",
-        "tone": "pos"
+        "t": "Stock market crash today: Investors lose over Rs 6 lakh crore as Sensex ends over 1,400 points down; top - The Times of India",
+        "tone": "neg"
+      },
+      {
+        "t": "Sensex Plunges 1,484 Pts, Nifty Below 25,350: Worst Fall in 4 Months - Rediff MoneyWiz",
+        "tone": "neg"
+      },
+      {
+        "t": "Nifty crashes by 350 points, Sensex down 1.35%. Why is the market down today? - India Infoline",
+        "tone": "neg"
       }
     ]
   },
@@ -491,17 +491,17 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 28.69,
+            "ret": 24.2,
             "days": 1
           },
           {
             "name": "Accent Microcell",
-            "ret": 22.16,
+            "ret": 19.22,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 1.19,
+            "ret": -0.37,
             "days": 2
           }
         ]
