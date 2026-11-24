@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T14:05:31.666767Z",
+  "generated": "2026-11-24T21:03:19.589509Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,37 +357,37 @@
     }
   ],
   "market": {
-    "generated": "2026-11-24T14:05:28.016249Z",
+    "generated": "2026-11-24T21:03:16.059798Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": 4.73
+        "pct": -0.5
       },
       {
         "name": "Dow",
-        "pct": 3.01
+        "pct": 0.86
       },
       {
         "name": "Nasdaq",
-        "pct": 6.51
+        "pct": -1.48
       },
       {
         "name": "Nikkei",
-        "pct": 3.91
+        "pct": -5.06
       },
       {
         "name": "Hang Seng",
-        "pct": -0.73
+        "pct": -0.12
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.17
+        "pct": -1.28
       },
       {
         "name": "WTI",
-        "pct": 0.7
+        "pct": 1.57
       }
     ],
     "forex": [
@@ -454,28 +454,28 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 3.37,
-    "bias": "positive",
+    "biasScore": -1.38,
+    "bias": "negative",
     "news": [
       {
         "t": "Stock Market Holiday: Share Markets Shut For Guru Nanak Jayanti Today. Are Banks Closed Too? - NDTV",
         "tone": "neu"
       },
       {
-        "t": "Why Stock Market Is Down Today? Sensex Falls 1,300 Points From High; Nifty Near 25,600 - Kotak Neo",
-        "tone": "neg"
-      },
-      {
-        "t": "Sensex Today Tanks 1,484 Points | Nifty Below 25,350 | 4 Reasons Why Indian Share Markets Are Falling - Equitymaster",
-        "tone": "neg"
+        "t": "Sensex Gains 384 Points, Nifty Nears 24,000 as Indian Stocks Rise for Fifth Straight Session - INDIA New England News",
+        "tone": "pos"
       },
       {
         "t": "Investors become richer by \u20b934.61 trillion as Sensex surges in November - Business Standard",
         "tone": "pos"
       },
       {
-        "t": "Market weekly wrap: NIFTY50, SENSEX extend winning streak to 4 weeks with 3% gains; NIFTY Smallcap 100 underperforms - Upstox",
-        "tone": "pos"
+        "t": "Sensex Today Ends 417 Points Lower | Nifty Below 23,900 | ITC &amp; Trent Losers - Equitymaster",
+        "tone": "neu"
+      },
+      {
+        "t": "FIIs Invest \u20b95,672.99 Crore as 16-Session Buying Streak Continues Despite Sensex and Nifty Decline - Kotak Neo",
+        "tone": "neg"
       }
     ]
   },
