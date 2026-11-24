@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-23T22:30:25.413217Z",
+  "generated": "2026-11-24T14:05:31.666767Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,7 +357,7 @@
     }
   ],
   "market": {
-    "generated": "2026-11-23T22:30:19.268568Z",
+    "generated": "2026-11-24T14:05:28.016249Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -373,109 +373,109 @@
       },
       {
         "name": "Nikkei",
-        "pct": -5.06
+        "pct": 3.91
       },
       {
         "name": "Hang Seng",
-        "pct": -1.89
+        "pct": -0.73
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -6.32
+        "pct": -2.17
       },
       {
         "name": "WTI",
-        "pct": -4.44
+        "pct": 0.7
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.42
+        "pct": 0.24
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 7.51
+        "pct": 2.19
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": 1.08,
-        "w1": 2.85
+        "d1": -1.77,
+        "w1": 0.4
       },
       {
         "name": "Nifty 50",
-        "d1": 1.12,
-        "w1": 2.61
+        "d1": -1.75,
+        "w1": 0.23
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Bank",
-        "pct": 2.49
+        "name": "Nifty IT",
+        "pct": 1.69
       },
       {
         "name": "Nifty Realty",
-        "pct": 1.71
-      },
-      {
-        "name": "Nifty IT",
-        "pct": 1.3
-      },
-      {
-        "name": "Nifty Auto",
-        "pct": 0.65
+        "pct": 0.31
       },
       {
         "name": "Nifty Pharma",
-        "pct": 0.05
+        "pct": -0.35
       },
       {
         "name": "Nifty FMCG",
-        "pct": -0.06
+        "pct": -0.46
+      },
+      {
+        "name": "Nifty Auto",
+        "pct": -1.03
       },
       {
         "name": "Nifty Energy",
-        "pct": -0.22
+        "pct": -1.78
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -3.17
       },
       {
         "name": "Nifty Metal",
-        "pct": -0.23
+        "pct": -3.68
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Bank",
+      "leader": "Nifty IT",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 1.46,
+    "biasScore": 3.37,
     "bias": "positive",
     "news": [
       {
-        "t": "Sensex, Nifty Open Higher Despite Weak Global Market Cues - HDFC Sky",
+        "t": "Stock Market Holiday: Share Markets Shut For Guru Nanak Jayanti Today. Are Banks Closed Too? - NDTV",
         "tone": "neu"
       },
       {
-        "t": "Stock market crash today: Investors lose over Rs 6 lakh crore as Sensex ends over 1,400 points down; top - The Times of India",
+        "t": "Why Stock Market Is Down Today? Sensex Falls 1,300 Points From High; Nifty Near 25,600 - Kotak Neo",
         "tone": "neg"
       },
       {
-        "t": "Financials drag Indian shares down on profit-taking after four-week rally - Reuters",
-        "tone": "neu"
-      },
-      {
-        "t": "Sensex sheds 1,484 points, Nifty drops below 25,400 amid heavy selling in banking, metal stocks - DD News",
+        "t": "Sensex Today Tanks 1,484 Points | Nifty Below 25,350 | 4 Reasons Why Indian Share Markets Are Falling - Equitymaster",
         "tone": "neg"
       },
       {
-        "t": "\u20b95.6 trn wiped off investor wealth as Sensex, Nifty slump over 1.7% - Business Standard",
-        "tone": "neg"
+        "t": "Investors become richer by \u20b934.61 trillion as Sensex surges in November - Business Standard",
+        "tone": "pos"
+      },
+      {
+        "t": "Market weekly wrap: NIFTY50, SENSEX extend winning streak to 4 weeks with 3% gains; NIFTY Smallcap 100 underperforms - Upstox",
+        "tone": "pos"
       }
     ]
   },
@@ -491,17 +491,17 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 25.46,
+            "ret": 24.2,
             "days": 1
           },
           {
             "name": "Accent Microcell",
-            "ret": 19.22,
+            "ret": 13.67,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": 1.66,
+            "ret": -0.37,
             "days": 2
           }
         ]
