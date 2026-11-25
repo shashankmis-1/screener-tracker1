@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T21:03:19.589509Z",
+  "generated": "2026-11-25T13:18:29.757778Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,7 +357,7 @@
     }
   ],
   "market": {
-    "generated": "2026-11-24T21:03:16.059798Z",
+    "generated": "2026-11-25T13:18:26.328373Z",
     "indices": [
       {
         "name": "S&P 500",
@@ -365,7 +365,7 @@
       },
       {
         "name": "Dow",
-        "pct": 0.86
+        "pct": 0.85
       },
       {
         "name": "Nasdaq",
@@ -373,109 +373,109 @@
       },
       {
         "name": "Nikkei",
-        "pct": -5.06
+        "pct": -2.78
       },
       {
         "name": "Hang Seng",
-        "pct": -0.12
+        "pct": -1.14
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -1.28
+        "pct": -2.18
       },
       {
         "name": "WTI",
-        "pct": 1.57
+        "pct": 0.8
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": 0.24
+        "pct": -0.75
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 2.19
+        "pct": -0.01
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -1.77,
-        "w1": 0.4
+        "d1": 1.82,
+        "w1": 1.7
       },
       {
         "name": "Nifty 50",
-        "d1": -1.75,
-        "w1": 0.23
+        "d1": 1.85,
+        "w1": 1.7
       }
     ],
     "sectors": [
       {
-        "name": "Nifty IT",
-        "pct": 1.69
-      },
-      {
-        "name": "Nifty Realty",
-        "pct": 0.31
+        "name": "Nifty FMCG",
+        "pct": 3.79
       },
       {
         "name": "Nifty Pharma",
-        "pct": -0.35
-      },
-      {
-        "name": "Nifty FMCG",
-        "pct": -0.46
-      },
-      {
-        "name": "Nifty Auto",
-        "pct": -1.03
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": -1.78
+        "pct": 2.38
       },
       {
         "name": "Nifty Bank",
-        "pct": -3.17
+        "pct": 1.79
+      },
+      {
+        "name": "Nifty Auto",
+        "pct": 1.16
+      },
+      {
+        "name": "Nifty IT",
+        "pct": 1.12
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": 0.04
+      },
+      {
+        "name": "Nifty Realty",
+        "pct": 0.02
       },
       {
         "name": "Nifty Metal",
-        "pct": -3.68
+        "pct": -2.04
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty IT",
+      "leader": "Nifty FMCG",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": -1.38,
+    "biasScore": -1.01,
     "bias": "negative",
     "news": [
       {
-        "t": "Stock Market Holiday: Share Markets Shut For Guru Nanak Jayanti Today. Are Banks Closed Too? - NDTV",
-        "tone": "neu"
+        "t": "Why is the Stock Market Up Today? BSE Sensex Soars Over 1400 Points; Nifty 50 Nears 25,800 - Kotak Neo",
+        "tone": "pos"
+      },
+      {
+        "t": "Stock market today: Sensex holds over 1,000 point gains after 2,000 point surge, Nifty50 crosses 25,900 - - The Times of India",
+        "tone": "pos"
+      },
+      {
+        "t": "Indian markets rally 1.8% as November gains help recoup nearly all 2026 losses - The Indian Express",
+        "tone": "pos"
+      },
+      {
+        "t": "Sensex jumps over 400 points, Nifty holds above 23,360 as crude oil prices ease - DD News",
+        "tone": "pos"
       },
       {
         "t": "Sensex Gains 384 Points, Nifty Nears 24,000 as Indian Stocks Rise for Fifth Straight Session - INDIA New England News",
         "tone": "pos"
-      },
-      {
-        "t": "Investors become richer by \u20b934.61 trillion as Sensex surges in November - Business Standard",
-        "tone": "pos"
-      },
-      {
-        "t": "Sensex Today Ends 417 Points Lower | Nifty Below 23,900 | ITC &amp; Trent Losers - Equitymaster",
-        "tone": "neu"
-      },
-      {
-        "t": "FIIs Invest \u20b95,672.99 Crore as 16-Session Buying Streak Continues Despite Sensex and Nifty Decline - Kotak Neo",
-        "tone": "neg"
       }
     ]
   },
@@ -491,7 +491,7 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 24.2,
+            "ret": 24.92,
             "days": 1
           },
           {
@@ -501,7 +501,7 @@
           },
           {
             "name": "Pricol Ltd",
-            "ret": -0.37,
+            "ret": -1.41,
             "days": 2
           }
         ]
