@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-25T20:24:56.909311Z",
+  "generated": "2026-11-26T12:58:46.986479Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,95 +357,95 @@
     }
   ],
   "market": {
-    "generated": "2026-11-25T20:24:53.878528Z",
+    "generated": "2026-11-26T12:58:44.282436Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.34
+        "pct": -0.25
       },
       {
         "name": "Dow",
-        "pct": 0.4
+        "pct": 0.33
       },
       {
         "name": "Nasdaq",
-        "pct": -0.82
+        "pct": -0.62
       },
       {
         "name": "Nikkei",
-        "pct": 3.91
+        "pct": 0.86
       },
       {
         "name": "Hang Seng",
-        "pct": -0.73
+        "pct": 1.19
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -0.89
+        "pct": -3.6
       },
       {
         "name": "WTI",
-        "pct": 2.28
+        "pct": 1.09
       }
     ],
     "forex": [
       {
         "name": "USD/INR",
-        "pct": -0.75
+        "pct": -0.29
       }
     ],
     "vix": [
       {
         "name": "India VIX",
-        "pct": 2.19
+        "pct": -4.73
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -1.77,
-        "w1": 0.4
+        "d1": 0.46,
+        "w1": 2.8
       },
       {
         "name": "Nifty 50",
-        "d1": -1.75,
-        "w1": 0.23
+        "d1": 0.25,
+        "w1": 2.6
       }
     ],
     "sectors": [
       {
         "name": "Nifty IT",
-        "pct": 1.69
+        "pct": 3.66
       },
       {
         "name": "Nifty Realty",
-        "pct": 0.31
-      },
-      {
-        "name": "Nifty Pharma",
-        "pct": -0.35
-      },
-      {
-        "name": "Nifty FMCG",
-        "pct": -0.46
-      },
-      {
-        "name": "Nifty Auto",
-        "pct": -1.03
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": -1.78
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": -3.17
+        "pct": 3.27
       },
       {
         "name": "Nifty Metal",
-        "pct": -3.68
+        "pct": 1.17
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": 0.58
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": 0.45
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -0.26
+      },
+      {
+        "name": "Nifty Auto",
+        "pct": -0.69
+      },
+      {
+        "name": "Nifty FMCG",
+        "pct": -0.94
       }
     ],
     "sectorTrend": {
@@ -454,27 +454,27 @@
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.48,
+    "biasScore": 0.3,
     "bias": "positive",
     "news": [
       {
-        "t": "Why is the Stock Market Up Today? BSE Sensex Soars Over 1400 Points; Nifty 50 Nears 25,800 - Kotak Neo",
+        "t": "Sensex Soars Close to 400 Pts, Nifty Nears 26,600: 3 Reasons Why the Stock Market Is Up Today - Kotak Neo",
         "tone": "pos"
       },
       {
-        "t": "Sensex opens in red, Nifty below 23,300 points - DD News",
-        "tone": "neu"
-      },
-      {
-        "t": "Stock market today: Sensex jumps over 2000 points; Nifty50 tops 25,900! Investors richer by Rs 3.84 lakh - The Times of India",
+        "t": "Sensex gains nearly 400 pts in early trade as IT stocks rally, Nifty below 25,900 - DD News",
         "tone": "pos"
       },
       {
-        "t": "Sensex jumps over 2,000 points, Nifty surges to 25,951 on foreign fund inflows, lower crude oil - The Hindu",
+        "t": "Stock Market Today: Nifty gains 1.85%, Sensex up 1,502 points - Multibagg AI",
         "tone": "pos"
       },
       {
-        "t": "Indian markets rally 1.8% as November gains help recoup nearly all 2026 losses - The Indian Express",
+        "t": "Indian Stock Market Rallies! Sensex Gains 200 Points, Nifty Crosses 25,800: What's Driving the Rise? - jeevanutsahnews.in",
+        "tone": "pos"
+      },
+      {
+        "t": "Today's Market: Sensex Today Ends 390 Points Higher | Nifty Above 25,850 | Wipro Up 4% - Indian Stock Market News - Equitymaster",
         "tone": "pos"
       }
     ]
@@ -491,17 +491,17 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 24.2,
+            "ret": 22.88,
             "days": 1
           },
           {
             "name": "Accent Microcell",
-            "ret": 13.67,
+            "ret": 15.65,
             "days": 1
           },
           {
             "name": "Pricol Ltd",
-            "ret": -0.37,
+            "ret": -3.33,
             "days": 2
           }
         ]
