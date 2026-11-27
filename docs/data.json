@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T12:55:34.747728Z",
+  "generated": "2026-11-27T19:51:23.585326Z",
   "today": "2026-07-09",
   "rows": [
     {
@@ -357,37 +357,37 @@
     }
   ],
   "market": {
-    "generated": "2026-11-27T12:55:25.680933Z",
+    "generated": "2026-11-27T19:51:20.281160Z",
     "indices": [
       {
         "name": "S&P 500",
-        "pct": -0.25
+        "pct": 1.6
       },
       {
         "name": "Dow",
-        "pct": 0.33
+        "pct": 1.18
       },
       {
         "name": "Nasdaq",
-        "pct": -0.62
+        "pct": 2.31
       },
       {
         "name": "Nikkei",
-        "pct": 2.11
+        "pct": 0.86
       },
       {
         "name": "Hang Seng",
-        "pct": 2.11
+        "pct": 1.19
       }
     ],
     "commodities": [
       {
         "name": "Brent",
-        "pct": -2.92
+        "pct": -4.34
       },
       {
         "name": "WTI",
-        "pct": 1.58
+        "pct": -0.72
       }
     ],
     "forex": [
@@ -399,64 +399,85 @@
     "vix": [
       {
         "name": "India VIX",
-        "pct": -1.75
+        "pct": -4.7
       }
     ],
     "india": [
       {
         "name": "Sensex",
-        "d1": -1.17,
-        "w1": 0.38
+        "d1": 0.46,
+        "w1": 2.8
       },
       {
         "name": "Nifty 50",
-        "d1": -1.07,
-        "w1": 0.36
+        "d1": 0.25,
+        "w1": 2.6
       }
     ],
     "sectors": [
       {
-        "name": "Nifty Metal",
-        "pct": 1.4
-      },
-      {
-        "name": "Nifty Energy",
-        "pct": 0.15
-      },
-      {
-        "name": "Nifty Pharma",
-        "pct": -0.4
-      },
-      {
-        "name": "Nifty Bank",
-        "pct": -0.78
-      },
-      {
-        "name": "Nifty FMCG",
-        "pct": -0.93
+        "name": "Nifty IT",
+        "pct": 3.66
       },
       {
         "name": "Nifty Realty",
-        "pct": -1.43
+        "pct": 3.27
+      },
+      {
+        "name": "Nifty Metal",
+        "pct": 1.17
+      },
+      {
+        "name": "Nifty Energy",
+        "pct": 0.58
+      },
+      {
+        "name": "Nifty Pharma",
+        "pct": 0.45
+      },
+      {
+        "name": "Nifty Bank",
+        "pct": -0.26
       },
       {
         "name": "Nifty Auto",
-        "pct": -1.48
+        "pct": -0.69
       },
       {
-        "name": "Nifty IT",
-        "pct": -1.88
+        "name": "Nifty FMCG",
+        "pct": -0.94
       }
     ],
     "sectorTrend": {
-      "leader": "Nifty Metal",
+      "leader": "Nifty IT",
       "streak": 1,
       "prev": null,
       "status": "new / rotated"
     },
-    "biasScore": 0.34,
+    "biasScore": 1.03,
     "bias": "positive",
-    "news": []
+    "news": [
+      {
+        "t": "Nifty, Sensex open lower; market to stay range-bound with positive undertone: experts - DD News",
+        "tone": "neu"
+      },
+      {
+        "t": "Why Stock Market is Down Today? Factors Behind the Fall of Equity Benchmarks in Today\u2019s Trade - Kotak Neo",
+        "tone": "neg"
+      },
+      {
+        "t": "Stock markets snap 2-day rally; Sensex, Nifty end in red amid profit booking - DD India",
+        "tone": "pos"
+      },
+      {
+        "t": "Stock Market This Week: Why Sensex Lost 580 Pts Despite Strong FII Inflows and Defence Rally - The Indian Awaaz",
+        "tone": "pos"
+      },
+      {
+        "t": "Black Friday Turns Red: Nifty Slips After a 15% Rally in Four Weeks. Is the Market Just Catching Its Breath? - NiftyTrader",
+        "tone": "pos"
+      }
+    ]
   },
   "paper": {
     "stats": {
@@ -470,7 +491,7 @@
         "openTrades": [
           {
             "name": "Varroc Engineer",
-            "ret": 22.97,
+            "ret": 22.88,
             "days": 1
           },
           {
@@ -480,7 +501,7 @@
           },
           {
             "name": "Pricol Ltd",
-            "ret": -3.46,
+            "ret": -3.33,
             "days": 2
           }
         ]
